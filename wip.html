@@ -1,0 +1,112 @@
+<link rel="stylesheet" type="text/css" href="sim.css" />
+
+<div id="controls">
+	
+	<div>
+		<div>
+			Growth in the beginning:
+			<br>
+			<b>R<sub>0</sub> = 2.50</b>
+		</div>
+		<div class='bar' id="r_0">
+			<div></div><div></div><div></div><div></div>
+		</div>
+	</div>
+
+	<div>
+		<div>
+			Ratio of folks still Susceptible:
+			<input type="range" id="slider_susceptible" min="0" max="1" step="0.001" disabled>
+		</div>
+		<div class='bar' id="r_susceptible">
+			<div></div><div></div><div></div><div></div>
+		</div>
+	</div>
+
+	<div class="phase_i phase" locked style="border-color:#71c0ff;">
+		<div>
+			Social Distancing:
+			<input type="range" id="slider_distancing" min="0" max="1" step="0.001" value="0" CAP="0.9">
+		</div>
+		<div class='bar' id="r_distancing">
+			<div></div><div></div><div></div><div></div>
+		</div>
+	</div>
+	
+	<div class="phase_ii phase" locked style="border-color:#70ff70;">
+		<div>
+			Cases isolated:
+			<input type="range" id="slider_cases" min="0" max="1" step="0.001" value="0" CAP="0.9">
+		</div>
+		<div class='bar' id="r_cases">
+			<div></div><div></div><div></div><div></div>
+		</div>
+	</div>
+
+	<div class="phase_ii phase" locked style="border-color:#b8ff70;">
+		<div>
+			Contacts quarantined:
+			<input type="range" id="slider_contacts" min="0" max="1" step="0.001" value="0" CAP="0.7">
+		</div>
+		<div class='bar' id="r_contacts">
+			<div></div><div></div><div></div><div></div>
+		</div>
+	</div>
+
+	<div class="phase_iii phase" locked style="border-color:#ffe770;">
+		<div>
+			Folks vaccinated:
+			<input type="range" id="slider_vax" min="0" max="1" step="0.001" value="0" CAP="0.9">
+		</div>
+		<div class='bar' id="r_vax">
+			<div></div><div></div><div></div><div></div>
+		</div>
+	</div>
+
+	<div>
+		<div>
+			Growth right now:
+			<br>
+			<b>
+				R = <span id="r_now">0.1</span>
+			</b>
+		</div>
+		<div class='bar' id="r_end">
+			<div></div><div></div><div></div><div></div>
+		</div>
+	</div>
+
+	<span id="containment_line"></span>
+
+	<button id="restart">restart</button>
+
+</div>
+
+<div id="graph">
+	<canvas id="graphCanvas"></canvas>
+	<div id="months">
+		<div>dec 2019</div>
+		<div>mar 2020</div>
+		<div>jun 2020</div>
+		<div>sep 2020</div>
+		<div>dec 2020</div>
+		<div>mar 2021</div>
+		<div>jun 2021</div>
+		<div>sep 2021</div>
+		<div>dec 2021</div>
+	</div>
+	<div id="month_ticks">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+
+
+<script src="sim.js"></script>

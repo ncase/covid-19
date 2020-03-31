@@ -1,0 +1,115 @@
+body{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+
+#controls{
+	width:300px;
+	/*height:500px;*/
+	float:left;
+	position: relative;
+}
+#controls > div{
+	overflow: hidden;
+	margin-bottom: 1em;
+	position: relative;
+
+	border-left: 5px solid #ffffff;
+	padding-left: 10px;
+}
+#controls > div > div{
+	width: 150px;
+	float: left;
+	position: relative;
+}
+#controls > div > div.bar{
+	height:10px;
+	background: #eeeeee;
+	position: absolute;
+	bottom:0; left:150px;
+	overflow: hidden;
+}
+#controls > div > div.bar > div{
+	height: 100%;
+	float: left;
+}
+#controls > div > div.bar > div:nth-child(1){
+	background: #ff4040;
+}
+#controls > div > div.bar > div:nth-child(2){
+	background: #cc4040;
+}
+#controls > div > div.bar > div:nth-child(3){
+	background: #994040;
+}
+#controls > div > div.bar > div:nth-child(4){
+	background: #664040;
+}
+#controls > div > #r_end{
+	height: 30px;
+}
+#controls > #containment_line{
+	display: block;
+	width:1px;
+	height: 100%;
+	background: #000;
+	position: absolute;
+	top: 0;
+}
+#controls .cap{
+    background: #fff;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 20px;
+}
+
+#controls > div[locked]{
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+
+#graph{
+	float:left;
+	margin-left: 1em;
+	width: 500px;
+}
+#graphCanvas{
+	width:500px;
+	height:500px;
+	border: 1px solid #eeeeee;
+}
+#graph > #months{
+	color: #bbb;
+    font-size: 10px;
+    width: 562.5px;
+    height: 50px;
+    text-align: right;
+    position: relative;
+    left: -70.5px;
+	top: 2px;
+}
+#graph > #months > div{
+	color: #bbb;
+    font-size: 10px;
+    width: 62.5px;
+    float: left;
+    transform-origin: top right;
+    transform: rotate(-30deg);
+}
+#graph > #month_ticks{
+    width: 562.5px;
+    height: 5px;
+    position: relative;
+    left: -61.5px;
+    top: -50px;
+}
+#graph > #month_ticks > div{
+	width: 61.5px;
+	height: 100%;
+	border-right: 1px solid #bbb;
+    float: left;
+}
