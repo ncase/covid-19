@@ -66,6 +66,10 @@ body{
     height: 20px;
 }
 
+#controls > input{
+	width: 100%;
+}
+
 #controls > div[locked]{
 	opacity: 0.2;
 	pointer-events: none;
@@ -76,6 +80,7 @@ body{
 	float:left;
 	margin-left: 1em;
 	width: 500px;
+	position: relative;
 }
 #graphCanvas{
 	width:500px;

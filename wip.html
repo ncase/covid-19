@@ -1,89 +1,74 @@
 <link rel="stylesheet" type="text/css" href="sim.css" />
 
 <div id="controls">
-	
-	<div>
-		<div>
-			Growth in the beginning:
-			<br>
-			<b>R<sub>0</sub> = 2.50</b>
-		</div>
-		<div class='bar' id="r_0">
-			<div></div><div></div><div></div><div></div>
-		</div>
-	</div>
 
-	<div>
-		<div>
-			Ratio of folks still Susceptible:
-			<input type="range" id="slider_susceptible" min="0" max="1" step="0.001" disabled>
-		</div>
-		<div class='bar' id="r_susceptible">
-			<div></div><div></div><div></div><div></div>
-		</div>
-	</div>
+	On <i>average</i>, in the beginning,<br>
+	each infected person...
+	<br>
+	<br>
+	Infects a new person every <span id="label_p_transmission">N</span> days
+	<br>
+	<input class="sim_input" type="range" id="p_transmission" min="1" max="28" step="1" value="4">
+	<br>
+	Recovers in <span id="label_p_recovery">N</span> days
+	<br>
+	<input class="sim_input" type="range" id="p_recovery" min="1" max="28" step="1" value="14">
+	<br>
+	Then loses immunity in <span id="label_p_waning">N</span> years
+	<br>
+	<input class="sim_input" type="range" id="p_waning" min="0.5" max="5" step="0.5" value="1">
 
-	<div class="phase_i phase" locked style="border-color:#71c0ff;">
-		<div>
-			Social Distancing:
-			<input type="range" id="slider_distancing" min="0" max="1" step="0.001" value="0" CAP="0.9">
-		</div>
-		<div class='bar' id="r_distancing">
-			<div></div><div></div><div></div><div></div>
-		</div>
-	</div>
-	
-	<div class="phase_ii phase" locked style="border-color:#70ff70;">
-		<div>
-			Cases isolated:
-			<input type="range" id="slider_cases" min="0" max="1" step="0.001" value="0" CAP="0.9">
-		</div>
-		<div class='bar' id="r_cases">
-			<div></div><div></div><div></div><div></div>
-		</div>
-	</div>
+	<hr>
 
-	<div class="phase_ii phase" locked style="border-color:#b8ff70;">
-		<div>
-			Contacts quarantined:
-			<input type="range" id="slider_contacts" min="0" max="1" step="0.001" value="0" CAP="0.7">
-		</div>
-		<div class='bar' id="r_contacts">
-			<div></div><div></div><div></div><div></div>
-		</div>
-	</div>
+	R0 is ...
 
-	<div class="phase_iii phase" locked style="border-color:#ffe770;">
-		<div>
-			Folks vaccinated:
-			<input type="range" id="slider_vax" min="0" max="1" step="0.001" value="0" CAP="0.9">
-		</div>
-		<div class='bar' id="r_vax">
-			<div></div><div></div><div></div><div></div>
-		</div>
-	</div>
+	<br><br>
+	But with % Susceptible,
+	<br>
+	Hygeine,
+	<br>
+	Physical distancing
+	<br>
+	Isolating (symptomatic) cases
+	<br>
+	Quarantining (pre/a-symptomatic) contacts
+	<br>
+	Deep cleaning (fomites)
+	<br>
+	Face masks
+	<br>
+	& Summer...
 
-	<div>
-		<div>
-			Growth right now:
-			<br>
-			<b>
-				R = <span id="r_now">0.1</span>
-			</b>
-		</div>
-		<div class='bar' id="r_end">
-			<div></div><div></div><div></div><div></div>
-		</div>
-	</div>
+	<br><br>
 
-	<span id="containment_line"></span>
+	R is now...
+
+	<hr>
+
+	Vaccinate until N% are <i>not</i> Susceptible
+	<br>
+
+	Change hospital capacity to...
+	<br>
+
+	<hr>
+
+	Simulate <span id="label_p_years">N</span> years
+	<br>
+	<input class="sim_input" type="range" id="p_years" min="0.5" max="5" step="0.5" value="2">
+	<br>
+	In <span id="label_p_speed">N</span> seconds
+	<br>
+	<input class="sim_input" type="range" id="p_speed" min="1" max="60" step="1" value="30">
+
+	<hr>
 
 	<button id="restart">restart</button>
-
 </div>
 
 <div id="graph">
 	<canvas id="graphCanvas"></canvas>
+	<!--
 	<div id="months">
 		<div>dec 2019</div>
 		<div>mar 2020</div>
@@ -106,6 +91,8 @@
 		<div></div>
 		<div></div>
 	</div>
+	-->
+	<img src="legend.png" width="500" height="500" style="position: absolute;top:0; left:0"></img>
 </div>
 
 
