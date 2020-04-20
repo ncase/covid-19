@@ -1,14 +1,15 @@
 body{
 	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
 }
 
-
 #controls{
-	width:300px;
+	width:250px;
 	/*height:500px;*/
 	float:left;
 	position: relative;
 }
+/*
 #controls > div{
 	overflow: hidden;
 	margin-bottom: 1em;
@@ -64,16 +65,24 @@ body{
     right: 0;
     width: 50px;
     height: 20px;
-}
+}*/
 
-#controls > input{
+#controls input[type=range]{
 	width: 100%;
 }
+#controls > div[strikethrough]{
+	text-decoration: line-through;
+}
+#controls > div[strikethrough] > input[type=range]{
+	pointer-events: none;
+	opacity: 0.5;
+}
 
+/*
 #controls > div[locked]{
 	opacity: 0.2;
 	pointer-events: none;
-}
+}*/
 
 
 #graph{
