@@ -70,10 +70,10 @@ body{
 #controls input[type=range]{
 	width: 100%;
 }
-#controls > div[strikethrough]{
+#controls div[strikethrough]{
 	text-decoration: line-through;
 }
-#controls > div[strikethrough] > input[type=range]{
+#controls div[strikethrough] > input[type=range]{
 	pointer-events: none;
 	opacity: 0.5;
 }

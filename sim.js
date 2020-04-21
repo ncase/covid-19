@@ -346,11 +346,12 @@ $('#replay').onclick = ()=>{
 07 Flatten The Curve
 08 Lockdown for a while
 09 Intermittent Lockdown
-10 Lockdown, then Test & Trace... and with VaccinatioN!
-11 Also deep cleaning & masks & summer
+10 Lockdown, then Test & Trace... and with Vaccination!
+11 Also deep cleaning & masks & summer (with one more lockdown)
 
 12 Decay of Recovered
-13 Oscillations (Hospital Capacity)
+13 Oscillations
+13b w Hospital Capacity
 14 Oscillations with Summer (Hospital Capacity)
 15 Intermittent Vaccines
 
@@ -411,7 +412,7 @@ const STAGES = {
 	"05a": {
 		hide: [
 			"section_meta","label_c_waning","c_recovery",
-			"int_block_0","int_block_1","int_block_2","int_block_3","int_block_4","hospital_capacity",
+			"int_block_0","int_block_1","int_block_2","int_block_3","int_block_4","int_block_5","hospital_capacity",
 			"graph",
 			"label_s","label_re",
 			"sim_controls"
@@ -427,7 +428,7 @@ const STAGES = {
 	"05b": {
 		hide: [
 			"section_meta","label_c_waning","c_recovery",
-			"int_block_0","int_block_1","int_block_2","int_block_3","int_block_4","hospital_capacity",
+			"int_block_0","int_block_1","int_block_2","int_block_3","int_block_4","int_block_5","hospital_capacity",
 			"graph",
 			"sim_controls"
 		],
@@ -624,7 +625,7 @@ const STAGES = {
 			["c_recovery", true],
 			["c_waning", true]
 		],
-		SIR: [0.09,0.01,0.9]
+		//SIR: [0.09,0.01,0.9]
 	},
 
 	"15": {
@@ -649,6 +650,7 @@ const STAGES = {
 	//////////////////////////////////////////
 	// SANDBOX ///////////////////////////////
 	//////////////////////////////////////////
+	
 	"SB": {
 		checkboxes: [
 			["c_recovery", true],
