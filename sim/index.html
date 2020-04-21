@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="sim.css" />
+</head>
+
+<body>
+
+	<div id="sandbox">
+	
+		<div id="controls">
+
+			<div id="section_dynamics">
+
+				On <i>average</i>,
+				each infected person...
+				<br><br>
+				
+				<div id="label_transmission">
+					Infects a new person every <span id="label_p_transmission">N</span> days
+					(in the beginning)
+					<br>
+					<input class="sim_input" type="range" id="p_transmission" min="1" max="28" step="1" value="4">
+				</div>
+				
+				<div id="label_c_recovery">
+					<input class="sim_checkbox" type="checkbox" id="c_recovery">
+					Recovers in <span id="label_p_recovery">N</span> days
+					<br>
+					<input class="sim_input" type="range" id="p_recovery" min="1" max="28" step="1" value="14">
+				</div>
+				
+				<div id="label_c_waning">
+					<input class="sim_checkbox" type="checkbox" id="c_waning">
+					Loses immunity in <span id="label_p_waning">N</span> years
+					<br>
+					<input class="sim_input" type="range" id="p_waning" min="0.5" max="5" step="0.5" value="1">
+				</div>
+
+				<hr>
+
+			</div>
+
+			<div id="section_r">
+
+				R0 is <span id="label_p_r0" toFixed="2"></span>
+				<input class="sim_input" type="range" id="p_r0" min="0" max="6" step="0.01" disabled>
+				<br>
+
+				<span id="label_s">
+					But R is changed by...
+					<br>
+					Susceptible population
+					<input class="sim_input" type="range" id="p_s" min="0" max="1" step="0.001" disabled>
+					<br>
+				</span>
+
+				<span id="int_block_0">
+					Personal Hygiene
+					<br>
+					<input class="sim_input recordable" type="range" id="p_hygiene" min="0" max="1" step="0.001" value="0">
+					<br>
+				</span>
+				<span id="int_block_1">
+					Physical Distancing
+					<br>
+					<input class="sim_input recordable" type="range" id="p_distancing" min="0" max="1" step="0.001" value="0">
+					<br>
+				</span>
+				<span id="int_block_2">
+					Isolating Cases
+					<br>
+					<input class="sim_input recordable" type="range" id="p_isolate" min="0" max="1" step="0.001" value="0">
+					<br>
+					Quarantining Contacts
+					<br>
+					<input class="sim_input recordable" type="range" id="p_quarantine" min="0" max="1" step="0.001" value="0">
+					<br>
+				</span>
+				<span id="int_block_3">
+					Deep Cleaning
+					<br>
+					<input class="sim_input recordable" type="range" id="p_cleaning" min="0" max="1" step="0.001" value="0">
+					<br>
+					Face Masks
+					<br>
+					<input class="sim_input recordable" type="range" id="p_masks" min="0" max="1" step="0.001" value="0">
+					<br>
+				</span>
+				<span id="int_block_4">
+					Summer
+					<br>
+					<input class="sim_input recordable" type="range" id="p_summer" min="0" max="1" step="0.001" value="0">
+					<br>
+				</span>
+				<span id="int_block_5">
+					Vaccinations
+					<br>
+					<input class="sim_input recordable" type="range" id="p_vaccines" min="0" max="1" step="0.001" value="0">
+					<br>
+				</span>
+
+				<br>
+
+				<span id="label_re">
+					R is now <span id="label_p_re" toFixed="2"></span>
+					<input class="sim_input" type="range" id="p_re" min="0" max="6" step="0.01" disabled>
+				</span>
+
+				<span id="hospital_capacity">
+					Hospital capacity at <span id="label_p_hospital">N</span>%
+					<br>
+					<input class="sim_input recordable" type="range" id="p_hospital" min="0" max="500" step="1" value="100">
+				</span>
+
+				<hr>
+
+			</div>
+
+			<div id="section_meta">
+
+				Simulate <span id="label_p_years">N</span> years...
+				<br>
+				<input class="sim_input" type="range" id="p_years" min="0.5" max="10" step="0.5" value="2">
+				<br>
+				...in <span id="label_p_speed">N</span> seconds
+				<br>
+				<input class="sim_input" type="range" id="p_speed" min="1" max="60" step="1" value="30">
+
+				<hr>
+
+			</div>
+
+			<div id="sim_controls">
+				<button id="start">start/stop</button>
+				<button id="restart">restart</button>
+				<button id="replay">replay recording</button>
+			</div>
+
+		</div>
+
+		<div id="graph">
+			<canvas id="graphCanvas"></canvas>
+			<!--
+			<div id="months">
+				<div>dec 2019</div>
+				<div>mar 2020</div>
+				<div>jun 2020</div>
+				<div>sep 2020</div>
+				<div>dec 2020</div>
+				<div>mar 2021</div>
+				<div>jun 2021</div>
+				<div>sep 2021</div>
+				<div>dec 2021</div>
+			</div>
+			<div id="month_ticks">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			-->
+			<img src="legend.png" width="500" height="500" style="position: absolute;top:0; left:0"></img>
+		</div>
+
+	</div>
+
+</body>
+
+<script src="sim.js"></script>

@@ -2,19 +2,23 @@
 
 ## COVID-19 Possibilities, Explained With Playable Simulations
 
-"The only thing to fear is fear itself" is stupid.
+"The only thing to fear is fear itself" is stupid.[^1]
 
-Sure, don't hoard toilet paper. But if someone's too scared to think about scary things, and they deny or downplay danger *when it's already here*, then they've got more problems than toilet paper.
+[^1]: hello!
+
+Sure, don't hoard toilet paper. But if someone's so scared to think about scary things, that they deny danger *when it's already here*, then they've got more problems[^2] than toilet paper.
+
+[^2]: but a snitch ain't one
 
 The problem's not fear, but how we *use* our fear. Taiwan and South Korea *bravely used their fear* (from SARS) to invest in "pandemic insurance", and it paid off in controlling COVID-19! Fear gives you energy to deal with present dangers & plan for future dangers – *if* you know how to channel your fear.
 
 So, we (Marcel & Nicky) have channeled our COVID-19 fears into making these playable simulations – so that *you* can channel *your* fear into gaining a deep, intuitive understanding of:
 
-* The Last Few Months (epidemiology 101, SIR model, R0 & Rt)
-* The Next Few Months (lockdowns, contact tracing, masks)
-* The Next Few Years (vaccines, summers, loss of immunity)
+* **The Last Few Months** (epidemiology 101, SIR model, R0 & Rt)
+* **The Next Few Months** (lockdowns, contact tracing, masks)
+* **The Next Few Years** (vaccines, summers, loss of immunity)
 
-Note: We're publishing this on April 30th, 2020. Still the early days. As humanity learns more about COVID-19, our plans will and *should* change – but we hope this post will address 99% of all future possibilities!
+Note: We're publishing this on April 30th, 2020. Still the early days. As humanity learns more about COVID-19, our plans will and *should* change – but we hope this post will address 90%+ of all future possibilities!
 
 Honestly, some of the possibilities are scary. And some are hopeful! But preparing for the scary possibilites is what *creates* the hopeful possibilites. You don't get to save the prince/ss without facing the dragon.
 
@@ -28,7 +32,7 @@ Let's bravely use our fear, and face this dragon.
 
 Pilots use flight simulators to learn how not to crash planes. **Epidemiologists use epidemic simulators to learn how not to crash humanity.**
 
-So, let's set up an epidemic simulator! First, we need some simulation rules.
+So, let's set up an epidemic "flight simulator"! First, we need some simulation rules.
 
 Let's say you have some Infected (i) people and not-yet-infected Susceptible (s) people. One (i) infects a (s), those 2 (i) infect another 2 (s), those 4 (i) infect another 4 (s), and so on:
 
@@ -231,13 +235,13 @@ So, what, do we just lockdown again & again?
 
 This was one solution suggested by the March 16 Imperial College report, and analyzed again by Marc Lipsitch ______ etc. [https://science.sciencemag.org/content/early/2020/04/14/science.abb5793?]
 
-This *would* keep hospitals below capacity! You just have to... shut everything down for 2 months, every 3 months, until a vaccine is available in 18 months.
+This *would* keep hospitals below capacity! You just have to... shut everything down for 2 months, every 3 months, until a vaccine is available in 18 months. That's... one year total out of 18 months.
 
 Look, it's all well & good to draw a line on a graph saying "healthcare capacity", but there's lots of important things we *can't* simulate here. Like:
 
 Mental Health) Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as negatively associated with an early death as smoking 15 cigarettes a day.
 
-Financial Health) "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks, it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+Financial Health) "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
 
 Not saying we should rule out intermittent lockdowns! But it's not ideal.
 
@@ -267,7 +271,7 @@ But if you *also* quarantine the contacts, you stop the spread, by staying one s
 
 // timeline
 
-(TODO: 30 min)
+(TODO: 30 min+ exposure)
 
 Contact tracing was how they contained Ebola in (where?) Africa! And that was just good ol' fashioned "ask people who they met" contact tracing.
 
@@ -331,7 +335,7 @@ If handwashing + case isolation + contact quarantining *still* isn't enough to g
 
 Remember we said "stuff like doorknobs" accounts for 10% of new infections? The technical jargon for things that can pass a virus from one human to another is a **"fomite".**
 
-10% means frequent deep cleanings of public spaces – subways, libraries, and malls – can reduce Rt by up to 10%. Which sounds useless, but if it reduces Rt from 1.05 to 0.95... that's Rt<1 = tens of thousands of lives saved.
+10% means frequent deep cleanings of public spaces – subways, libraries, and malls – can reduce Rt by up to 10%. Which sounds useless, but if it reduces Rt from 1.05 to 0.95... that's Rt<1 = lives saved.
 
 // calc?
 
@@ -345,13 +349,13 @@ Remember we said "stuff like doorknobs" accounts for 10% of new infections? The 
 
 What we're trying to say is:
 
-There aren't any RCTs (yet) testing "Cloth masks prevent COVID-19 spread" *specifically*. But there's lots of other evidence, if of lower "weight":
+There aren't any RCTs (yet) testing "Cloth masks prevent COVID-19 spread" *specifically*. But there's lots of *suggestive* evidence, if of lower "weight":
 
 * Staff in hospitals without masks are more likely to die of COVID-19
 * Taiwan & South Korea have widespread public wearing of masks
 * For colds & flus, masks reduce droplets/aerosols from the *wearer*.
 
-Pandemics are like poker. Act when you "have enough info", and you'll lose everything at stake. You'll never have enough info, just cost/benefit analyses under uncertainty. Like so:
+Pandemics are like poker. Act only when you "have enough info", and you'll lose everything at stake. You'll never have enough info, just cost/benefit analyses under uncertainty. Like so:
 
 Cost of cloth masks (certain): Small. Same as handwashing.
 
@@ -419,7 +423,7 @@ Let's simulate what that'll look like, with *no* interventions:
 
 // sim
 
-Previously, we only had *one* hospital-breaking spike with no interventions. Now, we have several, *and* the simulation comes to a rest with % of (i) infected *permanently above* hospital capacity. 
+Previously, with no interventions, we only had *one* hospital-breaking spike. Now, we have several, *and* the simulation comes to a rest with % of (i) infected *permanently above* hospital capacity. 
 
 (If you replay the simulation above with immunity lasting 3 years, that wouldn't be so bad! The % of (i) would rest comfortably *below* capacity. There'd still be spikes, but you can deal with them using the same interventions listed in last section)
 
@@ -455,7 +459,7 @@ Life will go on, even under the *worst* worst-case scenario.
 
 ...
 
-That said, the virus behind COVID-19 is way simpler than HIV, so there'll almost definitely be a vaccine. Even if it only grants immunity for a year. If so, we'll just have to do a vaccination campaign each autumn – and we can just do this alongside our regular flu shots:
+That said, the virus behind COVID-19 is way simpler than HIV, so there'll almost definitely be a vaccine, even if it only grants immunity for a year. If so, we'll just have to do a vaccination campaign each autumn – and we can just do this alongside our regular flu shots:
 
 // sim
 
@@ -485,7 +489,7 @@ Get current (i)s low, while building capability to do...
 
 **PHASE 2) "Test, Trace, Isolate"**
 
-We replace lockdown with other ways to get Rt<1. Life gets back to normal-ish! 🎉
+We replace lockdown with other ways to get Rt<1. Life gets back to normal-ish!  🎉
 
 More testing so we can *actually* tell what Rt currently is.
 
@@ -493,7 +497,7 @@ Create policies to get cases to isolate/quarantine. Paid leave & bonus financial
 
 Use *privacy-protecting* contact tracing apps to find contacts. Remember, not everybody has to have the app to get Rt<1.
 
-If Rt still not below 1: "Masks For All". Get most people to wear at *least* cloth face masks. Give out free masks if you have to.
+If Rt still not below 1: "Masks For All". Get most people to wear at *least* cloth face masks.
 
 If Rt *still* not below 1: Deep clean public spaces often. Mild social distancing. Maybe one or two more "circuit breaker" lockdowns. (but still avoiding "lockdown for most of 18 months"!)
 
@@ -507,15 +511,15 @@ If vaccine is *never* available: Raise our capacity for COVID-19 cases by creati
 
 **What's this mean for YOU, _right now?_**
 
-**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands! Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
 
 **For policymakers:** Create policies that compensate (or reward!) folks who have to self-isolate/quarantine. Direct funds into all the stuff we should be building, like...
 
-**For builders:** Build tests. Build ventilators. Build masks – cloth, surgical and N95. Build privacy-protecting contact tracing apps. Build antivirals and other treatments. Build vaccines. Build science. 
+**For builders:** Build tests. Build ventilators. Build masks – cloth, surgical and N95. Build apps. Build antivirals and other treatments. Build vaccines. Build science. 
 
 Will we *need* all that? "Probably" not, the same way you "probably" won't need safety belts, fire insurance, or parachutes on planes. It's like doing a cost/benefit analysis of Russian Roulette: the chance of disaster is small, but the *cost* of disaster is far, far bigger.
 
-In situations like this, it pays to listen honestly to your fears, face them, and prepare for them.
+In situations like this, it pays to listen *honestly* to your fears. Don't deny or downplay them, just face them, and prepare for them.
 
 The only thing to fear is people who think the only thing to fear is fear itself.
 

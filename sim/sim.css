@@ -1,9 +1,24 @@
 body{
+	margin: 0;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 15px;
+	background: #ddd;
+}
+
+#sandbox{
+	width: 800px;
+	height: 520px;
+	overflow: hidden;
+	background: #fff;
+	position: absolute;
+	margin:auto;
+	top:0; left:0; right:0; bottom:0;
 }
 
 #controls{
+	position: absolute;
+	left:15px;
+	top:20px;
 	width:250px;
 	/*height:500px;*/
 	float:left;
@@ -86,15 +101,15 @@ body{
 
 
 #graph{
-	float:left;
-	margin-left: 1em;
+	position: absolute;
+	right:15px;
+	top:8px;
 	width: 500px;
-	position: relative;
 }
 #graphCanvas{
 	width:500px;
 	height:500px;
-	border: 1px solid #eeeeee;
+	border: 1px solid #ccc;
 }
 #graph > #months{
 	color: #bbb;

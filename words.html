@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>words</title>
+
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">What Happens Next?</h1>
+
+<h2 id="toc_1">COVID-19 Possibilities, Explained With Playable Simulations</h2>
+
+<p>&quot;The only thing to fear is fear itself&quot; is stupid.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
+
+<p>Sure, don&#39;t hoard toilet paper. But if someone&#39;s so scared to think about scary things, that they deny danger <em>when it&#39;s already here</em>, then they&#39;ve got more problems<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup> than toilet paper.</p>
+
+<p>The problem&#39;s not fear, but how we <em>use</em> our fear. Taiwan and South Korea <em>bravely used their fear</em> (from SARS) to invest in &quot;pandemic insurance&quot;, and it paid off in controlling COVID-19! Fear gives you energy to deal with present dangers &amp; plan for future dangers – <em>if</em> you know how to channel your fear.</p>
+
+<p>So, we (Marcel &amp; Nicky) have channeled our COVID-19 fears into making these playable simulations – so that <em>you</em> can channel <em>your</em> fear into gaining a deep, intuitive understanding of:</p>
+
+<ul>
+<li><strong>The Last Few Months</strong> (epidemiology 101, SIR model, R0 &amp; Rt)</li>
+<li><strong>The Next Few Months</strong> (lockdowns, contact tracing, masks)</li>
+<li><strong>The Next Few Years</strong> (vaccines, summers, loss of immunity)</li>
+</ul>
+
+<p>Note: We&#39;re publishing this on April 30th, 2020. Still the early days. As humanity learns more about COVID-19, our plans will and <em>should</em> change – but we hope this post will address 90%+ of all future possibilities!</p>
+
+<p>Honestly, some of the possibilities are scary. And some are hopeful! But preparing for the scary possibilites is what <em>creates</em> the hopeful possibilites. You don&#39;t get to save the prince/ss without facing the dragon.</p>
+
+<p>Let&#39;s bravely use our fear, and face this dragon.</p>
+
+<hr>
+
+<h1 id="toc_2">The Last Few Months</h1>
+
+<p>...has been a real worldwide cram-school in Epidemiology 101.</p>
+
+<p>Pilots use flight simulators to learn how not to crash planes. <strong>Epidemiologists use epidemic simulators to learn how not to crash humanity.</strong></p>
+
+<p>So, let&#39;s set up an epidemic &quot;flight simulator&quot;! First, we need some simulation rules.</p>
+
+<p>Let&#39;s say you have some Infected (i) people and not-yet-infected Susceptible (s) people. One (i) infects a (s), those 2 (i) infect another 2 (s), those 4 (i) infect another 4 (s), and so on:</p>
+
+<p>// pic</p>
+
+<p><em>On average</em>, COVID-19 jumps from an (i) to a (s) every 4 days.<a href="source">1</a> The average # of days it takes for an (i) to infect an (s) is called the <strong>&quot;generation time&quot;</strong><a href="serial%20interval">2-note</a>. (Click the gray circles for sources, and the blue squares for side-notes!)</p>
+
+<p><em>Rule #1: The more (i)s there are, the faster (s)s become (i)s.</em></p>
+
+<p>// pic - rule</p>
+
+<p>If we simulate <em>just this rule and nothing else</em>, here&#39;s what it looks like over 3 months, starting with 99.9% (s) and just 0.1% (i):</p>
+
+<p><strong>Click &quot;Start&quot; play the simulation! You can then change the &quot;generation time&quot;, and see how that changes the simulation:</strong></p>
+
+<p>// sim</p>
+
+<p>Starts small (&quot;it&#39;s just a flu&quot;), then explodes (&quot;oh right, flus don&#39;t break hospitals in rich countries&quot;). This is the &quot;J-shaped&quot; <strong>exponential growth curve</strong>.</p>
+
+<p>But this simulation is wrong. There are things that prevent an (i) from infecting someone else – like if that other person is <em>already</em> an (i):</p>
+
+<p>// pic - 100% spread, 50% spread, 0% spread</p>
+
+<p><em>Rule #2: The fewer (s)s there are, the slower (s)s become (i)s.</em></p>
+
+<p>// pic - rule</p>
+
+<p>Now, what happens if we simulate <em>both</em> these rules?</p>
+
+<p><strong>Again, click Start to play the simulation!</strong></p>
+
+<p>// sim</p>
+
+<p>Starts small, explodes, then slows down again. This is the &quot;S-shaped&quot; <strong>logistic growth curve.</strong></p>
+
+<p>Still, this simulation predicts 100% of people will get the virus, and even the most pessimistic COVID-19 simulations don&#39;t predict <em>that</em>. </p>
+
+<p>What we&#39;re missing: You stop being infectious for COVID-19 when you recover... or die.</p>
+
+<p>For the sake not making these simulations too depressing, let&#39;s only simulate Infected (i) becoming (r) Recovered. (The math works out the same.) And let&#39;s assume <em>(for now!!!)</em> that (r)s can&#39;t get infected again. So, new rule:</p>
+
+<p><em>Rule #3: (i)s eventually become (r)s.</em> </p>
+
+<p>// pic - rule</p>
+
+<p>Let&#39;s have (i)s become (r)s after 14 days, <em>on average</em>.<a href="technical%20notes">3-note</a> This means some (i)s will recover <em>before</em> 14 days, and some recover <em>after</em>! This is closer to real life.</p>
+
+<p>To show <em>only</em> Rule #3, here&#39;s a simulation starting with 100% (i):</p>
+
+<p>// sim</p>
+
+<p>This is the &quot;flipped-J-shaped&quot; <strong>exponential decay curve.</strong></p>
+
+<p>Now, what happens if you simulate all 3 rules at once? What happens when you combine an S-shaped logistic curve with a flipped-J exponential decay curve?</p>
+
+<p>// pic</p>
+
+<p>Let&#39;s find out:</p>
+
+<p>// sim</p>
+
+<p>And <em>that&#39;s</em> where that famous curve comes from! It&#39;s not a bell curve, it&#39;s not even a &quot;log-normal&quot; curve. It has no name. But you&#39;ve seen it a zillion times, and beseeched to flatten.</p>
+
+<p>// pic: 3 rules</p>
+
+<p>This is the <strong>SIR Model</strong>, the <em>second</em>-most important idea in epidemiology.</p>
+
+<p><strong>NOTE:</strong> The simulations you&#39;ve been hearing in the news are <em>far</em> more complex than the ones you&#39;re seeing here! But the sims you&#39;ll play with here reach the same general conclusions, even if missing the nuances.</p>
+
+<p>One nuance you could add is the <strong>SIRS Model</strong>, where the final &quot;S&quot; also stands for (s) Susceptible – this is when people recover, are immune for a bit, <em>then lose that immunity and can be infected again.</em> (We&#39;ll consider this in the Next Few Years section)</p>
+
+<p>Another nuanced version is the <strong>SEIR Model</strong>, where the &quot;E&quot; stands for (e) Exposed, a brief period of time <em>after</em> you&#39;ve been infected, but <em>before</em> you can infect others. This is called the <strong>&quot;latent period&quot;</strong>, and for COVID-19 it&#39;s around 3 days.<a href="">4</a></p>
+
+<p>Here&#39;s what happens if you simulate that:</p>
+
+<p>// sim</p>
+
+<p>Doesn&#39;t change much, so let&#39;s stick to the vanilla SIR model. We brought (e)s up because the exact timing of contagiousness is important in &quot;contact tracing&quot;, which we&#39;ll explain in the Next Few Months section.</p>
+
+<p>Oh! But almost forgot, the <em>first</em>-most important idea in epidemiology:</p>
+
+<p><strong>&quot;R&quot;</strong></p>
+
+<p>Which is short for &quot;Reproduction Number&quot;. It&#39;s the <em>average</em> number of people an (i) will infect <em>before</em> they recover:</p>
+
+<p>// pic - R&gt;1 R=1 R&lt;1</p>
+
+<p><strong>R0</strong> (pronounced R-nought) is the Reproduction Number for a virus <em>at the very beginning of an outbreak, before we have immunity or interventions</em>. (Also called &quot;Basic Reproduction Number&quot;)</p>
+
+<p><strong>Rt</strong> (the &#39;t&#39; stands for time) is the Reproduction Number <em>right now</em>, after we have some immunity or interventions. (Also called &quot;Re&quot;, e standing for &quot;Effective Reproduction Number&quot;. Also called just &quot;R&quot;, to... confuse people)</p>
+
+<p>// pic of R0 and Rt over time for the Famous Curve – with peak for inflection!</p>
+
+<p>(A lot of news outlets confuse these two Rs! They&#39;re different!)</p>
+
+<p>The R0 for the flu<a href="more">6</a> is around 1.3. The R0 for COVID-19 is somewhere between 2 and 5.<a href="source">7</a>  The huge uncertainty is because R0 depends on exactly how quickly new people are infected (&quot;generation time&quot;) vs how quickly people recover<a href="technical%20note">8</a>:</p>
+
+<p>// sim</p>
+
+<p>Rt for COVID-19 depends on the interventions we do (or don&#39;t) have, as well as how many people <em>aren&#39;t</em> (s) Susceptible. (because they&#39;re (r) Recovered, currently (i) Infected, or... dead.)</p>
+
+<p>// sim</p>
+
+<p>Note that when (s)% is low enough, you can get Rt&lt;1 – <em>containing the virus!</em> This is called <strong>the &quot;herd immunity&quot; threshold</strong>. &quot;Herd immunity&quot; is a terrible <em>policy</em> (TODO: explain why), but it&#39;s important for understanding epidemiology.</p>
+
+<p>Now, let&#39;s run the same SIR model simulation again, but this time showing 1) Rt changing over time, and 2) the herd immunity threshold:</p>
+
+<p>// sim</p>
+
+<p>Note how total cases ((i)+(r)) <em>overshoots</em> the herd immunity threshold! And the <em>exact</em> moment it does this is when infections peak <em>and</em> when Rt drops below 1!</p>
+
+<p>If there&#39;s only one lesson you take away today, here it is, in big shiny letters:</p>
+
+<h1 id="toc_3">Rt&gt;1 = bad</h1>
+
+<h1 id="toc_4">Rt&lt;1 = good</h1>
+
+<p><strong>NOTE: We do not need to catch all transmissions, or even nearly all transmissions, to stop COVID-19.</strong></p>
+
+<p>It&#39;s a paradox – COVID-19 is incredibly contagious, yet to contain it, we &quot;only&quot; need to stop 72% of infections. 72%?! That&#39;s, like, a C– grade. But if R0 = 3.5, then reducing that by 72% will make Rt &lt; 1 = good.</p>
+
+<p>(And even if worst-case, R0=5, you &quot;only&quot; need to stop 80%. That&#39;s a B–.)</p>
+
+<p><em>Every</em> COVID-19 intervention you&#39;ve heard of – handwashing, social distancing, lockdowns, self-isolation, contact tracing &amp; quarantining, face masks, even &quot;herd immunity&quot; – they&#39;re <em>all</em> doing the same thing:</p>
+
+<p>Reducing Rt.</p>
+
+<p>Let&#39;s see how we can get Rt&lt;1 – in a way that protects not just our physical health, but also our mental health, social health, <em>and</em> financial health!</p>
+
+<hr>
+
+<h1 id="toc_5">The Next Few Months</h1>
+
+<p>...could have been worse.</p>
+
+<h3 id="toc_6">Scenario 0: Do Absolutely Nothing</h3>
+
+<p>For COVID-19, 1 in 20 (i)s need to be hospitalized. In rich countries like the US and UK, there&#39;s 1 hospital bed for every 1000 people. Therefore: a rich country can handle a maximum of 20 (i)s per 1000 people – or, a maximum of 2% of the population being simultaneously sick.</p>
+
+<p>Here&#39;s the same simulation from before, but with the &quot;2%&quot; threshold drawn:</p>
+
+<p>// sim</p>
+
+<p>It&#39;s not good.</p>
+
+<p>That&#39;s the same thing the March 16th Imperial College report found: if we do nothing, hospitals break. Almost everyone gets infected. Even with a low 0.5% infection fatality ratio, 80% of people infected in a large country like the US still means over a million dead... <em>IF</em> we did nothing.</p>
+
+<p>(A lot of news &amp; social media chose to report the scary bit, <em>without</em> &quot;IF WE DO NOTHING&quot;. Fear was channeled into clicks, not understanding. <em>Sigh.</em>)</p>
+
+<h3 id="toc_7">Scenario 1: Flatten The Curve</h3>
+
+<p>Handwashing was discovered in ____ by the doctor _______, when he realized that by getting his staff to wash their hands, child deaths in his hospital were cut by <em>90%!</em></p>
+
+<p>Doctors around the world immediately hailed his life-saving discovery, and ha ha just kidding they committed him to an asylum where he was beat to death by guards.</p>
+
+<p>In any case, frequent handwashing reduces your chances of catching influenza by 50%[9]() And if we combine this with other hygiene tips – cough into your elbow, don&#39;t touch your face – let&#39;s guess-timate that 100% compliance (which we will <em>NOT</em> get) will result in a 60% reduction in new infections, in Rt:</p>
+
+<p>// controls</p>
+
+<p>It can&#39;t get Rt&lt;1, but it <em>does</em> reduce it! How does that affect the epidemic?</p>
+
+<p>// sim</p>
+
+<p>That&#39;s a... <em>better</em> catastrophe.</p>
+
+<p>Contrary to many news &amp; social media posts, &quot;flattening the curve&quot; <em>does also reduce total cases</em>. But as long as Rt is still above 1, our hospitals will still most likely shatter.</p>
+
+<p>That&#39;s what the Imperial College report also found: any attempt at mere <strong>&quot;mitigation&quot;</strong> (Reduce Rt, but still Rt&gt;1 = bad) will fail, and the only way out is <strong>&quot;suppression&quot;</strong>. (Reduce Rt, so that Rt&lt;1 = good!)</p>
+
+<p><em>Crush</em> the curve, not just flatten it. For example, by doing a...</p>
+
+<h3 id="toc_8">Scenario 2: Months-Long Lockdown (we are here)</h3>
+
+<p>There&#39;s different degrees of &quot;physical distancing&quot;. (previously called &quot;social distancing&quot;) At the mildest, avoiding crowds. At the strongest, a full city-wide lockdown.</p>
+
+<p>London&#39;s full lockdown reduced Rt by 70%.<a href="">11</a> So, let&#39;s guess-timate that as the maximum effect for distancing.</p>
+
+<p>Here&#39;s how hygiene &amp; distancing together change Rt:</p>
+
+<p>// calc</p>
+
+<p>That&#39;s Rt&lt;1 = good!</p>
+
+<p>Let&#39;s see what happens if we <em>crush</em> the curve with a lockdown for 3 months, then finally, <em>finally</em> return to normal life:</p>
+
+<p><strong>Remember, you can re-play the simulation, and change the sliders <em>WHILE</em> it&#39;s running, to simulate your own COVID-19 strategy! You can also pause &amp; slow down the simulation:</strong></p>
+
+<p>// sim</p>
+
+<p>Oh.</p>
+
+<p>Right, as soon as you remove the lockdown, Rt&gt;1 again, and so you get a spike in cases that&#39;s almost as bad as if you&#39;d done <em>nothing at all.</em></p>
+
+<p><strong>A lockdown isn&#39;t a cure, it&#39;s just a restart.</strong></p>
+
+<p>So, what, do we just lockdown again &amp; again?</p>
+
+<h3 id="toc_9">Scenario 3: Intermittent Lockdown</h3>
+
+<p>// sim</p>
+
+<p>This was one solution suggested by the March 16 Imperial College report, and analyzed again by Marc Lipsitch ______ etc. [https://science.sciencemag.org/content/early/2020/04/14/science.abb5793?]</p>
+
+<p>This <em>would</em> keep hospitals below capacity! You just have to... shut everything down for 2 months, every 3 months, until a vaccine is available in 18 months. That&#39;s... one year total out of 18 months.</p>
+
+<p>Look, it&#39;s all well &amp; good to draw a line on a graph saying &quot;healthcare capacity&quot;, but there&#39;s lots of important things we <em>can&#39;t</em> simulate here. Like:</p>
+
+<p>Mental Health) Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it&#39;s as negatively associated with an early death as smoking 15 cigarettes a day.</p>
+
+<p>Financial Health) &quot;What about the economy&quot; sounds like you care more about dollars than lives, but &quot;the economy&quot; isn&#39;t just stocks: it&#39;s people&#39;s ability to provide food &amp; shelter for their loved ones, to invest in their kids&#39; futures, and enjoy arts, foods, videogames – the stuff makes life worth living. And besides, poverty <em>itself</em> has horrible impacts on mental and physical health.</p>
+
+<p>Not saying we should rule out intermittent lockdowns! But it&#39;s not ideal.</p>
+
+<p>Wait, didn&#39;t we say Taiwan &amp; South Korea &quot;bravely used their fear&quot; to control COVID-19? For 4 whole months? How?</p>
+
+<h3 id="toc_10">Scenario 4: Test, Trace, Isolate</h3>
+
+<p>You may be thinking:</p>
+
+<p><em>Sure, we *could* have done what Taiwan + South Korea did at the start, but it&#39;s too late now. We missed the start.</em></p>
+
+<p>But that&#39;s exactly it! A lockdown isn&#39;t a cure, it&#39;s just a restart – <strong>and a fresh start is what we need.</strong> (TODO: Actually, South Korea started late!)</p>
+
+<p>The lockdown will let us reduce (i) cases, and buy time to copy what Taiwan &amp; South Korea are already successfully doing: isolating COVID-19 cases, <em>and finding out who&#39;ve they been in extended close contact with</em> (<strong>&quot;contact tracing&quot;</strong>) <em>and quarantining them too</em>.</p>
+
+<p>(Pedantic note: <strong>&quot;isolate&quot;</strong> is for infected cases, <strong>&quot;quarantine&quot;</strong> is for contacts)</p>
+
+<p>Why do we need to quarantine the contacts? Because they could have been (e) Exposed &amp; caught the virus, but not know it yet:</p>
+
+<p>// timeline</p>
+
+<p>If you <em>only</em> isolate the cases, the virus can still spread:</p>
+
+<p>// timeline</p>
+
+<p>But if you <em>also</em> quarantine the contacts, you stop the spread, by staying one step ahead!</p>
+
+<p>// timeline</p>
+
+<p>(TODO: 30 min+ exposure)</p>
+
+<p>Contact tracing was how they contained Ebola in (where?) Africa! And that was just good ol&#39; fashioned &quot;ask people who they met&quot; contact tracing.</p>
+
+<p>...which, unfortunately, will not work for COVID-19. Interviews are too slow and human memory is too unreliable. [MARCEL&#39;S SOURCE] There&#39;s only <em>3 days</em> between being exposed to the virus (e) and being able to infect others (i).</p>
+
+<p>So, regrettably, some countries have resorted to privacy-invasive techniques, like grabbing loads of citizens&#39; phone location data. But does protecting human lives mean surrendering to Big Brother?</p>
+
+<p>HECK NO</p>
+
+<p><strong>Here&#39;s a short comic we made, explaining how you can do digital contact tracing in a privacy-protecting way.</strong> And when we say &quot;privacy-protecting&quot;, we mean that <em>even if the central server was hacked and all its data stolen</em>, the hacker would learn <em>nothing</em> about people&#39;s identities, locations, or who met who.</p>
+
+<p>(And here&#39;s a 3Blue1Brown video adaptation of our comic! Thanks Grant!)</p>
+
+<p>And this isn&#39;t just &quot;in theory&quot;. Several apps are <em>already</em> being developed for this. The European council vote (FILL IN). And Google/Apple&#39;s new announcement specifically supports the privacy-protecting protocol as described in our comic above. (Don&#39;t trust Google/Apple? Neither do we! The beauty of the protocol is that <em>it doesn&#39;t rely on trust.</em>)</p>
+
+<p>Okay okay, enough tooting our own horn. How does isolating cases &amp; quarantining contacts reduce Rt?</p>
+
+<p>University of Oxford study estimates that:</p>
+
+<ul>
+<li>(i) Symptomatic <strong>cases</strong> account for 40% of new infections. So by isolating cases, <strong>you reduce Rt by up to 40%.</strong></li>
+<li>(e) Pre-symptomatic &amp; A-symptomatic <strong>contacts</strong> account for 50%. So by quarantining contacts, <strong>you can reduce Rt by up to 50%.</strong></li>
+<li>Stuff like doorknobs accounts for the rest, 10%.</li>
+</ul>
+
+<p><a href="">Loong note about &quot;pre&quot; vs &quot;a&quot; symptomatic &amp; how the media screwed it up AGAIN</a></p>
+
+<p>So, combined, isolating cases &amp; quarantining contacts can get Rt comfortably below 1, <em>even with NO physical distancing!</em></p>
+
+<p>// calc</p>
+
+<p>Remember: <strong>we do not need to catch all transmissions, or even nearly all transmissions, to stop COVID-19.</strong> So the fact that not everybody is able (or willing) to download a privacy-protecting contact tracing app isn&#39;t a dealbreaker.</p>
+
+<p>We don&#39;t need to catch <em>all</em> contacts, isolate <em>all</em> cases, or even wash <em>all</em> the hands. Just enough to get that C– grade of 72%, to get Rt&lt;1 = good.</p>
+
+<p>(do wash your hands, though)</p>
+
+<p>Alright, enough chat. Here&#39;s a simulation of using a lockdown as reset, then switching to &quot;Test, Trace, Isolate&quot;:</p>
+
+<p>// sim</p>
+
+<p>And here it is again, with a vaccine at 18 months, which converts (s) into an immune (r), without having to become a (i). This gives us &quot;herd immunity&quot; the <em>right</em> way, and we can <em>finally</em> stop all other interventions.</p>
+
+<p>(actually, keep washing your hands. come on, a doctor was beaten to death in an asylum.)</p>
+
+<p>// sim </p>
+
+<p>So that&#39;s it!</p>
+
+<p>That&#39;s currently the best working plan, recommended by several independent teams of epidemiologists &amp; policymakers from across the political spectrum. (LINKS) Lockdown to get a fresh start, switch to Taiwan &amp; South Korea&#39;s strategy later.</p>
+
+<p>But...</p>
+
+<p>...you may be feeling a knot in your stomach. Things have <em>already</em> gone horribly wrong, more stuff could <em>still</em> go horribly wrong with this plan, right?</p>
+
+<p>You&#39;re dang right it could. Let&#39;s channel that fear... into making some <em>backup plans:</em></p>
+
+<h3 id="toc_11">Scenario X: Other Interventions &amp; Backup Plans</h3>
+
+<p>If handwashing + case isolation + contact quarantining <em>still</em> isn&#39;t enough to get Rt&lt;1... we can supplement it with three things:</p>
+
+<p><strong>Deep Cleaning:</strong></p>
+
+<p>Remember we said &quot;stuff like doorknobs&quot; accounts for 10% of new infections? The technical jargon for things that can pass a virus from one human to another is a <strong>&quot;fomite&quot;.</strong></p>
+
+<p>10% means frequent deep cleanings of public spaces – subways, libraries, and malls – can reduce Rt by up to 10%. Which sounds useless, but if it reduces Rt from 1.05 to 0.95... that&#39;s Rt&lt;1 = lives saved.</p>
+
+<p>// calc?</p>
+
+<p><strong>Masks For All:</strong></p>
+
+<p>[small brain] Correlation implies causation!</p>
+
+<p>[normal brain] Correlation doesn&#39;t imply causation, you need Randomized Controlled Trials (RCTs) to prove things.</p>
+
+<p>[large brain] Actually, under Bayes&#39; Theorem, <em>all</em> correlations are evidence for causation, because the likelihood of {seeing a correlation, given causation} is greater than the likelihood of {seeing a correlation, given <em>no</em> causation}. It&#39;s just not 100% proof, because <em>nothing</em> in science is 100% proof, not even RCTs (hence the replication crisis). <strong>Evidence isn&#39;t 0% or 100%, they have a full range of &quot;weights&quot;.</strong> And though correlational evidence has a lower &quot;weight&quot; than an RCT, it <em>is still evidence.</em> (See this 3Blue1Brown video for a visual explanation of Bayes&#39; Theorem)</p>
+
+<p>What we&#39;re trying to say is:</p>
+
+<p>There aren&#39;t any RCTs (yet) testing &quot;Cloth masks prevent COVID-19 spread&quot; <em>specifically</em>. But there&#39;s lots of <em>suggestive</em> evidence, if of lower &quot;weight&quot;:</p>
+
+<ul>
+<li>Staff in hospitals without masks are more likely to die of COVID-19</li>
+<li>Taiwan &amp; South Korea have widespread public wearing of masks</li>
+<li>For colds &amp; flus, masks reduce droplets/aerosols from the <em>wearer</em>.</li>
+</ul>
+
+<p>Pandemics are like poker. Act only when you &quot;have enough info&quot;, and you&#39;ll lose everything at stake. You&#39;ll never have enough info, just cost/benefit analyses under uncertainty. Like so:</p>
+
+<p>Cost of cloth masks (certain): Small. Same as handwashing.</p>
+
+<p>Benefit of cloth masks (uncertain): They probably don&#39;t stop <em>the wearer</em> from getting COVID-19, but they probably stop a pre-symptomatic wearer from <em>spreading</em> COVID-19. Let&#39;s guess masks reduce Rt by 0% to 20%. <em>Even though &quot;0%&quot; is still likely</em>, the average &quot;expected value&quot; is <em>halfway</em> between 0% and 20% – that is, 10%, same as deep cleaning, but at minuscule cost.</p>
+
+<p>Analysis: If someone offered you a coin flip, where tails = nothing happens, and heads = 1000s of lives saved... and the price for playing this game is a rag and two rubber bands... even though &quot;nothing&quot; is as likely as &quot;lives saved&quot;, you should do it. </p>
+
+<p>Cloth masks for all: do it!</p>
+
+<p>// calc?</p>
+
+<p><strong>Summer:</strong></p>
+
+<p>Okay, this is not an &quot;intervention&quot; we have control of, but it <em>does</em> help reduce Rt!</p>
+
+<p>For every extra 1° Celsius (2.2° Fahrenheit), Rt drops by ___%. The average difference between winter &amp; summer in New York is 15°C (60°F), so summer will make Rt drop by _%.</p>
+
+<p>Many news sites (wrongly) report summer won&#39;t slow COVID-19. They&#39;re probably trying not to get your hopes up: with R0=3.5, a _% reduction is Rt=_, still above 1.</p>
+
+<p>But still, it&#39;s <em>something</em>. If we have limited resources, we can scale back some interventions in the summer – so we can scale them higher in the winter.</p>
+
+<p>// calc? over time</p>
+
+<p><strong>A &quot;Circuit Breaker&quot; Lockdown:</strong></p>
+
+<p>And if all that <em>still</em> isn&#39;t enough to get Rt&lt;1... we can do another lockdown.</p>
+
+<p>But because Rt was reduced dramatically, we wouldn&#39;t have to do a 2-month-lockdown-every-3-months! Probably just <em>one</em> more 1-month lockdown, between now and when we have a vaccine.</p>
+
+<p>Here&#39;s a simulation of that (with sliders for <em>ALL</em> the interventions):</p>
+
+<p>// sim</p>
+
+<p>. . .</p>
+
+<p>We hope these plans give you hope. </p>
+
+<p>It <em>is</em> possible to keep Rt&lt;1, <em>without</em> locking down for most of 18 months. With plans like &quot;Test, Trace, Isolate&quot;, supplemented with backup plans like &quot;Masks For All&quot;, we can get back to a normal-ish life!</p>
+
+<p>Sure, your hands may be dry. But you&#39;ll get to invite a date out to a comics bookstore! You&#39;ll get to watch the latest cash-grab Hollywood sequel with friends. You&#39;ll get to people-watch at a library, taking joy in people going about the simple business of <em>being alive.</em></p>
+
+<p>Life will go on, even under the worst-case scenario.</p>
+
+<p>So now, let&#39;s use our fear&#39;s energy, and plan for some <em>even worse</em> worst-case scenarios:</p>
+
+<hr>
+
+<h1 id="toc_12">The Next Few Years</h1>
+
+<p>You get COVID-19, and recover. Or you get the COVID-19 vaccine! Either way, you&#39;re now immune...</p>
+
+<p>...<em>for how long?</em></p>
+
+<p>SARS, which was closely related (TODO: is it?) to this new coronavirus, gave its survivors around 2 years of immunity.<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/">12</a>. Some coronaviruses, like the ones that cause &quot;the&quot; common cold[13], give you just <a href="https://pubmed.ncbi.nlm.nih.gov/2170159/">1 year of immunity</a>. (TODO: MERS&#39; immunity)</p>
+
+<p>Let&#39;s think about the scariest scenario: immunity doesn&#39;t last.</p>
+
+<p><em>Rule #4: (r)s eventually become (s)s</em></p>
+
+<p>// pic</p>
+
+<p>The SIRS model: the (r) Recovered become (s) Susceptible again.</p>
+
+<p>Let&#39;s simulate what that&#39;ll look like, with <em>no</em> interventions:</p>
+
+<p>// sim</p>
+
+<p>Previously, with no interventions, we only had <em>one</em> hospital-breaking spike. Now, we have several, <em>and</em> the simulation comes to a rest with % of (i) infected <em>permanently above</em> hospital capacity. </p>
+
+<p>(If you replay the simulation above with immunity lasting 3 years, that wouldn&#39;t be so bad! The % of (i) would rest comfortably <em>below</em> capacity. There&#39;d still be spikes, but you can deal with them using the same interventions listed in last section)</p>
+
+<p>It&#39;s like a pendulum: total (i)+(r) cases swings around the &quot;herd immunity&quot; threshold, before settling exactly at &quot;herd immunity&quot;, where Rt=1. The virus no longer grows or shrinks. It&#39;s just with us forever: it&#39;s <strong>endemic.</strong></p>
+
+<p>// pic?</p>
+
+<p>Thankfully, summer will make it better by reducing Rt:</p>
+
+<p>// sim</p>
+
+<p>Oh wait no it doesn&#39;t. Summer <em>does</em> reduce new people becoming (i) infected, but that also reduces new people becoming (r) immune. Which means immunity in the population will drop <em>even further</em> with summer, allowing for <em>big regular spikes</em> in the winter.</p>
+
+<p>It&#39;s like a pendulum where you&#39;re moving the top back and forth: that just makes the cycles <em>worse</em>.</p>
+
+<p>// pic?</p>
+
+<p>Finally, the <em>worst</em> worst-case:</p>
+
+<p>What if, like HIV, there&#39;s just <em>never</em> a vaccine?</p>
+
+<p>Our only option now is to increase our capacity for COVID-19 cases. You could do this directly, by creating more hospital beds and ventilators. Or you could do this indirectly, by creating treatments for COVID-19, so that if you <em>do</em> get it, you&#39;re less likely to need a hospital bed or ventilator.</p>
+
+<p>Here&#39;s the same simulation, but 1) starting with herd immunity (which wanes quickly), and 2) with adjustable hospital capacity:</p>
+
+<p>// sim</p>
+
+<p>HIV/AIDS killed millions, mostly in marginalized communities. And yet, despite it being the worst-case pandemic scenario, and despite all the stigma against people who have it... HIV isn&#39;t a death sentence anymore.</p>
+
+<p>HIV has no vaccine. There&#39;s <em>definitely</em> no herd immunity. And yet, with treatments like antiretroviral therapy, people can and <em>are</em> living full lives with the virus. COVID-19 is devastating, but nowhere as much as HIV.</p>
+
+<p>Life will go on, even under the <em>worst</em> worst-case scenario.</p>
+
+<p>...</p>
+
+<p>That said, the virus behind COVID-19 is way simpler than HIV, so there&#39;ll almost definitely be a vaccine, even if it only grants immunity for a year. If so, we&#39;ll just have to do a vaccination campaign each autumn – and we can just do this alongside our regular flu shots:</p>
+
+<p>// sim</p>
+
+<p><strong>Finally, here&#39;s a Simulation Sandbox, with <em>every</em> option available. You can now also share your <em>own</em> simulations!</strong></p>
+
+<p>// sim</p>
+
+<p>Play around to intuitively understand the core rules of epidemiology. </p>
+
+<p>Try simulating different COVID-19 scenarios, plans, and backup plans. </p>
+
+<p>Ask questions, try to find an answer with the sim, and share your sim with others.</p>
+
+<p>This (again, very <em>VERY</em> basic!) simulation has let us answer so many questions about the past few months, next few months, and next few years.</p>
+
+<p>So now, let&#39;s return to...</p>
+
+<hr>
+
+<h1 id="toc_13">The Now</h1>
+
+<p>In summary, here&#39;s how we bravely use our fear, slay the dragon, and save the lives of millions of princes(ses):</p>
+
+<p><strong>PHASE 1) Lockdown to get a fresh start.</strong></p>
+
+<p>Get current (i)s low, while building capability to do...</p>
+
+<p><strong>PHASE 2) &quot;Test, Trace, Isolate&quot;</strong></p>
+
+<p>We replace lockdown with other ways to get Rt&lt;1. Life gets back to normal-ish!  🎉</p>
+
+<p>More testing so we can <em>actually</em> tell what Rt currently is.</p>
+
+<p>Create policies to get cases to isolate/quarantine. Paid leave &amp; bonus financial incentives if they do, <em>maybe</em> fines if they don&#39;t. </p>
+
+<p>Use <em>privacy-protecting</em> contact tracing apps to find contacts. Remember, not everybody has to have the app to get Rt&lt;1.</p>
+
+<p>If Rt still not below 1: &quot;Masks For All&quot;. Get most people to wear at <em>least</em> cloth face masks.</p>
+
+<p>If Rt <em>still</em> not below 1: Deep clean public spaces often. Mild social distancing. Maybe one or two more &quot;circuit breaker&quot; lockdowns. (but still avoiding &quot;lockdown for most of 18 months&quot;!)</p>
+
+<p>This will buy us time to finally do...</p>
+
+<p><strong>PHASE 3) Vaccinate!</strong></p>
+
+<p>If immunity doesn&#39;t last long: Vaccination campaign every autumn, like we already do for flu shots. </p>
+
+<p>If vaccine is <em>never</em> available: Raise our capacity for COVID-19 cases by creating more hospital beds &amp; ventilators, and developing antivirals &amp; treatments. (which we should be doing <em>anyway!</em>)</p>
+
+<p><strong>What&#39;s this mean for YOU, <em>right now?</em></strong></p>
+
+<p><strong>For everyone:</strong> Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a <em>privacy-protecting</em> contact tracing app when those are available next month. Stay healthy, physically &amp; mentally! And write your local policymaker to get off their butt and...</p>
+
+<p><strong>For policymakers:</strong> Create policies that compensate (or reward!) folks who have to self-isolate/quarantine. Direct funds into all the stuff we should be building, like...</p>
+
+<p><strong>For builders:</strong> Build tests. Build ventilators. Build masks – cloth, surgical and N95. Build apps. Build antivirals and other treatments. Build vaccines. Build science. </p>
+
+<p>Will we <em>need</em> all that? &quot;Probably&quot; not, the same way you &quot;probably&quot; won&#39;t need safety belts, fire insurance, or parachutes on planes. It&#39;s like doing a cost/benefit analysis of Russian Roulette: the chance of disaster is small, but the <em>cost</em> of disaster is far, far bigger.</p>
+
+<p>In situations like this, it pays to listen <em>honestly</em> to your fears. Don&#39;t deny or downplay them, just face them, and prepare for them.</p>
+
+<p>The only thing to fear is people who think the only thing to fear is fear itself.</p>
+
+<hr>
+
+<p>(TODO: US vs Korea/Taiwain resources)</p>
+
+<div class="footnotes">
+<hr>
+<ol>
+
+<li id="fn1">
+<p>hello!&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>but a snitch ain&#39;t one&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+
+
+
+</body>
+
+</html>

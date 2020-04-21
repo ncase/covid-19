@@ -1,0 +1,40 @@
+body{
+	margin:0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 22px;
+	font-weight: 100;
+	line-height: 1.7em;
+}
+
+article > p, article > ul{
+	width: 640px;
+	margin:1em auto;
+}
+.section{
+	width:100%;
+	background: #000;
+	color: #fff;
+	overflow: hidden;
+	padding: 1em 0;
+	margin-bottom: 2em;
+	margin-top: 3em;
+}
+.section:first-of-type{
+	margin-top: 0;
+}
+.section > div{
+	width: 800px;
+	margin:1em auto;
+}
+
+.sim{
+	width:100%;
+	background: #eee;
+	overflow: hidden;
+	margin: 1.5em 0;
+}
+iframe{
+	border:2px solid #eee;
+	display: block;
+	margin:0 auto;
+}

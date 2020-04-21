@@ -290,7 +290,7 @@ requestAnimationFrame(draw);
 // (RE)START ////////////////////////
 /////////////////////////////////////
 
-let IS_PLAYING = true;
+let IS_PLAYING = false;
 let togglePlaying = ()=>{
 	IS_PLAYING = !IS_PLAYING;
 };
