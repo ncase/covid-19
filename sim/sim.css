@@ -2,12 +2,19 @@ body{
 	margin: 0;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 15px;
+	font-weight: normal;
 	background: #ddd;
+}
+div{
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */ 
 }
 
 #sandbox{
 	width: 800px;
-	height: 520px;
+	height: 540px;
 	overflow: hidden;
 	background: #fff;
 	position: absolute;
@@ -24,6 +31,77 @@ body{
 	float:left;
 	position: relative;
 }
+
+#sim_controls{
+	margin-top: 10px;
+}
+
+.big_button{
+	font-weight: 100;
+	background: #ff4040;
+	color: #fff;
+	padding:10px;
+	border-radius: 10px;
+	border-bottom: 4px solid rgba(0,0,0,0.2);
+	font-size: 30px;
+	cursor: pointer;
+}
+.big_button:hover{
+	background: #ff6060;
+}
+.big_button > div{
+	display: none;
+}
+.big_button[label='start'] > #bb_start{
+	display: block;
+}
+.big_button:not([label='start']){
+	background: #dddddd;
+	color: #555;
+}
+.big_button:not([label='start']):hover{
+	background: #dddddd;
+}
+.big_button[label='continue'] > #bb_continue{
+	display: block;
+}
+.big_button[label='pause'] > #bb_pause{
+	display: block;
+}
+.big_button[label='reset'] > #bb_reset{
+	display: block;
+}
+.small_button{
+	text-align: right;
+    margin-top: 3px;
+    color: #999;
+    font-size: 17px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.small_button:hover{
+	color: #aaa;
+}
+.small_button > div{
+	display: none;
+}
+.small_button[label='reset'] > #sb_reset{
+	display: block;
+}
+.small_button[label='replay'] > #sb_replay{
+	display: block;
+}
+.small_button[label='params'] > #sb_params{
+	display: block;
+}
+
+hr{
+	border:none;
+	border-bottom: 2px dashed #ddd;
+	margin: 15px 0;
+}
+
+
 /*
 #controls > div{
 	overflow: hidden;
@@ -111,34 +189,66 @@ body{
 	height:500px;
 	border: 1px solid #ccc;
 }
-#graph > #months{
-	color: #bbb;
-    font-size: 10px;
-    width: 562.5px;
-    height: 50px;
-    text-align: right;
-    position: relative;
-    left: -70.5px;
-	top: 2px;
-}
-#graph > #months > div{
-	color: #bbb;
-    font-size: 10px;
-    width: 62.5px;
-    float: left;
-    transform-origin: top right;
-    transform: rotate(-30deg);
-}
+
 #graph > #month_ticks{
-    width: 562.5px;
-    height: 5px;
-    position: relative;
-    left: -61.5px;
-    top: -50px;
+    width: 500px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 501px;
+    color: #bbb;
+    font-size: 14px;
+    font-weight: 100;
 }
 #graph > #month_ticks > div{
-	width: 61.5px;
+	width: 100px;
 	height: 100%;
-	border-right: 1px solid #bbb;
-    float: left;
+    border-left: 1px solid #bbb;
+    position: absolute;
+}
+#graph > #month_ticks > div > span{
+	position: absolute;
+	left:7px;
+	top:5px;
+}
+
+icon{
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	position: relative;
+	top:0.1em;
+	background-size: 100% 100%;
+}
+icon[s]{
+	background-image: url(../icons/s.png);
+}
+icon[e]{
+	background-image: url(../icons/e.png);
+}
+icon[i]{
+	background-image: url(../icons/i.png);
+}
+icon[r]{
+	background-image: url(../icons/r.png);
+}
+
+#legend{
+	position: absolute;
+    top: 10px;
+    left: 10px;
+    /* font-size: 17px; */
+    font-weight: 100;
+    line-height: 1.4em;
+}
+
+#hide_on_first_playthrough{
+	transition: height 0.5s ease-in-out;
+	overflow: hidden;
+	height:0px;
+	padding-right: 2px;
+}
+
+#month_names{
+	display:none;
 }
