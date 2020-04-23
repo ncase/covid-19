@@ -195,8 +195,6 @@ let updateMonthTicks = ()=>{
 
 	});
 
-	console.log(JSON.stringify(ticks));
-
 }
 
 // Sliders

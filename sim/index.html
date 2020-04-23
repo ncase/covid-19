@@ -19,25 +19,26 @@
 					<br><br>
 					
 					<div id="label_transmission">
-						Infects a <icon s></icon> every <span id="label_p_transmission">N</span> days
+						Infects 1 <icon s></icon> per <span id="label_p_transmission">N</span> days
 						<br>
-						(when almost everyone's still <icon s></icon>)
-						<br>
-						<input class="sim_input" type="range" id="p_transmission" min="1" max="28" step="1" value="4">
+						<span id="label_transmission_caveat">
+							(at the start of the epidemic)<br>
+						</span>
+						<input class="sim_input" type="range" id="p_transmission" min="1" max="30" step="1" value="4">
 					</div>
 
 					<div id="label_c_exposed">
 						<input class="sim_checkbox" type="checkbox" id="c_exposed">
 						Takes <span id="label_p_exposed">N</span> days to go from <icon e></icon> to <icon i></icon>
 						<br>
-						<input class="sim_input" type="range" id="p_exposed" min="1" max="28" step="1" value="3">
+						<input class="sim_input" type="range" id="p_exposed" min="1" max="30" step="1" value="3">
 					</div>
 					
 					<div id="label_c_recovery">
 						<input class="sim_checkbox" type="checkbox" id="c_recovery">
 						Recovers <icon r></icon> in <span id="label_p_recovery">N</span> days
 						<br>
-						<input class="sim_input" type="range" id="p_recovery" min="1" max="28" step="1" value="14">
+						<input class="sim_input" type="range" id="p_recovery" min="1" max="30" step="1" value="11">
 					</div>
 					
 					<div id="label_c_waning">
@@ -168,10 +169,21 @@
 			</div>
 			<div id="legend">
 				
-				<icon s></icon> Susceptible<span id="show_percent_s"></span>
-				<span id="label_exposed"><br><icon e></icon> Exposed</span>
-				<br><icon i></icon> Infectious<span id="show_percent_i"></span>
-				<span id="label_removed"><br><icon r></icon> Removed</span>
+				<span id="label_susceptible">
+					<icon s></icon> Susceptible<span id="show_percent_s"></span>
+					<br>
+				</span>
+				<span id="label_exposed">
+					<icon e></icon> Exposed<span id="show_percent_e"></span>
+					<br>
+				</span>
+				<span id="label_infectious">
+					<icon i></icon> Infectious<span id="show_percent_i"></span>
+					<br>
+				</span>
+				<span id="label_removed">
+					<icon r></icon> Removed<span id="show_percent_r"></span>
+				</span>
 				
 				<br>
 				
@@ -185,6 +197,25 @@
 				&nbsp; ––– Healthcare Capacity
 				</span>
 
+			</div>
+		</div>
+
+		<div id="pointer">
+			<div id="hand_container">
+				<div id="hand"></div>
+			</div>
+			<div id="pointer_words">
+				<span id="pointer_params">
+					Try re-running the simulation
+					with different numbers!
+					<span id="pointer_params_2">
+						<b>(note: you can change the numbers <i>while</i> the sim is running)</b>
+					</span>
+				</span>
+				<span id="pointer_scroll">
+					Once you're done playing around,
+					scroll down to keep reading!
+				</span>
 			</div>
 		</div>
 
@@ -207,4 +238,8 @@
 
 </body>
 
-<script src="sim.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/Model.js"></script>
+<script src="js/Controls.js"></script>
+<script src="js/Stages.js"></script>
+<script src="js/main.js"></script>

@@ -252,3 +252,40 @@ icon[r]{
 #month_names{
 	display:none;
 }
+
+#pointer{
+	position: absolute;
+    display: none;
+}
+#hand_container{
+	position: absolute;
+	width:80px; height:80px;
+	transform-origin: 50% 50%;
+}
+#hand{
+	position: absolute;
+	background: url(../icons/hand.png);
+	background-size: 100% 100%;
+	width:80px; height:80px;
+
+	animation: aniFrames linear 0.75s;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+}
+#pointer_words{
+	position: absolute;
+    font-size: 20px;
+    width: 250px;
+}
+
+@keyframes aniFrames{
+	0% {
+		transform: translate(0px,0px);
+	}
+	50% {
+		transform: translate(0px,-5px);
+	}
+	100% {
+		transform: translate(0px,0px);
+	}
+}
