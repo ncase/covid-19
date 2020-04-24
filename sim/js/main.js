@@ -3,6 +3,5 @@
 /////////////////////////////////////
 
 restart();
-s_dom.oninput();
 _updateButtons();
 requestAnimationFrame(draw);

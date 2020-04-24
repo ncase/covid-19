@@ -67,13 +67,14 @@ let updateMonthTicks = ()=>{
 }
 
 // Sliders
-let DONT_RECORD_HISTORY = true;
+//let DONT_RECORD_HISTORY = true;
 let _DO_NOT_RECURSE = true;
+let INPUTS_WERE_CHANGED = false;
 let yearsSlider = $('#p_years');
 $all('.sim_input').forEach((slider)=>{
 	let id = slider.id;
 	let label = $('#label_'+id);
-	let isRecordable = slider.classList.contains('recordable');
+	//let isRecordable = slider.classList.contains('recordable');
 	let onChange = ()=>{
 
 		// Change label & param
@@ -85,11 +86,16 @@ $all('.sim_input').forEach((slider)=>{
 		params[id] = val;
 
 		// Record history (@ this day)
+		/*
 		if(isRecordable){
 			if(!DONT_RECORD_HISTORY){
-				recordedHistory.push([id, val, Math.round(daysCurrent)]);
+				let lastRecordedEntry = recordedHistory[recordedHistory.length-1];
+				if(!lastRecordedEntry || id!=lastRecordedEntry[0] || Math.round(daysCurrent)!=lastRecordedEntry[2]){ // not same thing/time
+					recordedHistory.push([id, val, Math.round(daysCurrent)]);
+				}
 			}
 		}
+		*/
 
 		// Just to update other random crap
 		if(!_DO_NOT_RECURSE){
@@ -112,11 +118,14 @@ $all('.sim_input').forEach((slider)=>{
 			sbDOM.setAttribute('label','params');
 		}
 
+		// HAX
+		INPUTS_WERE_CHANGED = true;
+
 	};
 	slider.oninput = onChange;
 	onChange();
 });
-DONT_RECORD_HISTORY = false;
+//DONT_RECORD_HISTORY = false;
 _DO_NOT_RECURSE = false;
 
 // Checkboxes
@@ -144,8 +153,8 @@ $all('.sim_checkbox').forEach((checkbox)=>{
 
 let IS_PLAYING = false;
 
-let recordedHistory = [];
-let IS_REPLAYING_HISTORY = false;
+//let recordedHistory = [];
+//let IS_REPLAYING_HISTORY = false;
 
 let START_S = 0.999,
 	START_E = 0.001,
@@ -168,6 +177,9 @@ let restart = ()=>{
 	let ctx = context;
 	ctx.setTransform(1,0,0,1,0,0);
 	ctx.clearRect(0,0,canvas.width,canvas.height);
+
+	// Force refresh DOM
+	s_dom.oninput();
 
 };
 
@@ -246,7 +258,7 @@ sbDOM.onclick = ()=>{
 		changeSliders(CURRENT_STAGE.inputs);
 
 	}else if(daysCurrent>daysTotal){
-		_replayTheSim();
+		//_replayTheSim();
 	}else{
 		_resetTheSim();
 	}
@@ -258,7 +270,7 @@ let _updateButtons = ()=>{
 	if(daysCurrent > daysTotal){
 
 		bbDOM.setAttribute('label','reset');
-		sbDOM.setAttribute('label',params.CANNOT_REPLAY_HISTORY ? '' : 'replay');
+		sbDOM.setAttribute('label','');
 	
 	}else if(IS_PLAYING){
 	
@@ -305,18 +317,20 @@ let _hideAllControls = ()=>{
 
 let _resetTheSim = ()=>{
 	_showAllControls();
-	IS_REPLAYING_HISTORY = false;
-	recordedHistory = [];
+	//IS_REPLAYING_HISTORY = false;
+	//recordedHistory = [];
 	restart();
 	IS_PLAYING = false;
 };
+/*
 let _replayTheSim = ()=>{
 	_hideAllControls();
-	IS_REPLAYING_HISTORY = true;
+	//IS_REPLAYING_HISTORY = true;
 	restart();
 	IS_PLAYING = true;
 };
 
+*/
 
 /////////////////////////////////////
 // THE HAND /////////////////////////

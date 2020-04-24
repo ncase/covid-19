@@ -3,6 +3,7 @@
 /////////////////////////////////////
 
 let int = {
+	non_s: 0,
 	hygiene: 0,
 	distancing: 0, 
 	isolate: 0, 
@@ -14,13 +15,34 @@ let int = {
 };
 
 let daysCurrent, daysDrawn, daysTotal, daysPerFrame;
-let r0_dom = $('#p_r0');
+let r0, re;
+//let r0_dom = $('#p_r0');
 let s_dom = $('#p_s');
-let re_dom = $('#p_re');
+//let re_dom = $('#p_re');
+
+let interventionStrengths = [
+	['non_s', 1.0],
+	['hygiene', 0.25],
+	['distancing', 0.7],
+	['isolate', 0.4],
+	['quarantine', 0.5],
+	['cleaning', 0.1],
+	['masks', 0.5], // 3.4 fold reduction (70%) (what CI?), subtract points for... improper usage? https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/ // cloth masks...
+	['summer', 0.333] // 15°C diff * 0.0225 (Wang et al)
+];
 
 let updateModel = (days, fake)=>{
 
 	let real_S=S, real_E=E, real_I=I, real_R=R;
+
+	// Susceptible & Re
+	/*if(fake && s_dom.disabled){
+		s_dom.value = 1 - S;
+	}*/
+	if(fake && !s_dom.disabled){
+		//s_dom.value = 1 - S;
+		S = 1 - parseFloat(s_dom.value);
+	}
 
 	let transmissionRate = 1/params.p_transmission,
 		incubationRate = 1/params.p_exposed,
@@ -28,33 +50,28 @@ let updateModel = (days, fake)=>{
 		immunityLossRate = 1/(params.p_waning*365);
 
 	// R0
-	r0_dom.value = transmissionRate/recoveryRate;
-	if(r0_dom.oninput) r0_dom.oninput();
+	r0 = transmissionRate/recoveryRate;
+	/*r0_dom.value = transmissionRate/recoveryRate;
+	if(r0_dom.oninput) r0_dom.oninput();*/
 
 	// Transmission affected by interventions
 
+	int.non_s = 1 - S;
+
 	int.hygiene = params.p_hygiene;
-	transmissionRate *= 1 - int.hygiene*0.5;
-
 	int.distancing = params.p_distancing;
-	transmissionRate *= 1 - int.distancing*0.7;
-
 	int.isolate = params.p_isolate;
-	transmissionRate *= 1 - int.isolate*0.4;
-
 	int.quarantine = params.p_quarantine;
-	transmissionRate *= 1 - int.quarantine*0.5;
-
 	int.cleaning = params.p_cleaning;
-	transmissionRate *= 1 - int.cleaning*0.1;
-
 	int.masks = params.p_masks;
-	transmissionRate *= 1 - int.masks*0.1;
 
 	int.summer = (1 - Math.cos((daysCurrent-30)/365 * Math.TAU))/2;
-	//int.summer = Math.max(0, int.summer);
 	int.summer *= params.p_summer;
-	transmissionRate *= 1 - int.summer* 0.333; // 15°C diff * 0.0225 (Wang et al)
+	
+	interventionStrengths.forEach((isPair,i)=>{
+		if(i==0) return; // DON'T double count S
+		transmissionRate *= 1 - (int[isPair[0]] * isPair[1]);
+	});
 
 	// Vaccination...
 	if(S > 1-params.p_vaccines){
@@ -66,7 +83,7 @@ let updateModel = (days, fake)=>{
 
 	// S...
 	if(!s_dom.disabled){
-		S = parseFloat(s_dom.value);
+		S = 1 - parseFloat(s_dom.value);
 	}
 
 	// Update Model
@@ -103,11 +120,12 @@ let updateModel = (days, fake)=>{
 	if(I>1) I=1;
 
 	// Susceptible & Re
-	if(s_dom.disabled){
-		s_dom.value = S;
+	if(!fake && s_dom.disabled){
+		s_dom.value = 1 - S;
 	}
-	re_dom.value = newlyExposed/newlyRecovered;
-	if(re_dom.oninput) re_dom.oninput();
+	re = newlyExposed/newlyRecovered;
+	/*re_dom.value = newlyExposed/newlyRecovered;
+	if(re_dom.oninput) re_dom.oninput();*/
 
 	// IF FAKE, UNDO EVERYTHING
 	if(fake){
@@ -132,6 +150,7 @@ canvas.style.height = (canvas.height/2)+"px";
 
 
 let interventionColors = [
+	['non_s', '#bbbbbb'],
 	['hygiene', 'hsl(230,100%,63%)', 0.1],
 	['distancing', 'hsl(200,100%,63%)', 0.2],
 	['isolate', 'hsl(140,100%,63%)', 0.2],
@@ -144,23 +163,153 @@ let interventionColors = [
 
 let _isItPastHerd = false;
 
+let label_p_r0 = $('#label_p_r0');
+let canvas_r0 = $('#canvas_r0');
+let label_p_re = $('#label_p_re');
+let canvas_re = $('#canvas_re');
+canvas_r0.width = 540;
+canvas_r0.height = 40;
+canvas_r0.style.width = (canvas_r0.width/2)+"px";
+canvas_r0.style.height = (canvas_r0.height/2)+"px";
+canvas_re.width = 540;
+canvas_re.height = 40;
+canvas_re.style.width = (canvas_re.width/2)+"px";
+canvas_re.style.height = (canvas_re.height/2)+"px";
+
+let updateRBar = (label, canvas, number, THIS_IS_RE)=>{
+
+	label.innerHTML = number.toFixed(2);
+
+	let ctx = canvas.getContext('2d');
+	ctx.scale(2,2);
+
+	ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
+	ctx.fillStyle = "#ff4040";
+	ctx.fillRect(0, 3, 250*number/3, 14);
+
+	if(THIS_IS_RE && re<r0-0.01){
+
+		// interventionColors & interventionStrengths
+		let diff = r0-re;
+
+		/*
+		let rReductions = [];
+		let fakeR = r0;
+		for(let i=0; i<interventionStrengths.length; i++){
+			let isPair = interventionStrengths[i],
+				name = isPair[0],
+				maxStrength = isPair[1],
+				myStrength = int[name] * maxStrength;
+			let newFakeR = fakeR*(1 - myStrength);
+			rReductions.push(fakeR - newFakeR);
+			fakeR = newFakeR;
+		}
+		*/
+
+		let interventionsAdded = interventionStrengths.reduce((sum, isPair)=>{
+			let name = isPair[0],
+				maxStrength = isPair[1],
+				myStrength = int[name] * maxStrength;
+			return sum+myStrength;
+		},0);
+
+
+		let interventionsRelative = interventionStrengths.map((isPair)=>{
+			let name = isPair[0],
+				maxStrength = isPair[1],
+				myStrength = int[name] * maxStrength;
+			return myStrength/interventionsAdded;
+		});
+
+		// Go from right to left
+		ctx.translate( (250/3)*r0, 10 );
+		interventionColors.forEach((icPair, i)=>{
+
+			let name = icPair[0],
+				color = icPair[1],
+				myDiff = interventionsRelative[i] * diff,
+				dx = -myDiff*(250/3);
+
+			if(dx<-8){
+				ctx.strokeStyle = color;
+				ctx.lineWidth = 2;
+				ctx.beginPath();
+				ctx.moveTo(0,0);
+				ctx.lineTo(dx+4, 0);
+				ctx.lineTo(dx+4+4, -4);
+				ctx.lineTo(dx+4, 0);
+				ctx.lineTo(dx+4+4, 4);
+				ctx.stroke();
+			}
+
+			ctx.translate(dx,0);
+
+		});
+
+
+	}
+
+	ctx.setTransform(1,0,0,1,0,0);
+	ctx.scale(2,2);
+
+	// Herd Immunity
+	ctx.fillStyle = "#000";
+	ctx.fillRect(250*1/3, 0, 1, ctx.canvas.height);
+
+	ctx.setTransform(1,0,0,1,0,0);
+
+};
+
+let IS_PLAYING_RECORDING = false;
+let recordedHistory = [];
+
+let show_percent_s = $('#show_percent_s'),
+	show_percent_e = $('#show_percent_e'),
+	show_percent_i = $('#show_percent_i'),
+	show_percent_r = $('#show_percent_r'),
+	herdDOM = $('.herd');
 let draw = ()=>{
 
 	// Redraw
 	requestAnimationFrame(draw);
 
-	// Update SI
-	if(params._HACK_SHOW_SI_PERCENTS){
-		let digits = 3; //(params._HACK_SHOW_SI_PERCENTS===true) ? 5 : params._HACK_SHOW_SI_PERCENTS;
-		$('#show_percent_s').innerHTML = ': '+(S*100).toFixed(digits)+'%';
-		$('#show_percent_e').innerHTML = ': '+(I*100).toFixed(digits)+'%';
-		$('#show_percent_i').innerHTML = ': '+(I*100).toFixed(digits)+'%';
-		$('#show_percent_r').innerHTML = ': '+(R*100).toFixed(digits)+'%';
+	// SUCH A HACK
+	if(CURRENT_STAGE._HACK_MAKE_TIME_KEEP_GOING){
+		daysTotal = Infinity;
+		daysCurrent += 1;
+		S = 0.999;
+		E = 0;
+		I = 0.001;
+		R = 0;
+		updateModel(1);
+		updateRBar(label_p_r0, canvas_r0, r0);
+		updateRBar(label_p_re, canvas_re, re, true);
 	}
 
+	// Update SI
+	if((IS_PLAYING || INPUTS_WERE_CHANGED) && params._HACK_SHOW_SI_PERCENTS){
+		let digits = 3; //(params._HACK_SHOW_SI_PERCENTS===true) ? 5 : params._HACK_SHOW_SI_PERCENTS;
+		show_percent_s.innerHTML = ': '+(S*100).toFixed(digits)+'%';
+		show_percent_e.innerHTML = ': '+(I*100).toFixed(digits)+'%';
+		show_percent_i.innerHTML = ': '+(I*100).toFixed(digits)+'%';
+		show_percent_r.innerHTML = ': '+(R*100).toFixed(digits)+'%';
+	}
+
+	// Update R0 & Re
+	if(IS_PLAYING || INPUTS_WERE_CHANGED){
+
+		updateRBar(label_p_r0, canvas_r0, r0);
+		updateRBar(label_p_re, canvas_re, re, true);
+
+		// Herd Immunity
+		herdDOM.style.left = (1-(1/r0))*250 + 'px';
+
+	}
+	INPUTS_WERE_CHANGED = false;
+
 	// Paused? At the end?
-	if(!IS_PLAYING) return;
-	if(params.FROZEN_IN_TIME) return;
+	if(!IS_PLAYING) return; // STOP
+	if(params.FROZEN_IN_TIME) return; // STOP
 	if(daysCurrent > daysTotal){
 		
 		IS_PLAYING = false;
@@ -183,7 +332,7 @@ let draw = ()=>{
 
 		params._HACK_RESET_WHEN_I_100 = "go";
 		bbDOM.setAttribute('label','reset');
-		sbDOM.setAttribute('label',params.CANNOT_REPLAY_HISTORY ? '' : 'replay');
+		sbDOM.setAttribute('label','');
 		
 		if(CURRENT_STAGE.SHOW_HAND=="tutorial_0" && handTutorial==1){
 			if(!HAND_IS_VISIBLE){
@@ -202,6 +351,33 @@ let draw = ()=>{
 
 
 	// Replay History!
+	if(IS_PLAYING_RECORDING){
+
+		let keepFindingNewEntries = true;
+		while(keepFindingNewEntries){
+
+			let record = recordedHistory[0];
+			if(!record || daysCurrent<record[2]){
+				// Not its time yet
+				keepFindingNewEntries = false;
+			}else{
+
+				// It is!
+				recordedHistory.shift(); // remove first element
+				
+				// Set that slider
+				let slider = $('#'+record[0]);
+				slider.value = record[1];
+				//DONT_RECORD_HISTORY = true;
+				slider.oninput();
+				//DONT_RECORD_HISTORY = false;
+
+			}
+
+		}
+
+	}
+	/*
 	if(IS_REPLAYING_HISTORY){
 		let keepLooping = true;
 		while(keepLooping){
@@ -223,6 +399,7 @@ let draw = ()=>{
 
 		}
 	}
+	*/
 
 	// For each new day, draw a new pixel
 	daysPerFrame = (daysTotal / params.p_speed) / 60; // (days/second) / (frames/second) = (days/frame)
@@ -266,6 +443,7 @@ let draw = ()=>{
 		y = 0;
 		h = canvas.height;
 		interventionColors.forEach((ic)=>{
+			if(ic[0]=="non_s") return; // EXCEPT Non-Susceptibles
 			ctx.fillStyle = ic[1];
 			ctx.globalAlpha = int[ic[0]] * ic[2];
 			ctx.fillRect(0,y,w,h);
@@ -273,6 +451,7 @@ let draw = ()=>{
 		});
 
 		// ICU bed capacity
+		// Actually... just make it a generous 1%.
 		if(params.p_hospital){
 			y = (1-((params.p_hospital/100)*0.02))*canvas.height;
 			h = 2;
@@ -283,9 +462,6 @@ let draw = ()=>{
 		// Herd Immunity
 		if(params.c_recovery && !params.DO_NOT_SHOW_HERD_IMMUNITY){
 			
-			let transmissionRate = 1/params.p_transmission,
-				recoveryRate = 1/params.p_recovery,
-				r0 = transmissionRate/recoveryRate;
 			let herdImmunity = 1 - (1/r0);
 
 			// Dashed

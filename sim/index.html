@@ -36,7 +36,7 @@
 					
 					<div id="label_c_recovery">
 						<input class="sim_checkbox" type="checkbox" id="c_recovery">
-						Recovers <icon r></icon> in <span id="label_p_recovery">N</span> days
+						Becomes <icon r></icon> in <span id="label_p_recovery">N</span> days
 						<br>
 						<input class="sim_input" type="range" id="p_recovery" min="1" max="30" step="1" value="11">
 					</div>
@@ -54,20 +54,23 @@
 
 				<div id="section_r">
 
-					R0 is <span id="label_p_r0" toFixed="2"></span>
-					<input class="sim_input" type="range" id="p_r0" min="0" max="6" step="0.01" disabled>
+					R<sub>0</sub> is <span id="label_p_r0" toFixed="2"></span>
+					<canvas class="r_canvas" id="canvas_r0"></canvas>
+					<!--input class="sim_input" type="range" id="p_r0" min="0" max="6" step="0.01" disabled-->
 					<br>
 
 					<span id="label_s">
+						<br>
 						But R is changed by...
 						<br>
-						Susceptible population
-						<input class="sim_input" type="range" id="p_s" min="0" max="1" step="0.001" value="1" disabled>
+						% of people who are <i>NOT</i> <icon s></icon>
+						<input class="sim_input" type="range" id="p_s" min="0" max="1" step="0.001" value="0" disabled>
+						<div class="herd"></div>
 						<br>
 					</span>
 
 					<span id="int_block_0">
-						Personal Hygiene
+						Increased Hygiene
 						<br>
 						<input class="sim_input recordable" type="range" id="p_hygiene" min="0" max="1" step="0.001" value="0">
 						<br>
@@ -89,13 +92,13 @@
 						<br>
 					</span>
 					<span id="int_block_3">
-						Deep Cleaning
-						<br>
-						<input class="sim_input recordable" type="range" id="p_cleaning" min="0" max="1" step="0.001" value="0">
-						<br>
 						Face Masks
 						<br>
 						<input class="sim_input recordable" type="range" id="p_masks" min="0" max="1" step="0.001" value="0">
+						<br>
+						Deep Cleaning
+						<br>
+						<input class="sim_input recordable" type="range" id="p_cleaning" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_4">
@@ -111,11 +114,10 @@
 						<br>
 					</span>
 
-					<br>
-
 					<span id="label_re">
 						R is now <span id="label_p_re" toFixed="2"></span>
-						<input class="sim_input" type="range" id="p_re" min="0" max="6" step="0.01" disabled>
+						<canvas class="r_canvas" id="canvas_re"></canvas>
+						<!--<input class="sim_input" type="range" id="p_re" min="0" max="6" step="0.01" disabled>-->
 					</span>
 
 					<span id="hospital_capacity">
@@ -124,7 +126,7 @@
 						<input class="sim_input recordable" type="range" id="p_hospital" min="0" max="500" step="1" value="100">
 					</span>
 
-					<hr>
+					<hr id="divider">
 
 				</div>
 
@@ -171,15 +173,15 @@
 				
 				<span id="label_susceptible">
 					<icon s></icon> Susceptible<span id="show_percent_s"></span>
-					<br>
+					<!--<br>-->
 				</span>
 				<span id="label_exposed">
 					<icon e></icon> Exposed<span id="show_percent_e"></span>
-					<br>
+					<!--<br>-->
 				</span>
 				<span id="label_infectious">
 					<icon i></icon> Infectious<span id="show_percent_i"></span>
-					<br>
+					<!--<br>-->
 				</span>
 				<span id="label_removed">
 					<icon r></icon> Removed<span id="show_percent_r"></span>
@@ -191,10 +193,10 @@
 				- - - Herd Immunity
 				</span>
 
-				<br>
+				<!--<br>-->
 				
 				<span id="label_capacity">
-				&nbsp; ––– Healthcare Capacity
+				––– Healthcare Capacity
 				</span>
 
 			</div>

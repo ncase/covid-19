@@ -14,7 +14,7 @@ div{
 
 #sandbox{
 	width: 800px;
-	height: 540px;
+	height: 640px;
 	overflow: hidden;
 	background: #fff;
 	position: absolute;
@@ -26,14 +26,30 @@ div{
 	position: absolute;
 	left:15px;
 	top:20px;
-	width:250px;
+	width:270px;
 	/*height:500px;*/
 	float:left;
 	position: relative;
 }
 
+#label_s{
+	position: relative;
+	display: inline-block;
+}
+#label_s > .herd{
+	display: block;
+    position: absolute;
+    border-right: 2px dotted black;
+    width: 0;
+    height: 16px;
+    bottom: 3px;
+    left: 159px;
+    pointer-events: none;
+}
+
 #sim_controls{
 	margin-top: 10px;
+	width: 250px;
 }
 
 .big_button{
@@ -99,6 +115,7 @@ hr{
 	border:none;
 	border-bottom: 2px dashed #ddd;
 	margin: 15px 0;
+	width: 250px;
 }
 
 
@@ -161,7 +178,8 @@ hr{
 }*/
 
 #controls input[type=range]{
-	width: 100%;
+	/*width: 100%;*/
+	width: 250px;
 }
 #controls div[strikethrough]{
 	text-decoration: line-through;
