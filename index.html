@@ -22,25 +22,21 @@
 		</div>
 	</div>
 
-	<p>&quot;The only thing to fear is fear itself&quot; is stupid.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
+	<p>&quot;The only thing to fear is fear itself&quot; was stupid advice.</p>
 
-	<p>Sure, don&#39;t hoard toilet paper. But if someone&#39;s so scared to think about scary things, that they deny danger <em>when it&#39;s already here</em>, then they&#39;ve got more problems<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup> than toilet paper.</p>
+	<p>If people fear fear itself, they&#39;ll deny danger because they don&#39;t want to create &quot;mass panic&quot;. The problem&#39;s not fear, but how we <em>use</em> our fear. Fear, used well, gives you energy to deal with current dangers, and prepare for future dangers.</p>
 
-	<p>The problem&#39;s not fear, but how we <em>use</em> our fear. Taiwan and South Korea <em>bravely used their fear</em> (from SARS) to invest in &quot;pandemic insurance&quot;, and it paid off in controlling COVID-19! Fear gives you energy to deal with present dangers &amp; plan for future dangers – <em>if</em> you know how to channel your fear.</p>
-
-	<p>So, we (Marcel &amp; Nicky) have channeled our COVID-19 fears into making these playable simulations – so that <em>you</em> can channel <em>your</em> fear into gaining a deep, intuitive understanding of:</p>
+	<p>Honestly, the two of us (Marcel, epidemiologist + Nicky, artist/coder) are worried about the future. We bet you are, too. That&#39;s why we want to channel <em>our</em> worries into making these <strong>playable simulations</strong>, so that you can channel <em>your</em> worries into understanding:</p>
 
 	<ul>
-	<li><strong>The Last Few Months</strong> (epidemiology 101, SIR model, R0 &amp; Rt)</li>
+	<li><strong>The Last Few Months</strong> (epidemiology 101, SEIR model, R &amp; R<sub>0</sub>)</li>
 	<li><strong>The Next Few Months</strong> (lockdowns, contact tracing, masks)</li>
-	<li><strong>The Next Few Years</strong> (vaccines, summers, loss of immunity)</li>
+	<li><strong>The Next Few Years</strong> (vaccines, loss of immunity?)</li>
 	</ul>
 
-	<p>Note: We&#39;re publishing this on April 30th, 2020. Still the early days. As humanity learns more about COVID-19, our plans will and <em>should</em> change – but we hope this post will address 90%+ of all future possibilities!</p>
+	<p>This guide is meant to give you hope <em>and</em> fear. To beat this virus <strong>in a way that also protects our mental &amp; financial health</strong>, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, <em>“The optimist invents the airplane and the pessimist the parachute.”</em></p>
 
-	<p>Honestly, some of the possibilities are scary. And some are hopeful! But preparing for the scary possibilites is what <em>creates</em> the hopeful possibilites. You don&#39;t get to save the prince/ss without facing the dragon.</p>
-
-	<p>Let&#39;s bravely use our fear, and face this dragon.</p>
+	<p>So, buckle in: we&#39;re about to experience some turbulence.</p>
 
 	<div class="section">
 		<div>
@@ -48,71 +44,57 @@
 		</div>
 	</div>
 
-	<p>...has been a real worldwide cram-school in Epidemiology 101.</p>
+	<p>Pilots use flight simulators to learn how not to crash planes.</p>
 
-	<p>Pilots use flight simulators to learn how not to crash planes. <strong>Epidemiologists use epidemic simulators to learn how not to crash humanity.</strong></p>
+	<p><strong>Epidemiologists use epidemic simulators to learn how not to crash humanity.</strong></p>
 
-	<p>So, let&#39;s set up an epidemic &quot;flight simulator&quot;! First, we need some simulation rules.</p>
-
-	<p>Let&#39;s say you have some Infected (i) people and not-yet-infected Susceptible (s) people. One (i) infects a (s), those 2 (i) infect another 2 (s), those 4 (i) infect another 4 (s), and so on:</p>
+	<p>So, let&#39;s create a very simple &quot;epidemic flight simulator&quot;! Here, we have some (i) Infectious people &amp; some not-yet-infected (s) Susceptible people. (i)s turn (s)s into more (i)s:</p>
 
 	<p>// pic</p>
 
-	<p><em>On average</em>, COVID-19 jumps from an (i) to a (s) every 4 days.<a href="source">1</a> The average # of days it takes for an (i) to infect an (s) is called the <strong>&quot;generation time&quot;</strong><a href="serial%20interval">2-note</a>. (Click the gray circles for sources, and the blue squares for side-notes!)</p>
+	<p>At the start of a COVID-19 outbreak, it&#39;s estimated that the virus jumps from an (i) to an (s) every 4 days.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> (<em>On average.</em> Remember, there&#39;s lots of variation.)</p>
 
-	<p><em>Rule #1: The more (i)s there are, the faster (s)s become (i)s.</em></p>
+	<p>Here&#39;s a simulation of a population with <em>just</em> 0.001% (i) and 99.999% (s), over 6 months. If we simulate &quot;double every 4 days&quot; <em>and nothing else</em>, what happens?</p>
 
-	<p>// pic - rule</p>
-
-	<p>If we simulate <em>just this rule and nothing else</em>, here&#39;s what it looks like over 3 months, starting with 99.9% (s) and just 0.1% (i):</p>
-
-	<p><strong>Click &quot;Start&quot; play the simulation! You can then change the &quot;generation time&quot;, and see how that changes the simulation:</strong></p>
+	<p><strong>Click &quot;Start&quot; to play the simulation! (Afterwards, you can re-play the simulation with different settings)</strong></p>
 
 	<div class="sim">
-		<iframe src="sim?stage=01" width="800" height="540"></iframe>
+		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 	</div>
 
-	<p>Starts small (&quot;it&#39;s just a flu&quot;), then explodes (&quot;oh right, flus don&#39;t break hospitals in rich countries&quot;). This is the &quot;J-shaped&quot; <strong>exponential growth curve</strong>.</p>
+	<p>This is the <strong>exponential growth curve.</strong> Starts small, then explodes. &quot;Oh it&#39;s just a flu&quot; to &quot;Oh right, flus don&#39;t create <em>mass graves in rich cities</em>&quot;. </p>
 
-	<p>But this simulation is wrong. There are things that prevent an (i) from infecting someone else – like if that other person is <em>already</em> an (i):</p>
+	<p>// pic - exponential double rice</p>
+
+	<p>But, this simulation is wrong. Exponential growth, thankfully, can&#39;t go on forever. One thing that stops a virus from spreading is if others <em>already</em> have the virus:</p>
 
 	<p>// pic - 100% spread, 50% spread, 0% spread</p>
 
-	<p><em>Rule #2: The fewer (s)s there are, the slower (s)s become (i)s.</em></p>
+	<p><strong>The more (i)s there are, the faster (s)s become (i)s, but the fewer (s)s there are, the <em>slower</em> (s)s become (i)s.</strong></p>
 
-	<p>// pic - rule</p>
-
-	<p>Now, what happens if we simulate <em>both</em> these rules?</p>
-
-	<p><strong>Again, click Start to play the simulation!</strong></p>
+	<p>Now, what happens if we simulate that?</p>
 
 	<p>// sim</p>
 
-	<p>Starts small, explodes, then slows down again. This is the &quot;S-shaped&quot; <strong>logistic growth curve.</strong></p>
+	<p>This is the &quot;S-shaped&quot; <strong>logistic growth curve.</strong> Starts small, explodes, then slows down again.</p>
 
-	<p>Still, this simulation predicts 100% of people will get the virus, and even the most pessimistic COVID-19 simulations don&#39;t predict <em>that</em>. </p>
+	<p>But, this simulation is <em>still</em> wrong. We&#39;re missing the fact that (i) Infectious people eventually stop being infectious, either by 1) recovering, 2) &quot;recovering&quot; with lung damage, or 3) dying.</p>
 
-	<p>What we&#39;re missing: You stop being infectious for COVID-19 when you recover... or die.</p>
+	<p>For simplicity&#39;s sake, let&#39;s pretend that all (i) Infectious people become (r) Recovered. (r)s can&#39;t be infected again, and let&#39;s pretend – <em>for now!</em> – that they stay immune for life.</p>
 
-	<p>For the sake not making these simulations too depressing, let&#39;s only simulate Infected (i) becoming (r) Recovered. (The math works out the same.) And let&#39;s assume <em>(for now!!!)</em> that (r)s can&#39;t get infected again. So, new rule:</p>
+	<p>When you&#39;re infected with COVID-19, it&#39;s estimated you stay (i) infectious for 12 days.<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup> (Again, <em>on average.</em>)</p>
 
-	<p><em>Rule #3: (i)s eventually become (r)s.</em> </p>
-
-	<p>// pic - rule</p>
-
-	<p>Let&#39;s have (i)s become (r)s after 14 days, <em>on average</em>.<a href="technical%20notes">3-note</a> This means some (i)s will recover <em>before</em> 14 days, and some recover <em>after</em>! This is closer to real life.</p>
-
-	<p>To show <em>only</em> Rule #3, here&#39;s a simulation starting with 100% (i):</p>
+	<p>Here&#39;s a simulation that starts with 100% (i). Most people recover after 12 days, then most of the remainder recover after another 12 days, then most of the remainder <em>of that remainder</em> recover after another 12 days, etc:</p>
 
 	<p>// sim</p>
 
-	<p>This is the &quot;flipped-J-shaped&quot; <strong>exponential decay curve.</strong></p>
+	<p>This is the opposite of exponential growth, the <strong>exponential decay curve</strong>.</p>
 
-	<p>Now, what happens if you simulate all 3 rules at once? What happens when you combine an S-shaped logistic curve with a flipped-J exponential decay curve?</p>
+	<p>Now, what happens if you combine this with the S-shaped logistic curve of infection?</p>
 
 	<p>// pic</p>
 
-	<p>Let&#39;s find out:</p>
+	<p>Let&#39;s find out. Here&#39;s a simulation of an epidemic <em>with</em> recovery:</p>
 
 	<p>// sim</p>
 
@@ -120,70 +102,84 @@
 
 	<p>// pic: 3 rules</p>
 
-	<p>This is the <strong>SIR Model</strong>, the <em>second</em>-most important idea in epidemiology.</p>
+	<p>This is the the <strong>SIR Model</strong>, ((s) <strong>S</strong>usceptible → (i) <strong>I</strong>nfectious →  (r) <strong>R</strong>ecovered) the second-most important idea in Epidemiology 101.</p>
 
-	<p><strong>NOTE:</strong> The simulations you&#39;ve been hearing in the news are <em>far</em> more complex than the ones you&#39;re seeing here! But the sims you&#39;ll play with here reach the same general conclusions, even if missing the nuances.</p>
+	<p>Note: The simulations that inform policy are <em>far</em> more sophisticated than this! But the SIR model can still help us understand a lot about COVID-19, even if missing the nuances.</p>
 
-	<p>One nuance you could add is the <strong>SIRS Model</strong>, where the final &quot;S&quot; also stands for (s) Susceptible – this is when people recover, are immune for a bit, <em>then lose that immunity and can be infected again.</em> (We&#39;ll consider this in the Next Few Years section)</p>
+	<p>Actually, let&#39;s add one more nuance: before an (s) becomes an (i), they first become an (e) Exposed person, when they&#39;re infect<em>ed</em> but not yet infect<em>ious</em> – they have the virus but can&#39;t pass it on (yet).</p>
 
-	<p>Another nuanced version is the <strong>SEIR Model</strong>, where the &quot;E&quot; stands for (e) Exposed, a brief period of time <em>after</em> you&#39;ve been infected, but <em>before</em> you can infect others. This is called the <strong>&quot;latent period&quot;</strong>, and for COVID-19 it&#39;s around 3 days.<a href="">4</a></p>
+	<p>(This variant is called the <strong>SEIR Model</strong>, where &quot;E&quot; stands for (e) Exposed. Note this <em>isn&#39;t</em> the everyday meaning of &quot;exposed&quot;, where you might or might not have the virus. In this technical definition, &quot;Exposed&quot; means you definitely have it. Yeah, science terminology is bad.)</p>
 
-	<p>Here&#39;s what happens if you simulate that:</p>
-
-	<p>// sim</p>
-
-	<p>Doesn&#39;t change much, so let&#39;s stick to the vanilla SIR model. We brought (e)s up because the exact timing of contagiousness is important in &quot;contact tracing&quot;, which we&#39;ll explain in the Next Few Months section.</p>
-
-	<p>Oh! But almost forgot, the <em>first</em>-most important idea in epidemiology:</p>
-
-	<p><strong>&quot;R&quot;</strong></p>
-
-	<p>Which is short for &quot;Reproduction Number&quot;. It&#39;s the <em>average</em> number of people an (i) will infect <em>before</em> they recover:</p>
-
-	<p>// pic - R&gt;1 R=1 R&lt;1</p>
-
-	<p><strong>R0</strong> (pronounced R-nought) is the Reproduction Number for a virus <em>at the very beginning of an outbreak, before we have immunity or interventions</em>. (Also called &quot;Basic Reproduction Number&quot;)</p>
-
-	<p><strong>Rt</strong> (the &#39;t&#39; stands for time) is the Reproduction Number <em>right now</em>, after we have some immunity or interventions. (Also called &quot;Re&quot;, e standing for &quot;Effective Reproduction Number&quot;. Also called just &quot;R&quot;, to... confuse people)</p>
-
-	<p>// pic of R0 and Rt over time for the Famous Curve – with peak for inflection!</p>
-
-	<p>(A lot of news outlets confuse these two Rs! They&#39;re different!)</p>
-
-	<p>The R0 for the flu<a href="more">6</a> is around 1.3. The R0 for COVID-19 is somewhere between 2 and 5.<a href="source">7</a>  The huge uncertainty is because R0 depends on exactly how quickly new people are infected (&quot;generation time&quot;) vs how quickly people recover<a href="technical%20note">8</a>:</p>
+	<p>For COVID-19, it&#39;s estimated that you&#39;re in this &quot;latent period&quot; for around 3 days.<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup> What happens if we add that to the simulation?</p>
 
 	<p>// sim</p>
 
-	<p>Rt for COVID-19 depends on the interventions we do (or don&#39;t) have, as well as how many people <em>aren&#39;t</em> (s) Susceptible. (because they&#39;re (r) Recovered, currently (i) Infected, or... dead.)</p>
+	<p>Not much, actually! The &quot;latent period&quot; only changes <em>when</em> the peak happens, but the <em>height</em> of the peak – and total people infected – remain the same:</p>
+
+	<p>// pics</p>
+
+	<p>Why&#39;s that? Because of the <em>first</em>-most important idea in Epidemiology 101:</p>
+
+	<p>// pic - <strong>&quot;R&quot;</strong></p>
+
+	<p>Which is short for &quot;Reproduction Number&quot;. It&#39;s the <em>average</em> number of people an (i) infects <em>before</em> they recover (or die).</p>
+
+	<p>// R &gt; 1, R = 1, R &lt; 1 pic</p>
+
+	<p><strong>R</strong> changes over the course of an outbreak, as we get more immunity &amp; interventions.</p>
+
+	<p><strong>R<sub>0</sub></strong> (pronounced R-nought) is what R is <em>at the start of an outbreak, before immunity or interventions</em>. R<sub>0</sub> is also called the &quot;basic reproduction number&quot;. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, because heat &#39;kills&#39; coronaviruses, R<sub>0</sub> for COVID-19 is lower in hot places than cold ones. Not low enough to contain it, though.</p>
+
+	<p>(A lot of news outlets – and even academic papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad.)</p>
+
+	<p>The R<sub>0</sub> for the flu<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> is around 1.3. The R<sub>0</sub> estimates for COVID-19 are usually between 2 and 3, maybe as high as 6.<sup id="fnref5"><a href="#fn5" rel="footnote">5</a></sup></p>
+
+	<p>In our simulations, an (i) recovers in 12 days, but infects one new (s) every 4 days. That means, <em>on average</em>, an (i) infects 3 (s)s before they recover. So for our simulations, R<sub>0</sub> is 3.</p>
+
+	<p><strong>Play around with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time &amp; new-infection time:</strong></p>
+
+	<p>// calc</p>
+
+	<p>But remember, the fewer (s)s there are, the <em>slower</em> (s)s become (i)s. 
+	R depends not just on R<sub>0</sub>, but also how many people are no longer Susceptible – due to, say, having recovered &amp; gotten natural immunity.</p>
+
+	<p>// calc 2</p>
+
+	<p>When enough people have natural immunity, R &lt; 1, and the virus is contained! This is called <strong>herd immunity</strong>, and while it&#39;s <em>terrible</em> policy, (we&#39;ll explain why later – it&#39;s not for the reason you may think!) it&#39;s essential to understanding Epidemiology 101.</p>
+
+	<p>Now, let&#39;s play the last simulation again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:</p>
 
 	<p>// sim</p>
 
-	<p>Note that when (s)% is low enough, you can get Rt&lt;1 – <em>containing the virus!</em> This is called <strong>the &quot;herd immunity&quot; threshold</strong>. &quot;Herd immunity&quot; is a terrible <em>policy</em> (TODO: explain why), but it&#39;s important for understanding epidemiology.</p>
+	<p>Note: Total cases (the gray curve) does not stop at herd immunity, but <em>overshoots</em> it! And it does this <em>exactly when</em> current cases (the pink curve) peaks. This happens no matter how you change the settings:</p>
 
-	<p>Now, let&#39;s run the same SIR model simulation again, but this time showing 1) Rt changing over time, and 2) the herd immunity threshold:</p>
+	<p>// pic</p>
 
-	<p>// sim</p>
+	<p>This is because, by definition, when there are more non-(s)s than the herd immunity threshold, you get R &lt; 1. And, by definition, R &lt; 1 means new cases stop growing.</p>
 
-	<p>Note how total cases ((i)+(r)) <em>overshoots</em> the herd immunity threshold! And the <em>exact</em> moment it does this is when infections peak <em>and</em> when Rt drops below 1!</p>
+	<p>If there&#39;s only one lesson you take away from this whole guide, here it is, in big shiny letters:</p>
 
-	<p>If there&#39;s only one lesson you take away today, here it is, in big shiny letters:</p>
+	<h1 id="toc_3">R &gt; 1 = bad</h1>
 
-	<h1 id="toc_3">Rt&gt;1 = bad</h1>
+	<h1 id="toc_4">R &lt; 1 = good (R=1, meh)</h1>
 
-	<h1 id="toc_4">Rt&lt;1 = good</h1>
+	<p><strong>This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!</strong></p>
 
-	<p><strong>NOTE: We do not need to catch all transmissions, or even nearly all transmissions, to stop COVID-19.</strong></p>
+	<p>It&#39;s a paradox. COVID-19 is incredibly contagious, yet to contain it, we &quot;only&quot; need to stop 67% of infections. 67%?! If that was a school grade, that&#39;s a D+. But if R<sub>0</sub> = 3, cutting that by 67% gives us R = 0.99, which is R &lt; 1, which means the virus is contained!</p>
 
-	<p>It&#39;s a paradox – COVID-19 is incredibly contagious, yet to contain it, we &quot;only&quot; need to stop 72% of infections. 72%?! That&#39;s, like, a C– grade. But if R0 = 3.5, then reducing that by 72% will make Rt &lt; 1 = good.</p>
+	<p>(And even if, extreme-worst-case, R<sub>0</sub> = <em>6</em>, you still &quot;only&quot; need to stop 84% of transmissions. That&#39;s a B grade.)</p>
 
-	<p>(And even if worst-case, R0=5, you &quot;only&quot; need to stop 80%. That&#39;s a B–.)</p>
+	<p>// calculator - custom</p>
 
 	<p><em>Every</em> COVID-19 intervention you&#39;ve heard of – handwashing, social distancing, lockdowns, self-isolation, contact tracing &amp; quarantining, face masks, even &quot;herd immunity&quot; – they&#39;re <em>all</em> doing the same thing:</p>
 
-	<p>Reducing Rt.</p>
+	<p>Getting R &lt; 1.</p>
 
-	<p>Let&#39;s see how we can get Rt&lt;1 – in a way that protects not just our physical health, but also our mental health, social health, <em>and</em> financial health!</p>
+	<p>So now, let&#39;s use our &quot;epidemic flight simulator&quot; to figure out the next few months! How will we get R &lt; 1 in a way that protects not just our physical health, <strong>but also our mental health, social health, <em>and</em> financial health?</strong></p>
 
+	<p>Brace yourselves for an emergency landing...</p>
+
+	<!--
 	<div class="section">
 		<div>
 			<h1 id="toc_5">The Next Few Months</h1>
@@ -559,6 +555,7 @@
 	<hr>
 
 	<p>(TODO: US vs Korea/Taiwain resources)</p>
+	-->
 
 	<div class="footnotes">
 	<hr>
