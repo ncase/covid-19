@@ -5,8 +5,11 @@ body{
 	font-weight: 100;
 	line-height: 1.7em;
 }
+b, strong{
+	font-weight: bold;
+}
 
-article > p, article > ul{
+article > p, article > ul, article > ol, article > h1, article > h2, article > h3{
 	width: 640px;
 	margin:1em auto;
 }
@@ -37,4 +40,34 @@ iframe{
 	border:2px solid #eee;
 	display: block;
 	margin:0 auto;
+}
+
+icon{
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	position: relative;
+	top:0.1em;
+	background-size: 100% 100%;
+}
+icon[s]{
+	background-image: url(../icons/s.png);
+}
+icon[e]{
+	background-image: url(../icons/e.png);
+}
+icon[i]{
+	background-image: url(../icons/i.png);
+}
+icon[r]{
+	background-image: url(../icons/r.png);
+}
+
+p > img{
+	width: 100%;
+	border: 1px solid #ddd;
+	margin: 0.5em auto;
+}
+sub{
+	line-height: 0;
 }

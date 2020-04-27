@@ -14,7 +14,7 @@ div{
 
 #sandbox{
 	width: 800px;
-	height: 640px;
+	height: 540px;
 	overflow: hidden;
 	background: #fff;
 	position: absolute;
@@ -264,7 +264,7 @@ icon[r]{
 	transition: height 0.5s ease-in-out;
 	overflow: hidden;
 	height:0px;
-	padding-right: 2px;
+	/*padding-right: 2px;*/
 }
 
 #month_names{

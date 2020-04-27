@@ -18,11 +18,11 @@ int-2a hygiene & distancing
 int-2 Flatten Curve / Herd Immunity
 int-3 Lockdown for a while
 int-4 Intermittent Lockdown "second & third waves"
-int-5 Lockdown, then Test & Trace...
-int-5b and with Vaccination!
+int-4a Calc trace
+int-4b Calc vaccinate 
+int-5 Lockdown, then Test & Trace.. then Vaccination!
 int-6a Masks
-int-6b Deep Cleaning
-int-6c Summer
+int-6b Summer
 int-7 Test+Trace+Masks + One Circuit Breaker
 
 yrs-1 Decay of Recovered
@@ -299,7 +299,7 @@ const STAGES = {
 		],
 		SHOW_ALL_AT_START: true,
 		PLAY_RECORDING: [
-			["p_distancing",0.344,84], ["p_hygiene",1,84],
+			["p_distancing",0.275,84], ["p_hygiene",1,84],
 			["p_distancing",0,340], ["p_hygiene",0,340],
 		],
 		SIR: [0.999995,0.000005,0]
@@ -323,7 +323,7 @@ const STAGES = {
 		SHOW_ALL_AT_START: true,
 		PLAY_RECORDING: [
 			["p_distancing",1,84], ["p_hygiene",1,84],
-			["p_distancing",0,234], //["p_hygiene",0,234]
+			["p_distancing",0,234], ["p_hygiene",0,234]
 		],
 		SIR: [0.999995,0.000005,0]
 	},
@@ -345,19 +345,66 @@ const STAGES = {
 		],
 		SHOW_ALL_AT_START: true,
 		PLAY_RECORDING: [
-			["p_distancing",1,85], ["p_hygiene",1,85],
-			["p_distancing",0,85+58],
-			["p_distancing",1,85+58+33],
-			["p_distancing",0,85+58+33+58],
-			["p_distancing",1,85+58+33+58+36],
-			["p_distancing",0,85+58+33+58+36+58],
-			["p_distancing",1,85+58+33+58+36+58+48],
-			["p_distancing",0,85+58+33+58+36+58+48+58],
-			["p_distancing",1,85+58+33+58+36+58+48+58+60],
-			["p_distancing",0,85+58+33+58+36+58+48+58+60+58],
-			["p_distancing",1,85+58+33+58+36+58+48+58+60+58+80],
+			["p_distancing",1,90], ["p_hygiene",1,90],
+			["p_distancing",0,90+68],
+			["p_distancing",1,90+68+54],
+			["p_distancing",0,90+68+54+73],
+			["p_distancing",1,90+68+54+73+73],
+			["p_distancing",0,90+68+54+73+73+73],
+			["p_distancing",1,90+68+54+73+73+73+87],
+			["p_distancing",0,90+68+54+73+73+73+87+58],
+			["p_distancing",1,90+68+54+73+73+73+87+58+108],
 		],
 		SIR: [0.999995,0.000005,0]
+	},
+
+	"int-4a": {
+		hide: [
+			"section_dynamics",
+			"section_meta","label_c_waning","c_recovery",
+			"label_c_exposed",
+			/*"int_block_0",
+			"int_block_1","int_block_2",*/"int_block_3","int_block_4","int_block_5","hospital_capacity",
+			"graph",
+			//"label_s","label_re",
+			"sim_controls",
+			"divider"
+		],
+		checkboxes: [
+			["c_recovery", true]
+		],
+		inputs: [
+			["p_hygiene",1],
+			["FROZEN_IN_TIME", true],
+		],
+		disabled:[
+			["p_s", false]
+		],
+		SHOW_ALL_AT_START: true
+	},
+
+	"int-4b": {
+		hide: [
+			"section_dynamics",
+			"section_meta","label_c_waning","c_recovery",
+			"label_c_exposed",
+			"int_block_0",
+			"int_block_1","int_block_2","int_block_3","int_block_4",/*"int_block_5",*/"hospital_capacity",
+			"graph",
+			//"label_s","label_re",
+			"sim_controls",
+			"divider"
+		],
+		checkboxes: [
+			["c_recovery", true]
+		],
+		inputs: [
+			["FROZEN_IN_TIME", true],
+		],
+		/*disabled:[
+			["p_s", false]
+		],*/
+		SHOW_ALL_AT_START: true
 	},
 
 	"int-5": {
@@ -365,7 +412,7 @@ const STAGES = {
 			"section_dynamics",
 			"label_c_waning","c_recovery","c_exposed",
 			"section_meta_years",
-			/*"int_block_2",*/"int_block_3","int_block_4","int_block_5","hospital_capacity"
+			/*"int_block_2",*/"int_block_3","int_block_4",/*"int_block_5",*/"hospital_capacity"
 		],
 		inputs: [
 			["p_years",2],
@@ -378,45 +425,24 @@ const STAGES = {
 		SHOW_ALL_AT_START: true,
 		PLAY_RECORDING: [
 			["p_distancing",1,84], ["p_hygiene",1,84],
+			
 			["p_distancing",0,175], ["p_quarantine",0.65,175], ["p_isolate",0.65,175],
-		],
-		SIR: [0.999995,0.000005,0]
-	},
 
-	"int-5b": {
-		hide: [
-			"section_dynamics",
-			"label_c_waning","c_recovery","c_exposed",
-			"section_meta_years",
-			/*"int_block_2",*/"int_block_3","int_block_4",/*"int_block_5",*/"hospital_capacity"
-		],
-		inputs: [
-			["p_years",2],
-			["p_speed",10],
-		],
-		checkboxes: [
-			["c_recovery", true],
-			["c_exposed",true]
-		],
-		SHOW_ALL_AT_START: true,
-		PLAY_RECORDING: [
-			["p_distancing",1,84], ["p_hygiene",1,84],
-			["p_distancing",0,175], ["p_quarantine",0.65,175], ["p_isolate",0.65,175],
 			["p_hygiene",0,550], ["p_quarantine",0,550], ["p_isolate",0,550],
-			["p_vaccines",0.64,550],
+			["p_vaccines",0.61,550],
 			["p_vaccines",0,580],
 		],
 		SIR: [0.999995,0.000005,0]
 	},
 
-	"int-6c": {
+	"int-6a": {
 		hide: [
 			"section_dynamics",
 			"section_meta",
 			"label_c_waning","c_recovery",
 			"label_c_exposed",
 			/*"int_block_0",
-			"int_block_1","int_block_2","int_block_3","int_block_4","int_block_5",*/
+			"int_block_1","int_block_2","int_block_3",*/"int_block_4","int_block_5",
 			"hospital_capacity",
 			"graph",
 			//"label_s","label_re",
@@ -428,6 +454,37 @@ const STAGES = {
 		],
 		inputs: [
 			["FROZEN_IN_TIME", true],
+			["p_hygiene", 1],
+			["p_isolate", 0.516],
+			["p_quarantine", 0.515],
+		],
+		disabled:[
+			["p_s", false]
+		],
+		SHOW_ALL_AT_START: true,
+		_HACK_MAKE_TIME_KEEP_GOING: true,
+	},
+
+	"int-6b": {
+		hide: [
+			"section_dynamics",
+			"section_meta",
+			"label_c_waning","c_recovery",
+			"label_c_exposed",
+			"int_block_0",
+			"int_block_1","int_block_2","int_block_3",/*"int_block_4",*/"int_block_5",
+			"hospital_capacity",
+			"graph",
+			//"label_s","label_re",
+			"sim_controls",
+			"divider"
+		],
+		checkboxes: [
+			["c_recovery", true]
+		],
+		inputs: [
+			["FROZEN_IN_TIME", true],
+			["p_summer", 1],
 		],
 		disabled:[
 			["p_s", false]
@@ -460,15 +517,17 @@ const STAGES = {
 			// Lift
 			["p_distancing",0,175],
 			["p_hygiene",0.66,84],
-			["p_quarantine",0.33,175], ["p_isolate",0.33,175], ["p_masks",0.33,175],
+			["p_quarantine",0.4,175],
+			["p_isolate",0.4,175],
+			["p_masks",0.17,175],
 
 			// Circuit Breaker
-			["p_distancing",1,60+283],
-			["p_distancing",0,60+283+60],
+			["p_distancing",1,365],
+			["p_distancing",0,365+60],
 
 			// Vaccine!
 			["p_hygiene",0,550], ["p_quarantine",0,550], ["p_isolate",0,550], ["p_masks",0,550],
-			["p_vaccines",0.64,550],
+			["p_vaccines",0.6,550],
 			["p_vaccines",0,580],
 
 		],
@@ -483,111 +542,153 @@ const STAGES = {
 	"yrs-1": {
 		hide: [
 			/*"section_dynamics",*/
+			"section_r",
 			"c_waning","c_recovery","c_exposed",
 			"section_meta_years",
-			"int_block_0","int_block_1",
-			"int_block_2","int_block_3",/*"int_block_4",*/"int_block_5","hospital_capacity"
+			"label_herd_immunity","label_capacity"
 		],
 		inputs: [
-			["p_years",10],
-			["p_speed",20],
+			["p_years",5],
+			["p_speed",5],
+			["p_hospital", 0],
+			["DO_NOT_SHOW_HERD_IMMUNITY", true],
+			["_HACK_SHOW_SI_PERCENTS",3],
 		],
 		checkboxes: [
 			["c_recovery", true],
 			["c_exposed",true],
 			["c_waning", true],
 		],
-		SHOW_ALL_AT_START: true,
-		SIR: [0.999995,0.000005,0]
+		//SHOW_ALL_AT_START: true,
+		SIR: [0,0,1],
+		SHOW_HAND: "tutorial_1"
 	},
 
-	/*
-
-	"12": {
-		hide: ["section_r","section_meta","label_transmission","label_c_recovery","c_waning"],
-		inputs: [
-			["p_years",5],
-			["p_speed",10]
-		],
-		checkboxes: [
-			["c_waning", true]
-		],
-		SIR: [0,0,1]
-	},
-
-	"13": {
+	"yrs-2": {
 		hide: [
-			"section_meta","c_waning","c_recovery",
+			//"section_dynamics",
+			"c_waning","c_recovery","c_exposed",
+			"section_meta_years",
+			"c_waning","c_recovery",
 			"int_block_0","int_block_1","int_block_2","int_block_3","int_block_4","int_block_5","hospital_capacity"
 		],
 		inputs: [
-			["p_years",5],
+			["p_years",10],
 			["p_speed",20],
 			//["TIME_DELTA", 0.2],
 		],
 		checkboxes: [
 			["c_recovery", true],
+			["c_exposed",true],
 			["c_waning", true]
 		],
+		SHOW_ALL_AT_START: true,
 		//SIR: [0.09,0.01,0.9]
 	},
 
-	"13b": {
+	"yrs-3": {
 		hide: [
-			"section_dynamics",
-			"section_meta","c_waning","c_recovery",
-			"int_block_0","int_block_1","int_block_2","int_block_3","int_block_4","int_block_5",
+			//"section_dynamics",
+			"c_waning","c_recovery","c_exposed",
+			"section_meta_years",
+			"c_waning","c_recovery",
+			"int_block_0","int_block_1","int_block_2","int_block_3",/*"int_block_4",*/"int_block_5","hospital_capacity"
 		],
 		inputs: [
-			["p_years",5],
-			["p_speed",20],
-			//["TIME_DELTA", 0.2],
-		],
-		checkboxes: [
-			["c_recovery", true],
-			["c_waning", true]
-		],
-		SIR: [0.09,0.01,0.9]
-	},
-
-	"14": {
-		hide: [
-			"section_dynamics",
-			"section_meta","c_waning","c_recovery",
-			"int_block_0","int_block_1","int_block_2","int_block_3","int_block_5",
-		],
-		inputs: [
-			["p_years",5],
+			["p_years",10],
 			["p_speed",20],
 			["p_summer",1],
 			//["TIME_DELTA", 0.2],
 		],
 		checkboxes: [
 			["c_recovery", true],
+			["c_exposed",true],
 			["c_waning", true]
 		],
+		SHOW_ALL_AT_START: true,
 		//SIR: [0.09,0.01,0.9]
 	},
 
-	"15": {
+
+	"yrs-4": {
 		hide: [
 			"section_dynamics",
-			"section_meta","c_waning","c_recovery",
-			"int_block_0","int_block_1","int_block_2","int_block_3",
+			//"c_waning","c_recovery","c_exposed",
+			"section_meta_years",
+			"c_waning","c_recovery",
+			"int_block_0","int_block_1","int_block_2","int_block_3",/*"int_block_4","int_block_5",*/"hospital_capacity"
 		],
 		inputs: [
-			["p_years",5],
+			["p_years",10],
 			["p_speed",20],
 			["p_summer",1],
 			//["TIME_DELTA", 0.2],
 		],
 		checkboxes: [
 			["c_recovery", true],
+			["c_exposed",true],
 			["c_waning", true]
 		],
-		SIR: [0.09,0.01,0.9]
+		PLAY_RECORDING: [
+
+			// Vaccine!
+			["p_vaccines",0.62,365-60],
+			["p_vaccines",0.0,365],
+			["p_vaccines",0.62,2*365-60],
+			["p_vaccines",0.0,2*365],
+			["p_vaccines",0.62,3*365-60],
+			["p_vaccines",0.0,3*365],
+			["p_vaccines",0.62,4*365-60],
+			["p_vaccines",0.0,4*365],
+			["p_vaccines",0.62,5*365-60],
+			["p_vaccines",0.0,5*365],
+			["p_vaccines",0.62,6*365-60],
+			["p_vaccines",0.0,6*365],
+			["p_vaccines",0.62,7*365-60],
+			["p_vaccines",0.0,7*365],
+			["p_vaccines",0.62,8*365-60],
+			["p_vaccines",0.0,8*365],
+			["p_vaccines",0.62,9*365-60],
+			["p_vaccines",0.0,9*365],
+			["p_vaccines",0.62,10*365-60],
+			["p_vaccines",0.0,10*365]
+
+		],
+		SHOW_ALL_AT_START: true,
+		//SIR: [0.09,0.01,0.9]
 	},
-	*/
+
+	"yrs-5": {
+		hide: [
+			"section_dynamics",
+			//"c_waning","c_recovery","c_exposed",
+			"section_meta_years",
+			"c_waning","c_recovery",
+			"int_block_0","int_block_1","int_block_2","int_block_3",/*"int_block_4",*/"int_block_5",
+			//"hospital_capacity"
+		],
+		inputs: [
+			["p_years",10],
+			["p_speed",20],
+			["p_summer",1],
+			//["TIME_DELTA", 0.2],
+		],
+		checkboxes: [
+			["c_recovery", true],
+			["c_exposed",true],
+			["c_waning", true]
+		],
+		SHOW_ALL_AT_START: true,
+		//SIR: [0.09,0.01,0.9]
+		PLAY_RECORDING: [
+
+			// Hospital
+			["p_hospital",500,365],
+			["p_hospital",750,365*2],
+			["p_hospital",1000,365*3]
+			
+		]
+	},
 
 	//////////////////////////////////////////
 	// SANDBOX ///////////////////////////////
@@ -596,8 +697,10 @@ const STAGES = {
 	"SB": {
 		checkboxes: [
 			["c_recovery", true],
-			["c_waning", true]
-		]
+			["c_waning", true],
+			["c_exposed",true],
+		],
+		SHOW_ALL_AT_START: true,
 	},
 	
 
@@ -638,6 +741,7 @@ let setStage = (stageID)=>{
 
 	// Sliders
 	stage.inputs = stage.inputs || [];
+	changeSliders(defaultParams);
 	changeSliders(stage.inputs);
 
 	// Checkboxes
@@ -691,3 +795,25 @@ let setStage = (stageID)=>{
 
 let stageParams = new URLSearchParams(location.search);
 if(stageParams.has('stage')) setStage(stageParams.get('stage'));
+
+if(stageParams.has('format')){
+
+	if(stageParams.get('format')=='calc'){
+		document.body.style.overflow = 'hidden';
+		$('#sandbox').style.margin = '0';
+	}
+	if(stageParams.get('format')=='lines'){
+		$all('.lines').forEach((dom)=>{
+			dom.style.display = 'none';
+		});
+	}
+	if(stageParams.get('format')=='sb'){
+		$('#legend').style.display = 'none';
+		$('#sandbox').style.margin = '0';
+	}
+
+}
+
+if(stageParams.has('height')){
+	$('#sandbox').style.height = stageParams.get('height')+'px';
+}

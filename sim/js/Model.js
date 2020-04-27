@@ -27,7 +27,7 @@ let interventionStrengths = [
 	['isolate', 0.4],
 	['quarantine', 0.5],
 	['cleaning', 0.1],
-	['masks', 0.5], // 3.4 fold reduction (70%) (what CI?), subtract points for... improper usage? https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/ // cloth masks...
+	['masks', 0.35], // 3.4 fold reduction (70%) (what CI?), subtract points for... improper usage? https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/ // cloth masks...
 	['summer', 0.333] // 15°C diff * 0.0225 (Wang et al)
 ];
 
@@ -120,7 +120,7 @@ let updateModel = (days, fake)=>{
 	if(I>1) I=1;
 
 	// Susceptible & Re
-	if(!fake && s_dom.disabled){
+	if((!fake || params.FROZEN_IN_TIME) && s_dom.disabled){
 		s_dom.value = 1 - S;
 	}
 	re = newlyExposed/newlyRecovered;
@@ -451,9 +451,9 @@ let draw = ()=>{
 		});
 
 		// ICU bed capacity
-		// Actually... just make it a generous 1%.
+		// 0.6%
 		if(params.p_hospital){
-			y = (1-((params.p_hospital/100)*0.02))*canvas.height;
+			y = (1-((params.p_hospital/100)*0.006))*canvas.height;
 			h = 2;
 			ctx.fillStyle = "#000000";
 			ctx.fillRect(0,y,w,h);

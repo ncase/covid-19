@@ -244,11 +244,20 @@ bbDOM.onclick = ()=>{
 let defaultParams = [
 	["p_transmission", 4],
 	["p_exposed", 3],
-	["p_recovery", 11],
+	["p_recovery", 10],
 	["p_waning", 1],
-	["p_hospital", 100],
+	["p_hospital", 333],
 	["p_years", 2],
 	["p_speed", 30],
+
+	["p_non_s", 0],
+	["p_hygiene", 0],
+	["p_distancing", 0],
+	["p_isolate", 0],
+	["p_quarantine", 0],
+	["p_cleaning", 0],
+	["p_masks", 0],
+	["p_summer", 0],
 ];
 
 sbDOM.onclick = ()=>{
@@ -301,7 +310,7 @@ let _showAllControls = ()=>{
 	hofp.style.position = "absolute";
     hofp.style.top = "-1000px";
 	setTimeout(()=>{
-		let newHeight = hofp.getBoundingClientRect().height;
+		let newHeight = hofp.getBoundingClientRect().height + 10;
 		hofp.style.position = "";
     	hofp.style.top = "";
 		hofp.style.height = originalHeight+"px";
