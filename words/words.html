@@ -46,6 +46,8 @@
 
 <p>It&#39;s estimated that, <em>at the start</em> of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> <em>approximately</em> every 4 days.<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></p>
 
+<p>[TODO: Actually fill out source / footnotes]</p>
+
 <p>If we simulate &quot;double every 4 days&quot; <em>and nothing else</em>, on a population starting with just 0.001% <icon i></icon>, what happens? </p>
 
 <p><strong>Click &quot;Start&quot; to play the simulation! You can re-play it later with different settings:</strong> (technical caveats: <sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup>)</p>
@@ -238,8 +240,6 @@
 
 <p>That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at <strong>mitigation</strong> (reduce R, but R &gt; 1) will fail. The only way out is <strong>suppression</strong> (reduce R so that R &lt; 1).</p>
 
-<p>// pic: difference </p>
-
 <p>That is, don&#39;t merely &quot;flatten&quot; the curve, <em>crush</em> the curve. For example, with a...</p>
 
 <h3 id="toc_2">Scenario 2: Months-Long Lockdown</h3>
@@ -326,7 +326,7 @@
         <iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-<p>Thus, we can get R &lt; 1 <em>without a lockdown!</em> Much better for our mental &amp; financial health. (As for the cost to folks who have to self-isolate/quarantine, <em>governments should support them</em> – subsidized paid leave, job protection, etc. Still way cheaper than intermittent lockdown.)</p>
+<p>Thus, even without 100% contact quarantining, we can get R &lt; 1 <em>without a lockdown!</em> Much better for our mental &amp; financial health. (As for the cost to folks who have to self-isolate/quarantine, <em>governments should support them</em> – subsidized paid leave, job protection, etc. Still way cheaper than intermittent lockdown.)</p>
 
 <p>We then keep R &lt; 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the <em>right</em> way:</p>
 
@@ -383,6 +383,8 @@
 
 <p><strong>Here&#39;s a calculator of how masks reduce R! You can switch between cloth &amp; surgical:</strong> (assumes cloth masks are half as effective as surgical masks<sup id="fnref32"><a href="#fn32" rel="footnote">32</a></sup>)</p>
 
+<p>[TODO: Actually allow toggling between cloth/surgical. Currently locked to cloth]</p>
+
 <div class="sim">
         <iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
@@ -396,6 +398,8 @@
 <p>Okay, this isn&#39;t an &quot;intervention&quot; we can control, but it will help! Some news outlets report that summer won&#39;t do anything to COVID-19. They&#39;re half right: summer won&#39;t get R &lt; 1, but it <em>will</em> reduce R.</p>
 
 <p>For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.<sup id="fnref34"><a href="#fn34" rel="footnote">34</a></sup> The summer-winter difference in New York City is 15°C (60°F), so summer will make R drop by 18%.</p>
+
+<p>[TODO: Fix weird arrow glitch]</p>
 
 <div class="sim">
         <iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
@@ -420,6 +424,8 @@
 <div class="sim">
         <iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
+
+<p>[TODO: Other options like temperature testing at malls, quarantines for travellers, replacing handshaking, etc]</p>
 
 <p>. . .</p>
 
@@ -477,7 +483,9 @@
         <iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 </div>
 
-<p>Oh. Counterintuitively, summer makes the spikes <em>worse</em>, and regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, <em>creating</em> large regular spikes in the winter.</p>
+<p>Oh.</p>
+
+<p>Counterintuitively, summer makes the spikes worse <em>and</em> regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, <em>creating</em> large regular spikes in the winter.</p>
 
 <p>Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:</p>
 
@@ -503,7 +511,7 @@
 
 <p>3) Do the R &lt; 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing <em>anyway!</em>) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:</p>
 
-<p><strong>Here&#39;s a simulation of <em>no</em> lasting immunity, <em>no</em> vaccine, and not even any interventions – just increasing ICU capacity to survive the long-term spikes:</strong></p>
+<p><strong>Here&#39;s a simulation of <em>no</em> lasting immunity, <em>no</em> vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:</strong></p>
 
 <div class="sim">
         <iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
@@ -517,7 +525,11 @@
 
 <p><strong>Here&#39;s an (optional) Sandbox Mode, with <em>everything</em> available. Simulate &amp; play around to your heart&#39;s content:</strong></p>
 
-<p>[TODO TODO TODO!]</p>
+<p>[TODO: EMBED THIS IN A WAY THAT DOESN&#39;T SUCK]</p>
+
+<div class="sim">
+        <iframe src="sim?stage=SB&format=sb&height=1000" width="800" height="1000"></iframe>
+</div>
 
 <p>This basic &quot;epidemic flight simulator&quot; has taught us so much. It&#39;s let us answer questions about the past few months, next few months, and next few years.</p>
 
@@ -548,6 +560,8 @@
 <p>Don&#39;t downplay fear to build up hope. Our fear should <em>team up</em> with our hope, like the inventors of airplanes &amp; parachutes. Preparing for horrible futures is how we <em>create</em> a hopeful future.</p>
 
 <p>The only thing to fear is the idea that the only thing to fear is fear itself.</p>
+
+<p><strong>{ Please let me know what you think! How did it feel overall, any parts in particular that went too slow or were too confusing, factual inaccuracies, nuances I missed, stuff I oughta mention, etc. Thank you! }</strong></p>
 
 <div class="footnotes">
 <hr>

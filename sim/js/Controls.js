@@ -219,6 +219,13 @@ bbDOM.onclick = ()=>{
 		}
 	}
 
+	if(CURRENT_STAGE.SHOW_HAND=="tutorial_2"){
+		if(handTutorial==0){
+			hideHand();
+			handTutorial = 1;
+		}
+	}
+
 	if(daysCurrent>daysTotal || params._HACK_RESET_WHEN_I_100=="go" || params._HACK_RESET_WHEN_R_100=="go"){
 		
 		_resetTheSim();
@@ -255,7 +262,6 @@ let defaultParams = [
 	["p_distancing", 0],
 	["p_isolate", 0],
 	["p_quarantine", 0],
-	["p_cleaning", 0],
 	["p_masks", 0],
 	["p_summer", 0],
 ];
@@ -381,6 +387,15 @@ let showHand = (position)=>{
 		    wordsDOM.style.left = '17px';
 		    wordsDOM.style.textAlign = 'center';
 			$('#pointer_scroll').style.display = 'inline';
+		break;
+		case 'recording':
+			handDOM.style.top = '300px';
+		    handDOM.style.left = '280px';
+		    handDOM.style.transform = 'rotate(270deg)';
+			wordsDOM.style.top = '317px';
+		    wordsDOM.style.left = '377px';
+		    wordsDOM.style.textAlign = 'left';
+			$('#pointer_replay').style.display = 'inline';
 		break;
 	}
 

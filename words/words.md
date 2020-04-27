@@ -34,6 +34,8 @@ It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from
 
 [^serial_interval]: https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article
 
+[TODO: Actually fill out source / footnotes]
+
 If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <icon i></icon>, what happens? 
 
 **Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
@@ -257,8 +259,6 @@ Three notes:
 3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
 
 That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
-
-// pic: difference 
 
 That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
 
@@ -618,3 +618,5 @@ So what does this mean for YOU, right now?
 Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
 
 The only thing to fear is the idea that the only thing to fear is fear itself.
+
+**{ Please let me know what you think! How did it feel overall, any parts in particular that went too slow or were too confusing, factual inaccuracies, nuances I missed, stuff I oughta mention, etc. Thank you! }**

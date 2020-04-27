@@ -8,7 +8,6 @@ let int = {
 	distancing: 0, 
 	isolate: 0, 
 	quarantine: 0, 
-	cleaning: 0, 
 	masks: 0, 
 	summer: 0, 
 	vaccines: 0
@@ -26,8 +25,7 @@ let interventionStrengths = [
 	['distancing', 0.7],
 	['isolate', 0.4],
 	['quarantine', 0.5],
-	['cleaning', 0.1],
-	['masks', 0.35], // 3.4 fold reduction (70%) (what CI?), subtract points for... improper usage? https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/ // cloth masks...
+	['masks', 0.35*0.5], // 3.4 fold reduction (70%) (what CI?), subtract points for... improper usage? https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/ // cloth masks...
 	['summer', 0.333] // 15°C diff * 0.0225 (Wang et al)
 ];
 
@@ -62,7 +60,6 @@ let updateModel = (days, fake)=>{
 	int.distancing = params.p_distancing;
 	int.isolate = params.p_isolate;
 	int.quarantine = params.p_quarantine;
-	int.cleaning = params.p_cleaning;
 	int.masks = params.p_masks;
 
 	int.summer = (1 - Math.cos((daysCurrent-30)/365 * Math.TAU))/2;
@@ -151,15 +148,122 @@ canvas.style.height = (canvas.height/2)+"px";
 
 let interventionColors = [
 	['non_s', '#bbbbbb'],
-	['hygiene', 'hsl(230,100%,63%)', 0.1],
-	['distancing', 'hsl(200,100%,63%)', 0.2],
-	['isolate', 'hsl(140,100%,63%)', 0.2],
-	['quarantine', 'hsl(100,100%,63%)', 0.2],
-	['cleaning', 'hsl(290,100%,63%)', 0.2],
-	['masks', 'hsl(260,100%,63%)', 0.2],
-	['summer', 'hsl(20,100%,63%)', 0.3],
-	['vaccines', 'hsl(53, 100%, 73%)', 0.6],
+	['hygiene', '#40AEFF', 0.1],
+	['distancing', '#405CFF', 0.2],
+	['isolate', '#8FD68A', 0.2],
+	['quarantine', '#75AD6F', 0.2],
+	['masks', '#9240FF', 0.2],
+	['summer', '#FF8142', 0.3],
+	['vaccines', '#FFDF40', 0.6],
 ];
+
+// SUPER HACK SLIDER COLORS
+// I hate browsers (thx https://stackoverflow.com/a/13348618 )
+let isThisFrikkinChrome = false;
+{
+	var isChromium = window.chrome;
+	var winNav = window.navigator;
+	var vendorName = winNav.vendor;
+	var isOpera = typeof window.opr !== "undefined";
+	var isIEedge = winNav.userAgent.indexOf("Edge") > -1;
+	var isIOSChrome = winNav.userAgent.match("CriOS");
+
+	if (isIOSChrome) {
+	   // is Google Chrome on IOS
+	   isThisFrikkinChrome = true;
+	} else if(
+	  isChromium !== null &&
+	  typeof isChromium !== "undefined" &&
+	  vendorName === "Google Inc." &&
+	  isOpera === false &&
+	  isIEedge === false
+	) {
+	   // is Google Chrome
+	   isThisFrikkinChrome = true;
+	} else { 
+	   // not Google Chrome 
+	   isThisFrikkinChrome = false;
+	}
+}
+let sliderColors = JSON.parse(JSON.stringify(interventionColors));
+sliderColors.shift();
+sliderColors.push([ 'hospital', '#000' ]);
+let hackStyle = '';
+sliderColors.forEach((icPair, i)=>{
+
+	if(i==0) return;
+
+	let [name,color] = icPair;
+
+	// Huge thanks to this person https://stackoverflow.com/a/38163892
+	if(isThisFrikkinChrome){
+		hackStyle += `
+
+			@media screen and (-webkit-min-device-pixel-ratio:0) {
+			  input#p_${name} {
+			    overflow: hidden;
+			    -webkit-appearance: none;
+			    background-color: #dddddd;
+			  }
+			  input#p_${name}::-webkit-slider-runnable-track {
+			    height: 10px;
+			    -webkit-appearance: none;
+			    color: ${color};
+			    margin-top: -1px;
+			  }
+			  input#p_${name}::-webkit-slider-thumb {
+			    width: 10px;
+				-webkit-appearance: none;
+				height: 9px;
+				cursor: ew-resize;
+				background: ${color};
+				color: ${color};
+				border:1px solid rgba(0,0,0,0.5);
+				position:relative;
+				top:1px;
+				cursor:grab;
+
+				box-shadow: -250px 0 0 250px;
+			  }
+			}
+		`;
+	}else{
+		hackStyle += `
+			input#p_${name}::-moz-range-progress {
+				background-color: ${color};
+			}
+			input#p_${name}::-moz-range-track {
+				background-color: #dddddd;
+			}
+			input#p_${name}::-moz-range-thumb {
+				background: ${color};
+				border-color: ${color};
+				cursor: grab;
+			}
+
+
+			input#p_${name}::-ms-fill-lower {
+				background-color: ${color};
+			}
+
+			input#p_${name}::-ms-fill-upper {
+				background-color: #dddddd;
+			}
+			input#p_${name}::-ms-thumb {
+				background: ${color};
+				border-color: ${color};
+				cursor: grab;
+			}
+
+		`;
+	}
+
+
+});
+let hackStyleDOM = document.createElement('style');
+hackStyleDOM.innerHTML = hackStyle;
+document.head.appendChild(hackStyleDOM);
+
 
 let _isItPastHerd = false;
 
@@ -268,12 +372,14 @@ let show_percent_s = $('#show_percent_s'),
 	show_percent_i = $('#show_percent_i'),
 	show_percent_r = $('#show_percent_r'),
 	herdDOM = $('.herd');
+
 let draw = ()=>{
 
 	// Redraw
 	requestAnimationFrame(draw);
 
 	// SUCH A HACK
+	if(!CURRENT_STAGE) return;
 	if(CURRENT_STAGE._HACK_MAKE_TIME_KEEP_GOING){
 		daysTotal = Infinity;
 		daysCurrent += 1;

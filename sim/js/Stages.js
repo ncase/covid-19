@@ -302,7 +302,8 @@ const STAGES = {
 			["p_distancing",0.275,84], ["p_hygiene",1,84],
 			["p_distancing",0,340], ["p_hygiene",0,340],
 		],
-		SIR: [0.999995,0.000005,0]
+		SIR: [0.999995,0.000005,0],
+		SHOW_HAND: "tutorial_2"
 	},
 
 	"int-3": {
@@ -325,7 +326,8 @@ const STAGES = {
 			["p_distancing",1,84], ["p_hygiene",1,84],
 			["p_distancing",0,234], ["p_hygiene",0,234]
 		],
-		SIR: [0.999995,0.000005,0]
+		SIR: [0.999995,0.000005,0],
+		SHOW_HAND: "tutorial_2"
 	},
 
 	"int-4": {
@@ -355,7 +357,8 @@ const STAGES = {
 			["p_distancing",0,90+68+54+73+73+73+87+58],
 			["p_distancing",1,90+68+54+73+73+73+87+58+108],
 		],
-		SIR: [0.999995,0.000005,0]
+		SIR: [0.999995,0.000005,0],
+		SHOW_HAND: "tutorial_2"
 	},
 
 	"int-4a": {
@@ -432,7 +435,8 @@ const STAGES = {
 			["p_vaccines",0.61,550],
 			["p_vaccines",0,580],
 		],
-		SIR: [0.999995,0.000005,0]
+		SIR: [0.999995,0.000005,0],
+		SHOW_HAND: "tutorial_2"
 	},
 
 	"int-6a": {
@@ -531,7 +535,8 @@ const STAGES = {
 			["p_vaccines",0,580],
 
 		],
-		SIR: [0.999995,0.000005,0]
+		SIR: [0.999995,0.000005,0],
+		SHOW_HAND: "tutorial_2"
 	},
 
 
@@ -655,6 +660,7 @@ const STAGES = {
 
 		],
 		SHOW_ALL_AT_START: true,
+		SHOW_HAND: "tutorial_2"
 		//SIR: [0.09,0.01,0.9]
 	},
 
@@ -687,7 +693,8 @@ const STAGES = {
 			["p_hospital",750,365*2],
 			["p_hospital",1000,365*3]
 			
-		]
+		],
+		SHOW_HAND: "tutorial_2"
 	},
 
 	//////////////////////////////////////////
@@ -777,7 +784,11 @@ let setStage = (stageID)=>{
 
 	// Show hand?
 	if(stage.SHOW_HAND){
-		showHand('start');
+		if(stage.SHOW_HAND=="tutorial_2"){
+			showHand('recording');
+		}else{
+			showHand('start');
+		}
 	}
 
 	// Show herd immunity?
