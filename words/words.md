@@ -90,7 +90,9 @@ Let's find out:
 
 And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
 
-This is the the **SIR Model**[^sir] – <icon s></icon>**S**usceptible <icon s></icon>**I**nfectious <icon s></icon>**R**ecovered  – the second-most important idea in Epidemiology 101:
+This is the the **SIR Model**[^sir]    
+(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
+the second-most important idea in Epidemiology 101:
 
 [^sir]: source, and sidenote on 'infectious'
 

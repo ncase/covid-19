@@ -523,7 +523,7 @@ const STAGES = {
 			["p_hygiene",0.66,84],
 			["p_quarantine",0.4,175],
 			["p_isolate",0.4,175],
-			["p_masks",0.17,175],
+			["p_masks",0.4,175],
 
 			// Circuit Breaker
 			["p_distancing",1,365],
