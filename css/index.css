@@ -158,3 +158,10 @@ sub{
 	text-align: right;
 	padding: 0.5em 1.5em;
 }
+
+.littlefoot-footnote__content {
+	line-height: 1.5em;
+}
+.littlefoot-footnote__content a{
+	color: #549cf9;
+}

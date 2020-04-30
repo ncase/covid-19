@@ -1,3 +1,16 @@
+<div class="section">
+	<div>
+		<h1>What Happens Next?</h1>
+		<h2>COVID-19 Futures, Explained With Playable Simulations</h2>
+		<h3>by Marcel Salathé (epidemiologist) and Nicky Case (art/code)</h3>
+		<h3>🕐 28 min play/read</h3>
+	</div>
+</div>
+
+**[ Hi early-access folks! Don't share this yet, I'm still polishing it up. Once you're done please give feedback on the Patreon comments. I'll add you to the playtester credits if you want, thanks! ^_^ ]**
+
+. . .
+
 "The only thing to fear is fear itself" was stupid advice.
 
 Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
@@ -5,7 +18,7 @@ Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll
 Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
 
 * **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks?)
+* **The Next Few Months** (lockdowns, contact tracing, masks)
 * **The Next Few Years** (loss of immunity? no vaccine?)
 
 This guide (published May 1st, 2020[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
@@ -68,11 +81,25 @@ But, this simulation is *still* wrong. We're missing the fact that <icon i></ico
 
 For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
 
-With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] (again, there's variation) What happens if we simulate epidemic growth *with* recovery?
+With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <icon i></icon>:**
 
 [^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
 
-Let's find out. <b style='color:#ff4040'>Red curve</b> is *current* cases, <b style='color:#888'>Gray curve</b> is *total* cases (current + recovered):
+<div class="sim">
+		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
+</div>
+
+This is the opposite of exponential growth, the **exponential decay curve.**
+
+Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+
+![](pics/graphs_q.png)
+
+Let's find out.
+
+<b style='color:#ff4040'>Red curve</b> is *current* cases <icon i></icon>,    
+<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>),
+starts at just 0.001% <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
@@ -80,7 +107,7 @@ Let's find out. <b style='color:#ff4040'>Red curve</b> is *current* cases, <b st
 
 And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
 
-This is the the **SIR Model**[^sir]    
+This is the the **SIR Model**,[^sir]    
 (<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
 the *second*-most important idea in Epidemiology 101:
 
@@ -98,11 +125,12 @@ Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon 
 
 [^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] (again &times;2: there's variation) What happens if we add that to the simulation?
+For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
 
 [^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red curve</b> is still *current* cases (exposed + infectious), <b style='color:#888'>Gray curve</b> is *total* cases (current + recovered):
+<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <icon e></icon>),    
+<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>):
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
@@ -206,9 +234,9 @@ Brace yourselves for an emergency landing...
 
 Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
 
-[^icu_covid]: Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. [Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/) Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
+[^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
 
-[^icu_us]: “Number of ICU beds | 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
 
 Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
 
@@ -471,7 +499,7 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
 
 (other arguments for/against masks:[^mask_args])
 
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks!
+[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
 
    **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
    
@@ -541,12 +569,10 @@ You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you'
 
 ...*for how long?*
 
-"Immunity" isn't all-or-nothing, but it's still worth estimating:
-
-* The coronavirus responsible for COVID-19 is most closely related to the coronavirus responsible for SARS. SARS probably gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you less than 8 months of immunity.[^cold immunity]
-* There's reports of people getting COVID-19, recovering, then testing positive again – but it's unclear if these are real re-infections, or false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on rhesus monkeys (infected with the coronavirus responsible for COVID-19) showed immunity for at least 28 days.[^monkeys]
+* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
+* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
+* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
+* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
 
 But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
 
@@ -558,15 +584,24 @@ But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
 
 [^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
 
-Let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+For these simulations, let's say it's 1 year.
+**Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*:
 
 <div class="sim">
-		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
+		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
+
+Return of the exponential decay!
 
 This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
 
 ![](pics/seirs.png)
+
+Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+
+<div class="sim">
+		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
+</div>
 
 In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
 
@@ -659,3 +694,5 @@ So what does this mean for YOU, right now?
 Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
 
 The only thing to fear is the idea that the only thing to fear is fear itself.
+
+**[ If you'd like, please give me feedback on the Patreon comments! Don't share this yet, it'll go live tomorrow May 1st noon Eastern time. Thank you so much! 💖 ]**

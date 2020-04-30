@@ -191,7 +191,7 @@ sliderColors.push([ 'hospital', '#000' ]);
 let hackStyle = '';
 sliderColors.forEach((icPair, i)=>{
 
-	if(i==0) return;
+	//if(i==0) return;
 
 	let [name,color] = icPair;
 
@@ -530,19 +530,19 @@ let draw = ()=>{
 		// R
 		y += h;
 		h = R * canvas.height;
-		ctx.fillStyle = "#cccccc";
-		ctx.fillRect(0,y,w,h);
-
-		// I
-		y += h;
-		h = I * canvas.height;
-		ctx.fillStyle = "#ff4040";
+		ctx.fillStyle = "#bbbbbb";
 		ctx.fillRect(0,y,w,h);
 
 		// E
 		y += h;
 		h = E * canvas.height;
 		ctx.fillStyle = "#FF9393";
+		ctx.fillRect(0,y,w,h);
+
+		// I
+		y += h;
+		h = I * canvas.height;
+		ctx.fillStyle = "#ff4040";
 		ctx.fillRect(0,y,w,h);
 
 		// INTERVENTIONS
