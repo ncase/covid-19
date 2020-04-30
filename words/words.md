@@ -658,7 +658,7 @@ Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s
 **Here's an (optional) Sandbox Mode, with *everything* available. Simulate & play around to your heart's content:**
 
 <div class="sim">
-		<iframe src="sim?stage=SB&format=sb&height=1000" width="800" height="1000"></iframe>
+		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
 
 This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.

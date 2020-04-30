@@ -31,6 +31,7 @@ div{
 	/*height:500px;*/
 	float:left;
 	position: relative;
+	padding-bottom: 40px;
 }
 
 #label_s{
@@ -198,6 +199,7 @@ hr{
 	right:15px;
 	top:8px;
 	width: 500px;
+	pointer-events: none;
 }
 #graphCanvas{
 	width:500px;
@@ -236,16 +238,16 @@ icon{
 	background-size: 100% 100%;
 }
 icon[s]{
-	background-image: url(../icons/s.png);
+	background-image: url(../../icons/s.png);
 }
 icon[e]{
-	background-image: url(../icons/e.png);
+	background-image: url(../../icons/e.png);
 }
 icon[i]{
-	background-image: url(../icons/i.png);
+	background-image: url(../../icons/i.png);
 }
 icon[r]{
-	background-image: url(../icons/r.png);
+	background-image: url(../../icons/r.png);
 }
 
 #legend{
@@ -279,7 +281,7 @@ icon[r]{
 }
 #hand{
 	position: absolute;
-	background: url(../icons/hand.png);
+	background: url(../../icons/hand.png);
 	background-size: 100% 100%;
 	width:80px; height:80px;
 
@@ -310,7 +312,7 @@ icon[r]{
 .control_icon{
 	width:36px;
 	height:36px;
-	background: url(../icons/controls.png);
+	background: url(../../icons/controls.png);
 	background-size: auto 100%;
 	display: inline-block;
 
@@ -325,4 +327,8 @@ icon[r]{
 }
 .control_icon[reset]{
 	background-position: -300% 0;
+}
+
+.simplebar-wrapper{
+	height: 450px !important;
 }
