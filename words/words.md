@@ -2,8 +2,8 @@
 	<div>
 		<h1>What Happens Next?</h1>
 		<h2>COVID-19 Futures, Explained With Playable Simulations</h2>
-		<h3>by Marcel Salathé (epidemiologist) and Nicky Case (art/code)</h3>
-		<h3>🕐 28 min play/read</h3>
+		<h3>by <a href='https://scholar.google.com/citations?user=_wHMGkUAAAAJ&hl=en'>Marcel Salathé</a> (epidemiologist) and <a href='https://ncase.me/'>Nicky Case</a> (art/code)</h3>
+		<h3>🕐 30 min play/read</h3>
 	</div>
 </div>
 
@@ -257,9 +257,7 @@ Even if only 0.5% of infected die – a generous assumption when there's no more
 
 The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
 
-[^yong]: “[Graham Medley] says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...]
-    
-    The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all. [...] “It’s been a case of how not to communicate during an outbreak,” says Devi Sridhar, a public-health specialist at the University of Edinburgh.”
+[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
     
     From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
@@ -297,7 +295,7 @@ Three notes:
 
 That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
 
-// TODO: pic difference
+![](pics/mitigation_vs_suppression.png)
 
 That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
 
@@ -319,7 +317,7 @@ So, what, do we just lockdown again & again?
 
 ###Scenario 3: Intermittent Lockdown
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper[^lockdown_harvard].
+This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
 
 [^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
@@ -585,7 +583,7 @@ But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
 [^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
 
 For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*:
+**Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>

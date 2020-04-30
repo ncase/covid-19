@@ -36,7 +36,7 @@
 					
 					<div id="label_c_recovery">
 						<input class="sim_checkbox" type="checkbox" id="c_recovery">
-						Becomes <icon r></icon> in <span id="label_p_recovery">N</span> days
+						Takes <span id="label_p_recovery">N</span> days to go from <icon i></icon> to <icon r></icon>
 						<br>
 						<input class="sim_input" type="range" id="p_recovery" min="1" max="30" step="1" value="10">
 					</div>
@@ -140,15 +140,28 @@
 
 			<div id="sim_controls">
 				<div class="big_button">
-					<div id="bb_start">▶ Start</div>
-					<div id="bb_pause">❙❙ Pause</div>
-					<div id="bb_continue">▶ Continue</div>
-					<div id="bb_reset">↺ Reset</div>
+					<div id="bb_start">
+						<div class='control_icon' start></div>
+						Start
+					</div>
+					<div id="bb_pause">
+						<div class='control_icon' pause></div>
+						Pause
+					</div>
+					<div id="bb_continue">
+						<div class='control_icon' continue></div>
+						Continue
+					</div>
+					<div id="bb_reset">
+						<div class='control_icon' reset></div>
+						Reset
+					</div>
 				</div>
-				<div class="small_button">
-					<div id="sb_reset">↺ Reset</div>
-					<div id="sb_replay">↺ Replay what you just did</div>
-					<div id="sb_params">↺ Reset all sliders</div>
+				<div id="sb_reset">
+					Reset All
+				</div>
+				<div id="sb_replay">
+					Replay Recording
 				</div>
 			</div>
 

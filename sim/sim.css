@@ -4,6 +4,7 @@ body{
 	font-size: 15px;
 	font-weight: normal;
 	background: #ddd;
+	line-height: 15px;
 }
 div{
 	-webkit-user-select: none;  /* Chrome all / Safari all */
@@ -48,8 +49,8 @@ div{
 }
 
 #sim_controls{
-	margin-top: 10px;
 	width: 250px;
+	position: relative;
 }
 
 .big_button{
@@ -67,6 +68,8 @@ div{
 }
 .big_button > div{
 	display: none;
+	position: relative;
+	top: -6px;
 }
 .big_button[label='start'] > #bb_start{
 	display: block;
@@ -87,28 +90,22 @@ div{
 .big_button[label='reset'] > #bb_reset{
 	display: block;
 }
-.small_button{
-	text-align: right;
-    margin-top: 3px;
+
+#sb_reset, #sb_replay{
+	position: absolute;
     color: #999;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 100;
     cursor: pointer;
+    bottom: -22px;
+
+    display: none;
 }
-.small_button:hover{
-	color: #aaa;
+#sb_reset:hover, #sb_replay:hover{
+	color: #bbb;
 }
-.small_button > div{
-	display: none;
-}
-.small_button[label='reset'] > #sb_reset{
-	display: block;
-}
-.small_button[label='replay'] > #sb_replay{
-	display: block;
-}
-.small_button[label='params'] > #sb_params{
-	display: block;
+#sb_reset{
+	right: 0px;
 }
 
 hr{
@@ -294,6 +291,7 @@ icon[r]{
 	position: absolute;
     font-size: 20px;
     width: 250px;
+    line-height: 1.3em;
 }
 
 @keyframes aniFrames{
@@ -306,4 +304,25 @@ icon[r]{
 	100% {
 		transform: translate(0px,0px);
 	}
+}
+
+
+.control_icon{
+	width:36px;
+	height:36px;
+	background: url(../icons/controls.png);
+	background-size: auto 100%;
+	display: inline-block;
+
+	position: relative;
+	top: 6px;
+}
+.control_icon[continue]{
+	background-position: -100% 0;
+}
+.control_icon[pause]{
+	background-position: -200% 0;
+}
+.control_icon[reset]{
+	background-position: -300% 0;
 }

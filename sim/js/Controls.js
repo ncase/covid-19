@@ -114,9 +114,11 @@ $all('.sim_input').forEach((slider)=>{
 		}
 
 		// MORE HAX
+		/*
 		if(daysCurrent==0){
 			sbDOM.setAttribute('label','params');
 		}
+		*/
 
 		// HAX
 		INPUTS_WERE_CHANGED = true;
@@ -189,7 +191,7 @@ let restart = ()=>{
 /////////////////////////////////////
 
 let bbDOM = $('.big_button');
-let sbDOM = $('.small_button');
+//let sbDOM = $('.small_button');
 
 let handTutorial = 0;
 
@@ -266,6 +268,27 @@ let defaultParams = [
 	["p_summer", 0],
 ];
 
+let _resetAll = ()=>{
+	changeSliders(defaultParams);
+	changeSliders(CURRENT_STAGE.inputs);
+	_resetTheSim();
+};
+$('#sb_reset').onclick = ()=>{
+	_resetAll();
+	_updateButtons();
+};
+
+$('#sb_replay').onclick = ()=>{
+	_resetAll();
+	recordedHistory = JSON.parse(JSON.stringify(CURRENT_STAGE.PLAY_RECORDING));
+	_updateButtons();
+
+	restart();
+	IS_PLAYING = true;
+};
+	
+
+/*
 sbDOM.onclick = ()=>{
 	if(daysCurrent==0){
 
@@ -279,27 +302,32 @@ sbDOM.onclick = ()=>{
 	}
 	_updateButtons();
 };
+*/
 
 let _updateButtons = ()=>{
 
 	if(daysCurrent > daysTotal){
 
 		bbDOM.setAttribute('label','reset');
-		sbDOM.setAttribute('label','');
+		//sbDOM.setAttribute('label','');
 	
 	}else if(IS_PLAYING){
 	
 		bbDOM.setAttribute('label','pause');
-		sbDOM.setAttribute('label','reset');
+		$('#sb_reset').style.display = 'block';
+		if(CURRENT_STAGE.PLAY_RECORDING){
+			$('#sb_replay').style.display = 'block';
+		}
+		//sbDOM.setAttribute('label','reset');
 	
 	}else{
 	
 		if(daysCurrent==0){
 			bbDOM.setAttribute('label','start');
-			sbDOM.setAttribute('label','NONE');
+			//sbDOM.setAttribute('label','NONE');
 		}else{
 			bbDOM.setAttribute('label','continue');
-			sbDOM.setAttribute('label','reset');
+			//sbDOM.setAttribute('label','reset');
 		}
 	
 	}
@@ -333,7 +361,7 @@ let _hideAllControls = ()=>{
 let _resetTheSim = ()=>{
 	_showAllControls();
 	//IS_REPLAYING_HISTORY = false;
-	//recordedHistory = [];
+	recordedHistory = [];
 	restart();
 	IS_PLAYING = false;
 };

@@ -152,6 +152,15 @@ sub{
 #shown_feetnotes{
 	display: none;
 }
+#footnotes_container ol{
+	display: inline;
+}
+#footnotes_container li{
+	display: list-item;
+}
+#footnotes_container a{
+	color: #fff;
+}
 
 #wash{
 	font-size: 12px;
@@ -165,3 +174,28 @@ sub{
 .littlefoot-footnote__content a{
 	color: #549cf9;
 }
+
+.sharable_icon{
+	width:25px;
+	height:25px;
+	background: url(../sharing/shareables.png);
+	background-size: auto 100%;
+	display: inline-block;
+
+	position: relative;
+	top:0;
+}
+.in_footer .sharable_icon{
+	width: 50px;
+	height: 50px;
+}
+.sharable_icon:hover{
+	top:-2px;
+}
+.sharable_icon[tw]{
+	background-position: -100% 0;
+}
+.sharable_icon[em]{
+	background-position: -200% 0;
+}
+

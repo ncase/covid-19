@@ -438,7 +438,7 @@ let draw = ()=>{
 
 		params._HACK_RESET_WHEN_I_100 = "go";
 		bbDOM.setAttribute('label','reset');
-		sbDOM.setAttribute('label','');
+		//sbDOM.setAttribute('label','');
 		
 		if(CURRENT_STAGE.SHOW_HAND=="tutorial_0" && handTutorial==1){
 			if(!HAND_IS_VISIBLE){
