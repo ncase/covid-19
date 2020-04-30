@@ -9,6 +9,13 @@ b, strong{
 	font-weight: bold;
 }
 
+a{
+	color: #ff4040;
+}
+a:hover{
+	color: #ff8080;
+}
+
 article > p, article > ul, article > ol, article > h1, article > h2, article > h3{
 	width: 640px;
 	margin:1em auto;
@@ -87,4 +94,67 @@ sub{
     left: calc(50% + 358px);
 	text-align: right;
 }
+#translations a, #sharing a{
+	color: #aaa;
+}
+#translations a:hover, #sharing a:hover{
+	color: #ccc;
+}
+#share_title, #share_desc{
+	display:none;
+}
 
+#footer{
+	background: #000;
+	color: #fff;
+	overflow: hidden;
+	margin-top: 2em;
+}
+#footer > div{
+	width:960px;
+	margin:3em auto;
+}
+
+#supporters{
+	color: #999;
+	font-size: 19px;
+	line-height: 1.3em;
+	columns:5;
+	text-align: center;
+}
+
+#footnotes_container{
+	background: #444;
+	color: #bbb;
+	padding-top: 2em;
+	padding-bottom: 1.5em;
+}
+#footnotes_container h2{
+    margin: 0 auto;
+    text-align: center;
+}
+.footnotes{
+	display: none;
+	width: 800px;
+	font-size: 16px;
+	line-height: 1.3em;
+	margin: 0 auto;
+}
+.footnotes hr/*, .footnotes a*/{
+	display: none;
+}
+#show_feetnotes_button{
+	cursor: pointer;
+}
+#show_feetnotes_button:hover{
+	color: #fff;
+}
+#shown_feetnotes{
+	display: none;
+}
+
+#wash{
+	font-size: 12px;
+	text-align: right;
+	padding: 0.5em 1.5em;
+}

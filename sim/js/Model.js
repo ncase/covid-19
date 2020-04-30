@@ -396,7 +396,7 @@ let draw = ()=>{
 	if((IS_PLAYING || INPUTS_WERE_CHANGED) && params._HACK_SHOW_SI_PERCENTS){
 		let digits = 3; //(params._HACK_SHOW_SI_PERCENTS===true) ? 5 : params._HACK_SHOW_SI_PERCENTS;
 		show_percent_s.innerHTML = ': '+(S*100).toFixed(digits)+'%';
-		show_percent_e.innerHTML = ': '+(I*100).toFixed(digits)+'%';
+		show_percent_e.innerHTML = ': '+(E*100).toFixed(digits)+'%';
 		show_percent_i.innerHTML = ': '+(I*100).toFixed(digits)+'%';
 		show_percent_r.innerHTML = ': '+(R*100).toFixed(digits)+'%';
 	}
@@ -533,16 +533,16 @@ let draw = ()=>{
 		ctx.fillStyle = "#cccccc";
 		ctx.fillRect(0,y,w,h);
 
-		// E
-		y += h;
-		h = E * canvas.height;
-		ctx.fillStyle = "#FF9393";
-		ctx.fillRect(0,y,w,h);
-
 		// I
 		y += h;
 		h = I * canvas.height;
 		ctx.fillStyle = "#ff4040";
+		ctx.fillRect(0,y,w,h);
+
+		// E
+		y += h;
+		h = E * canvas.height;
+		ctx.fillStyle = "#FF9393";
 		ctx.fillRect(0,y,w,h);
 
 		// INTERVENTIONS
