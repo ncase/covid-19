@@ -26,7 +26,7 @@ let interventionStrengths = [
 	['isolate', 0.4],
 	['quarantine', 0.5],
 	['masks', 0.35*0.5], // 3.4 fold reduction (70%) (what CI?), subtract points for... improper usage? https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/ // cloth masks...
-	['summer', 0.333] // 15°C diff * 0.0225 (Wang et al)
+	['summer', 0.4] // 15°C diff * 0.0225 (Wang et al)
 ];
 
 let updateModel = (days, fake)=>{
@@ -219,7 +219,7 @@ sliderColors.forEach((icPair, i)=>{
 				cursor: ew-resize;
 				background: ${color};
 				color: ${color};
-				border:1px solid rgba(0,0,0,0.5);
+				border:1px solid rgba(128,128,128,0.5);
 				position:relative;
 				top:1px;
 				cursor:grab;
@@ -554,7 +554,8 @@ let draw = ()=>{
 		interventionColors.forEach((ic)=>{
 			if(ic[0]=="non_s") return; // EXCEPT Non-Susceptibles
 			ctx.fillStyle = ic[1];
-			ctx.globalAlpha = int[ic[0]] * 0.2;//ic[2];
+			ctx.globalAlpha = int[ic[0]] * ic[2];
+			// ctx.globalAlpha = int[ic[0]] * 0.2;
 			ctx.fillRect(0,y,w,h);
 			ctx.globalAlpha = 1;
 		});
