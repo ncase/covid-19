@@ -32,7 +32,7 @@ Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you 
 * **The Next Few Months** (lockdowns, contact tracing, masks)
 * **The Next Few Years** (loss of immunity? no vaccine?)
 
-This guide (published May 1st, 2020[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
 
 [^timestamp]: NOTE: This guide was published on May 1st, 2020. Many details will become outdated, but Epidemiology 101 will remain true, and we're confident this guide will cover 95% of possible futures!
 
