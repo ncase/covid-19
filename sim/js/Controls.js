@@ -254,7 +254,7 @@ let defaultParams = [
 	["p_transmission", 4],
 	["p_exposed", 3],
 	["p_recovery", 10],
-	["p_waning", 1],
+	["p_waning", 12],
 	["p_hospital", 333],
 	["p_years", 2],
 	["p_speed", 30],

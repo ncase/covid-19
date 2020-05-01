@@ -44,9 +44,9 @@
 					
 					<div id="label_c_waning">
 						<input class="sim_checkbox" type="checkbox" id="c_waning">
-						Loses immunity <icon s></icon> in <span id="label_p_waning">N</span> years
+						Loses immunity <icon s></icon> in <span id="label_p_waning">N</span> months
 						<br>
-						<input class="sim_input" type="range" id="p_waning" min="0.5" max="5" step="0.5" value="1">
+						<input class="sim_input" type="range" id="p_waning" min="1" max="60" step="1" value="12">
 					</div>
 
 					<hr>
@@ -158,8 +158,11 @@
 						Reset
 					</div>
 				</div>
+				<div id="sb_stop">
+					Stop
+				</div>
 				<div id="sb_reset">
-					Reset All
+					Reset Sliders
 				</div>
 				<div id="sb_replay">
 					Replay Recording

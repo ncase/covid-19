@@ -45,7 +45,7 @@ let updateModel = (days, fake)=>{
 	let transmissionRate = 1/params.p_transmission,
 		incubationRate = 1/params.p_exposed,
 		recoveryRate = 1/params.p_recovery,
-		immunityLossRate = 1/(params.p_waning*365);
+		immunityLossRate = 1/(params.p_waning*(365/12));
 
 	// R0
 	r0 = transmissionRate/recoveryRate;
@@ -140,10 +140,11 @@ let updateModel = (days, fake)=>{
 
 let canvas = $('#graphCanvas');
 let context = canvas.getContext('2d');
-canvas.width = 1000;
-canvas.height = 1000;
-canvas.style.width = (canvas.width/2)+"px";
-canvas.style.height = (canvas.height/2)+"px";
+let canvasScale = 2;
+canvas.width = 500*canvasScale;
+canvas.height = 500*canvasScale;
+canvas.style.width = (canvas.width/canvasScale)+"px";
+canvas.style.height = (canvas.height/canvasScale)+"px";
 
 
 let interventionColors = [
@@ -525,12 +526,14 @@ let draw = ()=>{
 		// S
 		h = S * canvas.height;
 		ctx.fillStyle = "#eeeeee";
+		//ctx.fillStyle = "#000";
 		ctx.fillRect(0,y,w,h);
 
 		// R
 		y += h;
 		h = R * canvas.height;
 		ctx.fillStyle = "#bbbbbb";
+		//ctx.fillStyle = "#000";
 		ctx.fillRect(0,y,w,h);
 
 		// E
@@ -551,7 +554,7 @@ let draw = ()=>{
 		interventionColors.forEach((ic)=>{
 			if(ic[0]=="non_s") return; // EXCEPT Non-Susceptibles
 			ctx.fillStyle = ic[1];
-			ctx.globalAlpha = int[ic[0]] * ic[2];
+			ctx.globalAlpha = int[ic[0]] * 0.2;//ic[2];
 			ctx.fillRect(0,y,w,h);
 			ctx.globalAlpha = 1;
 		});

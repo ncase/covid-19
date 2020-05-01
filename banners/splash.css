@@ -1,0 +1,26 @@
+body{
+	margin:0;
+	background: #000;
+}
+#banner{
+    position: relative;
+    overflow: hidden;
+	width: 160px;
+    height: 480px;
+    background: url(tile.png);
+    background-size: 960px;
+    background-position: 0 0%;
+    background-color: #000;
+
+    transition: width 8s linear;
+}
+#banner[retract]{
+	transition: width 1s linear;
+}
+#icu{
+    width: 1000px;
+    background: #fff;
+    height: 4px;
+    position: absolute;
+    top: 446px;
+}

@@ -1,15 +1,26 @@
 <div class="section">
-	<div>
-		<h1>What Happens Next?</h1>
-		<h2>COVID-19 Futures, Explained With Playable Simulations</h2>
-		<h3>by <a href='https://scholar.google.com/citations?user=_wHMGkUAAAAJ&hl=en'>Marcel Salathé</a> (epidemiologist) and <a href='https://ncase.me/'>Nicky Case</a> (art/code)</h3>
-		<h3>🕐 30 min play/read</h3>
+    <div>
+    	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
+        <div style="top: 70px;font-size: 75px;font-weight: bold;">
+        	What Happens Next?
+       	</div>
+		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
+			COVID-19 Futures, Explained With Playable Simulations
+		</div>
+		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
+			<b>
+				🕐 30 min play/read
+				&nbsp;&middot;&nbsp;
+			</b>
+			by
+			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
+			(epidemiologist)
+			&
+			<a href="https://ncase.me/">Nicky Case</a>
+			(art/code)
+		</div>
 	</div>
 </div>
-
-**[ Hi early-access folks! Don't share this yet, I'm still polishing it up. Once you're done please give feedback on the Patreon comments. I'll add you to the playtester credits if you want, thanks! ^_^ ]**
-
-. . .
 
 "The only thing to fear is fear itself" was stupid advice.
 
@@ -692,5 +703,3 @@ So what does this mean for YOU, right now?
 Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
 
 The only thing to fear is the idea that the only thing to fear is fear itself.
-
-**[ If you'd like, please give me feedback on the Patreon comments! Don't share this yet, it'll go live tomorrow May 1st noon Eastern time. Thank you so much! 💖 ]**
