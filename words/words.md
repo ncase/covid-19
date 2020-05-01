@@ -34,14 +34,17 @@ Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you 
 
 This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
 
-[^timestamp]: NOTE: This guide was published on May 1st, 2020. Many details will become outdated, but Epidemiology 101 will remain true, and we're confident this guide will cover 95% of possible futures!
+[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+    
+    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
 
 So, buckle in: we're about to experience some turbulence.
 
-<div class="section">
-	<div>
-		<h1>The Last Few Months</h1>
-	</div>
+<div class="section chapter">
+    <div>
+		<img src="banners/curve.png" height=480 style="position: absolute;"/>
+        <div>The Last Few Months</div>
+    </div>
 </div>
 
 Pilots use flight simulators to learn how not to crash planes.
@@ -233,10 +236,11 @@ So now, let's use our "epidemic flight simulator" to figure this out: How can we
 
 Brace yourselves for an emergency landing...
 
-<div class="section">
-	<div>
-		<h1>The Next Few Months</h1>
-	</div>
+<div class="section chapter">
+    <div>
+		<img src="banners/curve.png" height=480 style="position: absolute;"/>
+        <div>The Next Few Months</div>
+    </div>
 </div>
 
 ...could have been worse. Here's a parallel universe we avoided:
@@ -568,10 +572,11 @@ Even under the worst-case scenario... life perseveres.
 
 So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
 
-<div class="section">
-	<div>
-		<h1>The Next Few Years</h1>
-	</div>
+<div class="section chapter">
+    <div>
+		<img src="banners/curve.png" height=480 style="position: absolute;"/>
+        <div>The Next Few Years</div>
+    </div>
 </div>
 
 You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
@@ -666,7 +671,7 @@ Even under the *worst* worst-case scenario... life perseveres.
 
 Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
 
-**Here's an (optional) Sandbox Mode, with *everything* available. Simulate & play around to your heart's content:**
+**Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
@@ -676,10 +681,11 @@ This basic "epidemic flight simulator" has taught us so much. It's let us answer
 
 So finally, let's return to...
 
-<div class="section">
-	<div>
-		<h1>The Now</h1>
-	</div>
+<div class="section chapter">
+    <div>
+		<img src="banners/curve.png" height=480 style="position: absolute;"/>
+        <div>The Now</div>
+    </div>
 </div>
 
 Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
