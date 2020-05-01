@@ -2,18 +2,56 @@
 
 # How To Translate
 
-Check to see if it's been translated
+**NOTE: I'm still editing some stuff! Words will be finalized-ish on May 4th.
+You can start on stuff below, then check for new commits on the 4th to see what else to
+translate. You're wonderful, thank you! 💖**
 
-Check to see if in Issues
+**NOTE 2: Sorry these instructions are really sloppy. Am writing this at midnight, rushing
+to publish this.**
 
-Fork this whole repo
+**NOTE 3: Indie gamedev is horrible.**
 
-Translate words.md, index.html, sim/index.html, thumbnail
+Step 1)
 
-Add to index.html with link
+Check to see if it's already been translated to your language!
+Go to the main site, look at the left sidebar.
 
-Send Pull Request
+Step 2)
 
-Wait for me
+If your language hasn't been done yet, check Github Issues to see if someone's already working on it.
+**If so:** help them!
+**If not:** fork this repo & link to your fork in a new Github Issue,
+announcing that you're translating for that language!
 
-DONE!
+Step 3)
+
+Translate `words.md`, (6000 words) then export it to html
+– make sure your Markdown app supports footnotes –
+and copy-paste that into the `<article></article>` part of `index.html`.
+
+Translate the `<head>`, sidebars, & footer of `index.html` (200 words)
+
+Translate the images in `/pics` (800 words)
+If you don't have image-editing software, ask for help on the Github Issue!
+
+Translate `sim/index.html` (100 words)
+
+Translate the thumbnail `sharing/thumbnail.png`
+
+Step 4)
+
+Use Github Pages to put your forked translation live on the interweb!
+
+Step 5)
+
+Send a Pull Request editing *just* `<div id="translations">` in `index.html`
+to add a link to your translation from the main page.
+
+Step 6)
+
+Wait for me to get off my lazy butt & accept the Pull Request (within \~72 hours? maybe?)
+
+Step 7)
+
+🎉 Party! Your translation should now be linked to from the main page.
+(Remember to close your Github Issue!)
