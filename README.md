@@ -14,7 +14,7 @@ to publish this.**
 Step 1)
 
 Check to see if it's already been translated to your language!
-Go to the main site, look at the left sidebar.
+Go to the [main site](https://ncase.me/covid-19/), look at the left sidebar.
 
 Step 2)
 
