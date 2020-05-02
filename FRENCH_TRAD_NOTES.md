@@ -27,7 +27,7 @@ Ne pas changer le nombre de lignes en traduisant. (ie ne pas rajouter/supprimer 
 | NextMonths: Scenario 0-3  | L239-L359 |  |   | |
 | NextMonths: Scenario 4  | L361-471 |  |   | |
 | NextMonths: Scenario 4+  | L473-573 |  |   | |
-| NextYears  | L575-682 |  |   | |
+| NextYears  | L575-682 | **WIP** @e-guenat |   | |
 | The Now  | L684-711 |  |   | |
 
 Dans vos MR, ne pas s'occuper de la génération de words.html et du copy/paste dans index.html. 
