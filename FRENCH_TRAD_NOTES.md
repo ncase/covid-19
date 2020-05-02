@@ -49,7 +49,9 @@ link to roosevelt sentence meaning understandable
 - L35  - faire peur to keep IMO
 - L35 - plan b ou plan de secours. Plan B sounds like nicky IMO
 - L39 convaincus for confiant may be discussed
-- L39 Epidemiologie 101 will not be understood sound French
+- L39 Epidemiologie 101 will not be understood sound French --> initiation à l'épidémiologie
+- L96 Just remember that in reality, some are dead --> "Mais garde en tête que la réalité est bien plus dure." sounds more respectful in French imo, et prends en compte à la fois mort et lésions irréversibles. To discuss
+- L96 let's pretend --> "supposons" 
 
 ### LastMonths: Curves
 
@@ -64,7 +66,7 @@ Cela devrait être fait dès que possible en repérant les expressions spécifiq
 - technical caveats: limites techniques **TO VALIDATE ** 
 - Epidémiologie 101 : **traduction compréhensible en français**
 - <icon i></icon> Infectious people --> les individus Infectieux <icon i></icon> . Noter l'inversion de l'ordre pour l'image.
-- contact tracing  
+- contact tracing 
 
 ## Get last update from nicky
 TODO On May 4th: get last updates from nickys project and stop at this version.
