@@ -63,6 +63,7 @@ Cela devrait être fait dès que possible en repérant les expressions spécifiq
 - Start (for simulations images): Lancer. Utiliser *réaliser* ou *lancer* en fonction.  
 - technical caveats: limites techniques **TO VALIDATE ** 
 - Epidémiologie 101 : **traduction compréhensible en français**
+- <icon i></icon> Infectious people --> les individus Infectieux <icon i></icon> . Noter l'inversion de l'ordre pour l'image.  
 
 
 ## Traduire /pics
