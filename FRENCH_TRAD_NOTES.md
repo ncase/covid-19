@@ -51,8 +51,16 @@ link to roosevelt sentence meaning understandable
 - L39 convaincus for confiant may be discussed
 - L39 Epidemiologie 101 will not be understood sound French
 
+### LastMonths: Curves
+
+
 ## Choix de traductions
 Ajoutez des choix de traduction de mots/expressions spécifiques qui doivent rester les mêmes dans toutes la traduction ici.
   
+- Infectious people: les individus Infectieux 
+- Suspectible people: les individus Susceptibles de contracter la maladie 
+- Start (for simulations): Lancer 
+- technical caveats: limites technique **TO VALIDATE ** 
+ , et les  (co
 - Epidémiologie 101 : blablabla
    
