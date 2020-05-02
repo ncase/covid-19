@@ -2,14 +2,14 @@
     <div>
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	What Happens Next?
+        	Ce qui nous attend.
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
+			Les Futurs du COVID-19, Expliqué par des Simulations Interactives
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
-				🕐 30 min play/read
+				🕐 30 min de jeu/lecture
 				&nbsp;&middot;&nbsp;
 			</b>
 			by
@@ -22,34 +22,34 @@
 	</div>
 </div>
 
-"The only thing to fear is fear itself" was stupid advice.
+"La seule chose dont il faille avoir peur est la peur elle-même" - Franklin D. Roosevelt. Conseil douteux.
 
-Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+Bien sûr, on nous rappelle à raison de ne pas se ruer sur le papier toilette. Mais si les responsables politiques craignent la peur et le désordre, ils minimiseront aussi les véritables dangers pour éviter toute panique générale. La peur n'est pas un problème. Le problème est la manière dont nous canalisons cette peur. Elle nous donne l'énergie pour faire face aux dangers de l'instant, et nous prépare aux dangers futurs.
 
-Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+Pour être honnête, nous (Marcel - épidémiologiste et Nicky - art/code) sommes inquiets. Tu l'es aussi n'est-ce pas? C'est pourquoi de nos peurs sont nées ces **simulations interactives**, pour que *tu* puisses à ton tour canaliser tes peurs et comprendre:
 
-* **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks)
-* **The Next Few Years** (loss of immunity? no vaccine?)
+* **Ces Derniers Mois** (épidémiologie 101, modèle SEIR, R et R<sub>0</sub>)
+* **Les Mois à Venir** (confinement, traçage de contacts, masques)
+* **Les Années à Venir** (perte d'immunité? vaccin introuvable?)
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+Ce guide (publié le 1er Mai 2020. clique sur cette note!→[^timestamp]) est censé *et* vous donner de l'espoir, *et* vous faire peur. Pour vaincre le COVID-19 **en préservant aussi nos santés mentals et financières**, nous devons faire preuve d'optimisme pour élaborer des plans, et de pessimisme pour élaborer des plans B. Comme l'a dit un jour Gladys Bronwyn Stern, *“L'optimiste invente l'avion, le pessimiste invente le parachute.”*
 
 [^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
     
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
+    **Ce guide a été publié le 1er Mai 2020.** De nombreux détails deviendront obsolètes, mais nous sommes convaincus que ce guide couvre 95% des futurs possibles, et que le cours Epidémiologie 101 sera toujours d'une grande utilité.
 
-So, buckle in: we're about to experience some turbulence.
+Donc accroche-toi: nous entrons dans une zone de turbulence.
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>Ces Derniers Mois</div>
     </div>
 </div>
 
-Pilots use flight simulators to learn how not to crash planes.
+Les pilotes utilisent des simulateurs de vols pour apprendre comment ne pas crasher des avions.
 
-**Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+**Les épidémiologistes utilisent des simulateurs d'épidémie pour apprendre comment ne pas crasher l'humanité.**
 
 So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
 
