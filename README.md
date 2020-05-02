@@ -2,6 +2,8 @@
 
 # How To Translate
 
+--> aller au [document de traduction en Francais](FRENCH_TRAD_NOTES.md)
+
 **NOTE: I'm still editing some stuff! Words will be finalized-ish on May 4th.
 You can start on stuff below, then check for new commits on the 4th to see what else to
 translate. You're wonderful, thank you! 💖**
