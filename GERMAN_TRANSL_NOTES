@@ -1,0 +1,86 @@
+# Dokumentation der Zusammenarbeit zur Übersetzung in Deutsch
+
+
+|   | Übersetzt | Korrigiert  | Abschließende Qualitätsprüfung |
+|---|---------|---|----|
+| index.html head  |   |   | |
+| index.html  footers |    |   | |
+| index.html sidebars  |    |   | |
+| /pics  |     |   | |
+| sharing/thumbnail.png  |     |   | |
+| sharing/thumbnail.png  |     |   | |
+| [words/words.md](words/words.md)  |  [voir ci-dessous](words/words.md)   |   | |
+
+## words/words.md
+
+
+|   |Zeilen | Übersetzt | Korrigiert  |Qualitätsprüfung |
+|---|---|------|---|----|
+| Misc |[L1-L23](https://github.com/TQueV/covid-19/blame/master/words/words.md#L1-L23) | **WIP** @TQueV  |   | |
+| Intro |[L25-L41](https://github.com/TQueV/covid-19/blame/master/words/words.md#L25-L41) |   |   | |
+| LastMonths: Curves | [L43-L153](https://github.com/TQueV/covid-19/blame/master/words/words.md#L43-L153) |    |   | |
+| LastMonths: R | [L155-L237](https://github.com/TQueV/covid-19/blame/master/words/words.md#L155-L237)|  |   | |
+| NextMonths: Scenario 0-3  | [L239-L359](https://github.com/TQueV/covid-19/blame/master/words/words.md#L239-L359) |  |   | |
+| NextMonths: Scenario 4  | [L361-L471](https://github.com/TQueV/covid-19/blame/master/words/words.md#L361-L471) |  |   | |
+| NextMonths: Scenario 4+  | [L473-L573](https://github.com/TQueV/covid-19/blame/master/words/words.md#L473-L573) |  |   | |
+| NextYears  | [L575-L682](https://github.com/TQueV/covid-19/blame/master/words/words.md#L575-L682) |  |   | |
+| The Now  | [L684-L711](https://github.com/TQueV/covid-19/blame/master/words/words.md#L684-L711) |  |   | |
+
+
+
+## Offene Punkte
+
+
+
+### Intro |L25-L41
+
+
+### LastMonths: Curves
+
+### Next years and Now
+
+
+## Gewählte Bezeichnungen
+
+
+- Infectious people:
+- Suspectible people:
+- Start (for simulations images):
+- technical caveats:
+- Epidémiologie 101:
+- contact tracing:
+- ICU:
+- ventilators:
+- privacy-protecting [as an ADJ]:
+- Exponential decay:
+
+- contextual notes: If title of an article or quote, I leave it in English and added a translation as the end of the note, as follows:
+[^keyword]: “quote EN” [from REF](URL) Traduction: "quote DE"
+
+## Get last update from nicky
+TODO On May 4th: get last updates from nickys project and stop at this version.
+
+## Traduire /pics [noch zu übersetzen]
+- retrouver les polices utilisées dans les images (contacter nicky si besoin)
+- rédiger les traductions dans le fichier [pics/PICS_TRANSLATION.md](pics/PICS_TRANSLATION.md), et les valider, avant de les appliquer dans les images
+
+|   |  Übersetzt | Korrigiert  | ins Bild eingefügt |
+|---|---|------|---|
+| dp3t.png |  |  |  |
+| exponential.png | |   |   |
+| graphs_q.png |  |    |   |
+| masks.png | |  |   |
+| mitigation_vs_suppression.png  |  |  |   |
+| plan.png  |  |  |   |
+| r.png  |  |  |   |
+| r2.png  |  |  |    |
+| r3.png  |  |  |    |
+| r4.png |  |  |    |
+| seir.png |  |  |    |
+| seirs.png |  |  |    |
+| sir.png |  |  |    |
+| spread.png |  |  |    |
+| susceptibles.png |  |  |    |
+| timeline1.png |  |  |    |
+| timeline2.png |  |  |    |
+| timeline3.png |  |  |    |
