@@ -12,4 +12,15 @@ L35  - faire peur to keep IMO
 L35 - plan b ou plan de secours. Plan B sounds like nicky IMO
 
 L39 convaincus for confiant may be discussed
+
+## Index.html
+head --> done
+footers --> TODO
+sidebars --> TODO
+
+## pics
+TODO
+
+## sim/index.html
+TODO
    
