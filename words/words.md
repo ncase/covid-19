@@ -350,7 +350,7 @@ Look, it's nice to draw a line saying "ICU capacity", but there's lots of import
 
 [^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
 
 Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
 
@@ -500,11 +500,9 @@ However, pandemics are like poker. **Make bets only when you're 95% sure, and yo
 
 [^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: If homemade cloth masks, same as the cost of all that soap for handwashing. If surgical masks, more expensive but still pretty cheap.
+Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
 
-Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%. (Again, you can challenge our assumptions by turning the sliders up/down)
-
-**Here's a calculator of how masks reduce R! You can switch between cloth & surgical:** (assumes cloth masks are 2/3 as effective as surgical masks[^homemade])
+Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
@@ -520,7 +518,7 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
     
     
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 2/3 of people wear *cloth* masks would tip that over to R < 1, virus contained!
+Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
 
 **Summer:**
 
@@ -545,7 +543,7 @@ But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R
 Here's a simulation a "lazy case" scenario:
 
 1. Lockdown, then
-2. A moderate amount of hygiene + "Test, Trace, Isolate" + *cloth* "Masks For All", then...
+2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
 3. One more "circuit breaker" lockdown before a vaccine's found.
 
 <div class="sim">

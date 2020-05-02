@@ -25,7 +25,7 @@ let interventionStrengths = [
 	['distancing', 0.7],
 	['isolate', 0.4],
 	['quarantine', 0.5],
-	['masks', 0.35*0.5], // 3.4 fold reduction (70%) (what CI?), subtract points for... improper usage? https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/ // cloth masks...
+	['masks', 0.35], // 3.4 fold reduction (70%) (what CI?), subtract points for... improper usage? https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/ // cloth masks...
 	['summer', 0.4] // 15°C diff * 0.0225 (Wang et al)
 ];
 
