@@ -28,7 +28,7 @@ Ne pas changer le nombre de lignes en traduisant. (ie ne pas rajouter/supprimer 
 | NextMonths: Scenario 4  | L361-471 |  |   | |
 | NextMonths: Scenario 4+  | L473-573 |  |   | |
 | NextYears  | L575-682 |  |   | |
-| NextYears  | L684-711 |  |   | |
+| The Now  | L684-711 |  |   | |
 
 Dans vos MR, ne pas s'occuper de la génération de words.html et du copy/paste dans index.html. 
 Je le ferai de manière régulière, cela permettra de s'assurer que le markdown to html est toujours réalisé par le même programme.
@@ -56,11 +56,36 @@ link to roosevelt sentence meaning understandable
 
 ## Choix de traductions
 Ajoutez des choix de traduction de mots/expressions spécifiques qui doivent rester les mêmes dans toutes la traduction ici.
-  
+Cela devrait être fait dès que possible en repérant les expressions spécifiques.
+ 
 - Infectious people: les individus Infectieux 
-- Suspectible people: les individus Susceptibles de contracter la maladie 
-- Start (for simulations): Lancer 
-- technical caveats: limites technique **TO VALIDATE ** 
- , et les  (co
-- Epidémiologie 101 : blablabla
-   
+- Suspectible people: les individus Susceptibles (de contracter la maladie) 
+- Start (for simulations images): Lancer. Utiliser *réaliser* ou *lancer* en fonction.  
+- technical caveats: limites techniques **TO VALIDATE ** 
+- Epidémiologie 101 : **traduction compréhensible en français**
+
+
+## Traduire /pics
+- retrouver les polices utilisées dans les images (contacter nicky si besoin)
+- rédiger les traductions dans le fichier [pics/PICS_TRANSLATION.md](pics/PICS_TRANSLATION.md), et les valider, avant de les appliquer dans les images 
+
+|   |  Traduit | Relu  | Appliqué à l'image |
+|---|---|------|---|
+| dp3t.png |  |  |   | 
+| exponential.png | |   |   | 
+| graphs_q.png |  |    |   | 
+| masks.png | |  |   | 
+| mitigation_vs_suppression.png  |  |  |   | 
+| plan.png  |  |  |   | 
+| r.png  |  |  |   | 
+| r2.png  |  |  |    |
+| r3.png  |  |  |    |
+| r4.png |  |  |    |
+| seir.png |  |  |    |
+| seirs.png |  |  |    |
+| sir.png |  |  |    |
+| spread.png |  |  |    |
+| susceptibles.png |  |  |    |
+| timeline1.png |  |  |    |
+| timeline2.png |  |  |    |
+| timeline3.png |  |  |    |
