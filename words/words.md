@@ -112,7 +112,8 @@ Maintenant, que se passe-t-il lorsque on simule la courbe de croissance logistiq
 Il n'y a qu'à simuler!
 
 <b style='color:#ff4040'>La courbe Rouge</b> représente les cas <icon i></icon> *actuels* ,    
-<b style='color:#999999'>La courbe Grise</b> représente le *total* de cas (actuels <icon i></icon> + guéris <icon r></icon>). <br>En commencant avec seulement 0.001% de <icon i></icon>:
+<b style='color:#999999'>La courbe Grise</b> représente le *total* de cas (actuels <icon i></icon> + guéris <icon r></icon>). 
+En commencant avec seulement 0.001% de <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
