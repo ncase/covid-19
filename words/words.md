@@ -111,8 +111,8 @@ Maintenant, que se passe-t-il lorsque on simule la courbe de croissance logistiq
 
 Il n'y a qu'à simuler!
 
-<b style='color:#ff4040'>La courbe rouge</b> représente les cas <icon i></icon> *actuels* ,    
-<b style='color:#999999'>La courbe grise</b> représente le *total* de cas (actuels <icon i></icon> + guéris <icon r></icon>). <br>En commencant avec seulement 0.001% de <icon i></icon>:
+<b style='color:#ff4040'>La courbe Rouge</b> représente les cas <icon i></icon> *actuels* ,    
+<b style='color:#999999'>La courbe Grise</b> représente le *total* de cas (actuels <icon i></icon> + guéris <icon r></icon>). <br>En commencant avec seulement 0.001% de <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
@@ -124,32 +124,32 @@ C'est le **Modèle SIR**, [^sir]
 (<icon s></icon>**S**usceptible <icon i></icon>**I**nfectieux <icon r></icon>**R**ecovered (guéri en anglais))      
 la *deuxième* idée la plus importante de notre initiation à l'épidémiologie:
 
-[^sir]: Pour des explications plus techniques sur le modèle SIR, voir [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) et [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: Pour plus d'explications techniques sur le modèle SIR, voir [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) et [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**NB: Les simulations fournies aux décideurs politiques sont bien, *bien* plus sophistiquées que ça!** Néanmoins le modèle SIR suffit pour trouver un résultat global similaire, même si certaines nuances lui échappe.
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+Ajoutons donc une autre nuance: avant qu'un <icon s></icon> devienne un <icon i></icon>, il doit d'abord être Exposé <icon e></icon>. Cela correspond au moment où l'individu possède le virus mais ne peut pas encore le transmettre – infect**é** mais pas encore infect**ieux**.
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(Cette variante est appellée le **Modèle SEIR**[^seir], avec "E" pour "Exposé" <icon e></icon>. Tu noteras que *ça ne correspond pas* au sens du mot "exposé" de tous les jours, quand tu peux *ou non* avoir le virus. La définition technique d'"Exposé" signifie que tu as bel et bien le virus. La terminologie en science est pleine d'absurdité.)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: Pour plus d'explications techniques sur le modèle SEIR, voir [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) et [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+Pour le COVID-19, on estime qu'un individu est infecté-mais-pas-encore-infectieux <icon e></icon> pendant 3 jours, *en moyenne*.[^latent] Que se passe-t-il lorsqu'on ajoute cela à la simulation?
 
-[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (traduction: En supposant que les symptômes commencent au 5ème jour, sachant que le caractère infectieux commence 2 jours avant, on devient infectieux au bout de 3 jours) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <icon e></icon>),    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>):
+<b style='color:#ff4040'>La courbe Rouge <b style='color:#FF9393'>+ Rose</b> curve</b> représente les cas *actuels* (infectieux <icon i></icon> + exposés <icon e></icon>),    
+<b style='color:#888'>La courbe Grise</b> représente le *total* de cas (actuels <icon i></icon> <icon e></icon> + guéris <icon r></icon>):
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
+Pas beaucoup de changement! Le temps que l'on passe en Exposé <icon e></icon> change le ratio de <icon e></icon>-pour-<icon i></icon>, et *date* du pic de cas... mais la *hauteur* du pic, et le nombre total de cas à la fin restent les mêmes.
 
 Why's that? Because of the *first*-most important idea in Epidemiology 101:
 
