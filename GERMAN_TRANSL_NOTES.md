@@ -2,8 +2,8 @@
 
 | Datei | Übersetzung | Korrektur | Qualitätsprüfung |
 |---|---|---|---|
-| index.html Kopfzeile | **WIP** @widomattern |  |  |
-| index.html Fusszeile |  |  |  |
+| index.html Kopfzeile | @widomattern |  |  |
+| index.html Fusszeile | **WIP** @widomattern |  |  |
 | index.html Seitenleiste |  |  |  |
 | /pics | siehe unten |  |  |
 | sharing/thumbnail.png |  |  |  |
