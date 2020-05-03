@@ -570,11 +570,11 @@ Even under the worst-case scenario... life perseveres.
 
 So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
 
-<!-- "The next years" übersetzt von jan.koelling -->
+<!-- "The next few years" übersetzt von jan.koelling -->
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>Die nächsten Jahre</div>
+        <div>Die nächsten paar Jahre</div>
     </div>
 </div>
 
