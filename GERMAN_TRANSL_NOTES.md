@@ -4,7 +4,7 @@
 |---|---|---|---|
 | index.html Kopfzeile | @widomattern |  |  |
 | index.html Fusszeile | @widomattern |  |  |
-| index.html Seitenleiste | **WIP** @widomattern |  |  |
+| index.html Seitenleiste | @widomattern |  |  |
 | /pics | siehe unten |  |  |
 | sharing/thumbnail.png |  |  |  |
 | sharing/thumbnail.png |  |  |  |
