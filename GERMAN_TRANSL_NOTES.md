@@ -28,6 +28,7 @@
 Wenn Sie während der Übersetzung Zweifel haben oder Entscheidungen treffen, die eine Erklärung benötigen, geben Sie diese bitte hier an.
 
 - gewählte Bezeichnung zu "contact tracing": wird in deutschsprachigen Medien nicht auch meist der englische Begriff benutzt? Idee: Ber der ersten Erwähnung von contact tracing "Kontaktverfolgung" in Klammern dazuschreiben, dann weiter contact tracing benutzen?
+- Schreiben wir in der Du-Form, aber Plural (Also z.B.: Probiert diesen Simulator aus .., NICHT: Probieren Sie / Probiere)?
 
 ## gewählte Bezeichnungen
 - Infectious people: 
