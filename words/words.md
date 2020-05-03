@@ -14,7 +14,7 @@
 			</b>
 			von
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologist)
+			(Epidemiologe)
 			&
 			<a href="https://ncase.me/">Nicky Case</a>
 			(art/code)
