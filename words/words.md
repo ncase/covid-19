@@ -5,14 +5,14 @@
         	Wie geht es weiter?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
+			Zukunftsszenarien von COVID-19, erklärt mit spielbaren Simulationen
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
 				🕐 Lese-/Spielzeit: 30 Min.
 				&nbsp;&middot;&nbsp;
 			</b>
-			by
+			von
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
 			(epidemiologist)
 			&
