@@ -17,7 +17,7 @@
 			(Epidemiologe)
 			&
 			<a href="https://ncase.me/">Nicky Case</a>
-			(art/code)
+			(Kunst/Code)
 		</div>
 	</div>
 </div>
