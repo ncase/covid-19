@@ -40,7 +40,7 @@ Translate the thumbnail `sharing/thumbnail.png`
 
 Step 4)
 
-Use Github Pages to put your forked translation live on the interweb!
+Use Github Pages to put your forked translation live on the interweb (Go to 'Settings' of your repository page and choose your master branch as your source)!
 
 Step 5)
 
