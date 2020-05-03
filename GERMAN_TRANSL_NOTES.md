@@ -2,7 +2,7 @@
 
 | Datei | Übersetzung | Korrektur | Qualitätsprüfung |
 |---|---|---|---|
-| index.html Kopfzeile |  |  |  |
+| index.html Kopfzeile | **WIP** @widomattern |  |  |
 | index.html Fusszeile |  |  |  |
 | index.html Seitenleiste |  |  |  |
 | /pics | siehe unten |  |  |
