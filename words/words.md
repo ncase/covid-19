@@ -22,7 +22,7 @@
 	</div>
 </div>
 
-"The only thing to fear is fear itself" was stupid advice.
+"Edina stvar, katere se je moramo bati, je strah sam" je neumen nasvet.
 
 Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
 
