@@ -4,25 +4,25 @@
 <head>
 
 	<!-- THE BIG META -->
-	<title>What Happens Next? COVID-19 Futures, Explained With Playable Simulations</title>  <!-- TRANSLATE -->
-	<meta name="description" content="an interactive guide" />  <!-- TRANSLATE: content -->
+	<title>Mi lesz most? A COVID-19 jövőképei, lejátszható szimulációkkal elmagyarázva</title>  <!-- TRANSLATE -->
+	<meta name="description" content="egy interaktív ismertető" />  <!-- TRANSLATE: content -->
 	<link rel="icon" type="image/png" href="favicon.png">
 	<meta charset="utf-8">
 	<base target="_blank">
 
 	<!-- Twitter Card data -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="What Happens Next? COVID-19 Futures, Explained With Playable Simulations">  <!-- TRANSLATE: content -->
-	<meta name="twitter:description" content="an interactive guide">  <!-- TRANSLATE: content -->
+	<meta name="twitter:title" content="Mi lesz most? A COVID-19 jövőképei, lejátszható szimulációkkal elmagyarázva">  <!-- TRANSLATE: content -->
+	<meta name="twitter:description" content="egy interaktív ismertető">  <!-- TRANSLATE: content -->
 	<meta name="twitter:image" content="https://ncase.me/covid-19/sharing/thumbnail.png">
 
 	<!-- Open Graph data -->
-	<meta property="og:title" content="What Happens Next? COVID-19 Futures, Explained With Playable Simulations">  <!-- TRANSLATE: content -->
+	<meta property="og:title" content="Mi lesz most? A COVID-19 jövőképei, lejátszható szimulációkkal elmagyarázva">  <!-- TRANSLATE: content -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://ncase.me/covid-19/">
 	<meta property="og:image" content="https://ncase.me/covid-19/sharing/thumbnail.png">
-	<meta property="og:description" content="an interactive guide">  <!-- TRANSLATE: content -->
-	<meta property="og:site_name" content="What Happens Next? COVID-19 Futures, Explained With Playable Simulations">  <!-- TRANSLATE: content -->
+	<meta property="og:description" content="egy interaktív ismertető">  <!-- TRANSLATE: content -->
+	<meta property="og:site_name" content="Mi lesz most? A COVID-19 jövőképei, lejátszható szimulációkkal elmagyarázva">  <!-- TRANSLATE: content -->
 	
 	<!-- Styles -->
 	<link rel="stylesheet" href="css/littlefoot.css"/>
@@ -63,811 +63,814 @@
 
 <article>
 	<div class="section">
-	    <div>
-	        <iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
-	        <div style="top: 70px;font-size: 75px;font-weight: bold;">
-	            What Happens Next?
-	        </div>
-	        <div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-	            COVID-19 Futures, Explained With Playable Simulations
-	        </div>
-	        <div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
-	            <b>
-	                🕐 30 min play/read
-	                &nbsp;&middot;&nbsp;
-	            </b>
-	            by
-	            <a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-	            (epidemiologist)
-	            &
-	            <a href="https://ncase.me/">Nicky Case</a>
-	            (art/code)
-	        </div>
-	    </div>
+		<div>
+			<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
+			<div style="top: 70px;font-size: 75px;font-weight: bold;">
+				Mi lesz most?
+			   </div>
+			<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
+				A COVID-19 jövőképei, lejátszható szimulációkkal elmagyarázva
+			</div>
+			<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
+				<b>
+					🕐 30 perces olvasmány
+					&nbsp;&middot;&nbsp;
+				</b>
+				sz.:
+				<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
+				(epidemiológus)
+				&
+				<a href="https://ncase.me/">Nicky Case</a>
+				(képek/kód)
+			</div>
+		</div>
 	</div>
 
-	<p>&quot;The only thing to fear is fear itself&quot; was stupid advice.</p>
+	<p>&quot;Az egyetlen dolog, amitől félni kell, az maga a félelem&quot; - ez egy hülye tanács volt.</p>
 
-	<p>Sure, don&#39;t hoard toilet paper – but if policymakers fear fear itself, they&#39;ll downplay real dangers to avoid &quot;mass panic&quot;. Fear&#39;s not the problem, it&#39;s how we <em>channel</em> our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.</p>
+	<p>Jó, ne halmozd fel a WC-papírt; de ha a döntéshozók félnek magától a félelemtől, akkor le fogják kicsinyelni a valódi veszélyeket, hogy elkerüljék a "tömeges pánik" kitörését. Nem magával a félelemmel van baj, hanem azzal, hogy mihez <em>kezdünk</em> a félelmünkkel. A félelem erőt ad, hogy megbirkózzunk a jelenlegi veszélyekkel, és felkészüljünk a későbbi veszélyekre.</p>
 
-	<p>Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That&#39;s why we&#39;ve channelled our fear into making these <strong>playable simulations</strong>, so that <em>you</em> can channel your fear into understanding:</p>
+	<p>Őszintén szólva, mi (Marcel, epidemiológus + Nicky, képek/kód) aggódunk. Lefogadjuk, hogy te is! Ezért a félelmünket mi arra használtuk fel, hogy elkészítsük ezeket a <strong>lejátszható szimulációkat</strong>, hogy aztán <em>te</em> megértést kovácsolhass a saját félelmedből:</p>
 
 	<ul>
-	<li><strong>The Last Few Months</strong> (epidemiology 101, SEIR model, R &amp; R<sub>0</sub>)</li>
-	<li><strong>The Next Few Months</strong> (lockdowns, contact tracing, masks)</li>
-	<li><strong>The Next Few Years</strong> (loss of immunity? no vaccine?)</li>
+	<li><strong>Az előző hónapok</strong> (Alapszintű epidemiológia, SEIR modell, R és R<sub>0</sub>)</li>
+	<li><strong>A következő hónapok</strong> (karantén, kontakt-nyomkövetés, maszkok)</li>
+	<li><strong>A következő évek</strong> (immunitás? ellenszer?)</li>
 	</ul>
 
-	<p>This guide (published May 1st, 2020. click this footnote!→<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>) is meant to give you hope <em>and</em> fear. To beat COVID-19 <strong>in a way that also protects our mental &amp; financial health</strong>, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, <em>“The optimist invents the airplane and the pessimist the parachute.”</em></p>
+	<p>Ezen ismertető (megjelent: 2020. május 1. Kattints erre a lábjegyzetre!→<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>) reményt <em>és</em> félelmet hivatott kelteni benned. A COVID-19 olyan módon való legyőzéséhez, hogy közben <strong>megóvjuk a szellemi egészségünket és a pénzügyi jólétünket is</strong>, a tervek kidolgozásához optimizmusra, a biztonsági tervek kidolgozásához pedig pesszimizmusra van szükségünk. Ahogy Gladys Bronwyn Stern mondta egyszer, <em>"A derűlátó feltalálja a repülőgépet, a borúlátó meg az ejtőernyőt."</em></p>
 
-	<p>So, buckle in: we&#39;re about to experience some turbulence.</p>
+	<p>Úgyhogy, kösd be magad, egy kis turbulencia jön.</p>
 
 	<div class="section chapter">
 	    <div>
 	        <img src="banners/curve.png" height=480 style="position: absolute;"/>
-	        <div>The Last Few Months</div>
+	        <div>Az előző hónapok</div>
 	    </div>
 	</div>
 
-	<p>Pilots use flight simulators to learn how not to crash planes.</p>
+	<p>A pilóták repülő-szimulátorokat használnak, hogy megtanulják, hogyan ne zuhanjon le a repülő.</p>
 
-	<p><strong>Epidemiologists use epidemic simulators to learn how not to crash humanity.</strong></p>
+	<p><strong>Az epidemiológusok járvány-szimulátorokat használnak, hogy megtanulják, hogyan ne zuhanjon össze az emberiség.</strong></p>
 
-	<p>So, let&#39;s make a very, <em>very</em> simple &quot;epidemic flight simulator&quot;! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:</p>
+	<p>Szóval, készítsünk egy nagyon, <em>nagyon</em> egyszerű "járvány-repülő szimulátort"! Ebben a szimulációban a <icon i> </icon> fertőző emberek a <icon s></icon> fogékony emberekből még több <icon i> </icon> fertőző embert tudnak csinálni:</p>
 
 	<p><img src="pics/spread.png" alt=""></p>
 
-	<p>It&#39;s estimated that, <em>at the start</em> of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, <em>on average</em>.<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup> (remember, there&#39;s a lot of variation)</p>
+	<p>Becslések szerint, egy COVID-19 kirobbanás *kezdetén*, a vírus *általában* egy <icon i></icon> emberről  4 naponta ragad át egy <icon s></icon> emberre <em>átlagosan</em>.<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup> (Ne feledd, nagy az ingadozás.)</p>
 
-	<p>If we simulate &quot;double every 4 days&quot; <em>and nothing else</em>, on a population starting with just 0.001% <icon i></icon>, what happens? </p>
+	<p>Mi történik, ha egy csupán 0,001% <icon i></icon> emberrel rendelkező lakosságon lefuttatjuk a szimulációt a "4 naponta megduplázódik" eshetőséggel <em>bármilyen más változó nélkül</em>? </p>
 
-	<p><strong>Click &quot;Start&quot; to play the simulation! You can re-play it later with different settings:</strong> (technical caveats: <sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup>)</p>
+	<p><strong>Kattints a &quot;Start&quot; gombra, hogy lejátszd a szimulációt! Később újrajátszhatod más beállításokkal:</strong> (technikai fenntartások: <sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup>)</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 	</div>
 
-	<p>This is the <strong>exponential growth curve.</strong> Starts small, then explodes. &quot;Oh it&#39;s just a flu&quot; to &quot;Oh right, flus don&#39;t create <em>mass graves in rich cities</em>&quot;. </p>
+	<p>Ez az <strong>exponenciális növekedési görbe.</strong> Lassan indul, aztán elszabadul. Először: &quot;Ó, csak egy influenza&quot;, aztán: &quot;Ja, igen, az influenzák nem hagynak hátra maguk után <em>tömeges sírhelyeket gazdag városokban</em>&quot;. </p>
 
 	<p><img src="pics/exponential.png" alt=""></p>
 
-	<p>But, this simulation is wrong. Exponential growth, thankfully, can&#39;t go on forever. One thing that stops a virus from spreading is if others <em>already</em> have the virus:</p>
+	<p>De, a szimuláció helytelen. Az exponenciális növekedés szerencsére nem tarthat örökké. Egy dolog, ami megakadályozza a vírus terjedését, az az, ha mások <em>már</em> elkapták:</p>
 
 	<p><img src="pics/susceptibles.png" alt=""></p>
 
-	<p>The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, <strong>but the fewer <icon s></icon>s there are, the <em>slower</em> <icon s></icon>s become <icon i></icon>s.</strong></p>
+	<p>Minél több a <icon i></icon> ember, annál gyorsabban lesznek <icon s></icon> emberekből <icon i></icon> emberek, <strong>de, minél kevesebb a <icon s></icon> ember, annál <em>lassabban</em> válnak <icon s></icon> emberek <icon i></icon> emberekké.</strong></p>
 
-	<p>How&#39;s this change the growth of an epidemic? Let&#39;s find out:</p>
+	<p>Hogyan befolyásolja ez a járvány terjedését? Derítsük ki:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 	</div>
 
-	<p>This is the &quot;S-shaped&quot; <strong>logistic growth curve.</strong> Starts small, explodes, then slows down again.</p>
+	<p>Ez az "S-alakú" <strong>logisztikai növekedési görbe.</strong> Lassan indul, elszabadul, majd újra lelassul.</p>
 
-	<p>But, this simulation is <em>still</em> wrong. We&#39;re missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) &quot;recovering&quot; with lung damage, or 3) dying.</p>
+	<p>De, a szimuláció <em>még mindig</em> helytelen. Nem vesszük figyelembe, hogy a <icon i></icon> fertőző emberek előbb-utóbb nem lesznek fertőzőek, mert 1) meggyógyulnak, 2) "megegyógyulnak", tüdőkárosodással, vagy 3) meghalnak.</p>
 
-	<p>For simplicity&#39;s sake, let&#39;s pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can&#39;t be infected again, and let&#39;s pretend – <em>for now!</em> – that they stay immune for life.</p>
+	<p>Az egyszerűség kedvéért, vegyük úgy, hogy minden <icon i></icon> fertőző ember <icon r></icon> meggyógyul. (Csak ne feledd, hogy a valóságban van, aki meghalt.) A <icon r></icon> emberek nem fertőződnek meg újra, és tegyük fel - <em>ideiglenesen!</em> - hogy életük végéig immunisak maradnak.</p>
 
-	<p>With COVID-19, it&#39;s estimated you&#39;re <icon i></icon> Infectious for 10 days, <em>on average</em>.<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> That means some folks will recover before 10 days, some after. <strong>Here&#39;s what that looks like, with a simulation <em>starting</em> with 100% <icon i></icon>:</strong></p>
+	<p>A COVID-19 esetében azt becslik, hogy az ember <em>általában</em> 10 napig <icon i></icon> fertőző marad.<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> Ez azt jelenti, hogy néhányan kevesebb, néhányan több, mint 10 nap alatt gyógyulnak meg. <strong>Ez így néz ki egy 100% <icon i></icon> emberrel <em>induló</em> szimulációval:</strong></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 	</div>
 
-	<p>This is the opposite of exponential growth, the <strong>exponential decay curve.</strong></p>
+	<p>Ez az exponenciális növekedés ellentéte, az <strong>exponenciális csökkenési görbe.</strong></p>
 
-	<p>Now, what happens if you simulate S-shaped logistic growth <em>with</em> recovery?</p>
+	<p>Vajon mi történik, ha <em>együtt</em> szimuláljuk az S-alakú logisztikai növekedést és a gyógyulást?</p>
 
 	<p><img src="pics/graphs_q.png" alt=""></p>
 
-	<p>Let&#39;s find out.</p>
+	<p>Derítsük ki.</p>
 
-	<p><b style='color:#ff4040'>Red curve</b> is <em>current</em> cases <icon i></icon>,<br>
-	<b style='color:#999999'>Gray curve</b> is <em>total</em> cases (current + recovered <icon r></icon>),
-	starts at just 0.001% <icon i></icon>:</p>
+	<p><b style='color:#ff4040'>Piros görbe</b>: <em>aktuális</em> esetek <icon i></icon>,<br>
+	<b style='color:#999999'>Szürke görbe</b>: <em>összes</em> eset (aktuális + meggyógyult <icon r></icon>),
+	0,001% <icon i></icon> emberrel kezdődik:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 	</div>
 
-	<p>And <em>that&#39;s</em> where that famous curve comes from! It&#39;s not a bell curve, it&#39;s not even a &quot;log-normal&quot; curve. It has no name. But you&#39;ve seen it a zillion times, and beseeched to flatten.</p>
+	<p>És <em>innen</em> származik az a híres görbe! Ez nem egy haranggörbe, de még nem is egy "log-normális" görbe. Nincs elnevezése. De már sokszor találkoztál vele és kérted, hogy laposodjon el.</p>
 
-	<p>This is the the <strong>SIR Model</strong>,<sup id="fnref5"><a href="#fn5" rel="footnote">5</a></sup><br>
-	(<icon s></icon><strong>S</strong>usceptible <icon i></icon><strong>I</strong>nfectious <icon r></icon><strong>R</strong>ecovered)<br>
-	the <em>second</em>-most important idea in Epidemiology 101:</p>
+	<p>Ez az <strong>SIR Modell</strong>,<sup id="fnref5"><a href="#fn5" rel="footnote">5</a></sup><br>
+	(<icon s></icon><strong>S</strong>usceptible (Fogékony) <icon i></icon><strong>I</strong>nfectious (Fertőző) <icon r></icon><strong>R</strong>ecovered (Meggyógyult) )<br>
+	az "Alapszintű epidemiológia" <em>második</em> legfontosabb fogalma:</p>
 
 	<p><img src="pics/sir.png" alt=""></p>
 
-	<p><strong>NOTE: The simulations that inform policy are way, <em>way</em> more sophisticated than this!</strong> But the SIR Model can still explain the same general findings, even if missing the nuances.</p>
+	<p><strong>MEGJEGYZÉS: A döntéshozókat informáló szimulációk ennél sokkal, <em>sokkal</em> kidolgozottabbak!</strong> De az SIR Modellel így is el lehet magyarázni pár általános eredményt, még ha nem is annyira árnyaltan.</p>
 
-	<p>Actually, let&#39;s add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can&#39;t pass it on yet – infect<em>ed</em> but not yet infect<em>ious</em>.</p>
+	<p>Tudod mit? Adjunk hozzá még egy árnyalatot: mielőtt egy <icon s></icon> ember <icon i></icon> lesz, először <icon e></icon> lappangóvá válik. Ebben az állapotban már elkapta a vírust, de még nem fertőző - fertőz<em>ött</em>, de még nem fertőz<em>ő</em>.</p>
 
 	<p><img src="pics/seir.png" alt=""></p>
 
-	<p>(This variant is called the <strong>SEIR Model</strong><sup id="fnref6"><a href="#fn6" rel="footnote">6</a></sup>, where the &quot;E&quot; stands for <icon e></icon> &quot;Exposed&quot;. Note this <em>isn&#39;t</em> the everyday meaning of &quot;exposed&quot;, when you may or may not have the virus. In this technical definition, &quot;Exposed&quot; means you definitely have it. Science terminology is bad.)</p>
+	<p>(Ezt a változatot <strong>SEIR Modell</strong>nek hívják<sup id="fnref6"><a href="#fn6" rel="footnote">6</a></sup>, amiben az "E": <icon e></icon> &quot;Exposed&quot; (Lappangó).</p>
 
-	<p>For COVID-19, it&#39;s estimated that you&#39;re <icon e></icon> infected-but-not-yet-infectious for 3 days, <em>on average</em>.<sup id="fnref7"><a href="#fn7" rel="footnote">7</a></sup> What happens if we add that to the simulation?</p>
+	<p>A COVID-19 esetében azt becslik, hogy ha <icon e></icon> fertőzött vagy, <em>általában</em> 3 napig még nem vagy fertőző.<sup id="fnref7"><a href="#fn7" rel="footnote">7</a></sup> Mi történik, ha hozzáadjuk ezt a szimulációhoz?</p>
 
-	<p><b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is <em>current</em> cases (infectious <icon i></icon> + exposed <icon e></icon>),<br>
-	<b style='color:#888'>Gray curve</b> is <em>total</em> cases (current + recovered <icon r></icon>):</p>
+	<p><b style='color:#ff4040'>Piros <b style='color:#FF9393'>+ Rózsaszín</b> görbe</b>: <em>aktuális</em> esetek (fertőző <icon i></icon> + lappangó <icon e></icon>),<br>
+	<b style='color:#888'>Szürke görbe</b>: <em>összes</em> eset (aktuális + meggyógyult <icon r></icon>):</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 	</div>
 
-	<p>Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and <em>when</em> current cases peak... but the <em>height</em> of that peak, and total cases in the end, stays the same.</p>
+	<p>Nincs nagy változás! A <icon e></icon> lappangó állapot időtartama megváltoztatja a <icon e></icon> és <icon i></icon> emberek arányát, és hogy <em>mikor</em> éri el a csúcsot az aktuális esetek száma... de, hogy <em>mekkora</em> ez a csúcs, valamint az összes esetek száma végül változatlan marad.</p>
 
-	<p>Why&#39;s that? Because of the <em>first</em>-most important idea in Epidemiology 101:</p>
+	<p>Miért? Az "Alapszintű epidemiológia" <em>első</em> legfontosabb fogalma miatt:</p>
 
 	<p><img src="pics/r.png" alt=""></p>
 
-	<p>Short for &quot;Reproduction number&quot;. It&#39;s the <em>average</em> number of people an <icon i></icon> infects <em>before</em> they recover (or die).</p>
+	<p>A "Reprodukciós szám" rövidítése. Ez az <em>átlagos</em> emberszám, amit egy <icon i></icon> megfertőz, <em>mielőtt</em> meggyógyul (vagy meghal).</p>
 
 	<p><img src="pics/r2.png" alt=""></p>
 
-	<p><strong>R</strong> changes over the course of an outbreak, as we get more immunity &amp; interventions.</p>
+	<p>Egy járványkitörés során az <strong>R</strong> értékét az immunisabbá válás és a közbeavatkozások befolyásolják.</p>
 
-	<p><strong>R<sub>0</sub></strong> (pronounced R-nought) is what R is <em>at the start of an outbreak, before immunity or interventions</em>. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.</p>
+	<p><strong>R<sub>0</sub></strong> az R értéke <em>a járványkitörés kezdetén, az immunitás és a közbeavatkozások előtt</em>. Az R<sub>0</sub> pontosabban határozza meg maga a vírus erősségét, de így is változó az érték különböző helyeken. Sűrűbben lakott városokban az R<sub>0</sub> értéke például magasabb, mint ritkábban lakott vidéki helyeken.</p>
 
-	<p>(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)</p>
+	<p>(A legtöbb cikk - sőt, még pár kutatási papír is! - összekeveri az R-t és az R<sub>0</sub>-t.)</p>
 
-	<p>The R<sub>0</sub> for &quot;the&quot; seasonal flu is around 1.28<sup id="fnref8"><a href="#fn8" rel="footnote">8</a></sup>. This means, at the <em>start</em> of a flu outbreak, each <icon i></icon> infects 1.28 others <em>on average.</em> (If it sounds weird that this isn&#39;t a whole number, remember that the &quot;average&quot; mom has 2.4 children. This doesn&#39;t mean there&#39;s half-children running about.)</p>
+	<p>Az idényszerűen előforduló influenza R<sub>0</sub> értéke 1,28 körül van<sup id="fnref8"><a href="#fn8" rel="footnote">8</a></sup>. Ez azt jelenti, hogy egy influenzajárvány <em>kezdetén</em> minden <icon i></icon> <em>átlagosan</em> 1,28 másik embert fertőz meg. (Ha furán hangzik, hogy nem egy egész számról van szó, gondolj arra, hogy egy "átlagos" anyukának 2,4 gyermeke van. Ez nem azt jelenti, hogy fél-gyerekek rohangálnak otthon.)</p>
 
-	<p>The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,<sup id="fnref9"><a href="#fn9" rel="footnote">9</a></sup> though one <em>not-yet-finalized</em> study estimates it was 5.7(!) in Wuhan.<sup id="fnref10"><a href="#fn10" rel="footnote">10</a></sup></p>
+	<p>A COVID-19 R<sub>0</sub> értéke becslés szerint 2,2<sup id="fnref9"><a href="#fn9" rel="footnote">9</a></sup>, bár egy, <em>még nem véglegesített</em> tanulmány szerint Wuhanban 5,7(!) volt.<sup id="fnref10"><a href="#fn10" rel="footnote">10</a></sup></p>
 
-	<p>In our simulations – <em>at the start &amp; on average</em> – an <icon i></icon> infects someone every 4 days, over 10 days. &quot;4 days&quot; goes into &quot;10 days&quot; two-and-a-half times. This means – <em>at the start &amp; on average</em> – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:<sup id="fnref11"><a href="#fn11" rel="footnote">11</a></sup>)</p>
+	<p>A szimulációinkban - <em>kezdetben és átlagosan</em> - egy <icon i></icon> 4 naponta megfertőz valakit, 10 napon keresztül. "10 nap" alatt két és fél "4 nap" telik el. Ez azt jeleni, hogy - <em>kezdetben és átlagosan</em> - minden <icon i></icon> 2,5 másik embert fertőz meg. Ezért az R<sub>0</sub> = 2,5. (fenntartások:<sup id="fnref11"><a href="#fn11" rel="footnote">11</a></sup>)</p>
 
-	<p><strong>Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time &amp; new-infection time:</strong></p>
+	<p><strong>Játszadozz el ezzel az R<sub>0</sub> kalkulátorral, hogy lásd, hogyan függ az R<sub>0</sub> értéke a gyógyulási időtől és az újabb megfertőződés idejétől:</strong></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 	</div>
 
-	<p>But remember, the fewer <icon s></icon>s there are, the <em>slower</em> <icon s></icon>s become <icon i></icon>s. The <em>current</em> reproduction number (R) depends not just on the <em>basic</em> reproduction number (R<sub>0</sub>), but <em>also</em> on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering &amp; getting natural immunity.)</p>
+	<p>De ne feledd, minél kevesebb a <icon s></icon> ember, annál <em>lassabban</em> válnak a <icon s></icon> emberek <icon i></icon> emberekké. Az <em>aktuális</em> reprodukciós szám (R) nem csak a <em>kezdeti</em> reprodukciós számtól függ (R<sub>0</sub>), hanem <em>attól is</em>, mennyien nem <icon s></icon> fogékonyak már. (Például, mert meggyógyultak és immunissá váltak.)</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 	</div>
 
-	<p>When enough people have immunity, R &lt; 1, and the virus is contained! This is called <strong>herd immunity</strong>. For flus, herd immunity is achieved <em>with a vaccine</em>. Trying to achieve &quot;natural herd immunity&quot; by letting folks get infected is a <em>terrible</em> idea. (But not for the reason you may think! We&#39;ll explain later.)</p>
+	<p>Ha elég ember immunis, akkor R &lt; 1, ezzel a vírus meg lett fékezve! Ez a <strong>nyájimmunitás</strong>. Influenzák esetében ezt <em>oltóanyaggal</em> érhetjük el. <em>Borzalmas</em> elképzelés "természetes nyájimmunitást" azzal elérni, hogy hagyjuk megfertőződni az embereket. (Nem biztos, hogy azért, amire te gondolsz! Később elmagyarázzuk.)</p>
 
-	<p>Now, let&#39;s play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:</p>
+	<p>Na, játsszunk el az SEIR Modellel újra, de most mutatjuk, hogyan változik az R<sub>0</sub> és az R értéke, valamint a nyájimmunitás-küszöb:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 	</div>
 
-	<p><strong>NOTE: Total cases <em>does not stop</em> at herd immunity, but overshoots it!</strong> And it crosses the threshold <em>exactly</em> when current cases peak. (This happens no matter how you change the settings – try it for yourself!)</p>
+	<p><strong>MEGJEGYZÉS: Az összes esetek száma <em>nem áll meg</em> a nyájimmunitás küszöbénél, hanem túllépi azt!</strong> <em>Pontosan</em> akkor lépi át a küszöbét, amikor a csúcsra ér az aktuális esetek száma. (Akárhogy változtatod a beállításokat, mindig így történik - próbáld csak ki!)</p>
 
-	<p>This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R &lt; 1. And when R &lt; 1, new cases stop growing: a peak.</p>
+	<p>Ez azért van, mert amikor több a nem <icon s></icon> ember, mint a nyájimmunitás küszöbe, akkor az R &lt; 1. Amikor pedig az R &lt; 1, nincsenek új esetek: az aktuális esetek száma elérte a csúcsot.</p>
 
-	<p><strong>If there&#39;s only one lesson you take away from this guide, here it is</strong> – it&#39;s an extremely complex diagram so please take time to fully absorb it:</p>
+	<p><strong>Ha csak egyetlen dolgot jegyzel meg ebből az ismertetőből, az legyen a következő</strong> - a diagram rendkívül összetett, szóval szánj rá egy kis időt, hogy kellően megemészthesd:</p>
 
 	<p><img src="pics/r3.png" alt=""></p>
 
-	<p><strong>This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!</strong></p>
+	<p><strong>Vagyis: NEM szükséges minden egyes fertőzést megelőznünk, de még közel mindegyiket sem, a COVID-19 megállításához!</strong></p>
 
-	<p>It&#39;s a paradox. COVID-19 is extremely contagious, yet to contain it, we &quot;only&quot; need to stop more than 60% of infections. 60%?! If that was a school grade, that&#39;s a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R &lt; 1, virus is contained! (exact formula:<sup id="fnref12"><a href="#fn12" rel="footnote">12</a></sup>)</p>
+	<p>Ez egy ellentmondás. A COVID-19 rendkívül fertőző, mégis, a megfékezéséhez elég "csak" a fertőzések 60%-át megelőznünk. 60%?! Van olyan iskola, ahol ez 2-es alá. De ha az R<sub>0</sub> = 2,5 és ebből leveszünk 61%-ot, az eredmény R = 0,975, ahol az R &lt; 1, vagyis a vírus terjedése megállt! (pontos egyenlet:<sup id="fnref12"><a href="#fn12" rel="footnote">12</a></sup>)</p>
 
 	<p><img src="pics/r4.png" alt=""></p>
 
-	<p>(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that&#39;s good you&#39;re challenging our assumptions! There&#39;ll be a &quot;Sandbox Mode&quot; at the end of this guide, where you can plug in your <em>own</em> numbers, and simulate what happens.)</p>
+	<p>(Ha azt gondolod, hogy az R<sub>0</sub> vagy a többi szám túl alacsony/magas a szimulációnkban, örülünk, hogy megkérdőjelezed a feltevéseinket! Lesz majd egy "Sandbox Mód" az ismertetőnk végén, ahol megadhatsz <em>saját</em> számokat, és kipróbálhatod a szimulációt, hogy mi történik.)</p>
 
-	<p><em>Every</em> COVID-19 intervention you&#39;ve heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing &amp; quarantining, face masks, even &quot;herd immunity&quot; – they&#39;re <em>all</em> doing the same thing:</p>
+	<p><em>Mindenféle</em> COVID-19 közbeavatkozásnak, amiről hallottál - kézmosás, fizikai távolságtartás, kijárási korlátozás, elzárkózás, kontakt-nyomkövetés, karantén, arcmaszkok, sőt, még a "nyájimmunitás" is - <em>mindnek</em> egyetlen dolog a célja:</p>
 
-	<p>Getting R &lt; 1.</p>
+	<p>Hogy elérjük az R &lt; 1-et.</p>
 
-	<p>So now, let&#39;s use our &quot;epidemic flight simulator&quot; to figure this out: How can we get R &lt; 1 in a way <strong>that also protects our mental health <em>and</em> financial health?</strong></p>
+	<p>Na most, használjuk fel a "járvány-repülő szimulátort", hogy kitaláljuk: Hogyan érhetjük el az R &lt; 1-et olyan módon, <strong>ami egyúttal megóvja a szellemi egészségünket <em>és</em> a pénzügyi jólétünket?</strong></p>
 
-	<p>Brace yourselves for an emergency landing...</p>
+	<p>Készüljetek a kényszerleszállásra...</p>
 
 	<div class="section chapter">
 	    <div>
 	        <img src="banners/curve.png" height=480 style="position: absolute;"/>
-	        <div>The Next Few Months</div>
+	        <div>A következő hónapok</div>
 	    </div>
 	</div>
 
-	<p>...could have been worse. Here&#39;s a parallel universe we avoided:</p>
+	<p>...rosszabb is lehetett volna. Itt egy párhuzamos univerzum, amit elkerültünk:</p>
 
-	<h3 id="toc_0">Scenario 0: Do Absolutely Nothing</h3>
+	<h3 id="toc_0">0. eset: Egyáltalán nem csinálunk semmit</h3>
 
-	<p>Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).<sup id="fnref13"><a href="#fn13" rel="footnote">13</a></sup> In a rich country like the USA, there&#39;s 1 ICU bed per 3400 people.<sup id="fnref14"><a href="#fn14" rel="footnote">14</a></sup> Therefore, the USA can handle 20 out of 3400 people being <em>simultaneously</em> infected – or, 0.6% of the population.</p>
+	<p>20 db COVID-19-cel fertőzött emberből körülbelül 1 db intenzív osztályra kerül.<sup id="fnref13"><a href="#fn13" rel="footnote">13</a></sup> Egy gazdag országban, mint az Egyesült Államokban, 1 ágy jut az intenzív osztályokon 3400 emberre.<sup id="fnref14"><a href="#fn14" rel="footnote">14</a></sup> Vagyis, az Egyesült Államok 20 embert tud ellátni a 3400 <em>egyidőben</em> fertőzött emberből; vagyis, a népesség 0,6%-át.</p>
 
-	<p>Even if we <em>more than tripled</em> that capacity to 2%, here&#39;s what would&#39;ve happened <em>if we did absolutely nothing:</em></p>
+	<p>Még ha <em>több mint megháromszorozzuk is</em> ezt a kapacitást, hogy elérje a 2%-ot, ez történt volna, <em>ha semmit nem teszünk:</em></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 	</div>
 
-	<p>Not good.</p>
+	<p>Nem valami szép.</p>
 
-	<p>That&#39;s what <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">the March 16 Imperial College report</a> found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
-	(remember: total cases <em>overshoots</em> herd immunity)</p>
+	<p>Ez áll <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">az Imperial College március 16-i jelentésében</a>: ha nem teszünk semmit, megtelnek az intenzív osztályok és a lakosság több mint 80%-a megfertőződik. 
+	(ne feledd: az összes eset száma <em>túllépi</em> a nyájimmunitás küszöbét)</p>
 
-	<p>Even if only 0.5% of infected die – a generous assumption when there&#39;s no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... <em>IF we did nothing.</em></p>
+	<p>Még ha csak a fertőzöttek 0,5%-a hal is meg - ami nem túlzás, tekintve, hogy tele vannak az intenzív osztályok - egy olyan nagy országban, mint az Egyesült Államok, a 300 millió lakos 80%-ának a 0,5%-a az így is 1,2 millió halott... <em>HA nem teszünk semmit.</em></p>
 
-	<p>(Lots of news &amp; social media reported &quot;80% will be infected&quot; <em>without</em> &quot;IF WE DO NOTHING&quot;. Fear was channelled into clicks, not understanding. <em>Sigh.</em>)</p>
+	<p>(Sok híradó és közösségi mádia jelentette azt, hogy az emberek "80%-a megfertőződik" <em>anélkül</em>, hogy hozzátették volna: "HA NEM TESZÜNK SEMMIT". A félelmet a nézettség növelésére használták fel, nem pedig a megértés terjesztésére. <em>Sóhaj.</em>)</p>
 
-	<h3 id="toc_1">Scenario 1: Flatten The Curve / Herd Immunity</h3>
+	<h3 id="toc_1">1. eset: A görbe ellaposítása / Nyájimmunitás</h3>
 
-	<p>The &quot;Flatten The Curve&quot; plan was touted by every public health organization, while the United Kingdom&#39;s original &quot;herd immunity&quot; plan was universally booed. They were <em>the same plan.</em> The UK just communicated theirs poorly.<sup id="fnref15"><a href="#fn15" rel="footnote">15</a></sup></p>
+	<p>A "görbe ellaposítása" tervet javasolta az összes közegészségügyi szervezet, míg az Egyesült Királyság eredeti "nyájimmunitás" tervét univerzálisan leszólták. Ezek <em>ugyanazok a tervek</em> voltak. Az Egyesült Királyság csak rosszul kommunikálta az övét.<sup id="fnref15"><a href="#fn15" rel="footnote">15</a></sup></p>
 
-	<p>Both plans, though, had a literally fatal flaw.</p>
+	<p>De mindkét tervben volt egy szó szerint végzetes hiba.</p>
 
-	<p>First, let&#39;s look at the two main ways to &quot;flatten the curve&quot;: handwashing &amp; physical distancing.</p>
+	<p>Elsőnek nézzük meg a két fő módját a "görbe ellaposításának": kézmosás és fizikai távolságtartás.</p>
 
-	<p>Increased handwashing cuts flus &amp; colds in high-income countries by ~25%<sup id="fnref16"><a href="#fn16" rel="footnote">16</a></sup>, while the city-wide lockdown in London cut close contacts by ~70%<sup id="fnref17"><a href="#fn17" rel="footnote">17</a></sup>. So, let&#39;s assume handwashing can reduce R by <em>up to</em> 25%, and distancing can reduce R by <em>up to</em> 70%:</p>
+	<p>A magas jövedelmű országok esetében az alaposabb kézmosás az influenzákat és a megfázásokat kb. 25%-kal csökkenti<sup id="fnref16"><a href="#fn16" rel="footnote">16</a></sup>, míg egész London lezárása kb. 70%-kal csökkentette a személyes érintkezést<sup id="fnref17"><a href="#fn17" rel="footnote">17</a></sup>. Szóval tegyük fel, hogy a kézmosás <em>akár</em> 25%-kal, a távolságtartás pedig <em>akár</em> 70%-kal képes lecsökkenteni az R értékét:</p>
 
-	<p><strong>Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:</strong> (this calculator visualizes their <em>relative</em> effects, which is why increasing one <em>looks</em> like it decreases the effect of the others.<sup id="fnref18"><a href="#fn18" rel="footnote">18</a></sup>)</p>
+	<p><strong>Játssz ezzel a kalkulátorral, hogy lásd, hogyan csökkenti R értékét a nem <icon s></icon> emberek %-a, a kézmosás és a távolságtartás:</strong> (Ez a kalkulátor a <em>viszonyított</em> hatásokat vizualizálja, ezért <em>tűnik</em> úgy, hogy az egyik növelése csökkenti a többi hatását.<sup id="fnref18"><a href="#fn18" rel="footnote">18</a></sup>)</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 	</div>
 
-	<p>Now, let&#39;s simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only <em>mild</em> physical distancing – so that R is lower, but still above 1:</p>
+	<p>Na, szimuláljuk le, mi történik egy COVID-19 járvánnyal, ha 2020. márciusától kezdve többet mosnánk kezet, de csak <em>mérsékelten</em> tartanánk a fizikai távolságot; így R alacsonyabb, de még mindig nagyobb mint 1:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 	</div>
 
-	<p>Three notes:</p>
+	<p>Három megjegyzés:</p>
 
 	<ol>
-	<li><p>This <em>reduces</em> total cases! <strong>Even if you don&#39;t get R &lt; 1, reducing R still saves lives, by reducing the &#39;overshoot&#39; above herd immunity.</strong> Lots of folks think &quot;Flatten The Curve&quot; spreads out cases without reducing the total. This is impossible in <em>any</em> Epidemiology 101 model. But because the news reported &quot;80%+ will be infected&quot; as inevitable, folks thought total cases will be the same no matter what. <em>Sigh.</em></p></li>
-	<li><p>Due to the extra interventions, current cases peak <em>before</em> herd immunity is reached. In fact, in this simulation, total cases only overshoots <em>a tiny bit</em> above herd immunity – the UK&#39;s plan! At that point, R &lt; 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...</p></li>
-	<li><p>You still run out of ICUs. For several months. (and remember, we <em>already</em> tripled ICUs for these simulations)</p></li>
+	<li><p>Ez <em>csökkenti</em> az összes eset számát! <strong>Még ha nem is lesz R &lt; 1, az R csökkentése így is életeket ment azzal, hogy csökken a nyájimmunitás küszöbének "meghaladása".</strong> Sokan úgy gondolják, hogy a "görbe ellaposítása" kiterjeszti az eseteket, de nem csökkenti az összes eset számát. Ez <em>bármilyen</em> "Alapszintű epidemiológia" modellen lehetetlen. De, mivel a híradó "80% feletti fertőződés"-t elkerülhetetlenként jelentett, az emberek úgy gondolták, hogy az összes eset száma ugyanannyi marad, bármit is teszünk. <em>Sóhaj.</em></p></li>
+	<li><p>A plusz közbeavatkozások miatt, az aktuális esetek száma a nyájimmunitás elérése <em>előtt</em> éri el a csúcsát. Sőt, ebben a szimulációban az összes eset száma csak <em>kicsit</em> haladja meg a nyájimmunitás küszöbét; az Egyesült Királyság tervét! Ezen a ponton R &lt; 1, szóval minden más közbeavatkozást elfelejthetünk, a COVID-19 pedig meg lett fékezve! Nos, egyetlen problémától eltekintve...</p></li>
+	<li><p>Így is megtelnek az intenzív osztályok. Hónapokra. (És ne feledd, <em>már korábban</em> megháromszoroztuk őket az ilyen esetekre.)</p></li>
 	</ol>
 
-	<p>That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at <strong>mitigation</strong> (reduce R, but R &gt; 1) will fail. The only way out is <strong>suppression</strong> (reduce R so that R &lt; 1).</p>
+	<p>Ez volt a másik eredménye az Imperial College március 16-i jelentésének, ami meggyőzte az Egyesült Királyságot, hogy mondjon le eredeti tervéről. A <strong>mérséklésre</strong> való bármilyen törekvés (ami következményeképp R értéke csökken, de R &gt; 1 marad) kudarcot vall. Az egyedüli lehetőség az <strong>elfolytás</strong> (ami következményeképp R értéke 1 alá csökken; R &lt; 1).</p>
 
 	<p><img src="pics/mitigation_vs_suppression.png" alt=""></p>
 
-	<p>That is, don&#39;t merely &quot;flatten&quot; the curve, <em>crush</em> the curve. For example, with a...</p>
+	<p>Vagyis, ne csak "laposítsuk el" a görbét, hanem <em>lapítsuk ki</em> azt. Például úgy, hogy...</p>
 
-	<h3 id="toc_2">Scenario 2: Months-Long Lockdown</h3>
+	<h3 id="toc_2">2. eset: Több hónapos karantén</h3>
 
-	<p>Let&#39;s see what happens if we <em>crush</em> the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – <em>finally</em> – return to normal life:</p>
+	<p>Nézzük mi történik, ha <em>kilapítjuk</em> a görbét egy 5 hónapos karanténnal, szinte nullára csökkentjük a <icon i></icon> emberek számát, majd végre - <em>végre</em> - visszatérünk a rendes életünkhöz:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 	</div>
 
-	<p>Oh.</p>
+	<p>Ó.</p>
 
-	<p>This is the &quot;second wave&quot; everyone&#39;s talking about. As soon as we remove the lockdown, we get R &gt; 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that&#39;s almost as bad as if we&#39;d done Scenario 0: Absolutely Nothing.</p>
+	<p>Ez a "második hullám", amiről beszélnek. Amint feloldjuk a karantént, az R megint nagyobb lesz, mint 1. Szóval egyetlen hátramaradt <icon i></icon> (vagy importált <icon i></icon>) ember képes majdnem olyan durván megnövelni az esetek számát, mintha azt csináltuk volna, amit a 0. esetben: semmit.</p>
 
-	<p><strong>A lockdown isn&#39;t a cure, it&#39;s just a restart.</strong></p>
+	<p><strong>A karantén nem megoldás, csupán újrakezdés.</strong></p>
 
-	<p>So, what, do we just lockdown again &amp; again?</p>
+	<p>Szóval, mi lesz? Újra és újra karantént rendelünk el?</p>
 
-	<h3 id="toc_3">Scenario 3: Intermittent Lockdown</h3>
+	<h3 id="toc_3">3. eset: Időszakos karantén</h3>
 
-	<p>This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.<sup id="fnref19"><a href="#fn19" rel="footnote">19</a></sup></p>
+	<p>Ezt a megoldást először az Imperial College március 16-i jelentése javasolta, majd később egy harvardi írás.<sup id="fnref19"><a href="#fn19" rel="footnote">19</a></sup></p>
 
-	<p><strong>Here&#39;s a simulation:</strong> (After playing the &quot;recorded scenario&quot;, you can try simulating your <em>own</em> lockdown schedule, by changing the sliders <em>while</em> the simulation is running! Remember you can pause &amp; continue the sim, and change the simulation speed)</p>
+	<p><strong>Itt egy szimuláció:</strong> (Miután lejátszottad a "rögzített forgatókönyvet", megpróbálhatod <em>te magad</em> időzíteni a karanténokat a csúszkák segítségével, <em>miközben</em> fut a szimuláció! Ne feledd, hogy szüneteltetheted, aztán folytathatod a szimulációt és a sebességét is megváltoztathatod.)</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 	</div>
 
-	<p>This <em>would</em> keep cases below ICU capacity! And it&#39;s <em>much</em> better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there&#39;s no vaccine, repeat until herd immunity is reached... in 2022.)</p>
+	<p>Ez az intenzív osztályok kapacitása alatt <em>tartaná</em> az esetek számát! És <em>sokkal</em> jobb, mint egy 18 hónapos karantén, míg elérhető nem lesz az oltóanyag. Annyit kell tennünk, hogy... bezárkózunk pár hónapra, kimozdulunk pár hónapra, ezt ismételgetve az oltóanyag kibocsájtásáig. (Ha pedig nincs oltóanyag, akkor a nyájimmunitás eléréséig, ami... 2022-ben lesz.)</p>
 
-	<p>Look, it&#39;s nice to draw a line saying &quot;ICU capacity&quot;, but there&#39;s lots of important things we <em>can&#39;t</em> simulate here. Like:</p>
+	<p>Nézd, meghúzhatunk egy "intenzív osztály kapacitása" vonalat, de sok fontos dolgot <em>nem tudunk</em> szimulálni. Például:</p>
 
-	<p><strong>Mental Health:</strong> Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it&#39;s as associated with an early death as smoking 15 cigarettes a day.<sup id="fnref20"><a href="#fn20" rel="footnote">20</a></sup></p>
+	<p><strong>Szellemi egészség:</strong> A magány a depresszió, a szorongás és az öngyilkosság egyik legnagyobb kiváltó kockázati tényezője. És ugyanannyi eséllyel vezethet korai halálhoz, mint a napi 15 cigaretta elszívása.<sup id="fnref20"><a href="#fn20" rel="footnote">20</a></sup></p>
 
-	<p><strong>Financial Health:</strong> &quot;What about the economy&quot; sounds like you care more about dollars than lives, but &quot;the economy&quot; isn&#39;t just stocks: it&#39;s people&#39;s ability to provide food &amp; shelter for their loved ones, to invest in their kids&#39; futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty <em>itself</em> has horrible impacts on mental and physical health.</p>
+	<p><strong>Pénzügyi jólét:</strong> Ha felteszed a "Mi lesz a gazdasággal?" kérdést, úgy néznek rád, mintha jobban érdekelne a pénz mint az emberélet. De "a gazdaság" nem csak részvényről szól, hanem az emberek képességéről, hogy élelmet és otthont biztosítsanak a szeretteiknek, hogy befektessenek a gyermekeik jövőjébe és élvezzék a művészetet, ételeket, videójátékokat stb.; azokat a dolgokat, amik értelmet adnak az életnek. Különben is, <em>maga a szegénység</em> is szörnyű hatással van a szellemi és fizikai egészségre.</p>
 
-	<p>Not saying we <em>shouldn&#39;t</em> lock down again! We&#39;ll look at &quot;circuit breaker&quot; lockdowns later. Still, it&#39;s not ideal.</p>
+	<p>Nem azt mondjuk, hogy <em>nem szabadna</em> újra karanténba vonulnunk! Később megnézzük a "megszakító" karanténokat. Egyszerűen csak nem ideális.</p>
 
-	<p>But wait... haven&#39;t Taiwan and South Korea <em>already</em> contained COVID-19? For 4 whole months, <em>without</em> long-term lockdowns?</p>
+	<p>De várjunk... Taiwan és Dél-Korea nem fékezte <em>már</em> meg a COVID-19-et? Méghozzá már 4 hónapja, hosszabb karanténok <em>nélkül</em>?</p>
 
-	<p>How?</p>
+	<p>Hogyan?</p>
 
-	<h3 id="toc_4">Scenario 4: Test, Trace, Isolate</h3>
+	<h3 id="toc_4">4. eset: Tesztelés, nyomon követés, elszigetelés</h3>
 
-	<p><em>&quot;Sure, we *could&#39;ve* done what Taiwan &amp; South Korea did at the start, but it&#39;s too late now. We missed the start.&quot;</em></p>
+	<p><em>"Persze, *csinálhattuk* volna azt, amit Taiwan és Dél-Korea a kezdeteknél, de már túl késő. Lekéstünk a kezdetekről."</em></p>
 
-	<p>But that&#39;s exactly it! “A lockdown isn&#39;t a cure, it&#39;s just a restart”... <strong>and a fresh start is what we need.</strong></p>
+	<p>De pontosan erről van szó! "A karantén nem megoldás, csak újrakezdés"... <strong>és új kezdetre van szükségünk.</strong></p>
 
-	<p>To understand how Taiwan &amp; South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection<sup id="fnref21"><a href="#fn21" rel="footnote">21</a></sup>:</p>
+	<p>Hogy megértsük, hogyan fékezte meg Taiwan és Dél-Korea a COVID-19-et, ismernünk kell egy tipikus COVID-19 fertőzés pontos szakaszait<sup id="fnref21"><a href="#fn21" rel="footnote">21</a></sup>:</p>
 
 	<p><img src="pics/timeline1.png" alt=""></p>
 
-	<p>If cases only self-isolate when they know they&#39;re sick (that is, they feel symptoms), the virus can still spread:</p>
+	<p>Ha az ember csak akkor szigeteli el magát, amikor már tudja, hogy beteg (vagyis érzi a tüneteket), a vírus tovább tud terjedni:</p>
 
 	<p><img src="pics/timeline2.png" alt=""></p>
 
-	<p>And in fact, 44% of all transmissions are like this: <em>pre</em>-symptomatic! <sup id="fnref22"><a href="#fn22" rel="footnote">22</a></sup></p>
+	<p>Sőt, a vírus 44%-ban így terjed: tünet <em>előtt</em>! <sup id="fnref22"><a href="#fn22" rel="footnote">22</a></sup></p>
 
-	<p>But, if we find <em>and quarantine</em> a symptomatic case&#39;s recent close contacts... we stop the spread, by staying one step ahead!</p>
+	<p>De, amennyiben megtaláljuk <em>és elszigeteljük</em> azokat az embereket, akik tüneteket mutató emberrel érintkeztek a közelmúltban... megfékezzük a terjedést, azzal, hogy egy lépéssel előbbre járunk!</p>
 
 	<p><img src="pics/timeline3.png" alt=""></p>
 
-	<p>This is called <strong>contact tracing</strong>. It&#39;s an old idea, was used at an unprecedented scale to contain Ebola<sup id="fnref23"><a href="#fn23" rel="footnote">23</a></sup>, and now it&#39;s core part of how Taiwan &amp; South Korea are containing COVID-19!</p>
+	<p>Ezt <strong>kontakt-nyomkövetésnek</strong> hívják. Ez egy régi ötlet, az Ebola megfékezésére használták, előtte még sosem látott szinten<sup id="fnref23"><a href="#fn23" rel="footnote">23</a></sup>, ma pedig szerves része annak a módszernek, ahogyan Taiwan és Dél-Korea kordában tartja a COVID-19-et!</p>
 
-	<p>(It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)</p>
+	<p>(Ezzel a korlátozottan elérhető teszteket is hatékonyabban tudjuk használni; megtalálhatjuk a tünet előtti <icon i></icon> embereket anélkül, hogy majdnem mindenkit tesztelni kellene.)</p>
 
-	<p>Traditionally, contacts are found with in-person interviews, but those <em>alone</em> are too slow for COVID-19&#39;s ~48 hour window. That&#39;s why contact tracers need help, and be supported by – <em>NOT</em> replaced by – contact tracing apps.</p>
+	<p>A kontaktokat hagyományosan személyes interjúk alapján találják meg, de ez <em>önmagában</em> túl lassú módszer a COVID-19 kb. 48 órás ablakához képest. Ezért van segítségre szükségük a kontakt-nyomkövetőknek. Támogatni kell - <em>NEM</em> pedig lecserélni! - őket kontakt-nyomkövető alkalmazásokkal.</p>
 
-	<p>(This idea didn&#39;t come from &quot;techies&quot;: using an app to fight COVID-19 was first proposed by <a href="https://science.sciencemag.org/content/early/2020/04/09/science.abb6936">a team of Oxford epidemiologists</a>.)</p>
+	<p>(Ez az ötlet nem az informatika világából ered: először <a href="https://science.sciencemag.org/content/early/2020/04/09/science.abb6936">egy csapat oxfordi epidemiológus</a> akart alkalmazást felhasználni a COVID-19 elleni küzdelemben.)</p>
 
-	<p>Wait, apps that trace who you&#39;ve been in contact with?... Does that mean giving up privacy, giving in to Big Brother?</p>
+	<p>Várjunk, egy alkalmazás, ami nyomon követi, kivel léptél kontaktba?... Ez azt jelenti, hogy bele fog látni a magánéletünkbe, mint a Big Brother?</p>
 
-	<p>Heck no! <strong><a href="https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing">DP-3T</a></strong>, a team of epidemiologists &amp; cryptographers (including one of us, Marcel Salathé) is <em>already</em> making a contact tracing app – with code available to the public – that reveals <strong>no info about your identity, location, who your contacts are, or even <em>how many contacts</em> you&#39;ve had.</strong></p>
+	<p>Szó sincs róla! <strong><a href="https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing">DP-3T</a></strong>. Epidemiológusok és kriptográfusok egy csapata (köztük van egyikünk, Marcel Salathé is) <em>már</em> egy kontakt-nyomkövető alkalmazáson dolgozik - aminek a forráskódja nyíltan elérhető lesz - és <strong>semmit nem árul el a kilétedről, pozíciódról, sem pedig arról, hogy kikkel, vagy hogy <em>mennyi emberrel léptél kontaktba</em>.</strong></p>
 
-	<p>Here&#39;s how it works:</p>
+	<p>Így működik:</p>
 
 	<p><img src="pics/dp3t.png" alt=""></p>
 
-	<p>(&amp; <a href="https://ncase.me/contact-tracing/">here&#39;s the full comic</a>)</p>
+	<p>(És <a href="https://ncase.me/contact-tracing/">itt a teljes, eredeti (angol) nyelven</a>).</p>
 
-	<p>Along with similar teams like TCN Protocol<sup id="fnref24"><a href="#fn24" rel="footnote">24</a></sup> and MIT PACT<sup id="fnref25"><a href="#fn25" rel="footnote">25</a></sup>, they&#39;ve inspired Apple &amp; Google to bake privacy-first contact tracing directly into Android/iOS.<sup id="fnref26"><a href="#fn26" rel="footnote">26</a></sup> (Don&#39;t trust Google/Apple? Good! The beauty of this system is it doesn&#39;t <em>need</em> trust!) Soon, your local public health agency may ask you to download an app. If it&#39;s privacy-first with publicly-available code, please do!</p>
+	<p>Olyan hasonló csapatokkal együtt, mint a TCN Protocol<sup id="fnref24"><a href="#fn24" rel="footnote">24</a></sup> és az MIT PACT<sup id="fnref25"><a href="#fn25" rel="footnote">25</a></sup>, arra inspirálták az Apple-t és a Google-t, hogy ezeket az adatvédelmet tisztelő kontakt-nyomkövető alkalmazásokat ültessék be az Android/iOS rendszerekbe.<sup id="fnref26"><a href="#fn26" rel="footnote">26</a></sup> (Nem bízol a Google-ben, sem az Apple-ben? Helyes! A rendszer szépsége, hogy nincs <em>szüksége</em> bizalomra!) Nemsokára megkérhet a közegészségügyi hivatalod, hogy tölts le egy alkalmazást. Ha ez az alkalmazás tiszteli az adatvédelmet és nyíltan elérhető a forráskódja, kérlek tedd meg!</p>
 
-	<p>But what about folks without smartphones? Or infections through doorknobs? Or &quot;true&quot; asymptomatic cases? Contact tracing apps can&#39;t catch all transmissions... <em>and that&#39;s okay!</em> We don&#39;t need to catch <em>all</em> transmissions, just 60%+ to get R &lt; 1.</p>
+	<p>De mi van azokkal, akiknek nincsen okostelefonjuk? Vagy a kilincs útján terjedő fertőzéssel? Vagy a "valóban" tünetmentes esetekkel? A kontakt-nyomkövető alkalmazások nem tudják az összes fertőzést megelőzni... <em>és ezzel nincs is baj!</em> Nem kell megelőznünk <em>az összes</em> fertőzést, elég a 60% feletti érték ahhoz, hogy az R &lt; 1-et elérjük.</p>
 
-	<p>(Rant about the confusion about pre-symptomatic vs &quot;true&quot; asymptomatic. &quot;True&quot; asymptomatics are rare:<sup id="fnref27"><a href="#fn27" rel="footnote">27</a></sup>)</p>
+	<p>(Megjegyzés a tünet előtti és valóban tünetmentes eset különbségéről. A "valóban" tünetmentes eset ritka:<sup id="fnref27"><a href="#fn27" rel="footnote">27</a></sup>)</p>
 
-	<p>Isolating <em>symptomatic</em> cases would reduce R by up to 40%, and quarantining their <em>pre/a-symptomatic</em> contacts would reduce R by up to 50%<sup id="fnref28"><a href="#fn28" rel="footnote">28</a></sup>:</p>
+	<p>A <em>tünetes</em> esetek elszigetelése akár 40%-kal, a <em>tünet előtti/tünetmentes</em> kontaktjaik karanténba vonulása pedig akár 50%-kal csökkentené az R értékét<sup id="fnref28"><a href="#fn28" rel="footnote">28</a></sup>:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 	</div>
 
-	<p>Thus, even without 100% contact quarantining, we can get R &lt; 1 <em>without a lockdown!</em> Much better for our mental &amp; financial health. (As for the cost to folks who have to self-isolate/quarantine, <em>governments should support them</em> – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)</p>
+	<p>Így, még 100%-os kontakt-elszigetelés nélkül is elérhetjük az R &lt; 1-et <em>karantén nélkül!</em> Ez sokkal jobb a szellemi egészésgünknek és a pénzügyi jólétünknek. (Akiknek el kell szigetelődniük, őket <em>a kormányoknak kellene támogatniuk</em>; tesztekkel, az állás védelmével, fizetett szabadsággal stb. Ez még így is jóval olcsóbb, mint az időszakos karantén.)</p>
 
-	<p>We then keep R &lt; 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the <em>right</em> way:</p>
+	<p>Ezután megtartjuk az R &lt; 1-et, amíg meg nem lesz az oltóanyag, ami a fogékony <icon s></icon> embereket immunis, meggyógyult <icon r></icon> emberekké teszi. Nyájimmunisság, a <em>helyes</em> módon:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 	</div>
 
-	<p>(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you&#39;d have to compensate by vaccinating <em>more</em> than &quot;herd immunity&quot;, to <em>actually</em> get herd immunity)</p>
+	<p>(Megjegyzés: ez a kalkulátor úgy tesz, mintha 100%-os hatékonyságúak lennének az oltóanyagok. Ne feledd, hogy a valóságban kompenzálni kell azzal, hogy <em>többet</em> oltasz be a "nyájimmunitás"-nál, hogy <em>ténylegesen</em> elérd a nyájimmunitást.)</p>
 
-	<p>Okay, enough talk. Here&#39;s a simulation of:</p>
+	<p>Oké, elég a beszédből. Itt egy szimuláció a következőkről:</p>
 
 	<ol>
-	<li>A few-month lockdown, until we can...</li>
-	<li>Switch to &quot;Test, Trace, Isolate&quot; until we can...</li>
-	<li>Vaccinate enough people, which means...</li>
-	<li>We win.</li>
+	<li>Néhány hónapos karantén, mielőtt...</li>
+	<li>Átválthatunk a "Tesztelés, nyomon követés, elszigetelés" módszerre, mielőtt...</li>
+	<li>Beolthatunk elég embert, amivel...</li>
+	<li>Győzünk.</li>
 	</ol>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 	</div>
 
-	<p>So that&#39;s it! That&#39;s how we make an emergency landing on this plane.</p>
+	<p>Ennyi! Így végzünk kényszerleszállást ezzel a repülővel.</p>
 
-	<p>That&#39;s how we beat COVID-19.</p>
+	<p>Így győzzük le a COVID-19-et.</p>
 
 	<p>...</p>
 
-	<p>But what if things <em>still</em> go wrong? Things have gone horribly wrong already. That&#39;s fear, and that&#39;s good! Fear gives us energy to create <em>backup plans</em>.</p>
+	<p>De mi van, ha <em>mégis</em> rosszra fordulnak a dolgok? Már így is szörnyen rosszra fordultak a dolgok. Ez félelem, ami hasznos! A félelem arra ösztönöz, hogy <em>biztonsági tervet</em> ötöljünk ki..</p>
 
-	<p>The pessimist invents the parachute.</p>
+	<p>A borúlátó feltalálja az ejtőernyőt.</p>
 
-	<h3 id="toc_5">Scenario 4+: Masks For All, Summer, Circuit Breakers</h3>
+	<h3 id="toc_5">4. eset (extra): Maszkot mindenkinek, nyár, megszakítók</h3>
 
-	<p>What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, <em>still</em> aren&#39;t enough to get R &lt; 1?</p>
+	<p>Mi van, ha az R<sub>0</sub> jóval nagyobb, mint gondoltuk és sem a fenti közbeavatkozások, de még a mérsékelt távolságtartás <em>sem</em> elegendő ahhoz, hogy elérjük az R &lt; 1-et?</p>
 
-	<p>Remember, even if we can&#39;t get R &lt; 1, reducing R still reduces the &quot;overshoot&quot; in total cases, thus saving lives. But still, R &lt; 1 is the ideal, so here&#39;s a few other ways to reduce R:</p>
+	<p>Ne feledd, még ha nem is tudjuk elérni az R &lt; 1-et, az R érték csökkentése ettől még mérsékeli az összes eset csúcspontját, életeket mentve ezzel. De ettől még az R &lt; 1 az ideális, szóval itt van még pár módszer, amivel csökkenthetjük az R értékét:</p>
 
-	<p><strong>Masks For All:</strong></p>
+	<p><strong>Maszkot mindenkinek:</strong></p>
 
-	<p><em>&quot;Wait,&quot;</em> you might ask, <em>&quot;I thought face masks don&#39;t stop you from getting sick?&quot;</em></p>
+	<p><em>"Várj, azt hittem, hogy a maszkok nem óvnak meg a fertőzéstől."</em></p>
 
-	<p>You&#39;re right. Masks don&#39;t stop you from getting sick<sup id="fnref29"><a href="#fn29" rel="footnote">29</a></sup>... they stop you from getting <em>others</em> sick.</p>
+	<p>Igazad van. A maszkok nem téged óvnak a fertőzéstől<sup id="fnref29"><a href="#fn29" rel="footnote">29</a></sup>... hanem <em>másokat</em> óvnak attól, hogy megfertőzd őket.</p>
 
 	<p><img src="pics/masks.png" alt=""></p>
 
-	<p>To put a number on it: surgical masks <em>on the sick person</em> reduce cold &amp; flu viruses in aerosols by 70%.<sup id="fnref30"><a href="#fn30" rel="footnote">30</a></sup> Reducing transmissions by 70% would be as large an impact as a lockdown!</p>
+	<p>Vagyis: <em>a beteg által viselt</em> orvosi maszkok 70%-kal csökkentik a megfázás és az influenza vírusokat az aeroszolban.<sup id="fnref30"><a href="#fn30" rel="footnote">30</a></sup> A fertőzés 70%-os csökkentése pedig olyan hatásos lenne, mint egy karantén!</p>
 
-	<p>However, we don&#39;t know for sure the impact of masks on COVID-19 <em>specifically</em>. In science, one should only publish a finding if you&#39;re 95% sure of it. (...should.<sup id="fnref31"><a href="#fn31" rel="footnote">31</a></sup>) Masks, as of May 1st 2020, are less than &quot;95% sure&quot;.</p>
+	<p>Viszont nem ismerjük <em>pontosan</em> a maszkok COVID-19-re való hatását. A tudományos világban csak akkor szabadna közzétenned egy eredményt, ha 95%-ban biztos vagy benne. (...szabadna.<sup id="fnref31"><a href="#fn31" rel="footnote">31</a></sup>) A maszkok, 2020. május 1-jei álláspont szerint, kevesebb, mint "95%-ig biztosak".</p>
 
-	<p>However, pandemics are like poker. <strong>Make bets only when you&#39;re 95% sure, and you&#39;ll lose everything at stake.</strong> As a recent article on masks in the British Medical Journal notes,<sup id="fnref32"><a href="#fn32" rel="footnote">32</a></sup> we <em>have</em> to make cost/benefit analyses under uncertainty. Like so:</p>
+	<p>Viszont a járványok olyanok, mint a póker. <strong>Ha csak akkor teszel tétet, amikor 95%-ig biztos vagy a dologban, valószínűleg mindent elvesztesz.</strong> Ahogy egy közelmúltban megjelent, maszkokról szóló cikk megjegyzi a British Medical Journalban,<sup id="fnref32"><a href="#fn32" rel="footnote">32</a></sup> bizonytalanság idején <em>muszáj</em> elemeznünk, hogy milyen áron milyen hasznot érhetünk el. Pl.:</p>
 
-	<p>Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks<sup id="fnref33"><a href="#fn33" rel="footnote">33</a></sup>), super cheap. If surgical masks, more expensive but still pretty cheap.</p>
+	<p>Ár: Az otthon készült maszkok (amik kb. 2/3 annyira hatékonyak, mint az orvosi maszkok<sup id="fnref33"><a href="#fn33" rel="footnote">33</a></sup>), nagyon olcsóak. Az orvosi maszkok drágábbak, de még mindig elég olcsóak.</p>
 
-	<p>Benefit: Even if it&#39;s a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average &quot;expected value&quot; is still 35%, same as a half-lockdown! So let&#39;s guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)</p>
+	<p>Haszon: Még akkor is, ha 50/50 az esélye, hogy az orvosi maszk 0%-kal vagy 70%-kal csökkenti a fertőzést, az átlag "várható érték" még mindig 35%. Mint egy fél-karantén! Saccoljuk meg, hogy az orvosi maszkok akár 35%-kal csökkentik az R értékét, beleszámítva a bizonytalanságunkat. (Most is megkérdőjelezheted a feltevéseinket a csúszkák húzogatásával.)</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 	</div>
 
-	<p>(other arguments for/against masks:<sup id="fnref34"><a href="#fn34" rel="footnote">34</a></sup>)</p>
+	<p>(További érvelések a maszkok mellett/ellen:<sup id="fnref34"><a href="#fn34" rel="footnote">34</a></sup>)</p>
 
-	<p>Masks <em>alone</em> won&#39;t get R &lt; 1. But if handwashing &amp; &quot;Test, Trace, Isolate&quot; only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R &lt; 1, virus contained!</p>
+	<p>A maszkok <em>önmagukban</em> nem fogják elhozni az R &lt; 1-et. De ha a kézmosás és a "Tesztelés, nyomon követés, elszigetelés" csak R = 1,10-ig juttat el minket, akkor, ha az emberek csupán 1/3-a maszkok viselne, máris átbillentené az R értékét 1 alá, így meg lenne fékezve a vírus!</p>
 
-	<p><strong>Summer:</strong></p>
+	<p><strong>Nyár:</strong></p>
 
-	<p>Okay, this isn&#39;t an &quot;intervention&quot; we can control, but it will help! Some news outlets report that summer won&#39;t do anything to COVID-19. They&#39;re half right: summer won&#39;t get R &lt; 1, but it <em>will</em> reduce R.</p>
+	<p>Oké, ez nem egy olyan "közbeavatkozás", amit irányítani tudunk, de segíteni fog! Néhány sajtóorgánum azt jelenti, hogy a nyár semmit nem fog tenni a COVID-19-cel. Félig igazuk van: a nyár nem fogja elérni az R &lt; 1-et, de <em>csökkenteni fogja</em> az R értékét.</p>
 
-	<p>For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.<sup id="fnref35"><a href="#fn35" rel="footnote">35</a></sup> The summer-winter difference in New York City is 15°C (60°F), so summer will make R drop by 18%.</p>
+	<p>A COVID-19 esetében minden extra 1° Celsius (2,2° Fahrenheit) hatására 1,2%-ot csökken az R értéke.<sup id="fnref35"><a href="#fn35" rel="footnote">35</a></sup> New Yorkban a téli-nyári hőmérséklet-különbség 15°C (60°F), így a nyár 18%-kal csökkenteni fogja az R értékét.</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 	</div>
 
-	<p>Summer alone won&#39;t make R &lt; 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them <em>higher</em> in the winter.</p>
+	<p>A nyár önmagában nem fogja levinni 1 alá az R értékét, de ha korlátozottak az erőforrásaink, tartalékolhatjuk a nyári közbeavatkozásokat télre.</p>
 
-	<p><strong>A &quot;Circuit Breaker&quot; Lockdown:</strong></p>
+	<p><strong>Egy "megszakító" karantén:</strong></p>
 
-	<p>And if all that <em>still</em> isn&#39;t enough to get R &lt; 1... we can do another lockdown.</p>
+	<p>Ha pedig mindez <em>még mindig</em> nem elég, hogy elérjük az R &lt; 1-et... elrendelhetünk még egy karantént.</p>
 
-	<p>But we wouldn&#39;t have to be 2-months-closed / 1-month-open over &amp; over! Because R is reduced, we&#39;d only need one or two more &quot;circuit breaker&quot; lockdowns before a vaccine is available. (Singapore had to do this recently, &quot;despite&quot; having controlled COVID-19 for 4 months. That&#39;s not failure: this <em>is</em> what success takes.)</p>
+	<p>De nem kellene ismételgetnünk a 2 hónap elzártság / 1 hónap kimozdulás taktikáját újra és újra! Mivel az R értéke alacsonyabb, már csak egy vagy kettő "megszakító" karanténra lenne szükségünk, mielőtt elérhetővé válik az oltóanyag. (Szingapúrban ez szükségszerűvé vált, "annak ellenére", hogy már 4 hónapja kordában tartották a COVID-19-et. Ez nem kudarc, <em>ez szükséges</em> a sikerhez.)</p>
 
-	<p>Here&#39;s a simulation a &quot;lazy case&quot; scenario:</p>
+	<p>Itt egy szimuláció, egy "lusta ügy" esete:</p>
 
 	<ol>
-	<li>Lockdown, then</li>
-	<li>A moderate amount of hygiene &amp; &quot;Test, Trace, Isolate&quot;, with a mild amount of &quot;Masks For All&quot;, then...</li>
-	<li>One more &quot;circuit breaker&quot; lockdown before a vaccine&#39;s found.</li>
+	<li>Karantén, majd</li>
+	<li>Egy mérsékelt szintű higiénia és "Tesztelés, nyomon követés, elszigetelés", egy kis "Maszkot mindenkinek" dologgal megfűszerezve, majd...</li>
+	<li>Még egy "megszakító" karantén, mielőtt megtalálják az oltóanyagot.</li>
 	</ol>
 
 	<div class="sim">
 	        <iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 	</div>
 
-	<p>Not to mention all the <em>other</em> interventions we could do, to further push R down:</p>
+	<p>Arról nem is beszélve, mennyi mindennel tudná a <em>többi</em> közbeavatkozás tovább csökkenteni az R értékét:</p>
 
 	<ul>
-	<li>Travel restrictions/quarantines</li>
-	<li>Temperature checks at malls &amp; schools</li>
-	<li>Deep-cleaning public spaces</li>
-	<li><a href="https://twitter.com/V_actually/status/1233785527788285953">Replacing hand-shaking with foot-bumping</a></li>
-	<li>And all else human ingenuity shall bring</li>
+	<li>Utazási korlátozások</li>
+	<li>Testhőmérséklet-ellenőrzés az áruházaknál és az iskoláknál</li>
+	<li>Nyilvános helyek alapos takarítása</li>
+	<li><a href="https://twitter.com/V_actually/status/1233785527788285953">Kéz helyett lábbal való köszönés</a></li>
+	<li>És minden más, amit az emberi találékonyság kiötöl</li>
 	</ul>
 
 	<p>. . .</p>
 
-	<p>We hope these plans give you hope. </p>
+	<p>Reméljük, hogy ezek a tervek reménnyel töltenek el.</p>
 
-	<p><strong>Even under a pessimistic scenario, it <em>is</em> possible to beat COVID-19, while protecting our mental and financial health.</strong> Use the lockdown as a &quot;reset button&quot;, keep R &lt; 1 with case isolation + privacy-protecting contract tracing + at <em>least</em> cloth masks for all... and life can get back to a normal-ish!</p>
+	<p><strong>Még ha egy pesszimista forgatókönyv szerint alakul is a helyzet, akkor is <em>lehetséges</em> legyőzni a COVID-19-et, úgy, hogy közben megóvjuk a szellemi egészségünket és a pénzügyi jólétünket.</strong> A karantént használjuk "újraindító gombként", tartsuk meg az R &lt; 1-et eseti elszigeteléssel, adatvédelmet tisztelő kontakt-nyomkövető alkalmazásokkal és <em>legalább</em> ruhából készült maszkokkal... aztán visszatérhet az élet a nomális-szerű kerékvágásba!</p>
 
-	<p>Sure, you may have dried-out hands. But you&#39;ll get to invite a date out to a comics bookstore! You&#39;ll get to go out with friends to watch the latest Hollywood cash-grab. You&#39;ll get to people-watch at a library, taking joy in people going about the simple business of <em>being alive.</em></p>
+	<p>Talán kiszáradnak a kezeid. De lesz lehetőséged randira menni! Lesz lehetőséged moziba menni a barátaiddal, hogy megnézzétek a legújabb hollywoodi pénzlehúzást. Lesz lehetőséged betérni egy könyvtárba, ahol megfigyelheted az embereket és élvezeted lelheted benne, hogy egyszerűen mindenki <em>örül annak, hogy életben van.</em></p>
 
-	<p>Even under the worst-case scenario... life perseveres.</p>
+	<p>Még a legrosszabb forgatókönyv esetén is... az élet kitart.</p>
 
-	<p>So now, let&#39;s plan for some <em>worse</em> worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:</p>
+	<p>Na akkor, készítsünk terveket pár, <em>a legrosszabbnál is rosszabb</em> esetre. Vízen landoltunk, fogd a mentőmellényed és kérlek, kövesd a fényt a vészkijárathoz:</p>
 
 	<div class="section chapter">
 	    <div>
 	        <img src="banners/curve.png" height=480 style="position: absolute;"/>
-	        <div>The Next Few Years</div>
+	        <div>A következő évek</div>
 	    </div>
 	</div>
 
-	<p>You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you&#39;re now immune...</p>
+	<p>Elkapod a COVID-19-et, majd meggyógyulsz. Vagy megkapod a COVID-19 oltást. Akárhogy is, immunissá váltál...</p>
 
-	<p>...<em>for how long?</em></p>
+	<p>...<em>de meddig?</em></p>
 
 	<ul>
-	<li>COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.<sup id="fnref36"><a href="#fn36" rel="footnote">36</a></sup></li>
-	<li>The coronaviruses that cause &quot;the&quot; common cold give you 8 months of immunity.<sup id="fnref37"><a href="#fn37" rel="footnote">37</a></sup></li>
-	<li>There&#39;s reports of folks recovering from COVID-19, then testing positive again, but it&#39;s unclear if these are false positives.<sup id="fnref38"><a href="#fn38" rel="footnote">38</a></sup></li>
-	<li>One <em>not-yet-peer-reviewed</em> study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.<sup id="fnref39"><a href="#fn39" rel="footnote">39</a></sup></li>
+	<li>A COVID-19 legközelebb a SARS-hoz áll, ami a túlélőinek 2 évnyi immunitást adott.<sup id="fnref36"><a href="#fn36" rel="footnote">36</a></sup></li>
+	<li>Az a koronavírus, ami a "mezei" megfázást okozza, 8 havi immunitást ad.<sup id="fnref37"><a href="#fn37" rel="footnote">37</a></sup></li>
+	<li>Vannak olyan emberekről szóló jelentések, akik kigyógyultak a COVID-19-ből, majd újra pozitív lett a teszjük, de nem világos, hogy ez hamis eredmény-e.<sup id="fnref38"><a href="#fn38" rel="footnote">38</a></sup></li>
+	<li>A majmokról készült egy <em>független szakértő által még nem értékelt</em> tanulmány legalább 28 napnyi immunitást mutatott ki a COVID-19 koronavírus ellen.<sup id="fnref39"><a href="#fn39" rel="footnote">39</a></sup></li>
 	</ul>
 
-	<p>But for COVID-19 <em>in humans</em>, as of May 1st 2020, &quot;how long&quot; is the big unknown.</p>
+	<p>De az <em>emberekben</em> előforduló COVID-19-et illetően, 2020. május 1-jei álláspont szerint a "meddig tart" a nagy rejtély.</p>
 
-	<p>For these simulations, let&#39;s say it&#39;s 1 year.
-	<strong>Here&#39;s a simulation starting with 100% <icon r></icon></strong>, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on <em>average</em>, with variation:</p>
+	<p>Ezekre a szimulációkra adjunk mondjuk 1 évet.
+	<strong>Itt egy szimuláció, ami 100% <icon r></icon> emberrel kezdődik</strong>, akik exponenciálisan válnak fogékony, nem immunis <icon s></icon> emberekké <em>átlagosan</em>, 1 év után, különböző variációkkal:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 	</div>
 
-	<p>Return of the exponential decay!</p>
+	<p>Az exponenciális romlás visszatér!</p>
 
-	<p>This is the <strong>SEIRS Model</strong>. The final &quot;S&quot; stands for <icon s></icon> Susceptible, again.</p>
+	<p>Ez a <strong>SEIRS Modell</strong>. A végső "S" újfent a <icon s></icon> Susceptible (fogékony) embereket jelenti.</p>
 
 	<p><img src="pics/seirs.png" alt=""></p>
 
-	<p>Now, let&#39;s simulate a COVID-19 outbreak, over 10 years, with no interventions... <em>if immunity only lasts a year:</em></p>
+	<p>Szimuláljunk egy COVID-19 kitörést, 10 éven keresztül, közbeavatkozások nélkül... <em>ha az immunitás csak egy évig tart:</em></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 	</div>
 
-	<p>In previous simulations, we only had <em>one</em> ICU-overwhelming spike. Now, we have several, <em>and</em> <icon i></icon> cases come to a rest <em>permanently at</em> ICU capacity. (Which, remember, we <em>tripled</em> for these simulations)</p>
+	<p>Az előző szimulációkban csak <em>egy</em> intenzív osztályokat túltelítő eset volt. Most több ilyen történt <em>és</em> a <icon i></icon> esetek <em>állandósultak</em> az intenzív osztályok kapacitásának szintjén. (Amit ne feledd, <em>megháromszoroztunk</em> ezekhez a szimulációkhoz.)</p>
 
-	<p>R = 1, it&#39;s <strong>endemic.</strong></p>
+	<p>R = 1, <strong>helyhez kötött.</strong></p>
 
-	<p>Thankfully, because summer reduces R, it&#39;ll make the situation better:</p>
+	<p>Szerencsére, mivel a nyár csökkenti az R értékét, javulni fog a helyzet:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 	</div>
 
-	<p>Oh.</p>
+	<p>Ó.</p>
 
-	<p>Counterintuitively, summer makes the spikes worse <em>and</em> regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, <em>creating</em> large regular spikes in the winter.</p>
+	<p>A várakozásokkal ellentétben, a nyár ront a kiugrásokon, <em>sőt</em>, rendszeressé teszi őket! Ez azért van, mert a nyár csökkenti az új <icon i></icon> emberek számát, ez pedig csökkenti az új immunis <icon r></icon> emberek számát. Ami azt jelenti, hogy az immunitás megzuhan a nyár alatt, nagy, rendszeres kiugrásokat <em>idézve elő</em> télen.</p>
 
-	<p>Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:</p>
+	<p>Szerencsére erre elég egyszerű a megoldás; oltsuk be az embereket minden ősszel/télen, ahogy az influenza-oltással is tesszük:</p>
 
-	<p><strong>(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)</strong></p>
+	<p><strong>(Miután lejátszottad a rögzített szimulációt, próbálkozz meg saját oltási kampányokkal! Ne feledd, hogy bármikor tudod szüneteltetni és folytatni a szimulációt.)</strong></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 	</div>
 
-	<p>But here&#39;s the scarier question:</p>
+	<p>De itt jön az ijesztőbb kérdés:</p>
 
-	<p>What if there&#39;s no vaccine for <em>years</em>? Or <em>ever?</em></p>
+	<p>Mi van, ha még <em>évekig</em> nem lesz oltóanyag? Mi van, ha <em>soha</em> nem lesz oltóanyag?</p>
 
-	<p><strong>To be clear: this is unlikely.</strong> Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there&#39;s never been a vaccine for any of the other coronaviruses before, but that&#39;s because SARS was eradicated quickly, and &quot;the&quot; common cold wasn&#39;t worth the investment. </p>
+	<p><strong>Csak hogy tisztázzuk: ez valószínűtlen.</strong> A legtöbb epidemiológus 1-2 éven belülre várja az oltóanyagot. Igaz, semelyik másik koronavírus ellen nem volt még oltóanyag, de ez azért volt, mert a SARS-t gyorsan elpusztították, a "mezei" megfázás pedig nem érte meg a befektetést.</p>
 
-	<p>Still, infectious disease researchers have expressed worries: What if we can&#39;t make enough?<sup id="fnref40"><a href="#fn40" rel="footnote">40</a></sup> What if we rush it, and it&#39;s not safe?<sup id="fnref41"><a href="#fn41" rel="footnote">41</a></sup></p>
+	<p>Pár fertőző betegség kutató így is aggodalmát fejezte ki. Mi lesz, ha nem tudunk eleget előállítani?<sup id="fnref40"><a href="#fn40" rel="footnote">40</a></sup> Mi lesz, ha elsietjük és nem lesz biztonságos?<sup id="fnref41"><a href="#fn41" rel="footnote">41</a></sup></p>
 
-	<p>Even in the nightmare &quot;no-vaccine&quot; scenario, we still have 3 ways out. From most to least terrible:</p>
+	<p>Még az "oltóanyag nélküli" esetben is van három kiutunk. A legrosszabbtól kezdve:</p>
 
-	<p>1) Do intermittent or loose R &lt; 1 interventions, to reach &quot;natural herd immunity&quot;. (Warning: this will result in many deaths &amp; damaged lungs. <em>And</em> won&#39;t work if immunity doesn&#39;t last.)</p>
+	<p>1) Csináljuk az időszakos vagy laza R &lt; 1 közbeavatkozásokat, hogy elérjük a "természetes nyájimmunitást". (Vigyázat: ez sok halállal és sérült tüdővel jár. <em>Ráadásul</em> nem fog működni, ha az immunitás nem marad meg.)</p>
 
-	<p>2) Do the R &lt; 1 interventions forever. Contact tracing &amp; wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests &amp; wearing condoms became a new norm in the post-HIV world.</p>
+	<p>2) Csináljuk az R &lt; 1 közbeavatkozásokat, örökké. Egyszerűen mindennapivá válik a kontakt-nyomkövetés és a maszkviselés  a COVID-19 megjelenése utáni viágban, ahogy az STI tesztek és az óvszer viselése megszokássá vált a HIV megjelenése utáni világban.</p>
 
-	<p>3) Do the R &lt; 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing <em>anyway!</em>) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:</p>
+	<p>3) Csináljuk az R &lt; 1 közbeavatkozásokat, amíg ki nem fejlesztünk olyan kezeléseket, amiknek köszönhetően a COVID-19-es esetek sokkal, sokkal kisebb eséllyel szorulnak kritikus ellátásra. (<em>Most is</em> ezt kellene tennünk!) Tizedjére csökkenteni az intenzív osztályok kihasználtságát ugyanaz, mintha tízszeresére növelnénk az intenzív osztályok kapacitását:</p>
 
-	<p><strong>Here&#39;s a simulation of <em>no</em> lasting immunity, <em>no</em> vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:</strong></p>
+	<p><strong>Itt egy szimuláció, amiben <em>nincs</em> megmaradó immunitás, <em>nincs</em> oltóanyag, de még csak közbeavatkozások sincsenek; csak fokozatosan növeljük a kapacitást, hogy túléljük a hosszútávú kiugrásokat:</strong></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 	</div>
 
-	<p>Even under the <em>worst</em> worst-case scenario... life perseveres.</p>
+	<p>Még a <em>legrosszabbnál is rosszabb</em> esetben is... az élet kitart.</p>
 
 	<p>. . .</p>
 
-	<p>Maybe you&#39;d like to challenge our assumptions, and try different R<sub>0</sub>&#39;s or numbers. Or try simulating your <em>own</em> combination of intervention plans!</p>
+	<p>Talán szeretnéd megkérdeőjelezni a feltételezéseinket, és kipróbálni különböző R<sub>0</sub> értékeket vagy számokat. Vagy kirpbálnád a <em>saját</em> kombinációidat a közbeavatkozási terveket illetően!</p>
 
-	<p><strong>Here&#39;s an (optional) Sandbox Mode, with <em>everything</em> available. (scroll to see all controls) Simulate &amp; play around to your heart&#39;s content:</strong></p>
+	<p><strong>Itt egy (opcionális) Sandbox Mód, amiben <em>minden</em> elérhető (görgess lejjebb, hogy lásd az összes csúszkát). Szimulálj és játszadozz a beállításokkal kedved szerint:</strong></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 	</div>
 
-	<p>This basic &quot;epidemic flight simulator&quot; has taught us so much. It&#39;s let us answer questions about the past few months, next few months, and next few years.</p>
+	<p>Az alap "járvány-repülő szimulátor" rengeteget tanított nekünk. A segítségével meg tudtunk válaszolni kérdéseket az elmúlt hónapokról, a következő hónapokról és a következő évekről.</p>
 
-	<p>So finally, let&#39;s return to...</p>
+	<p>Úgyhogy végül, térjük vissza...</p>
 
 	<div class="section chapter">
 	    <div>
 	        <img src="banners/curve.png" height=480 style="position: absolute;"/>
-	        <div>The Now</div>
+	        <div>A jelen</div>
 	    </div>
 	</div>
 
-	<p>Plane&#39;s sunk. We&#39;ve scrambled onto the life rafts. It&#39;s time to find dry land.<sup id="fnref42"><a href="#fn42" rel="footnote">42</a></sup></p>
+	<p>Elsüllyedt a repülő. A mentőcsónakokon tülekedünk. Ideje szárazföld után nézni.<sup id="fnref42"><a href="#fn42" rel="footnote">42</a></sup></p>
 
-	<p>Teams of epidemiologists and policymakers (<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">left</a>, <a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">right</a>, and <a href="https://ethics.harvard.edu/covid-roadmap">multi-partisan</a>) have come to a consensus on how to beat COVID-19, while protecting our lives <em>and</em> liberties.</p>
+	<p>Epidemiológusok és döntéshozók csapatai (<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">baloldali</a>, <a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">jobboldali</a>, és <a href="https://ethics.harvard.edu/covid-roadmap">több-párti</a>) jutottak egyetértésre a COVID-19 legyőzését illetően, miközben a mi életünket <em>és</em> szabadságunkat védték.</p>
 
-	<p>Here&#39;s the rough idea, with some (less-consensus) backup plans:</p>
+	<p>Itt van a terv nagyvonalakban, egy pár (közös megegyezésnek kevésbé örvendő) biztonsági tervvel együtt:</p>
 
 	<p><img src="pics/plan.png" alt=""></p>
 
-	<p>So what does this mean for YOU, right now?</p>
+	<p>Szóval, mit jelent ez most SZÁMODRA?</p>
 
-	<p><strong>For everyone:</strong> Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a <em>privacy-protecting</em> contact tracing app when those are available next month. Stay healthy, physically &amp; mentally! And write your local policymaker to get off their butt and...</p>
+	<p><strong>Mindenki:</strong> Tartsátok tiszteletben a karantént, hogy minél hamarabb túljuthassunk az első Fázison. Mossatok kezet. Készítsetek saját maszkokat. Töltsétek le az <em>adatvédelmet tisztelő</em> kontakt-nyomkövető alkalmazást, amint elérhetővé válik a következő hónapban. Őrizzétek egészségetek, mind fizikailag, mind szellemileg! És írjatok a helyi döntéshozóitoknak, hogy emeljék fel a valagukat és...</p>
 
-	<p><strong>For policymakers:</strong> Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, <em>supported</em> by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...</p>
+	<p><strong>Döntéshozók:</strong> Hozzatok olyan törvényeket, amik támogatják azokat, akiknek el kell szigetelődniük. Vegyetek fel több kézi kontakt-nyomkövetőt, akiket <em>segítenek</em> az adatvédelmet tisztelő kontakt-nyomkövető alkalmazások. Fordítsatok több forrást azokra a dolgokra, amikből hiányunk van, például...</p>
 
-	<p><strong>For builders:</strong> Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren&#39;t vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. </p>
+	<p><strong>Alkotók:</strong> Alkossatok teszteket. Készítsetek ventilátorokat. Készítsetek személyes védőfelszerelést a kórházaknak. Alkossatok teszteket. Készítsetek maszkokat. Készítsetek alkalmazásokat. Hozzatok létre vírusölő, betegséget megelőző szert, és egyéb kezeléseket amik nem oltóanyagok. Készítsetek oltóanyagokat. Alkossatok teszteket. Alkossatok teszteket. Alkossatok teszteket. Adjatok reményt.</p>
 
-	<p>Don&#39;t downplay fear to build up hope. Our fear should <em>team up</em> with our hope, like the inventors of airplanes &amp; parachutes. Preparing for horrible futures is how we <em>create</em> a hopeful future.</p>
+	<p>Ne kicsinyeljétek le a félelmet a remény érdekében. A félelmünknek <em>össze kell dolgoznia</em> a reményünkkel, mint a repülőgépek és az ejtőernyők feltalálóinak. A szörnyű eshetőségekre felkészülve <em>alkotunk meg</em> egy reményteljes jövőt.</p>
 
-	<p>The only thing to fear is the idea that the only thing to fear is fear itself.</p>
+	<p>Az egyetlen dolog, amitől félni kell, az az a gondolat, miszerint csak magától a félelemtől kell félni.</p>
 
 	<div class="footnotes">
 	<hr>
 	<ol>
 
 	<li id="fn1">
-	<p>These footnotes will have sources, links, or bonus commentary. Like this commentary!&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+	<p>Ezekben a lábjegyzetekben források, linkek, vagy bónusz kommentárok lesznek. Mint ez!&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
 
-	<p><strong>This guide was published on May 1st, 2020.</strong> Many details will become outdated, but we&#39;re confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.</p>
+	<p><strong>Ez az útmutató 2020. május 1-jén jelent meg.</strong> Sok részlet idővel elavulttá fog válni, de biztosak vagyunk benne, hogy ez az útmutató fedezi a lehetséges jövőképek 95%-át, valamint hogy az "Alapszintű epidemiológia" örökre hasznos marad.</p>
 	</li>
 
 	<li id="fn2">
-	<p>“The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. <a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article">Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L</a> (Disclaimer: Early release articles are not considered as final versions)&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+	<p>"Az intervallum középértéke 3,96 nap (95% megbízhatósági intervallum, 3,53-4,39 nap) volt". <a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article">Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L</a> (Megjegyzés: Az előzetesen kiadott cikkek nem tekintendők végleges változatnak)&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn3">
-	<p><strong>Remember: all these simulations are super simplified, for educational purposes.</strong>&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+	<p><strong>Ne feledd: ezek nagyon leegyszerűsített szimulációk, tájékoztatási célt szolgálnak.</strong>&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
 
-	<p>One simplification: When you tell this simulation &quot;Infect 1 new person every X days&quot;, it&#39;s actually increasing # of infected by 1/X each day. Same for future settings in these simulations – &quot;Recover every X days&quot; is actually reducing # of infected by 1/X each day.</p>
+	<p>Egy egyszerűsítés: Amikor azt mondod a szimulációnak, hogy "X naponta fertőződjön meg 1 új ember", valójában a fertőzöttek számát növeli 1/X-szel naponta. Ugyanez igaz a szimulációk későbbi beállításaira; az "X naponta gyógyuljon meg" valójában csökkenti a fertőzöttek számát 1/X-szel naponta.</p>
 
-	<p>Those <em>aren&#39;t</em> exactly the same, but it&#39;s close enough, and for educational purposes it&#39;s less opaque than setting the transmission/recovery rates directly.</p>
+	<p>Ez <em>nem</em> ugyanaz, de megközelítőleg elég pontos, a tájékoztatás céljából pedig átláthatóbb így, mintha kézzel állítgatnánk a fertőzés/gyógyulás arányait.</p>
 	</li>
 
 	<li id="fn4">
-	<p>“The median communicable period [...] was 9.5 days.” <a href="https://link.springer.com/article/10.1007/s11427-020-1661-4">Hu, Z., Song, C., Xu, C. et al</a> Yes, we know &quot;median&quot; is not the same as &quot;average&quot;. For simplified educational purposes, close enough.&nbsp;<a href="#fnref4" rev="footnote">&#8617;</a></p>
+	<p>"A fertőző időszak mediánja [...] 9,5 nap volt." <a href="https://link.springer.com/article/10.1007/s11427-020-1661-4">Hu, Z., Song, C., Xu, C. et al</a> Igen, tudjuk, hogy a "medián" nem ugyanaz, mint az "átlag". Az egyszerűsített tájékoztatás céljából elég közeli.&nbsp;<a href="#fnref4" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn5">
-	<p>For more technical explanations of the SIR Model, see <a href="https://www.idmod.org/docs/hiv/model-sir.html#">the Institute for Disease Modeling</a> and <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model">Wikipedia</a>&nbsp;<a href="#fnref5" rev="footnote">&#8617;</a></p>
+	<p>További technikai információ az SIR Modellről: <a href="https://www.idmod.org/docs/hiv/model-sir.html#">the Institute for Disease Modeling</a> and <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model">Wikipedia</a>&nbsp;<a href="#fnref5" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn6">
-	<p>For more technical explanations of the SEIR Model, see <a href="https://www.idmod.org/docs/hiv/model-seir.html">the Institute for Disease Modeling</a> and <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model">Wikipedia</a>&nbsp;<a href="#fnref6" rev="footnote">&#8617;</a></p>
+	<p>További technikai információ az SEIR Modellről: <a href="https://www.idmod.org/docs/hiv/model-seir.html">the Institute for Disease Modeling</a> and <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model">Wikipedia</a>&nbsp;<a href="#fnref6" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn7">
-	<p>“Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al.</a>&nbsp;<a href="#fnref7" rev="footnote">&#8617;</a></p>
+	<p>"Ha egy a korai COVID-19 esetekben végzett tanulmány alapján azt feltételezzük, hogy a lappangási idő átlagosan 5,2 napra oszlik el, az arra enged következtetni, hogy a fertőző állapot 2,3 nappal a tünetek megjelenése előtt áll be (95% megbízhatósági intervallum, 0,8-3,0 nap) ." (vagyis: Feltéve, hogy a tünetek az 5. napon jelennek meg, a fertőző állapot 2 nappal korábban, a 3. napon áll be) <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al.</a>&nbsp;<a href="#fnref7" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn8">
-	<p>“The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” <a href="https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480">Biggerstaff, M., Cauchemez, S., Reed, C. et al.</a>&nbsp;<a href="#fnref8" rev="footnote">&#8617;</a></p>
+	<p>"Az idényszerűen előforduló influenza medián R értéke 1,28 volt (IQR: 1,19-1,37)" <a href="https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480">Biggerstaff, M., Cauchemez, S., Reed, C. et al.</a>&nbsp;<a href="#fnref8" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn9">
-	<p>“We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/">Riou J, Althaus CL.</a>&nbsp;<a href="#fnref9" rev="footnote">&#8617;</a></p>
+	<p>"A 2019-nCoV alap reprodukciós R0 számát körülbelül 2,2-re becsültük (90% nagy sűrűségű intervallum: 1,4-3,8)" <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/">Riou J, Althaus CL.</a>&nbsp;<a href="#fnref9" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn10">
-	<p>“we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article">Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.</a>&nbsp;<a href="#fnref10" rev="footnote">&#8617;</a></p>
+	<p>"Számításaink szerint az R0 medián értéke 5,7 (95% megbízhatósági intervallum, 3,8-8,9)" <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article">Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.</a>&nbsp;<a href="#fnref10" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn11">
-	<p>This is pretending that you&#39;re equally infectious all throughout your &quot;infectious period&quot;. Again, simplifications for educational purposes.&nbsp;<a href="#fnref11" rev="footnote">&#8617;</a></p>
+	<p>Ez akkor igaz, ha úgy vesszük, hogy "fertőző időszakban" végig ugyanannyira fertőző egy ember. Ahogy mondtam, az egyszerűsítések a tájékoztatás célját szolgálják.&nbsp;<a href="#fnref11" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn12">
-	<p>Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions <em>stopped</em>.&nbsp;<a href="#fnref12" rev="footnote">&#8617;</a></p>
+	<p>Ne feledd: R = R<sub>0</sub> * megengedett fertőzések aránya.<br>
+	Azt se feledd, hogy:<br>
+	megengedett fertőzések aránya = 1 - <em>megállított</em> fertőzések aránya.&nbsp;<a href="#fnref12" rev="footnote">&#8617;</a></p>
 
-	<p>Therefore, to get R &lt; 1, you need to get R<sub>0</sub> * TransmissionsAllowed &lt; 1. </p>
+	<p>Vagyis, az R &lt; 1 eléréséhez szükséges, hogy:<br>
+	R<sub>0</sub> * MegengedettFertőzések &lt; 1. </p>
 
-	<p>Therefore, TransmissionsAllowed &lt; 1/R<sub>0</sub></p>
+	<p>Vagyis, MegengedettFertőzések &lt; 1/R<sub>0</sub></p>
 
-	<p>Therefore, 1 - TransmissionsStopped &lt; 1/R<sub>0</sub></p>
+	<p>Vagyis, 1 - MegállítottFertőzések &lt; 1/R<sub>0</sub></p>
 
-	<p>Therefore, TransmissionsStopped &gt; 1 - 1/R<sub>0</sub></p>
+	<p>Vagyis, MegállítottFertőzések &gt; 1 - 1/R<sub>0</sub></p>
 
-	<p>Therefore, you need to stop more than <strong>1 - 1/R<sub>0</sub></strong> of transmissions to get R &lt; 1 and contain the virus!</p>
+	<p>Vagyis, meg kell állítanod több mint <strong>1 - 1/R<sub>0</sub></strong> -t a fertőzésekből, hogy R &lt; 1 legyen és megfékezd a vírust!</p>
 	</li>
 
 	<li id="fn13">
-	<p><a href="https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/">&quot;Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group&quot;</a>. Between 4.9% to 11.5% of <em>all</em> COVID-19 cases required ICU. Generously picking the lower range, that&#39;s 5% or 1 in 20. Note that this total is specific to the US&#39;s age structure, and will be higher in countries with older populations, lower in countries with younger populations.&nbsp;<a href="#fnref13" rev="footnote">&#8617;</a></p>
+	<p><a href="https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/">&quot;2020. február 12. és március 16. közt, az Egyesült Államokban a COVID-19-cel fertőzött emberek azon százaléka, ahol a személy intenzív osztályra került, évcsoportok alapján&quot;</a>. Az <em>összes</em> COVID-19-cel fertőzött beteg 4,9-11,5%-át volt szükséges sürgősségi osztályra szállítani. Alacsony szinten is számolva, ez 5%, vagyis minden 20-ból 1. Megjegyzés: ez az Egyesült Államok korcsoport-struktúrájára jellemző; más, idősebb lakossággal rendelkező országokban magasabb, míg fiatalabb lakossággal rendelkező országokban alacsonyabb ez az arány.&nbsp;<a href="#fnref13" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn14">
-	<p>“Number of ICU beds = 96,596”. From <a href="https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19">the Society of Critical Care Medicine</a> USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. &nbsp;<a href="#fnref14" rev="footnote">&#8617;</a></p>
+	<p>"Az intenzív osztályokon lévő ágyak száma = 96 596". Forrás: <a href="https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19">the Society of Critical Care Medicine</a> Az Egyesült Államok népessége 328 200 000 volt 2019-ben. 96 596 : 328 200 000 = kb. 1 : 3400.&nbsp;<a href="#fnref14" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn15">
-	<p>“He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”&nbsp;<a href="#fnref15" rev="footnote">&#8617;</a></p>
+	<p>"Azt mondja, hogy a cél megegyezik a többi országéval: a fertőzések terjedésének elfojtásával ellaposítani a görbét. Ennek következményeképp, a nemzetben kialakulhat a nyájimmunitás; ez egy mellékhatás, nem cél. [...] A kormány koronavírus akcióterve, ami online is elérhető, egyáltalán nem említi a nyájimmunitást."&nbsp;<a href="#fnref15" rev="footnote">&#8617;</a></p>
 
-	<p>From a <a href="https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/">The Atlantic article by Ed Yong</a></p>
+	<p>Forrás: <a href="https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/">The Atlantic article by Ed Yong</a></p>
 	</li>
 
 	<li id="fn16">
-	<p>“All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x">Rabie, T. and Curtis, V.</a> Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.&nbsp;<a href="#fnref16" rev="footnote">&#8617;</a></p>
+	<p>"Nyolc hitelképes tanulmány arra jutott, hogy a kézmosás 6-44%-kal csökkentette a légúti megbetegedések kockázatát [összesített érték: 24% (95% megbízhatósági intervallum, 6-40%)]." Az összesített értéket felkerekítettük 25%-ra ezekben a szimulációkban az egyszerűség kedvéért. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x">Rabie, T. and Curtis, V.</a> Megjegyzés: ez a meta-analízis azt írja, a kézmosás-tanulmányok minősége (a magas jövedelmű országokban legalábbis) borzasztó.&nbsp;<a href="#fnref16" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn17">
-	<p>“We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. <a href="https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html">Jarvis and Zandvoort et al</a>&nbsp;<a href="#fnref17" rev="footnote">&#8617;</a></p>
+	<p>"Egyéni megfigyelés során 73%-os csökkenést számoltunk az átlagos napi kapcsolatteremtésben. Ez elég lesz ahhoz, hogy az R0 karantén előtti 2,6-os értékét lecsökkentsük a karantén alatt 0,62-re (0,37 - 0,89)". Mi 70%-ra kerekítettük le ezekben a szimulációkban az egyszerűség kedvéért. <a href="https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html">Jarvis and Zandvoort et al</a>&nbsp;<a href="#fnref17" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn18">
-	<p>This distortion would go away if we plotted R on a logarithmic scale... but then we&#39;d have to explain <em>logarithmic scales.</em>&nbsp;<a href="#fnref18" rev="footnote">&#8617;</a></p>
+	<p>Nem lenne ez a torzítás ha az R-t logaritmikus skálán ábrázolnánk... de ehhez el kellene magyaráznunk a <em>logaritmikus skálát.</em>&nbsp;<a href="#fnref18" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn19">
-	<p>“Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” <a href="https://science.sciencemag.org/content/early/2020/04/14/science.abb5793">Kissler and Tedijanto et al</a>&nbsp;<a href="#fnref19" rev="footnote">&#8617;</a></p>
+	<p>"Más közbeavatkozások hiányában, a távolságtartás sikerének fontos mércéje az, hogy túlterhelődnek-e a kritikus ellátás kapacitásai. Ennek elkerülése érdekében 2022-be nyúló meghosszabbított vagy időszakos távolságtartásra lehet szükség." <a href="https://science.sciencemag.org/content/early/2020/04/14/science.abb5793">Kissler and Tedijanto et al</a>&nbsp;<a href="#fnref19" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn20">
-	<p>See <a href="https://journals.sagepub.com/doi/abs/10.1177/1745691614568352">Figure 6 from Holt-Lunstad &amp; Smith 2010</a>. Of course, big disclaimer that they found a <em>correlation</em>. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you&#39;re gonna get.&nbsp;<a href="#fnref20" rev="footnote">&#8617;</a></p>
+	<p>Lásd: <a href="https://journals.sagepub.com/doi/abs/10.1177/1745691614568352">6. ábra Holt-Lunstad &amp; Smith 2010</a>. Persze érdemes kétkedve tekinteni erre az <em>összefüggésre</em>. De be kell érned ezzel a bizonyítással, hacsak nem akarsz véletlenszerűen kiválogatni pár embert, akiknek aztán életük végéig magányosnak kell lenniük, hogy megbizonyosodj róla.&nbsp;<a href="#fnref20" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn21">
-	<p><strong>3 days on average to infectiousness:</strong> “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al.</a>  &nbsp;<a href="#fnref21" rev="footnote">&#8617;</a></p>
+	<p><strong>Átlagosan 3 nap múlva áll be a fertőző állapot:</strong> "Ha egy a korai COVID-19 esetekben végzett tanulmány alapján azt feltételezzük, hogy a lappangási idő átlagosan 5,2 napra oszlik el, az arra enged következtetni, hogy a fertőző állapot 2,3 nappal a tünetek megjelenése előtt áll be (95% megbízhatósági intervallum, 0,8-3,0 nap) ." (vagyis: Feltéve, hogy a tünetek az 5. napon jelennek meg, a fertőző állapot 2 nappal korábban, a 3. napon áll be) <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al.</a>  &nbsp;<a href="#fnref21" rev="footnote">&#8617;</a></p>
 
-	<p><strong>4 days on average to infecting someone else:</strong> “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” <a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article">Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L</a></p>
+	<p><strong>Átlagosan 4 nap múlva fertőzünk meg valaki mást:</strong> "Az átlag-intervallum 3,96 nap volt (95% megbízhatósági intervallum, 3,53-4,39 nap)" <a href="https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article">Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L</a></p>
 
-	<p><strong>5 days on average to feeling symptoms:</strong> “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” <a href="https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED">Lauer SA, Grantz KH, Bi Q, et al</a></p>
+	<p><strong>Átlagosan 5 nap múlva érezzük a tüneteket:</strong> "Az átlag lappangási idő kb. 5,1 nap (95% megbízhatósági intervallum, 4,5-5,8 nap)" <a href="https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED">Lauer SA, Grantz KH, Bi Q, et al</a></p>
 	</li>
 
 	<li id="fn22">
-	<p>“We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al</a>&nbsp;<a href="#fnref22" rev="footnote">&#8617;</a></p>
+	<p>"Becsléseink szerint a szekunder esetekben a fertőzés 44%-a (95% megbízhatósági intervallum, 25-69%) a fertőző ember tünet-előtti időszakában történt" <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al</a>&nbsp;<a href="#fnref22" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn23">
-	<p>“Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/">Swanson KC, Altare C, Wesseh CS, et al.</a>&nbsp;<a href="#fnref23" rev="footnote">&#8617;</a></p>
+	<p>"A kontakt-nyomkövetés kritikus közbeavatkozás volt Libériában; történelmünk egyik legnagyobb kontakt-nyomkövetési erőfeszítése volt járvány időszakában." <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/">Swanson KC, Altare C, Wesseh CS, et al.</a>&nbsp;<a href="#fnref23" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn24">
-	<p><a href="https://github.com/TCNCoalition/TCN#tcn-protocol">Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol</a>&nbsp;<a href="#fnref24" rev="footnote">&#8617;</a></p>
+	<p><a href="https://github.com/TCNCoalition/TCN#tcn-protocol">Temporary Contact Numbers (Átmeneti Kontakt Számok), egy decentralizált, az adatvédelmet tisztelő kontakt-nyomkövető protokoll</a>&nbsp;<a href="#fnref24" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn25">
-	<p><a href="https://pact.mit.edu/">PACT: Private Automated Contact Tracing</a>&nbsp;<a href="#fnref25" rev="footnote">&#8617;</a></p>
+	<p><a href="https://pact.mit.edu/">PACT: Private Automated Contact Tracing (Privát Automatizált Kontakt-Nyomkövetés)</a>&nbsp;<a href="#fnref25" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn26">
-	<p><a href="https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/">Apple and Google partner on COVID-19 contact tracing technology </a>. Note they&#39;re not making the apps <em>themselves</em>, just creating the systems that will <em>support</em> those apps.&nbsp;<a href="#fnref26" rev="footnote">&#8617;</a></p>
+	<p><a href="https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/">Az Apple és a Google beszáll a COVID-19 kontakt-nyomkövető technológiába </a>. Megjegyzés: <em>nem ők maguk írják</em> az alkalmazásokat, csak lehetővé teszik, hogy a rendszereik <em>támogassák</em> ezeket az alkalmazásokat.&nbsp;<a href="#fnref26" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn27">
-	<p>Lots of news reports – and honestly, many research papers – did not distinguish between &quot;cases who showed no symptoms when we tested them&quot; (pre-symptomatic) and &quot;cases who showed no symptoms <em>ever</em>&quot; (true asymptomatic). The only way you could tell the difference is by following up with cases later.&nbsp;<a href="#fnref27" rev="footnote">&#8617;</a></p>
+	<p>Rengeteg hír, és őszintén szólva, sok kutatás sem tesz különbséget a &quot;nem mutatott tüneteket, amikor kerestük őket&quot; (tünet előtti) és a &quot;<em>soha</em> nem mutott tüneteket&quot; (valóban tünetmentes) esetek közt. Csak úgy lehetne megmondani a különbséget, hogy később újra megvizsgáljuk az eseteket.&nbsp;<a href="#fnref27" rev="footnote">&#8617;</a></p>
 
-	<p>Which is what <a href="https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article">this study</a> did. (Disclaimer: &quot;Early release articles are not considered as final versions.&quot;) In a call center in South Korea that had a COVID-19 outbreak, &quot;only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections.&quot;</p>
+	<p>Pontosan ezt tette <a href="https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article">ez a tanulmány</a>. (Megjegyzés: &quot;Az előzetesen kiadott cikkek nem tekintendők végleges változatnak.&quot;) Egy Dél-Koreában található, COVID-19 járvány súlytotta telefonközpontban &quot;csak 4 (1,9%) ember maradt tünetmentes a karantén 14 napja alatt, és a családi kontaktjaik egyikőjüke sem lett szekunder módon fertőzött.&quot;</p>
 
-	<p>So that means &quot;true asymptomatics&quot; are rare, and catching the disease from a true asymptomatic may be even rarer!</p>
+	<p>Ez azt jelenti, hogy a &quot;valóban tünetmentes&quot; esetek ritkák, és fertőzést kapni egy valóban tünetmentes embertől, még ennél is ritkább!</p>
 	</li>
 
 	<li id="fn28">
-	<p>From the same Oxford study that first recommended apps to fight COVID-19: <a href="https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data">Luca Ferretti &amp; Chris Wymant et al</a> See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    &nbsp;<a href="#fnref28" rev="footnote">&#8617;</a></p>
+	<p>Ugyanabban az oxfordi tanulmányban, ami először javasolta az alkalmazások használatát a COVID-19 elleni küzdelemben: <a href="https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data">Luca Ferretti &amp; Chris Wymant et al</a> 2. ábra. Amennyiben R<sub>0</sub> = 2,0, a különböző esetek így "járulnak hozzá" az értékhez:    &nbsp;<a href="#fnref28" rev="footnote">&#8617;</a></p>
 
 	<ul>
-	<li>Symptomatics contribute R = 0.8 (40%)</li>
-	<li>Pre-symptomatics contribute R = 0.9 (45%)</li>
-	<li>Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)</li>
-	<li>Environmental stuff like doorknobs contribute R = 0.2 (10%)</li>
+	<li>Tünetes: R = 0,8 (40%)</li>
+	<li>Tünet előtti: R = 0,9 (45%)</li>
+	<li>Tünetmentes: R = 0,1 (5%, bár ez bizonytalan, lehet jóval alacsonyabb is)</li>
+	<li>Környezeti tényezők, pl.: kilincsek: R = 0,2 (10%)</li>
 	</ul>
 
-	<p>And add up the pre- &amp; a-symptomatic contacts (45% + 5%) and you get 50% of R!</p>
+	<p>Adjuk össze tünet előtti és a tünetmentes kontaktokat (45% + 5%), amivel kijön az R 50%-a!</p>
 	</li>
 
 	<li id="fn29">
-	<p>“None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” <a href="https://www.sciencedirect.com/science/article/pii/S0196655307007742">Tara Oberg &amp; Lisa M. Brosseau</a>&nbsp;<a href="#fnref29" rev="footnote">&#8617;</a></p>
+	<p>"Ezen sebészeti maszkok egyike sem mutatott megfelelő szűrőteljesítményt, valamint olyan arcillesztési jellemzőik sincsenek, amik légzésvédő eszköznek minősíthetnék őket." <a href="https://www.sciencedirect.com/science/article/pii/S0196655307007742">Tara Oberg &amp; Lisa M. Brosseau</a>&nbsp;<a href="#fnref29" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn30">
-	<p>“The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/">Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ</a>&nbsp;<a href="#fnref30" rev="footnote">&#8617;</a></p>
+	<p>"Az aeroszol sokszorozódási számaiban megfigyelt átlag 3,4-szeres csökkenés [70%-os csökkenés], egybeöltve a nagy cseppek szóródásának majdnem teljes eliminálásával, amit Johnson et al. demonstráltak, azt sugallja, hogy a fertőzöttek által viselt sebészi maszkok klinikailag jelentős hatással lehetnek a fertőzésre." <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/">Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ</a>&nbsp;<a href="#fnref30" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn31">
-	<p>Any actual scientist who read that last sentence is probably laugh-crying right now. See: <a href="https://en.wikipedia.org/wiki/Data_dredging">p-hacking</a>, <a href="https://en.wikipedia.org/wiki/Replication_crisis">the replication crisis</a>)&nbsp;<a href="#fnref31" rev="footnote">&#8617;</a></p>
+	<p>Ha olvasta ezt a mondatot egy valódi tudós, most biztos sír a nevetéstől. Lásd: <a href="https://en.wikipedia.org/wiki/Data_dredging">p-hacking</a>, <a href="https://en.wikipedia.org/wiki/Replication_crisis">the replication crisis</a>)&nbsp;<a href="#fnref31" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn32">
-	<p>“It is time to apply the precautionary principle” <a href="https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf">Trisha Greenhalgh et al [PDF]</a>&nbsp;<a href="#fnref32" rev="footnote">&#8617;</a></p>
+	<p>"Ideje alkalmazni az elővigyázatosság elvét" <a href="https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf">Trisha Greenhalgh et al [PDF]</a>&nbsp;<a href="#fnref32" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn33">
-	<p><a href="https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55">Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., &amp; Bennett, A</a> See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.&nbsp;<a href="#fnref33" rev="footnote">&#8617;</a></p>
+	<p><a href="https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55">Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., &amp; Bennett, A</a> 1. táblázat: Egy 100%-os pamutpóló szűrési képessége körülbelül 2/3-a egy sebészi maszk szűrőképességének. Ezt két bakteriális aeroszollal tesztelték.&nbsp;<a href="#fnref33" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn34">
-	<p><strong>&quot;We need to save supplies for hospitals.&quot;</strong> <em>Absolutely agreed.</em> But that&#39;s more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.&nbsp;<a href="#fnref34" rev="footnote">&#8617;</a></p>
+	<p><strong>&quot;Meg kell hagynunk a készleteket a kórházaknak.&quot;</strong> <em>Teljességgel egyetértek.</em> De ez inkább a maszk gyártás, nem pedig a maszk tartalékolás mellett szóló érv. Addig is, készíthetünk ruhából maszkot.&nbsp;<a href="#fnref34" rev="footnote">&#8617;</a></p>
 
-	<p><strong>&quot;They&#39;re hard to wear correctly.&quot;</strong> It&#39;s also hard to wash your hands according to the WHO Guidelines – seriously, &quot;Step 3) right palm over left dorsum&quot;?! – but we still recommend handwashing, because imperfect is still better than nothing.</p>
+	<p><strong>&quot;Nehéz helyesen viselni őket.&quot;</strong> A WHO Útmutatója szerint kezet mosni is nehéz (komolyan, &quot;3. lépés: jobb tenyér a bal dorsum fölé&quot;?!) ennek ellenére javasoljuk a kézmosást, mert a tökéletlenség még mindig jobb, mint a semmi.</p>
 
-	<p><strong>&quot;It&#39;ll make people more reckless with handwashing &amp; social distancing.&quot;</strong> Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we&#39;d argue the opposite: masks are a <em>constant physical reminder</em> to be careful – and in East Asia, masks are also a symbol of solidarity!</p>
+	<p><strong>&quot;Óvatlanabbak lesznek tőle az emberek a kézmosást és a távolságtartást illetően.&quot;</strong> Persze, a biztonsági öveknek köszönhetően pedig figyelmen kívül hagyják az emberek a stop táblákat, a fogselyem használata miatt meg köveket esznek. Most komolyan, szerintünk pont az ellenkezője áll fenn: a maszkok <em>állandó fizikai emlékeztetők</em>, hogy legyünk óvatosak; Kelet-Ázsiában pedig a maszk a szolidaritás szimbóluma!</p>
 	</li>
 
 	<li id="fn35">
-	<p>“One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. <a href="https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767">Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng</a>&nbsp;<a href="#fnref35" rev="footnote">&#8617;</a></p>
+	<p>"Egy fok-Celsius hőmérsékletnövekedés [...] 0,0225-tel csökkenti az R értékét" és "ennek a 100 városnak az átlagos R értéke 1,83". 0,0225 ÷ 1,83 = kb. 1,2%. <a href="https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767">Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng</a>&nbsp;<a href="#fnref35" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn36">
-	<p>“SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/">Wu LP, Wang NC, Chang YH, et al.</a> &quot;Sadly&quot; we&#39;ll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.&nbsp;<a href="#fnref36" rev="footnote">&#8617;</a></p>
+	<p>"SARS-specifikus antitestek átlag 2 évig maradtak fenn [...] Ezáltal, a SARS-betegek talán újra fogékonyak lehetnek 3 év után." <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/">Wu LP, Wang NC, Chang YH, et al.</a> "Sajnos" soha nem fogjuk tudni, milyen hosszan tartott volna a SARS elleni immunisság, mivel olyan gyorsan kipusztítottuk.&nbsp;<a href="#fnref36" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn37">
-	<p>“We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” <a href="http://www.columbia.edu/%7Ejls106/galanti_shaman_ms_supp.pdf">Marta Galanti &amp; Jeffrey Shaman (PDF)</a>&nbsp;<a href="#fnref37" rev="footnote">&#8617;</a></p>
+	<p>"Nem találtunk jelentős különbséget a legalább egyszeri pozitív teszteredmény valószínűsége és a béta-koronavírus HKU1 és OC43 újbóli megjelenésének valószínűsége közt 34 héttel a betegfelvétel/első fertőzés után." <a href="http://www.columbia.edu/%7Ejls106/galanti_shaman_ms_supp.pdf">Marta Galanti &amp; Jeffrey Shaman (PDF)</a>&nbsp;<a href="#fnref37" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn38">
-	<p>“Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” <a href="https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/">from STAT News by Andrew Joseph</a>&nbsp;<a href="#fnref38" rev="footnote">&#8617;</a></p>
+	<p>"Miután valaki legyőz egy vírust, a vírus részecskéi egy ideig  a testben szoktak maradni. Ezek nem okozhatnak fertőzést, de előidézhetnek pozitív teszteredményt." <a href="https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/">from STAT News by Andrew Joseph</a>&nbsp;<a href="#fnref38" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn39">
-	<p>From <a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract">Bao et al.</a> <em>Disclaimer: This article is a preprint and has not been certified by peer review (yet).</em> Also, to emphasize: they only tested re-infection 28 days later. &nbsp;<a href="#fnref39" rev="footnote">&#8617;</a></p>
+	<p>Forrás: <a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract">Bao et al.</a> <em>Megjegyzés: Ez a cikk egy előzetes nyomtatás, amit (még) nem igazoltak független szakértők.</em> Különben is, hogy nyomatékosítsam: csak 28 nappal később tesztelték az újrafertőződést. &nbsp;<a href="#fnref39" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn40">
-	<p>“If a coronavirus vaccine arrives, can the world make enough?” <a href="https://www.nature.com/articles/d41586-020-01063-8">by Roxanne Khamsi, on Nature</a>&nbsp;<a href="#fnref40" rev="footnote">&#8617;</a></p>
+	<p>"Ha meglesz a koronavírus ellenszere, képes lesz-e a világ előállítani eleget?" <a href="https://www.nature.com/articles/d41586-020-01063-8">by Roxanne Khamsi, on Nature</a>&nbsp;<a href="#fnref40" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn41">
-	<p>“Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” <a href="https://www.nature.com/articles/d41586-020-00751-9">by Shibo Jiang, on Nature</a>&nbsp;<a href="#fnref41" rev="footnote">&#8617;</a></p>
+	<p>"Ne siessük el a COVID-19 oltóanyag kiadását, [...] megfelelő biztonsági óvintézkedések előtt" <a href="https://www.nature.com/articles/d41586-020-00751-9">by Shibo Jiang, on Nature</a>&nbsp;<a href="#fnref41" rev="footnote">&#8617;</a></p>
 	</li>
 
 	<li id="fn42">
-	<p>Dry land metaphor <a href="https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/">from Marc Lipsitch &amp; Yonatan Grad, on STAT News</a>&nbsp;<a href="#fnref42" rev="footnote">&#8617;</a></p>
+	<p>Szárazföld metafora <a href="https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/">Marc Lipsitch &amp; Yonatan Grad, on STAT News</a>&nbsp;<a href="#fnref42" rev="footnote">&#8617;</a></p>
 	</li>
 
 	</ol>
@@ -883,43 +886,40 @@
 
 	<div>
 		
-		Help this post get R > 1: <span class='shareables in_footer' style='position: relative; top: 17px; right: -6px;'></span>
+		Segíts, hogy elérjük az R > 1-et: <span class='shareables in_footer' style='position: relative; top: 17px; right: -6px;'></span>
 		<br><br>
-		This guide is
+		Ez az ismertető
 		<br>
 		<img src='sharing/cc0.png' style="margin-right: 10px; margin-top: 10px; width: 120px;"/>
 		<b style='font-size: 100px;position: relative;top: -24px;'>
-			PUBLIC DOMAIN
+			KÖZKINCS<br>
 		</b>
-		That means you <i>already</i> have permission to re-use &amp; remix
-		any of the art/code/words on this page – on blogs, news sites, classrooms, anywhere!
+		Ez azt jelenti, hogy <i>szabadon</i> felhasználhatod az ismertető bármelyik részletét; blogokon, hírcsatornákon, tantermekben, bárhol!
 		<a href='https://github.com/ncase/covid-19'>
-			(Swipe our code on Github)
+			(Töltsd le a kódot a Githubról.)
 		</a>
 		<br>
 		<b>
-			Just remember to credit
+			Csak ne felejtsd el feltüntetni a készítőket:
 			<a href='https://scholar.google.com/citations?user=_wHMGkUAAAAJ&hl=en'>Marcel Salathé</a>
 			&
 			<a href='https://ncase.me/'>Nicky Case</a>
-			(May 2020)
+			(2020. május)
 		</b>
 		
 		
 		<br><br>
 
-		This free, open-source guide was made possible thanks to
-		Nicky's supporters on Patreon.
-		If (seriously, ONLY IF) you have some disposible income in these hard times, you can
-		<a href='https://www.patreon.com/ncase'>throw coins at Nicky!</a>
-		If not, you can share this guide or
-		<a href='https://ncase.me/'>see their other educational art/interactives</a>.
-		(excellent for homeshooling if, say, schools are currently closed
-		due to a pandemic)
+		Ez az ingyenes, nyílt kódú ismertető Nicky Patreon-támogatóinak köszönhetően jött létre.
+		Amennyiben akad egy kis pénzed, amire nincs szükséged (tényleg csak akkor, HA nincs rá szükséged),
+		<a href='https://www.patreon.com/ncase'>kisegítheted Nickyt!</a>
+		Amennyiben nincs, megoszthatod ezt az ismertetőt másokkal és/ vagy kipróbálhatod
+		<a href='https://ncase.me/'>Nicky egyéb alkotásait</a>.
+		(Otthoni oktatásra is tökéletesek, ha már a járvány miatt be vannak zárva az iskolák.)
 
 		<br><br>
 
-		Here's some of the generous Patrons who made this possible: 💖
+		Pár nagylelkű Patron (Patreon támogató), akik lehetővé tették mindezt: 💖
 
 		<br><br>
 
@@ -929,7 +929,7 @@
 
 		<br><br>
 
-		And <i>huge</i> thank you to these folks for playtesting/proofreading:
+		Nekik pedig <i>hatalmas</i> köszönet a tesztelésért, átolvasásért:
 		Alex Kreitzberg,
 		Amit Patel,
 		EmilyKate McDonough,
@@ -948,19 +948,19 @@
 
 		<br><br>
 
-		Any errors remaining are probably Nicky's fault.
+		Bármely fennmaradó hiba valószínűleg Nicky bűne.
 
 	</div>
 
 </div>
 
 <div id="footnotes_container">
-	<h2 id='show_feetnotes_button'>(Click to show Feetnotes)</h2>
-	<h2 id='shown_feetnotes'>Feetnotes:</h2-->
+	<h2 id='show_feetnotes_button'>(Kattints, hogy megnézd a lábjegyzeteket)</h2>
+	<h2 id='shown_feetnotes'>Lábjegyzetek:</h2-->
 </div>
 
 <div id="wash">
-	wash your hands! 👏
+	Mossatok kezet! 👏
 </div>
 
 
