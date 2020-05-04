@@ -31,6 +31,8 @@ iframe{
 article > p, article > ul, article > ol, article > h1, article > h2, article > h3{
 	width: 640px;
 	margin:1em auto;
+	direction:rtl;
+	text-align:right;
 }
 .section{
 	width:100%;
