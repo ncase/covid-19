@@ -2,15 +2,6 @@
 
 # How To Translate
 
-**NOTE: I'm still editing some stuff! Words will be finalized-ish on May 4th.
-You can start on stuff below, then check for new commits on the 4th to see what else to
-translate. You're wonderful, thank you! 💖**
-
-**NOTE 2: Sorry these instructions are really sloppy. Am writing this at midnight, rushing
-to publish this.**
-
-**NOTE 3: Indie gamedev is horrible.**
-
 Step 1)
 
 Check to see if it's already been translated to your language!
@@ -29,7 +20,7 @@ Translate `words.md`, (6000 words) then export it to html
 – make sure your Markdown app supports footnotes –
 and copy-paste that into the `<article></article>` part of `index.html`.
 
-Translate the `<head>`, sidebars, & footer of `index.html` (200 words)
+Translate the `<head>`, sidebars, & footer of `index.html` (200 words) **Feel free to add yourself in the header/footer credits as a translator! :)**
 
 Translate the images in `/pics` (800 words)
 If you don't have image-editing software, ask for help on the Github Issue!
