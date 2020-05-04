@@ -239,84 +239,81 @@ Brace yourselves for an emergency landing...
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Months</div>
+        <div>Die nächsten paar Monate</div>
     </div>
 </div>
 
-...could have been worse. Here's a parallel universe we avoided:
+... hätten deutlich schlimmer sein können. Hier ist ein Paralleluniversum, das wir vermieden haben:
 
-###Scenario 0: Do Absolutely Nothing
+###Szenario 0: Überhaupt nichts tun
 
-Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+Etwa 1 von 20 Menschen, die sich COVID-19 infiziert haben, benötigen intensivmedizinische Behandlung.[^icu_covid] In einem reichen Land wie den USA kommt ein Intensivplatz auf 3.400 Menschen.[^icu_us] Daher können die USA damit umgehen, dass 20 von 3400 Menschen *gleichzeitig* infiziert sind - oder 0,6% der Bevölkerung.
 
-[^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
+[^icu_covid]: [Prozentualer Anteil der COVID-19-Fälle in den USA vom 12. Februar bis 16. März 2020, die eine intensivmedizinische Behandlung benötigten, nach Altersgruppe](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Zwischen 4,9% und 11,5% *aller* COVID-19-Fälle benötigten eine intensivmedizinische Behandlung. Wenn man die unterste Schätzung wählt, sind das 5 Prozent oder 1 von 20. Diese Gesamtzahl ist spezifisch für die Altersstruktur der USA. In Ländern mit älterer Bevölkerung wird sie höher und in Ländern mit jüngerer Bevölkerung niedriger sein.
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+[^icu_us]: Anzahl der Betten auf der Intensivstation = 96.596. Von [der Gesellschaft für Intensivmedizin] (https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) Die Bevölkerung der USA betrug im Jahr 2019 rund 328.200.000 Personen. 96.596 von 328.200.000 macht ungefähr 1 von 3400. 
 
-Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
+Selbst wenn wir diese Kapazität auf 2% *mehr als verdreifacht* hätten, wäre Folgendes passiert, *wenn wir absolut nichts getan hätten:*
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
-Not good.
+Gar nicht gut.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
-(remember: total cases *overshoots* herd immunity)
+Eben das hat [der Bericht des Imperial College vom 16. März] (http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) herausgefunden: Wenn wir nichts tun, gehen uns die Betten auf den Intensivstationen aus und mehr als 80% der Bevölkerung werden infiziert. 
+(zur Erinnerung: die Gesamtzahl der Fälle *überschreitet* die Herdenimmunität)
 
-Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+Selbst wenn nur 0,5% der Infizierten sterben - eine sehr optimistische Annahme, wenn es keine Betten auf Intensivstationen mehr gibt - dann sterben in einem großen Land wie den USA mit 300 Millionen Menschen 0,5% von 80% der 300 Millionen. Also immer noch 1,2 Millionen Menschen ... *FALLS wir nichts tun*.
 
-(Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
+(In vielen Nachrichten und sozialen Medien wurde berichtet: "80% werden infiziert" *ohne* den Beisatz "FALLS WIR NICHTS TUN". Die Angst kanalisierte sich auf diese Weise in Klicks, nicht in Verständnis. *Seufz.*)
 
-###Scenario 1: Flatten The Curve / Herd Immunity
+###Szenario 1: "Flatten the Curve" / Herdenimmunität
 
-The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+Der Plan "Flatten The Curve" (Abflachen der Kurve) wurde von allen Gesundheitsorganisation angepriesen, während der ursprüngliche britische Plan der "Herdenimmunität" allgemein ausgepfiffen wurde. Allerdings handelte es sich dabei eigentlich um *denselben Plan.* Großbritannien kommunizierte ihn nur schlecht.[^yong]
 
-[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
-    
-    From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+(^yong): Übersetztes Zitat: Er sagt, dass das eigentliche Ziel dasselbe ist wie in anderen Ländern: die Kurve abflachen, indem der Ausbruch von Infektionen zeitlich versetzt wird. Als Folge davon kann die Nation Herdenimmunität erreichen; das ist ein Nebeneffekt, kein Ziel. [...] Der aktuelle Coronavirus-Aktionsplan der Regierung, der online verfügbar ist, erwähnt die Herdenimmunität überhaupt nicht. (Aus einem [The Atlantic-Artikel von Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/))
 
-Both plans, though, had a literally fatal flaw.
+Beide Pläne hatten jedoch einen fatalen Fehler.
 
-First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
+Betrachten wir zunächst die beiden Hauptmöglichkeiten, mit denen sich die Kurve abflachen lässt: Händewaschen und soziale Distanzierung.
 
-Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+Durch vermehrtes Händewaschen werden Grippen und Erkältungskrankeiten in Ländern mit hohem Einkommen um ~25%[^handwashing] reduziert, während die stadtweite Abriegelung in London enge Kontakte um ~70%[^london] einschränkt. Nehmen wir also an, durch Händewaschen kann R um *bis zu* 25% reduziert werden, und durch Distanzierung kann R um *bis zu* 70% reduziert werden:
 
-[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
+[^handwashing]: Alle acht in Frage kommenden Studien berichteten, dass das Händewaschen das Risiko einer Atemwegsinfektion senkt, wobei die Risikominderung zwischen 6% und 44% liegt. Gepoolter Wert 24% (95% CI 6-40%). (Der Einfachheit halber haben wir in diesen Simulationen den gepoolten Wert auf 25% aufgerundet.) [Rabie, T. und Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Anmerkung: Wie diese Meta-Analyse aufzeigt, ist die Qualität der Studien zum Händewaschen (zumindest in Ländern mit hohem Einkommen) miserabel.
 
-[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: Wir fanden eine 73%ige Verringerung der durchschnittlichen täglichen Anzahl der beobachteten Kontakte pro Teilnehmer. Dies würde ausreichen, um R0 von einem Wert von 2,6 vor dem Lockdown auf 0,62 (0,37 - 0,89) während des Lockdowns zu reduzieren. (Der Einfachheit halber haben wir in diesen Simulationen auf 70% abgerundet.) [Jarvis und Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**Probiere mit diesem Rechner aus, um mit unterschiedlichen % von Nicht-<icon s></icon> zu sehen, wie Händewaschen und Distanzierung R reduzieren:** (dieser Rechner visualisiert ihre *relativen* Effekte, weshalb die Erhöhung des einen Merkmals so *aussieht*, als ob es die Wirkung des anderen verringert.[^log_caveat])
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+[^log_caveat]: Diese Verzerrung würde verschwinden, wenn wir R auf einer logarithmischen Skala auftragen würden... aber dann müssten wir *logarithmische Skalen.* erklären
 
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
+Lasst uns nun simulieren, was mit einer COVID-19-Epidemie passiert, wenn wir ab März 2020 das Händewaschen verstärkt hätten, aber nur mit *wenig* sozialer Distanzierung - sodass R niedriger, aber immer noch größer als 1 ist:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
+Drei Anmerkungen:
 
-1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1. Dies *verringert* die Gesamtzahl der Fälle! **Selbst wenn R < 1 nicht erreicht wird, rettet die Reduzierung von R immer noch Leben, indem sie den 'Überhang' bis zur Herdenimmunität reduziert.** Viele Menschen denken, dass mit dem Abflachen der Kurve die Fälle zeitlich gestreckt werden, ohne aber die Gesamtzahl zu reduzieren. Doch das steht im Widerspruch zu *jedem* grundlegenden Epidemiologie-Modell. Aber weil in den Nachrichten "80%+ werden infiziert sein" als unvermeidlich berichtet wurde, kommt es zu der weitläufigen Annahme, dass die Gesamtzahl der Fälle in jedem Fall gleich bleiben würde. *Seufz.*
 
-2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2. Aufgrund der zusätzlichen Interventionen erreichen die aktuellen Fälle ihren Höhepunkt *bevor* die Herdenimmunität erreicht wird. Tatsächlich schießt in dieser Simulation die Gesamtzahl der Fälle nur *ein kleines bisschen* über die Herdenimmunität hinaus - der Plan des Vereinigten Königreichs! An diesem Punkt, R < 1, kann man alle anderen Interventionen loslassen, und COVID-19 bleibt eingedämmt! Es gibt nur ein Problem ...
 
-3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3. Es fehlen die Betten auf den Intensivstationen. Und das über mehrere Monate. (und dabei haben wir die Betten auf den Intensivstationen für diese Simulation *bereits* verdreifacht)
 
-That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
-
+Das führte zum Befund im Bericht des Imperial College vom 16. März, der Großbritannien davon überzeugte, seinen ursprünglichen Plan aufzugeben. Jeder Versuch einer **Milderung** (R reduzieren, aber R > 1) wird scheitern. Der einzige Ausweg ist **Unterdrückung** (R reduzieren, so dass R < 1).
 ![](pics/mitigation_vs_suppression.png)
 
-That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
+Das heißt: Es reicht nicht, die Kurve einfach "abzuflachen". Die Kurve muss *zerstampft* werden. Zum Beispiel mit ...
 
-###Scenario 2: Months-Long Lockdown
+###Szenario 2: Monatelanger Lockdown
 
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+Mal sehen, was passiert, wenn wir die Kurve mit einen 5-monatigen Lockdown *zerstampfen*, die <icon i></icon> auf fast gar nichts reduzieren und dann endlich – *endlich* – wieder zu unserem normalen Leben zurückkehren:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
@@ -324,107 +321,103 @@ Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <
 
 Oh.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+Das ist die "zweite Welle", über die alle sprechen. Sobald wir den Lockdown aufheben, erhalten wir wieder R > 1. Ein einzelner, verbliebener <icon i></icon> (oder ein importierter <icon i></icon>) kann also einen Ausschlag verursachen, der fast so schlimm ist, als hätten wir Szenario 0 verfolgt: Absolut nichts getan.
 
-**A lockdown isn't a cure, it's just a restart.**
+**Ein Lockdown ist keine Heilung, es ist nur ein Neustart.**
 
-So, what, do we just lockdown again & again?
+Was also tun? Einen Lockdown nach dem anderen?
 
-###Scenario 3: Intermittent Lockdown
+###Szenario 3: Periodischer Lockdown
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+Diese Option wurde zuerst im Bericht des Imperial College vom 16. März und später erneut in einem Harvard-Papier vorgeschlagen [^lockdown_harvard].
 
-[^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
+[^lockdown_harvard]: In Abwesenheit anderer Interventionen ist eine Schlüsselmetrik für den Erfolg der sozialen Distanzierung, ob die Kapazitäten der Intensivpflege überschritten werden. Um dies zu vermeiden, kann eine längere oder zeitweilige soziale Distanzierung bis ins Jahr 2022 erforderlich sein. [Kissler und Tedijanto et al] (https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**Hier ist eine Simulation für diese Option:** (Spiele zunächst die Aufzeichnung ab. Danach kannst Du versuchen, Deinen *eigenen* Lockdown-Plan zu simulieren, indem Du den Schieberegler änderst ** während* die Simulation läuft! Du kannst dabei die Simulation unterbrechen, fortsetzen und die Simulationsgeschwindigkeit ändern)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+Dies *würde* Fälle unter der Kapazität der Intensivstationen halten! Und es ist *viel* besser als ein 18-monatiger Lockdown, bis ein Impfstoff zur Verfügung steht. Wir müssten also nur... für ein paar Monate einen Lockdown machen, für ein paar Monate öffnen und das solange wiederholen, bis ein Impfstoff verfügbar ist. (Und wenn es keinen Impfstoff gibt, wiederholen wir es, bis die Herdenimmunität erreicht ist... im Jahr 2022).
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+Es scheint zunächst sinnvoll, solch einen Plan anhand der Kapazitäten der Intensivstationen zu machen, aber dabei übersehen wir zahlreiche wesentliche Dinge, die wir hier *nicht* simulieren können. Zum Beispiel:
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**Psychische Aspekte:** Einsamkeit ist einer der größten Risikofaktoren für Depressionen, Angstzustände und Selbstmord. Und sie führt statistisch gesehen genauso häufig zu einem frühen Tod, wie das Rauchen von 15 Zigaretten am Tag..[^loneliness]
 
-[^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
+.[^loneliness]: Siehe [Abbildung 6 aus Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Natürlich müssen wir einschränkend die Frage stellen, ob sie tatsächlich eine *Korrelation* gefunden haben. Aber wenn wir Menschen nicht nach dem Zufallsprinzip ein Leben in Einsamkeit verordnen wollen, müssen wir für unsere Annahmen auf solche Beobachtungen zurückgreifen.
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**Wirtschaftliche Aspekte:** Die Frage nach der Wirtschaft klingt so, als ob man sich mehr um Dollar als um Leben kümmert, aber "die Wirtschaft" besteht nicht nur aus Aktien: Es geht um die Fähigkeit der Menschen, sich um ihre Liebsten zu kümmern, in die Zukunft ihrer Kinder zu investieren und Kunst, Essen und Videospiele zu genießen. All das also, was das Leben lebenswert macht. Dazu kommt, dass Armut *an sich* gravierende Auswirkungen auf die geistige und körperliche Gesundheit hat.
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+Das ist kein Plädoyer gegen erneute Lockdowns! Wir werden uns später mit möglichen Vorgehensweisen dazu befassen. Trotzdem ist es nicht ideal.
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
+Was also tun? Hmmm ... haben Taiwan und Südkorea nicht *bereits* COVID-19 in den Griff bekommen? Für vier ganze Monate und *ohne* längerfristige Lockdowns?
 
-How?
+Wie ist das möglich?
 
-###Scenario 4: Test, Trace, Isolate
+###Szenario 4: Testen, Verfolgen, Isolieren
 
-*"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+*Sicherlich hätten wir das tun können, was Taiwan und Südkorea am Anfang getan haben. Aber dazu ist es jetzt ist es zu spät. Wir haben den Start verpasst. "*
 
-But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
+Aber erinnert euch daran: "Ein Lockdown ist keine Heilung, es ist nur ein Neustart"... **und ein Neustart ist das, was wir brauchen.**
 
-To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
+Um zu verstehen, wie Taiwan und Südkorea COVID-19 in den Griff bekommen haben, müssen wir den genauen zeitlichen Ablauf einer typischen COVID-19-Infektion verstehen[^timeline]:
 
-[^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
+[^timeline]: **durchschnittlich 3 Tage bis zur Ansteckungsgefahr:** "Unter der Annahme einer Verteilung der Inkubationszeit von durchschnittlich 5,2 Tagen aus einer separaten Studie über frühe COVID-19-Fälle folgerten wir, dass die Ansteckung 2,3 Tage (95% CI, 0,8-3,0 Tage) vor Symptombeginn lag" (Das bedeutet: Wenn die Symptome nach 5 Tagen beginnen, hat man sich schon 2 Tage vorher angesteckt = Ansteckungsgefahr 3 Tage nach der Ansteckung)
     
-    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
-    
-    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    ** durchschnittlich 4 Tage bis zur Ansteckung einer anderen Person:** "Das durchschnittliche [serielle] Intervall betrug 3,96 Tage (95% CI 3,53-4,39 Tage)" [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+ 
+     ** durchschnittlich 5 Tage bis zum Auftreten von Symptomen:** "Die mediane Inkubationszeit wurde auf 5,1 Tage geschätzt (95% CI, 4,5 bis 5,8 Tage)" [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
-If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
+Wenn sich Menschen erst dann selbst isolieren, wenn sie wissen, dass sie krank sind (d.h. wenn sie Symptome spüren), kann sich das Virus trotzdem ausbreiten:
 
 ![](pics/timeline2.png)
 
-And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+Und in der Tat sind 44% aller Übertragungen so: Sie finden *vor* dem Auftreten von Symptomen statt! [^pre_symp]
 
-[^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: Wir schätzten, dass 44% (95% Konfidenzintervall, 25-69%) der sekundären Fälle während des präsymptomatischen Stadiums der Indexfälle infiziert wurden. [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
-But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
+Aber, wenn wir die stattgefundenen und engsten Kontakte einer Person, die Symptome hat, finden *und unter Quarantäne stellen* ... stoppen wir die Ausbreitung, indem wir einen Schritt voraus bleiben!
 
 ![](pics/timeline3.png)
 
-This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
+Diese Idee wird als **Kontaktverfolgung** bezeichnet. Sie wurde bereits zur Eindämmung von Ebola[^ebola] verwendet, und ist jetzt zentraler Bestandteil der Eindämmungsstrategie von COVID-19 in Taiwan & Südkorea!
 
-[^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
+[^ebola]: Kontaktverfolgung war eine entscheidende Intervention in Liberia und stellte eine der größten Kontaktverfolgungsbemühungen während einer Epidemie in der Geschichte dar. [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)
+(Dies ermöglicht uns auch, unsere begrenzten Test-Kapazitäten effizienter zu nutzen, um <icon i></icon> vor dem Ausbruch von Symptomen zu finden, ohne so gut wie alle testen zu müssen.)
 
-Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
+Normalerweise werden Kontakte durch persönliche Interviews gefunden, aber diese *alleine* sind zu langsam für das ~48-Stunden-Fenster von COVID-19. Aus diesem Grund brauchen Kontaktverfolger Hilfe und werden deshalb unterstützt von - *NICHT* ersetzt durch - Kontaktverfolgungs-Apps.
 
-(This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
+(Diese Idee stammt nicht von "Nerds": Die Verwendung einer App zur Bekämpfung von COVID-19 wurde zuerst von [einem Team von Epidemiolog\*innen aus Oxford](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936) vorgeschlagen.)
 
-Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+Aber warte, Apps, die zurückverfolgen, mit wem du in Kontakt warst?... Bedeutet das, Deine Privatsphäre aufzugeben und Big Brother zu opfern?
 
-Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
+Verdammt nein! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, ein Team von Epidemiolog\*innen & Verschlüsselungsexpert\*innen (darunter einer von uns, Marcel Salathé), entwickelt *bereits* eine Anwendung zur Kontaktverfolgung - mit einem für die Öffentlichkeit zugänglichen Code -, die **keine Informationen preisgibt über Deine Identität, Deinen Standort, wer Deine Kontakte sind und nicht einmal darüber, *wie viele Kontakte* Du hattest.**
 
-Here's how it works:
+Das funktioniert so:
 
 ![](pics/dp3t.png)
 
-(& [here's the full comic](https://ncase.me/contact-tracing/))
+(& [hier findest Du den vollständigen Comic](https://ncase.me/contact-tracing/))
 
-Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
+Zusammen mit ähnlichen Teams wie TCN Protocol[^tcn] und MIT PACT[^pact] haben sie Apple & Google dazu gebracht, Kontaktverfolgung bei Wahrung der Privatsphäre direkt in Android/iOS zu implementieren.[^gapple] (Du traust Google/Apple nicht? Gut! Das Schöne an diesem System ist, dass es kein Vertrauen *benötigt*). Bald wird Deine örtliche Gesundheitsbehörde Dich vielleicht bitten, eine App herunterzuladen. Wenn der Schutz der Privatsphäre dabei gesichert und der Code öffentlich zugänglich ist, dann tue das bitte!
 
-[^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
+[^tcn]: [Temporary Contact Numbers, ein dezentralisiertes Protokoll zur Kontaktverfolgung unter Wahrung der Privatsphäre](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
 [^pact]: [PACT: Private Automated Contact Tracing](https://pact.mit.edu/)
 
-[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
+[^gapple]: [Apple und Google kooperieren bei einer COVID-19 Kontaktverfolgungs-Techhnologie ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Bitte beachte: Sie entwickeln diese Apps nicht *selbst*, sondern nur die Umgebungen, die diese Apps *unterstützen*.
 
-But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+Aber was ist mit den Menschen ohne Smartphones? Oder Infektionen durch Türklinken? Oder "echte" asymptomatische Fälle? Apps zur Kontaktverfolgung können nicht alle Übertragungen erfassen... *und das ist okay!* Wir müssen nicht *alle* Übertragungen erfassen, nur 60%+ um R < 1 zu erreichen.
 
-(Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
+(Dazu ein Rant über die Verwirrung zwischen prä-symptomatisch und "echter" Asymptomatik. "Echte" Asymptomatiken sind selten:[^rant])
 
-[^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
-   
-    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
-    
-    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
+[^rant]: Viele Nachrichtenberichte - und ehrlich gesagt auch viele wissenschaftlichen Arbeiten - unterscheiden nicht zwischen "Fällen, die keine Symptome zeigten, als wir sie getestet haben" (präsymptomatisch) und "Fällen, die *immer* keine Symptome zeigten". (wirklich asymptomatisch). Sie könnten den Unterschied nur feststellen, wenn sie die Fälle später nachverfolgen würden. Genau das hat [diese Studie] (https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) getan. In einem Callcenter in Südkorea, das einen COVID-19-Ausbruch hatte, blieben nur 4 (1,9 %) Fälle innerhalb von 14 Tagen nach der Quarantäne asymptomatisch, und keiner ihrer Haushaltskontakte erwarb Sekundärinfektionen (Disclaimer: Vorzeitige Veröffentlichungen von Artikeln, gelten nicht als endgültige Versionen.) Das bedeutet also, dass "echte Asymptomatik" selten ist, und die Ansteckung mit einer echten Asymptomatik kann sogar noch seltener sein!
 
-Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
+Die Isolierung *symptomatischer* Fälle würde R um bis zu 40% reduzieren, und die Quarantäne ihrer *pre/a-symptomatischen* Kontakte würde R um bis zu 50% reduzieren[^oxford]:
 
 [^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
     
@@ -439,36 +432,36 @@ Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining thei
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
+Das bedeutet, dass wir auch ohne 100%ige Kontaktquarantäne R < 1 bekommen können *ohne Lockdown!* Das ist somit viel besser für unsere psychische und wirtschaftliche Verfassung. (Menschen, die sich selbst isolieren, *müssen von den Regierungen Unterstützung erhalten* - Kostenübernahme für die Tests, Arbeitsschutz, subventionierten bezahlten Urlaub usw. Das ist insgesamt immer noch viel billiger als periodische Lockdowns).
 
-We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
+Wir behalten dann R < 1 bis wir einen Impfstoff haben, der gefährdete <icon s></icon>s zu immunisierten <icon r></icon> macht. Herdenimmunität auf die *richtige* Art:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+(Hinweis: Dieser Rechner erweckt den Anschein, als seien die Impfstoffe zu 100% wirksam. In Wirklichkeit müssten wir durch Impfung aber *mehr* als "Herdenimmunität" schaffen, um *wirklich* eine Herdenimmunität zu erhalten)
 
-Okay, enough talk. Here's a simulation of:
+Okay, genug der Worte. Das hier ist eine Simulation von ...
 
-1. A few-month lockdown, until we can...
-2. Switch to "Test, Trace, Isolate" until we can...
-3. Vaccinate enough people, which means...
-4. We win.
+1. ... einem Lockdown über wenige Monate, bis wir...
+2. umschalten auf "Testen, Verfolgen, Isolieren", bis wir...
+3. genug Leute impfen, was bedeutet, dass...
+4. wir gewinnen.
 
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-So that's it! That's how we make an emergency landing on this plane.
+Das war's also! So machen wir eine Notlandung mit unserem Flugzeug.
 
-That's how we beat COVID-19.
+So schlagen wir COVID-19.
 
 ...
 
-But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
+Aber was ist, wenn die Dinge *immer noch* schief gehen? Die Dinge sind ja bereits schrecklich schief gelaufen. Wer so überlegt hat Angst - und das ist gut so! Angst gibt uns Energie, um *Sicherungspläne* zu erstellen.
 
-The pessimist invents the parachute.
+Der Pessimist erfindet den Fallschirm.
 
 ###Scenario 4+: Masks For All, Summer, Circuit Breakers
 
