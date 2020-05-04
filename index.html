@@ -147,29 +147,29 @@
 	        <iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 	</div>
 
-	<p>This is the &quot;S-shaped&quot; <strong>logistic growth curve.</strong> Starts small, explodes, then slows down again.</p>
+	<p>این منحنی &quot;S - مانند&quot; <strong>منحنی رشد منطقی</strong> هست. آروم شروع میشه، یهو منفجر میشه، و خسته میشه و دوباره آهسته پیشروی میکه  .</p>
 
-	<p>But, this simulation is <em>still</em> wrong. We&#39;re missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) &quot;recovering&quot; with lung damage, or 3) dying.</p>
+	<p>ولی این شبیه ساز <em>هنوز</em> غلطه.(گیری کردیما). راستش یه چیز خیلی مهم رو در نظر نگرفتیم. افراد ناقل<icon i></icon> بعد از مدتی پاک میشن! ( حالا با بهبود، صدمه به ریه یا حتی مرگ)</p>
 
-	<p>For simplicity&#39;s sake, let&#39;s pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <span class="nowrap"><icon r></icon>s</span> can&#39;t be infected again, and let&#39;s pretend – <em>for now!</em> – that they stay immune for life.</p>
+	<p>یه مقدار سخت شد. بیاین اینطوری سادش کنیم. بیاین وانمود کنیم ک همه ی<icon i></icon>ها تبدیل میشن به افراد بهبود یافته<icon r></icon> (یاتون باشه در واقعیت یک سری جونشون رو از دست میدن) بیاین  <em>فعلا</em> وانمود کنیم همه ی <span class="nowrap"><icon r></icon>ها</span> در طول عمرشون از بیماری ایمن شدن.(مثل یه ادم که میره تو یه محفظه ی ضد گلوله، هرچی تیر بزنی چی میشه؟)</p>
 
-	<p>With COVID-19, it&#39;s estimated you&#39;re <icon i></icon> Infectious for 10 days, <em>on average</em>.<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> That means some folks will recover before 10 days, some after. <strong>Here&#39;s what that looks like, with a simulation <em>starting</em> with 100% <span class="nowrap"><icon i></icon>:</span></strong></p>
+	<p>تو این ویروس لعنتی، پیش بینی میشه شما میتونین در عرض 10 روز ناقل<icon i></icon> بمونید, البته به طور <em>میانگین</em>.<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> That means some folks will recover before 10 days, some after. <strong>Here&#39;s what that looks like, with a simulation <em>starting</em> with 100% <span class="nowrap"><icon i></icon>:</span></strong></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 	</div>
 
-	<p>This is the opposite of exponential growth, the <strong>exponential decay curve.</strong></p>
+	<p>این داداشمون(شایدم آبجی) برعکس تابع نمایی رشده، که بهش میگیم <strong>منحی تابع نمایی فروپاشی.</strong></p>
 
-	<p>Now, what happens if you simulate S-shaped logistic growth <em>with</em> recovery?</p>
+	<p>خب به نظرتون چی میشه اگر تابع فروپاشی و رشد رو با هم مخلوط کنیم؟</p>
 
 	<p><img src="pics/graphs_q.png" alt=""></p>
 
-	<p>Let&#39;s find out.</p>
+	<p>بیاین چک کنیم.</p>
 
-	<p><b style='color:#ff4040'>Red curve</b> is <em>current</em> cases <span class="nowrap"><icon i></icon>,</span><br>
-	<b style='color:#999999'>Gray curve</b> is <em>total</em> cases (current + recovered <span class="nowrap"><icon r></icon>),</span>
-	starts at just 0.001% <span class="nowrap"><icon i></icon>:</span></p>
+	<p><b style='color:#ff4040'>منحنی قرمز</b> کیس های <em>فعال</em> هست <span class="nowrap"><icon i></icon>,</span><br>
+	<b style='color:#999999'>منحنی خاکستری </b> شامل <em>تمام</em> کیس هاست (بهبود و فعال)<span class="nowrap"><icon r></icon>),</span>
+	 <span class="nowrap"><icon i></icon>:</span></p>ها فقط 0.001% رو در ابتدا شامل میشن.
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
@@ -939,45 +939,32 @@
 		Here's some of the generous Patrons who made this possible: 💖
 
 		<br><br>
-
-		<div id="supporters">
-			9_9<br>Aaron Steelman<br>Abdallah AbuHashem<br>Adam Zeiner<br>Aeryn Light<br>Agent Entity<br>Ahti Ahde<br>Aimee Jarboe<br>Akito INOUE<br>Aldebarb <br>alex <br>Alex Kreitzberg<br>Alexander Zacherl<br>Alexis Olson<br>Allison Clift-Jennings<br>Amy Fuchs<br>Amy Traylor<br>Andre Latchman<br>Andrea Chlebikova<br>Andrea Di Biagio<br>Andrew Sachs<br>Andy Ellis<br>Anton Eremin<br>Apollo Slater<br>Aria Minaei<br>Armelle Laine<br>Arvand Barghi<br>Aurimas<br>B Cavello<br>Ben Kraft<br>Benoit Doidic<br>Berk Gedik<br>Brandon Quinn<br>Brendan Nelligan<br>Brian Handy<br>Brian Lange<br>Bruce Steinberg<br>Caelyn McAulay<br>Caio Vinicius do Nascimento<br>Cassandra Xia<br>Catherine J Smith<br>Cathy Deng<br>Cedric Nering<br>Chad Sansing<br>Charlie Stigler<br>Chong Kee Tan<br>Choose A Username<br>Chris Hallacy<br>Chris Makler<br>Chris Ploeg<br>Christine Capra<br>Christopher Ferrie<br>Christopher Walker<br>Clive Freeman<br>Colin Anderson<br>Colin Liotta<br>Connie <br>Corey Girard<br>count <br>Cristy Stone<br>Curtis Frye<br>Cyrus Levy<br>D <br>Da LIberman<br>Dag Frode Solberg<br>Damien Bernard<br>Daniel Shiffman<br>Daniel Teitelbaum<br>Dante <br>Darius Bacon<br>Dave B.<br>Dave Tu<br>David E Weekly<br>David Mora<br>Denis <br>Dominik <br>Duilio Palacios<br>Dylan Field<br>Eldecrok <br>Eric Chisholm<br>Ernst Scholtz<br>Ethan Muller<br>Eugene Eric Kim<br>Evan Rocha<br>Evan Shulman<br>Fanboat <br>Fiona Nielsen<br>Florencia Herra Vega<br>FlyingRat <br>Gabriel Barbosa Nunes<br>Gargi Sharma<br>Gary Coulter<br>Gauthier Muguerza<br>Glen E. Ivey<br>Grävling <br>Green <br>Greg <br>Guy Chapman<br>Harry Brisson<br>HI <br>Hilary Fried<br>Hildegard von Bigass<br>Idahosa Ness<br>ikrima <br>IndustrialRobot <br>Ivar Troost<br>Ivo Murrell<br>J C<br>Jacob Christian Munch-Andersen<br>James <br>James Horton<br>Jan Kölling<br>Jared Cosulich<br>Jason Crawford<br>Jay Mitchell<br>Jay Treat<br>jc <br>Jean-Eudes Denis<br>Jesse Bradley<br>Jing Wang<br>Jingfeng Chen<br>Joe Sevits<br>Jonne Harja<br>Joost Gadellaa<br>Joseph Rocca<br>Josh 'Cheeseness' Bush<br>Josh Koenig<br>Joshua Horowitz<br>Joy Buolamwini<br>k3taminee<br>Kailys <br>Kalu <br>Karen Cooper<br>Kate Fractal<br>Kelly Reed<br>Kelvin Nishikawa<br>Kendra Lockman<br>Kevin Richardson<br>Kevin Simler<br>Kevin Zollman<br>KevinDeLand <br>Kien <br>Kimberly Lammi<br>Kwame Thomison<br>Kyle Buswell<br>Kyle Studstill<br>labratross <br>Landy Manderson<br>Laura <br>Laura Baldwin<br>Laurent COOPER<br>Lee Berman<br>Leopard Dan<br>Liyi Zhang<br>Lucas Garron<br>Lukas Peyer<br>Lydia Choy<br>M <br>Malte <br>Manuel Kueblboeck<br>Marc Cohen<br>Marc Marasco<br>Marguerite Dibble<br>Mark Guzdial<br>marko <br>Mary Bush<br>Mary C.<br>Matt Hughes<br>Matthew Campbell<br>Maura Dawes<br>Maxim Sidorov<br>Mercury Legba<br>Michael Donatz<br>Michael Handler<br>Michael Huff<br>Michael Slade<br>Michal Takáč<br>Mikayla <br>Mikey <br>Mikkel Snyder<br>Naomi Alderman<br>Nat Alison<br>Natalie Rothfels<br>Natalie Sun<br>Nelson Crespo<br>Nguyet Vuong<br>Nigel Kerr<br>Nikhil Harithas<br>Nikita Vasilyev<br>Nimrod Kimhi<br>Noah Richards<br>Orb Li<br>Pablo Molins<br>Patrick Henderson<br>Paul d'Aoust<br>Paul Sztajer<br>Phil Dougherty<br>Philip White<br>Pierre Thierry<br>Pixl Pixl<br>postmillenial <br>Przemek Piotrowski<br>Rachél Bazelais<br>Rae McIntosh<br>Rafael F.Font<br>Ralph Pantozzi<br>raspbeguy <br>Raymond Keller<br>Rebecca Thomas<br>Reed Copperstrand<br>Ridima Ramesh<br>Rob Howard<br>Rob McKaughan<br>Robert Aran<br>Robert Cobb<br>Robert Duncan<br>Rohit Bhat<br>Ruby Moore<br>S Smith<br>saianne <br>Sara Ness<br>Sasha Fenn<br>Scott Reynolds<br>Sean Riley<br>Sergey Dolgov<br>Shreeya Goel<br>Simon <br>Simon Morrow<br>slow.danger<br>Smarter Every Day<br>Sofia Razón<br>Soraya Een Hajji<br>Sorden <br>Srini Kadamati<br>Steve Cha<br>Steve Ryman<br>Steve Waldman<br>Stewart Burrows Brand<br>Stian Soltvedt<br>Stuart <br>Sylvain Francis<br>T <br>Tal Rotbart<br>Tamir Bahar<br>Thais Weiller<br>Thember <br>Tobias Rose-Stockwell<br>toby schachman<br>Todd Siegel<br>Tom Lieber<br>Tommy Maranges<br>Toph Tucker<br>Tyler Coleman<br>Victor Debrus<br>Vlad Dziuba<br>Vladimir <br>Wait But Why<br>Wesley Gardner<br>what's for dinner<br>Will Dayble<br>William B Everett<br>Wouter <br>Yan Naung Oak<br>Yohan Dash<br>Yu-Han Kuo<br>Zach Smith<br>Zan Armstrong<br>Zener <br>zubr kabbi<br>김슬<br>🐸
+<!---
+		<div id="supporters"> 
 		</div>
+--->
+		<br><br>
+
+		مرسی از بچه هایی که برای ترجمه ی این مقاله، بدون هیچ درخواستی همراهیم کردن:
+		رضا ترابی دانشجوی مهندسی پزشکیمون، نماینده ی ما تو نصف جهان :),
+		مرتضی علی، مهدوی دانشجوی علوم کامپیوتر دانشگاه تهران داماد بشی :),
+		امیرحسین حجازیان دانشجوی برق امیرکبیر (بگیم پلی تکنیک کلاسش بیشتر براش D:),
 
 		<br><br>
 
-		And <i>huge</i> thank you to these folks for playtesting/proofreading:
-		Alex Kreitzberg,
-		Amit Patel,
-		EmilyKate McDonough,
-		Emma Hodcroft,
-		Evan Rocha,
-		Gillian Tarr,
-		Grävling,
-		Kayle Sawyer,
-		Michael Huff,
-		Phil Dougherty,
-		Philipp Wacker,
-		Ridima Ramesh,
-		Sofia Razón,
-		Srini Kadamati,
-		Vi Hart
-
-		<br><br>
-
-		Any errors remaining are probably Nicky's fault.
+		هر مشکلی در ترجمه، مستقیما به من و هر مشکلی تو کد به سازنده ی اصلی مربوطه اصلا :).
 
 	</div>
 
 </div>
 
 <div id="footnotes_container">
-	<h2 id='show_feetnotes_button'>(Click to show Feetnotes)</h2>
-	<h2 id='shown_feetnotes'>Feetnotes:</h2-->
+	<h2 id='show_feetnotes_button'>(برای نمایش پانویس بزنید)</h2>
+	<h2 id='shown_feetnotes'>پانویس ها:</h2-->
 </div>
 
 <div id="wash">
-	wash your hands! 👏
+	مرسی که دستاتونو میشورین (ولی آب رو هدر ندید) 👏
 </div>
 
 
@@ -999,7 +986,7 @@ littlefoot.littlefoot({
 	/>
 	  <% number %>
 	</button>
-	`
+	
 });
 </script>
 
