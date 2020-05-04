@@ -168,33 +168,34 @@
 	<p>بیاین چک کنیم.</p>
 
 	<p><b style='color:#ff4040'>منحنی قرمز</b> کیس های <em>فعال</em> هست <span class="nowrap"><icon i></icon>,</span><br>
-	<b style='color:#999999'>منحنی خاکستری </b> شامل <em>تمام</em> کیس هاست (بهبود و فعال)<span class="nowrap"><icon r></icon>),</span>
-	 <span class="nowrap"><icon i></icon>:</span></p>ها فقط 0.001% رو در ابتدا شامل میشن.
+	<b style='color:#999999'>منحنی خاکستری </b> شامل <em>تمام</em> کیس هاست (بهبود و فعال)<span class="nowrap"><icon r></icon>,</span>
+	 <span class="nowrap"><icon i></icon>ها فقط 0.001% رو در ابتدا شامل میشن.:</span></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 	</div>
 
-	<p>And <em>that&#39;s</em> where that famous curve comes from! It&#39;s not a bell curve, it&#39;s not even a &quot;log-normal&quot; curve. It has no name. But you&#39;ve seen it a zillion times, and beseeched to flatten.</p>
+	<p>و <em>اینجاست</em>و اینجاست ک منحنی مشهورمون ظاهر میشه! این ی منحنیه زنگوله ای نیست، حتی یک &quot;لگاریتم معمولی&quot; هم نیست. اصلا اسمی نداره. این همون نموداری هست که هزاران بار دیدید و آرزو کردید صاف بشه (انشاالله).</p>
 
-	<p>This is the the <strong>SIR Model</strong>,<sup id="fnref5"><a href="#fn5" rel="footnote">5</a></sup><br>
+	<p>این <strong>مدل SIR</strong> هست :),<sup id="fnref5"><a href="#fn5" rel="footnote">5</a></sup><br>
 	(<icon s></icon><strong>S</strong>usceptible <icon i></icon><strong>I</strong>nfectious <icon r></icon><strong>R</strong>ecovered)<br>
-	the <em>second</em>-most important idea in Epidemiology 101:</p>
+	(اگه فارسیش میکردیم میشد "منب" که زیاد قشنگ نمیشد.)
+	این <em>دومین</em>ایده از نظر اهمیت برای اپیدمیولوژیه-101 هست!:</p>
 
 	<p><img src="pics/sir.png" alt=""></p>
 
-	<p><strong>NOTE: The simulations that inform policy are way, <em>way</em> more sophisticated than this!</strong> But the SIR Model can still explain the same general findings, even if missing the nuances.</p>
+	<p><strong>دقت کنید: شبیه سازی هایی ک سیاست رو مطلع میکنند، خیلی خیلی پیچیده تر از این هستند!</strong> ولی مدل SIR همچنان می تونه ی سری چیزای عمومی رو توضیح بده  هرچند ی سری چیز های ظریف رو کم داره.</p>
 
-	<p>Actually, let&#39;s add one more nuance: before an <icon s></icon> becomes an <span class="nowrap"><icon i></icon>,</span> they first become <icon e></icon> Exposed. This is when they have the virus but can&#39;t pass it on yet – infect<em>ed</em> but not yet infect<em>ious</em>.</p>
+	<p>در واقع بیاین یکم ظریف کاریو بیشتر کنیم: قبل از اینکه یک <icon s></icon> تبدیل بشه به یک <span class="nowrap"><icon i></icon>,</span> تبدیل میشه به یک در معرض بیماری<icon e></icon>. این برای موقعیه ک ویروسو دارن ولی <em>نمیتونن</em> منتقلش کنند.</p>
 
 	<p><img src="pics/seir.png" alt=""></p>
 
-	<p>(This variant is called the <strong>SEIR Model</strong><sup id="fnref6"><a href="#fn6" rel="footnote">6</a></sup>, where the &quot;E&quot; stands for <icon e></icon> &quot;Exposed&quot;. Note this <em>isn&#39;t</em> the everyday meaning of &quot;exposed&quot;, when you may or may not have the virus. In this technical definition, &quot;Exposed&quot; means you definitely have it. Science terminology is bad.)</p>
+	<p>این نمونه رو <strong>مدل SEIR</strong><sup id="fnref6"><a href="#fn6" rel="footnote">6</a></sup>میگن، در واقع &quot;E&quot; به معنای در &quot;معرض&quot;<icon e></icon> (Exposed). Note thisهست.دقت کنین که این معنی عادی این واژه نیست! که ممکنه داشته باشی یا نه..در اینجا شما <em>قطعا</em> ویروسو دارین!</p>
 
-	<p>For COVID-19, it&#39;s estimated that you&#39;re <icon e></icon> infected-but-not-yet-infectious for 3 days, <em>on average</em>.<sup id="fnref7"><a href="#fn7" rel="footnote">7</a></sup> What happens if we add that to the simulation?</p>
+	<p>برای COVID-19 این شرایط<icon e></icon> به طور میانگین ۳ روز طول میکشه.حالا چی میشه اگه ما ب نمودارمون اضافش کنیم؟  .<sup id="fnref7"><a href="#fn7" rel="footnote">7</a></sup></p>
 
-	<p><b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is <em>current</em> cases (infectious <icon i></icon> + exposed <span class="nowrap"><icon e></icon>),</span><br>
-	<b style='color:#888'>Gray curve</b> is <em>total</em> cases (current + recovered <span class="nowrap"><icon r></icon>):</span></p>
+	<p><b style='color:#ff4040'>قرمز <b style='color:#FF9393'>+ صورتی</b> منحنی</b> <em>فعال</em> <icon i></icon> + در معرض <span class="nowrap"><icon e></icon>)هست,</span><br>
+	<b style='color:#888'>منحنی خاکستری</b> <em>تمام</em> کیس ها شامل بهبود و فعال هست. <span class="nowrap"><icon r></icon>):</span></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
