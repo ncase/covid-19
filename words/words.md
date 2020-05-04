@@ -112,7 +112,7 @@ Now, what happens if you simulate S-shaped logistic growth *with* recovery?
 Let's find out.
 
 <b style='color:#ff4040'>Red curve</b> is *current* cases <icon i></icon>,    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>),
+<b style='color:#999999'>Gray curve</b> is *recovered* cases <icon r></icon>. The top of the gray curve corresponds to *total* cases (current + recovered <icon r></icon>),
 starts at just 0.001% <icon i></icon>:
 
 <div class="sim">
