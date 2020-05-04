@@ -9,7 +9,7 @@
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
-				🕐 30 min play/read
+				🕐 30 min play/beri
 				&nbsp;&middot;&nbsp;
 			</b>
 			by
