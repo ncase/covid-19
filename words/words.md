@@ -45,7 +45,7 @@ Onestamente, noi (Marcel, epidemiologo e Nicky, arte/codice) siamo preoccupati. 
 -->
 
 * **Gli ultimi mesi** (epidemiologia di base, il modello SEIR, R e R<sub>0</sub>)
-* **I prossimi mesi** (lockdown, tracciamento dei contatti, maschere)
+* **I prossimi mesi** (lockdown, tracciamento dei contatti, mascherine)
 * **I prossimi anni** (perdita di immunità? assenza di vaccino?)
 
 <!--This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*-->
@@ -53,7 +53,7 @@ Onestamente, noi (Marcel, epidemiologo e Nicky, arte/codice) siamo preoccupati. 
 Questa guida (originale pubblicato il 1 Maggio 2020. clicca questa nota!→[^timestamp]) vuole infonderti *sia* speranza *sia* paura. Per battere COVID-19 **in un modo che protegge anche la nostra salute mentale e finanziaria**, abbiamo bisogna di ottimismo per fare dei piani e di pessimismo per avere un piano B. Come disse Gladys Bronwyn Stern: *“L'ottimista inventa l'aereoplano e il pessimista il paracadute.”*
 
 <!--[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
-    
+
     **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
 -->
 
@@ -103,16 +103,16 @@ Se simuliamo questo "raddoppiare ogni 4 giorni" *e nient'altro*, su una popolazi
 **Clicca "Gioca" per "giocare" con la simulazione! Dopo puoi rigiocarla con impostazioni diverse:** (avvertenze tecniche: [^caveats])
 
 <!--[^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
-    
+
     One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
-    
+
     Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
 -->
 
 [^caveats]: **Ricorda: tutte queste simulazioni sono ipersemplificate a scopo didattico.**
-    
+
     Esempio di semplificazione: Quanto dici al simulatore "Infetta 1 nuova persona ogni X giorni", quello che il simulatore fa è aumentare il numero di infettati di 1/X ogni giorno. La stessa cosa vale per impostazioni che vedremo nelle prossime simulazioni – "Guarisci ogni X giorni" vuol dire riduci il numero di infettati di 1/X ogni giorno.
-    
+
     Le due cose (quello che "dici" al simulatore e quello che "fa") non sono *esattamente* equivalenti ma ci vanno vicino. A scopo didattico è meno comprensibile impostare direttamente un tasso di trasmissione/guarigione.
 
 <div class="sim">
@@ -353,27 +353,27 @@ E' un paradosso. Il COVID-19 è estremamente contagioso, ma per fermarlo, dobbia
 
 <!--[^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
 
-    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1. 
-    
+    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1.
+
     Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
-    
+
     Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
-    
+
     Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
-    
+
     Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
 -->
 
 [^exact_formula]: Ricorda che R = R<sub>0</sub> * il rapporto di contagi ancora permessi. Ricorda anche che il rapporto di contagi permessi = 1 - rapporto di contagi *impediti*.
 
-    Quindi, per avere R < 1, hai bisgno di avere R<sub>0</sub> * ContagiPermessi < 1. 
-    
+    Quindi, per avere R < 1, hai bisgno di avere R<sub>0</sub> * ContagiPermessi < 1.
+
     Quindi, ContagiPermessi < 1/R<sub>0</sub>
-    
+
     Quindi, 1 - ContagiImpediti < 1/R<sub>0</sub>
-    
+
     Qunidi, ContagiImpediti > 1 - 1/R<sub>0</sub>
-    
+
     Quindi, hai bisogno di impedire più di **1 - 1/R<sub>0</sub>** contagi per avere R < 1 e fermare il virus!
 
 ![](pics/r4.png)
@@ -384,7 +384,7 @@ E' un paradosso. Il COVID-19 è estremamente contagioso, ma per fermarlo, dobbia
 
 <!--*Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:-->
 
-*Ogni* intervento contro COVID-19 di cui hai sentito parlare – lavarsi le mani, distanziamento fisico/sociale, lockdown, autoisolamento, tracciamento di contatti e quarantena, maschere, anche l'"immunità di gregge" – stanno *tutti* cercando di fare la stessa cosa:
+*Ogni* intervento contro COVID-19 di cui hai sentito parlare – lavarsi le mani, distanziamento fisico/sociale, lockdown, autoisolamento, tracciamento di contatti e quarantena, mascherine, anche l'"immunità di gregge" – stanno *tutti* cercando di fare la stessa cosa:
 
 <!--Getting R < 1.-->
 
@@ -415,7 +415,7 @@ Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Car
 
 [^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400.
 
 Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
 
@@ -425,7 +425,7 @@ Even if we *more than tripled* that capacity to 2%, here's what would've happene
 
 Not good.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
+That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected.
 (remember: total cases *overshoots* herd immunity)
 
 Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
@@ -437,7 +437,7 @@ Even if only 0.5% of infected die – a generous assumption when there's no more
 The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
 
 [^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
-    
+
     From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
 Both plans, though, had a literally fatal flaw.
@@ -531,9 +531,9 @@ But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **a
 To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
 
 [^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
-    
+
     **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
-    
+
     **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
@@ -583,15 +583,15 @@ But what about folks without smartphones? Or infections through doorknobs? Or "t
 (Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
 
 [^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
-   
+
     Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
-    
+
     So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
 
 Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
 
 [^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
-    
+
     * Symptomatics contribute R = 0.8 (40%)
     * Pre-symptomatics contribute R = 0.9 (45%)
     * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
@@ -677,10 +677,10 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
 [^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
 
    **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
-   
+
    **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
-    
-    
+
+
 
 Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
 
@@ -724,7 +724,7 @@ Not to mention all the *other* interventions we could do, to further push R down
 
 <p>. . .</p>
 
-We hope these plans give you hope. 
+We hope these plans give you hope.
 
 **Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
 
@@ -760,7 +760,7 @@ But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
 
 [^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
+[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later.
 
 For these simulations, let's say it's 1 year.
 **Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
@@ -807,7 +807,7 @@ But here's the scarier question:
 
 What if there's no vaccine for *years*? Or *ever?*
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment. 
+**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment.
 
 Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
 
@@ -886,7 +886,7 @@ Quindi cosa significa questo per TE, ora?
 
 <!--**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope.-->
 
-**Per i produttori:** Produci più test. Produci più ventilatori. Produci più dispositivi di protezione personale per gli ospedali. Più test. Più maschere. Più app. Produci antivirali, trattementi profilattici ed altri trattamenti diversi dai vaccini. Lavora sui vaccini. Produci test. Più test. Ancora test. Costruisci speranza. 
+**Per i produttori:** Produci più test. Produci più ventilatori. Produci più dispositivi di protezione personale per gli ospedali. Più test. Più mascherine. Più app. Produci antivirali, trattementi profilattici ed altri trattamenti diversi dai vaccini. Lavora sui vaccini. Produci test. Più test. Ancora test. Costruisci speranza.
 
 <!--Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.-->
 
