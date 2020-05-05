@@ -218,41 +218,41 @@ Znova uporabimo Model SEIR, vendar sedaj prikažimo R<sub>0</sub>, R skozi čas 
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
+**OPOMBA: Skupni primeri se pri imuniteti črede *ne ustavijo*, temveč mejo presežejo!** To se zgodi *točno takrat*, ko trenutni primeri dosežejo vrhunec. (Do tega pride ne glede na to, kako spremenite nastavitve – poskusite sami!)
 
-This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
+Temu je tako, ker v primeru, ko je več <icon s></icon> kot je meja imunosti črede, dobite R < 1. In ko je R < 1, novi primeri prenehajo rasti: pride do vrhunca.
 
-**If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
+**Če boste iz tega priročnika odnesli le eno lekcijo, je to sledeča** - pred vami je izredno zapleten diagram, zato si prosim vzemite čas, da ga boste popolnoma razumeli:
 
 ![](pics/r3.png)
 
-**This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!**
+**To pomeni: za zaustavitev COVID-19 nam NI potrebno ujeti večine, kaj šele vseh prenosov!**
 
-It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
+To je paradoks. COVID-19 je izjemno nalezljiv, kljub temu pa moramo ustaviti "le" nekaj več kot 60% okužb. 60% ?! Če bi bila to šolska ocena, je to zadostno(2). Če pa je R<sub>0</sub> = 2,5, sledi, da za 61% zmanjšamo R = 0,975. Potem je R < 1 in virus je obvladljiv, saj je tako rekoč omejen! (natančna formula: [^exact_formula])
 
-[^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
+[^exact_formula]: Pomni: R = R<sub>0</sub> * razmerje prenosov, ki so še dovoljeni. Ne pozabite tudi, da je dovoljeno razmerje prenosov = 1 – razmerje *ustavljenih* prenosov.
 
-    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1.
+    Če želite dobiti R < 1, morate dobiti R<sub>0</sub> * dovoljeni prenosi < 1.
 
-    Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
+    Sledi: dovoljeni prenosi < 1/R<sub>0</sub>
+    
+    Sledi: 1 – ustavljeni prenosi < 1/R<sub>0</sub>
+ 
+    Sledi: ustavljeni prenosi > 1 – 1/R<sub>0</sub>
 
-    Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
-
-    Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
-
-    Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
+    Zato je potrebno ustaviti več kot **1 – 1/R<sub>0</sub>** prenosov, da dobimo R < 1 in omejimo virus!
 
 ![](pics/r4.png)
 
-(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
+(Če menite, da so R<sub>0</sub> ali druge številke v naših simulacijah prenizke/previsoke, je to odlično, saj tako izpodbijate naše predpostavke! Na koncu tega priročnika bo na voljo "način peskovnika", kjer lahko priključite *svoje* številke in simulirajte, kaj se zgodi.)
 
-*Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
+*Vsak* poseg glede COVID-19, za katerega ste slišali - pranje rok, socialno/fizično distanciranje, zaprtja, samoizolacija, sledenje stikom in karantena, maske za obraz, celo "imuniteta črede" - *vsi* počnejo popolnoma isto:
 
-Getting R < 1.
+Pridobivajo R < 1.
 
-So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
+Sedaj uporabimo naš "simulator epidemije letenja", da ugotovimo sledeče: Kako lahko dobimo R < 1 na način, ki **ščiti tudi naše duševno *in* finančno zdravje?**
 
-Brace yourselves for an emergency landing...
+Pripravite se na zasilni pristanek...
 
 <div class="section chapter">
     <div>
