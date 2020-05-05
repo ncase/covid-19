@@ -57,7 +57,7 @@ Torej, naredimo zelo, * zelo * preprost "simulator epidemije letenja"! V tej sim
 
 ![](pics/spread.png)
 
-It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
+Ocenjuje se, da *na začetku* izbruha COVID-19, virus skoči iz <icon i></icon> na <icon s></icon> vsake 4 dni, *v povprečju*.[^serial_interval] (ne pozabite, da obstaja veliko različic)
 
 [^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
 
