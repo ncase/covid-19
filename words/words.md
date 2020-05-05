@@ -22,7 +22,7 @@
 	</div>
 </div>
 
-"Edino česar se moramo bati je strahu samega" je bil neumen nasvet.
+"Edino česar se moramo bati, je strahu samega!" je bil neumen nasvet.
 
 Seveda, ne skladiščite toaletnega papirja – ampak, če se politiki sami bojijo, bodo zmanjšali resnično nevarnost in se izognili "množični paniki". Strah ni problem. Problem je kam *preusmerimo* svoj strah.
 Strah nam daje energijo, da se zdaj soočimo z nevarnostmi in se pripravimo na vse nevarnosti, ki še prihajajo.
@@ -36,7 +36,7 @@ Iskreno, midva (Marcel, epidemolog + Nicky, umetnik) sva v skrbeh. Staviva, da s
 Ta vodič (objavljeno 1.5.2020, kliknite za opombo!→[^timestamp]) bi vam naj dal upanje *in* strah, da premagate COVID-19 **na način, ki ščiti našo mentalno in duševno zdravje**. Optimizen potrebujemo za ustvarjanje načrtov, za pripravo rezervnih načrtov pa potrebujemo pesimizem.
 Kot je nekoč rekel Gladys Bronwyn, *“Optimist si izmisli letalo, pesimist pa padalo.”*
 
-[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+[^timestamp]: Te sprotne opombe bodo imele vire, povezave ali dodatne komentarje. Tako kot ta komentar!
 
     **Ta vodič je bil objavljen 1. maja 2020** Številne podrobnosti bodo zastarele, ampak sva prepričana, da bo ta vodič zajel 95% verzij prihodnosti, da bo knjiga Epidemiology 101 za vedno ostala uporabna.
 
