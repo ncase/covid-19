@@ -63,13 +63,13 @@ Ocenjuje se, da *na začetku* izbruha COVID-19, virus skoči iz <icon i></icon> 
 
 Če imitiramo "podvojimo vsake 4 dni" *in nič drugega*, na populaciji s samo 0.001% <icon i></icon>, kaj se zgodi?
 
-**Pritisni "Začetek" za predvajanje simulacije! Kasnje lahko ponoviš z drugačnimi nastavitvami:** (technical caveats: [^caveats])
+**Pritisni "Začetek" za predvajanje simulacije! Kasnje lahko ponoviš z drugačnimi nastavitvami:** (tehnična opozoria: [^caveats])
 
-[^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
+[^caveats]: **Ne pozabite: vse te simulacije so zelo poenostavljene zaradi izobraževalnih namenov.**
 
-    One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
+    Ena poenostavitev: Ko ukažete tej simulaciji "Okužite 1 novo osebo vsakih X dni", se dejansko vsak dan poveča število okuženih za 1 / X. Enako za prihodnje nastavitve v teh simulacijah – "Ozdravi vsakih X dni" dejansko znanjša število okuženih za 1 / X vsak dan.
 
-    Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
+    Ti *niso* popolnoma enaki, ampak so dovolj blizu in so v izobraževalne namene manj moteni kot neposredna nastavitev hitrosti prenosa/okrevanja.   
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
