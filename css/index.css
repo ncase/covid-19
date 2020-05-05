@@ -29,7 +29,8 @@ a:hover{
 .sim{
 	width:100%;
 	background: #eee;
-	overflow: hidden;
+	overflow-y: hidden;
+	overflow-x: auto;
 	margin: 1.5em 0;
 }
 iframe{
