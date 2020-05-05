@@ -24,14 +24,14 @@
 
 "Edino česar se moramo bati je strahu samega" je bil neumen nasvet.
 
-Seveda, ne skladiščite toaletnega papirja – ampak, če se politiki sami bojijo, bodo zmanjšali resnično nevaronnst in se izognili "množični paniki". Strah ni problem. Problem je kam *preusmerimo* svoj strah.
-Strah nam daje energijo, da se zdaj soočimo z nevarnostmi in se pripravimo na vse, ki še pridejo pozneje.
+Seveda, ne skladiščite toaletnega papirja – ampak, če se politiki sami bojijo, bodo zmanjšali resnično nevarnost in se izognili "množični paniki". Strah ni problem. Problem je kam *preusmerimo* svoj strah.
+Strah nam daje energijo, da se zdaj soočimo z nevarnostmi in se pripravimo na vse nevarnosti, ki še pridejo pozneje.
 
-Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+Iskreno, midva (Marcel, epidemolog + Nicky, umetnik) sva v skrbeh. Staviva, da ste tudi vi! Zato sva usmerila najin strah v izvedbo teh **igralnih simulacij**, da lahko tudi *vi* usmerite svoj strah v razumevanje:
 
 * **Zadnjih nekaj mesecev** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks)
-* **The Next Few Years** (loss of immunity? no vaccine?)
+* **Naslednjih nekaj mesecev** (lockdowns, contact tracing, masks)
+* **Naslednjih nekaj let** (loss of immunity? no vaccine?)
 
 This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
 
