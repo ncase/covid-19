@@ -96,7 +96,7 @@ Odgovor se skriva v naslednjih vrsticah:
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-To je "S-shaped" **logistična krivulja rasti.**
+To je "S-oblikovana" **logistična krivulja rasti.**
 Sprva raste počasi, eskplodira in se spet upočasni.
 
 
@@ -113,35 +113,39 @@ Pri COVID-19 je predvideno, da si *v povprečju* <icon i></icon> kužen
 **Spodnja simulacija prikazuje, kako bi izgledalo, če bi *na začetku* bili
 100% <icon i></icon>:**
 
-[^nalezljivost]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
+[^nalezljivost]: “Povprečna doba nalezljivosti  \[...\] je bila 9.5 dni.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) 
+Ja, vemo, da "mediana" ni isto kot "povprečje". Za lažje razumevanje zanemarimo razliko.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
-This is the opposite of exponential growth, the **exponential decay curve.**
+To je ravno nasprotje eksponentne rasti, **eksponentno padajoča krivulja.**
 
-Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+Kaj se zgodi, če simuliraš S-obliko logistične krivulje
+rasti *z* okrevanjem?
 
 ![](pics/graphs_q.png)
 
 Let's find out.
 
-<b style='color:#ff4040'>Red curve</b> is *current* cases <icon i></icon>,    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>),
-starts at just 0.001% <icon i></icon>:
+<b style='color:#ff4040'>Rdeča krivulja</b> so *trenutni* primeri <icon i></icon>,    
+<b style='color:#999999'>Siva krivulja</b> so *vsi* primeri (trenutni + opomogli <icon r></icon>),
+kjer je na začetku 0.001% <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
+In *tako* pridemo do najbolj znane krivulje! 
+To ni normalna porazdelitev, niti ni "logaritemsko normalna" porazdelitev. Krivulja ni poimenovana, vendar si jo že videl
+nešteto krat.
 
-This is the the **SIR Model**,[^sir]    
-(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
-the *second*-most important idea in Epidemiology 101:
+To je **SIR Model**,[^sir]    
+(<icon s></icon>**D**ovzetni <icon i></icon>**N**alezljivi <icon r></icon>**O**pomogli)      
+*Druga*-najbolj pomembna ideja Epidemiology 101:
 
-[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: Bolj podrobna pojasnitev modela SIR: [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) in [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
