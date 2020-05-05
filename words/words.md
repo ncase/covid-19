@@ -176,7 +176,7 @@ Why's that? Because of the *first*-most important idea in Epidemiology 101:
 
 ![](pics/r.png)
 
-R je kratka oznaka za "število za razmnoževanje". Predstavlja *povprečno* število ljudi, ki se okužijo, *preden* ozdravijo (ali umrejo).
+R je kratica, s katero označimo "število za razmnoževanje". Predstavlja *povprečno* število ljudi, ki se okužijo *preden* ozdravijo (ali umrejo).
 
 ![](pics/r2.png)
 
@@ -198,7 +198,7 @@ Predvideva se, da bo vrednost R<sub>0</sub> za COVID-19 znašala približno 2,2,
 
 V naših simulacijah oseba *na začetku v povprečju* okuži nekoga drugega vsake 4 dni ter to počne več kot 10 dni. "4 dnevi" grejo v "10 dni" dva in pol krat. To pomeni, da vsaka oseba *na začetku v povprečju* okuži 2,5 drugih oseb. Zato je potemtakem R<sub>0</sub> = 2,5. (opozorila: [^r0_caveats_sim])
 
-[^r0_caveats_sim]: Pretvarjamo se, da ste vsi enako kužni v svojem t.i. "nalezljivem obdobju". Znova je prišlo do poenostavitev zaradi izobraževalnih namenov.
+[^r0_caveats_sim]: Pretvarjamo se, da so vsi enako kužni v svojem t.i. "nalezljivem obdobju". Zaradi izobraževalnih namenov je znova prišlo do manjših poenostavitev.
 
 **Preizkusi R<sub>0</sub> kalkulator, ki prikazuje, kako R<sub>0</sub> vpliva na čas zdravljenja in čas, v katerem pride do nove infekcije:**
 <div class="sim">
