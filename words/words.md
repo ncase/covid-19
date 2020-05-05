@@ -176,46 +176,44 @@ Why's that? Because of the *first*-most important idea in Epidemiology 101:
 
 ![](pics/r.png)
 
-Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
+R je kratka oznaka za "število za razmnoževanje". Predstavlja *povprečno* število ljudi, ki se okužijo, *preden* ozdravijo (ali umrejo).
 
 ![](pics/r2.png)
 
-**R** changes over the course of an outbreak, as we get more immunity & interventions.
+**R** se med izbruhom spremeni, saj sčasoma pridobimo imunost in sprejmemo ustrezne ukrepe.
 
-**R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
+**R<sub>0</sub>** (izgovarjamo R-nič) predstavlja R *na začetku izbruha, torej pred imunostjo in ukrepi*. **R<sub>0</sub>** natančneje odraža moč virusa, vendar se le-ta še vedno spreminja od mesta do mesta. Na primer: **R<sub>0</sub>** je višji v gosteje naseljenih mestih kakor v redkih podeželskih območjih.
 
-(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
+(V večini novic, celo v nekaterih raziskovalnih člankih, pride do zmede zaradi zamenjave R in R<sub>0</sub>. Znova je potrebno poudariti, da je znanstvena terminologija zares slaba.)
 
-The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
+R<sub>0</sub> za t.i. »sezonsko gripo« znaša približno 1,28[^r0_flu]. To pomeni, da na *začetku* izbruha gripe vsak v *povprečju* okuži 1.28 drugih ljudi. (Če morda komu to, da to ni celo število, zveni nenavadno, ne pozabite, da ima "povprečna" mama 2,4 otroka. To pa seveda ne pomeni, da okoli teka polbrat.)
 
-[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+[^r0_flu]: “Srednja vrednost R za sezonsko gripo je znašala 1,28” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
-The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
+Predvideva se, da bo vrednost R<sub>0</sub> za COVID-19 znašala približno 2,2,[^r0_covid] vendar *sicer še nedokončana* študija v Wuhanu znaša 5,7![^r0_wuhan]
 
-[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+[^r0_covid]: “Osnovno reprodukcijsko število R0 leta 2019-nCoV smo ocenili na približno 2,2 (90-odstoten gost interval: 1,4–3,8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
-[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
+[^r0_wuhan]: “Izračunali smo srednjo vrednost **R<sub>0</sub>** 5,7 (95% CI 3,8–8,9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
+V naših simulacijah oseba *na začetku v povprečju* okuži nekoga drugega vsake 4 dni ter to počne več kot 10 dni. "4 dnevi" grejo v "10 dni" dva in pol krat. To pomeni, da vsaka oseba *na začetku v povprečju* okuži 2,5 drugih oseb. Zato je potemtakem R<sub>0</sub> = 2,5. (opozorila: [^r0_caveats_sim])
 
-[^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
+[^r0_caveats_sim]: Pretvarjamo se, da ste vsi enako kužni v svojem t.i. "nalezljivem obdobju". Znova je prišlo do poenostavitev zaradi izobraževalnih namenov.
 
-**Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
-
+**Preizkusi R<sub>0</sub> kalkulator, ki prikazuje, kako R<sub>0</sub> vpliva na čas zdravljenja in čas, v katerem pride do nove infekcije:**
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
+Ne pozabite, manj kot je <icon s></icon>, *počasnejši* postanejo <icon i></icon>. *Trenutno* reprodukcijsko število (R) ni odvisno samo od *osnovnega* reprodukcijskega števila (R<sub>0</sub>), ampak *tudi* od tega, koliko ljudi ni več <icon s></icon> dovzetnih. (Na primer: Nekateri ozdravijo in pridobijo naravno imunost.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
+Ko je dovolj ljudi imunih, je R < 1 in virus je moč obvladovati! Temu pravimo **imuniteta črede**. Imuniteto črede pri gripi dosežemo *s cepivom*. Ideja o tem, da bi "naravno imunost črede" dosegli tako, da bi se ljudje okužili, je *grozljiva*. (Vendar ne iz razloga, za katerega morda mislite! Pojasnilo sledi kasneje.)
 
-Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
-
+Znova uporabimo Model SEIR, vendar sedaj prikažimo R<sub>0</sub>, R skozi čas in mejo imunosti črede:
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
