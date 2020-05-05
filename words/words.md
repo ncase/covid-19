@@ -38,9 +38,9 @@ Kot je nekoč rekel Gladys Bronwyn, *“Optimist si izmisli letalo, pesimist pa 
 
 [^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
 
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
+    **Ta vodič je bil objavljen 1. maja 2020** Številne podrobnosti bodo zastarele, ampak sva prepričana, da bo ta vodič zajel 95% verzij prihodnosti, da bo knjiga Epidemiology 101 za vedno ostala uporabna.
 
-So, buckle in: we're about to experience some turbulence.
+Torej, prite se, kmalu bomo doživeli nekaj turbolenc!
 
 <div class="section chapter">
     <div>
