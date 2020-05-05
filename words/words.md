@@ -548,7 +548,7 @@ And if all that *still* isn't enough to get R < 1... we can do another lockdown.
 
 But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
 
-Here's a simulation a "lazy case" scenario:
+Here's a simulation of a "lazy case" scenario:
 
 1. Lockdown, then
 2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
