@@ -53,7 +53,7 @@ Piloti uporabljajo simulatorje letenja, da se naučijo, kako ne bi strmoglavili 
 
 **Epidemologi uporabljajo simolatorje epidemij, da se naučijo, kako nebi strmoglavili človeštva.**
 
-So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
+Torej, naredimo zelo, * zelo * preprost "simulator epidemije letenja"! V tej simulaciji lahko <icon i></icon>  okuženi ljudje spremenijo <icon s></icon> dovzetne ludi v <icon i></icon> okužene ljudi:
 
 ![](pics/spread.png)
 
