@@ -5,7 +5,7 @@
         	Kaj se bo zgodilo v prihodnje?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
+			Prihodnost COVID-19, Predstavljeno z igrivimi simulacijami
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
