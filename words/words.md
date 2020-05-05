@@ -24,7 +24,8 @@
 
 "Edino česar se moramo bati je strahu samega" je bil neumen nasvet.
 
-Seveda, Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+Seveda, ne skladiščite toaletnega papirja – ampak, če se politiki sami bojijo, bodo zmanjšali resnično nevaronnst in se izognili "množični paniki". Strah ni problem. Problem je kam *preusmerimo* svoj strah.
+Strah nam daje energijo, da se zdaj soočimo z nevarnostmi in se pripravimo na vse, ki še pridejo pozneje.
 
 Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
 
