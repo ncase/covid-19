@@ -59,11 +59,11 @@ Torej, naredimo zelo, * zelo * preprost "simulator epidemije letenja"! V tej sim
 
 Ocenjuje se, da *na začetku* izbruha COVID-19, virus skoči iz <icon i></icon> na <icon s></icon> vsake 4 dni, *v povprečju*.[^serial_interval] (ne pozabite, da obstaja veliko različic)
 
-[^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
+[^serial_interval]: “Povprečni [serijski] interval je bil 3.96 dni (95% CI 3.53–4.39 dni)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Članki z zgodnjo izdajo se ne štejejo v končne različice)
 
 Če imitiramo "podvojimo vsake 4 dni" *in nič drugega*, na populaciji s samo 0.001% <icon i></icon>, kaj se zgodi?
 
-**Pritisni "Začetek" za predvajanje simulacije! Kasnje lahko ponoviš z drugačnimi nastavitvami:** (tehnična opozoria: [^caveats])
+**Pritisni "Začetek" za predvajanje simulacije! Kasnje lahko ponoviš z drugačnimi nastavitvami:** (tehnična opozorila: [^caveats])
 
 [^caveats]: **Ne pozabite: vse te simulacije so zelo poenostavljene zaradi izobraževalnih namenov.**
 
@@ -75,7 +75,7 @@ Ocenjuje se, da *na začetku* izbruha COVID-19, virus skoči iz <icon i></icon> 
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*".
+To je **eksponentna krivulja.** Najprej narašča zelo počasi in nato eksplodira. "Ah, to je samo gripa" do "Ojoj, gripa ne bi smela ustvarjati *množičnih grobišč v mestih*".
 
 ![](pics/exponential.png)
 
