@@ -63,7 +63,7 @@ Ocenjuje se, da *na začetku* izbruha COVID-19, virus skoči iz <icon i></icon> 
 
 Če imitiramo "podvojimo vsake 4 dni" *in nič drugega*, na populaciji s samo 0.001% <icon i></icon>, kaj se zgodi?
 
-**Pritisni "Začetek" za predvajanje simulacije! Kasnje lahko ponoviš z drugačnimi nastavitvami:** (tehnična opozorila: [^caveats])
+**Pritisni "Začetek" za predvajanje simulacije! Kasneje lahko ponoviš z drugačnimi nastavitvami:** (tehnična opozorila: [^caveats])
 
 [^caveats]: **Ne pozabite: vse te simulacije so zelo poenostavljene zaradi izobraževalnih namenov.**
 
@@ -78,28 +78,42 @@ Ocenjuje se, da *na začetku* izbruha COVID-19, virus skoči iz <icon i></icon> 
 To je **eksponentna krivulja.** Najprej narašča zelo počasi in nato eksplodira. "Ah, to je samo gripa" do "Ojoj, gripa ne bi smela ustvarjati *množičnih grobišč v mestih*".
 
 ![](pics/exponential.png)
-
-But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
+Ampak ta simulacija je napačna, saj se na srečo ekponentna 
+rast ne more odvijati v neskončnost. 
+Ena od omejitev širjenja virusa je tudi, da se ne more širiti, če
+so vsi že okuženi:
 
 ![](pics/susceptibles.png)
 
-The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, **but the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s.**
+Več <icon i></icon> kot je, hitreje <icon s></icon>
+ postanejo <icon i></icon>, ** ampak manj kot je <icon s></icon>,
+   *počasneje* <icon s></icon> postanejo <icon i></icon>.**
 
-How's this change the growth of an epidemic? Let's find out:
+Kako to vpliva na rast epidemije? 
+Odgovor se skriva v naslednjih vrsticah:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
+To je "S-shaped" **logistična krivulja rasti.**
+Sprva raste počasi, eskplodira in se spet upočasni.
 
-But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
 
-For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
+Ampak ta simulacija je *še vedno* napačna.
+ Ne upoštevamo dejstva, da <icon i></icon> okuženi ljudje ščasoma niso več nalezljivi, 
+ saj so 1) ozdraveli,  2) "ozdraveli" s pljučno degeneracijo ali 3) umrli.
 
-With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <icon i></icon>:**
+Poenostavimo, da so si vsi <icon i></icon> okuženi ljudje <icon r></icon> opomogli. (Zgolj ne pozabi, da si v 
+realnosti nekateri ne opomorejo.) Pretvarjajmo se, da se <icon r></icon> nemorejo ponovno okužiti – *za zdaj!*
+ – ostanejo imuni celo življenje.
 
-[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
+Pri COVID-19 je predvideno, da si *v povprečju* <icon i></icon> kužen
+10 dni. [^nalezljivost] To pomeni, da si bodo nekateri opomogli prej, nekateri kasneje.
+**Spodnja simulacija prikazuje, kako bi izgledalo, če bi *na začetku* bili
+100% <icon i></icon>:**
+
+[^nalezljivost]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
