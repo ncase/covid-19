@@ -11,6 +11,8 @@ div{
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
 	user-select: none;          /* Likely future */ 
+	direction:rtl;
+	text-align:right;
 }
 
 #sandbox{
