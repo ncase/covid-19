@@ -5,7 +5,7 @@
         	Kaj se bo zgodilo v prihodnje?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			Prihodnost COVID-19, Predstavljeno z igrivimi simulacijami
+			Prihodnost COVID-19, predstavljena z igrivimi simulacijami
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
@@ -40,18 +40,18 @@ Kot je nekoč rekel Gladys Bronwyn, *“Optimist si izmisli letalo, pesimist pa 
 
     **Ta vodič je bil objavljen 1. maja 2020** Številne podrobnosti bodo zastarele, ampak sva prepričana, da bo ta vodič zajel 95% verzij prihodnosti, da bo knjiga Epidemiology 101 za vedno ostala uporabna.
 
-Torej, prite se, kmalu bomo doživeli nekaj turbolenc!
+Torej, pripnite se, kmalu bomo doživeli nekaj turbolenc!
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>Zadnjih nekaj mesecev</div>
     </div>
 </div>
 
-Pilots use flight simulators to learn how not to crash planes.
+Piloti uporabljajo simulatorje letenja, da se naučijo, kako ne bi strmoglavili letal.
 
-**Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+**Epidemologi uporabljajo simolatorje epidemij, da se naučijo, kako nebi strmoglavili človeštva.**
 
 So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
 
