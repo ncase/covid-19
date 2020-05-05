@@ -24,7 +24,7 @@
 
 "Edino česar se moramo bati, je strahu samega!" je bil neumen nasvet.
 
-Seveda, ne skladiščite toaletnega papirja – ampak, če se politiki sami bojijo, bodo zmanjšali resnično nevarnost in se izognili "množični paniki". Strah ni problem. Problem je kam *preusmerimo* svoj strah.
+Seveda, ne delajte si zalog toaletnega papirja – ampak, če se politiki sami bojijo strahu, bodo zmanjšali pomen resnične nevarnosti in se izognili "množični paniki". Strah ni problem. Problem je kam *preusmerimo* svoj strah.
 Strah nam daje energijo, da se zdaj soočimo z nevarnostmi in se pripravimo na vse nevarnosti, ki še prihajajo.
 
 Iskreno, midva (Marcel, epidemolog + Nicky, umetnik) sva v skrbeh. Staviva, da ste tudi vi! Zato sva usmerila najin strah v izvedbo teh **igralnih simulacij**, da lahko tudi *vi* usmerite svoj strah v razumevanje:
