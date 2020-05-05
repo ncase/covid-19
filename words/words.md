@@ -25,7 +25,7 @@
 "Edino česar se moramo bati je strahu samega" je bil neumen nasvet.
 
 Seveda, ne skladiščite toaletnega papirja – ampak, če se politiki sami bojijo, bodo zmanjšali resnično nevarnost in se izognili "množični paniki". Strah ni problem. Problem je kam *preusmerimo* svoj strah.
-Strah nam daje energijo, da se zdaj soočimo z nevarnostmi in se pripravimo na vse nevarnosti, ki še pridejo pozneje.
+Strah nam daje energijo, da se zdaj soočimo z nevarnostmi in se pripravimo na vse nevarnosti, ki še prihajajo.
 
 Iskreno, midva (Marcel, epidemolog + Nicky, umetnik) sva v skrbeh. Staviva, da ste tudi vi! Zato sva usmerila najin strah v izvedbo teh **igralnih simulacij**, da lahko tudi *vi* usmerite svoj strah v razumevanje:
 
@@ -33,7 +33,8 @@ Iskreno, midva (Marcel, epidemolog + Nicky, umetnik) sva v skrbeh. Staviva, da s
 * **Naslednjih nekaj mesecev** (lockdowns, contact tracing, masks)
 * **Naslednjih nekaj let** (loss of immunity? no vaccine?)
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+Ta vodič (objavljeno 1.5.2020, kliknite za opombo!→[^timestamp]) bi vam naj dal upanje *in* strah, da premagate COVID-19 **na način, ki ščiti našo mentalno in duševno zdravje**. Optimizen potrebujemo za ustvarjanje načrtov, za pripravo rezervnih načrtov pa potrebujemo pesimizem.
+Kot je nekoč rekel Gladys Bronwyn, *“Optimist si izmisli letalo, pesimist pa padalo.”*
 
 [^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
 
