@@ -61,9 +61,9 @@ Ocenjuje se, da *na začetku* izbruha COVID-19, virus skoči iz <icon i></icon> 
 
 [^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
 
-If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <icon i></icon>, what happens?
+Če imitiramo "podvojimo vsake 4 dni" *in nič drugega*, na populaciji s samo 0.001% <icon i></icon>, kaj se zgodi?
 
-**Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
+**Pritisni "Začetek" za predvajanje simulacije! Kasnje lahko ponoviš z drugačnimi nastavitvami:** (technical caveats: [^caveats])
 
 [^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
 
