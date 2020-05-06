@@ -141,38 +141,49 @@ In *tako* pridemo do najbolj znane krivulje!
 To ni normalna porazdelitev, niti ni "logaritemsko normalna" porazdelitev. Krivulja ni poimenovana, vendar si jo že videl
 nešteto krat.
 
-To je **SIR Model**,[^sir]    
-(<icon s></icon>**D**ovzetni <icon i></icon>**N**alezljivi <icon r></icon>**O**pomogli)      
-*Druga*-najbolj pomembna ideja Epidemiology 101:
+To je **model SIR**,[^sir]    
+(<icon s></icon>**S**usceptible(Dovzetni) <icon i></icon>**I**nfectious(nalezljivi) <icon r></icon>**R**ecovered(opomogli))      
+*Druga*-najbolj pomembna ugotovitev v knjigi Epidemiology 101:
 
 [^sir]: Bolj podrobna pojasnitev modela SIR: [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) in [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
+
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**Opomba: Simulacija teh napovedi je veliko, *veliko* bolj kompleksna kot je predstavljeno!** 
+Ampak model SIR še vedno pojasni glavne rezultate, čeprav so izpuščene podrobnosti.
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+Pravzaprav, dodajmo še en detajl: preden <icon s></icon> postane <icon i></icon>, je sprva <icon e></icon> izpostavljen.
+To je obdoblje, ko se je okužil, ampak še virusa ne prenaša na druge - je okužen ampak še nenalezljiv.
+
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(To različico imenujemo **model SEIR**[^seir], kjer je "E" okrajšava za <icon e></icon> "Exposed" (izpostavljene). 
+Pomni, da tukaj izpostavljenost *nima* vsakodnevnega pomena. V tej strokovni definiciji "Izpostavljenost" pomeni, da 
+si definitivno okužen. Strokovna terminologija je slaba.)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: Bolj strokovno razlago modela SEIR najdeš: [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) in [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+Pri COVID-19 je predvidena ocena, da si <icon e></icon> okužen, ampak še nenalezljiv, *v povprečju* 3 dni.[^latent] 
+Kaj se zgodi, če to upoštevamo pri simulaciji?
 
-[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases,
+ we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset”
+  (prevod: Domnevno se simptomi pokažejo po 5 dneh, virus pa širiš že 2 dni prej = Nalezljivost se začne 3 dan)
+   [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <icon e></icon>),    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>):
+<b style='color:#ff4040'>Rdeča <b style='color:#FF9393'>+ Roza</b> krivulja</b> so *trenutni* primeri (okuženi <icon i></icon> + izpostavljeni <icon e></icon>),    
+<b style='color:#888'>Siva krivulja</b> so *vsi* primeri (trenutni + opomogli <icon r></icon>):
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
+Ni se veliko spremenilo! Kako dolgo si <icon e></icon> izpostavljen spremeni razmerje med <icon e></icon>-in-<icon i></icon>,
+ in *kdaj* trenutni primeri dosežejo ekstrem... ampak "*višina*" ekstrema, in vseh primerov na koncu, ostane enaka.
 
-Why's that? Because of the *first*-most important idea in Epidemiology 101:
+Zakaj je temu tako? Zaradi *prve*-najpomemnejše ugotovitve v Epidemiology 101:
 
 ![](pics/r.png)
 
