@@ -2,19 +2,10 @@
 
 # How To Translate
 
-**NOTE: I'm still editing some stuff! Words will be finalized-ish on May 4th.
-You can start on stuff below, then check for new commits on the 4th to see what else to
-translate. You're wonderful, thank you! 💖**
-
-**NOTE 2: Sorry these instructions are really sloppy. Am writing this at midnight, rushing
-to publish this.**
-
-**NOTE 3: Indie gamedev is horrible.**
-
 Step 1)
 
 Check to see if it's already been translated to your language!
-Go to the main site, look at the left sidebar.
+Go to the [main site](https://ncase.me/covid-19/), look at the left sidebar.
 
 Step 2)
 
@@ -29,10 +20,11 @@ Translate `words.md`, (6000 words) then export it to html
 – make sure your Markdown app supports footnotes –
 and copy-paste that into the `<article></article>` part of `index.html`.
 
-Translate the `<head>`, sidebars, & footer of `index.html` (200 words)
+Translate the `<head>`, sidebars, & footer of `index.html` (200 words) **Feel free to add yourself in the header/footer credits as a translator! :)**
 
 Translate the images in `/pics` (800 words)
 If you don't have image-editing software, ask for help on the Github Issue!
+The fonts are [Open Sans](https://fonts.google.com/specimen/Open+Sans) and [Patrick Hand](https://fonts.google.com/specimen/Patrick+Hand)
 
 Translate `sim/index.html` (100 words)
 
@@ -40,7 +32,7 @@ Translate the thumbnail `sharing/thumbnail.png`
 
 Step 4)
 
-Use Github Pages to put your forked translation live on the interweb!
+Use Github Pages to put your forked translation live on the interweb (Go to 'Settings' of your repository page and choose your master branch as your source)!
 
 Step 5)
 

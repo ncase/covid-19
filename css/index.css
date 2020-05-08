@@ -95,6 +95,10 @@ icon[r]{
 	background-image: url(../icons/r.png);
 }
 
+.nowrap{
+	white-space: nowrap;
+}
+
 p > img{
 	width: 100%;
 	border: 1px solid #ddd;
