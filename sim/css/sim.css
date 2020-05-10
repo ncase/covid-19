@@ -13,7 +13,7 @@ div{
 	user-select: none;          /* Likely future */ 
 	direction:rtl;
 	text-align:right;
-	right:6px;
+	right:3px;
 }
 
 #sandbox{
@@ -219,6 +219,8 @@ hr{
     color: #bbb;
     font-size: 14px;
     font-weight: 100;
+	right: 0px;
+	direction: ltr;
 }
 #graph > #month_ticks > div{
 	width: 100px;
