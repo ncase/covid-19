@@ -221,51 +221,51 @@
 
 	<p> R<sub>0</sub>برای کووید-19 برابر 2.2 تخمین زده شده,<sup id="fnref9"><a href="#fn9" rel="footnote">9</a></sup> البته تحقیقی <em>نهایی نشده</em> این عدد رو در شهر ووهان(محل شروع ویروس) 5.7 تخمین زده!!!.<sup id="fnref10"><a href="#fn10" rel="footnote">10</a></sup></p>
 
-	<p>در شبیه ساز ما <em>در شروع به صورت میانگین</em> – an <icon i></icon> infects someone every 4 days, over 10 days. &quot;4 days&quot; goes into &quot;10 days&quot; two-and-a-half times. This means – <em>at the start &amp; on average</em> – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:<sup id="fnref11"><a href="#fn11" rel="footnote">11</a></sup>)</p>
+	<p>در شبیه ساز ما <em>در شروع به صورت میانگین</em> – یک ناقل<icon i></icon> در یک بازه ی 10 روزه، هر 4 روز یک نفر رو مبتلا میکنه. &quot;10 روز&quot; رو میشه 2.5تا &quot;4 روز&quot; فرض کرد. پس <em>به صورت میانگین در شروع</em> هر ناقل <icon i></icon> 2.5 نفر رو مبتلا میکنه. (caveats:<sup id="fnref11"><a href="#fn11" rel="footnote">11</a></sup>)</p>
 
-	<p><strong>Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time &amp; new-infection time:</strong></p>
+	<p><strong>بیاین یکم با این R<sub>0</sub> بازی کنین تا ببینین چطور R<sub>0</sub> با توجه به زمان بهبودی و ابتلای جدید محاسبه میشه:</strong></p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 	</div>
 
-	<p>But remember, the fewer <span class="nowrap"><icon s></icon>s</span> there are, the <em>slower</em> <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s.</span> The <em>current</em> reproduction number (R) depends not just on the <em>basic</em> reproduction number (R<sub>0</sub>), but <em>also</em> on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering &amp; getting natural immunity.)</p>
+	<p>ولی یادتون باشه، هرچی <span class="nowrap"><icon s></icon>ها</span> کمتر باشه، <em>آرومتر</em> <span class="nowrap"><icon s></icon>ها</span> به <span class="nowrap"><icon i></icon>ها تبدیل میشن.</span>مقدار <em>کنونی</em> R فقطه به مقدار <em>اولیه</em> اش reproduction number (R<sub>0</sub>) بستگی نداره, این مقدار به تعداد افرادی که دیگه <icon s></icon> نیستن هم بستگی داره.حالا ممکنه بهبود پیدا کرده باشن یا از دنیا برن :( </p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 	</div>
 
-	<p>When enough people have immunity, R &lt; 1, and the virus is contained! This is called <strong>herd immunity</strong>. For flus, herd immunity is achieved <em>with a vaccine</em>. Trying to achieve &quot;natural herd immunity&quot; by letting folks get infected is a <em>terrible</em> idea. (But not for the reason you may think! We&#39;ll explain later.)</p>
+	<p>وقتی افراد کافی به مصونیت میرسن, یا به بیان واضح تر R<1 میشه، میگن ویروس<strong>احاطه شده</strong>. این احاطه در انفولانزا <em>با واکسن</em> به دست میاد. راستش، میشه این احاطه با &quot;مصونیت طبیعی&quot; هم به دست بیاد، ولی با این روش باید افراد زیادی مبتلا بشن! فکر کنین چه <em>فاجعه</em> بزرگی میشه!(جلوتر بیشتر راجع بهش حرف میزنیم)</p>
 
-	<p>Now, let&#39;s play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:</p>
+	<p>حالا بیان ی بار دیگه SEIR Model رو اجرا کنیم،اما با نشون دادن R <sub>0</sub> و Rبر حسب زمان و آستانه مصونیت دسته جمعی:</p>
 
 	<div class="sim">
 	        <iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 	</div>
 
-	<p><strong>NOTE: Total cases <em>does not stop</em> at herd immunity, but overshoots it!</strong> And it crosses the threshold <em>exactly</em> when current cases peak. (This happens no matter how you change the settings – try it for yourself!)</p>
+	<p><strong>نکته:مجموع کیس ها در مصونیت طبیعی <em>متوقف نیمشه!</em> بلکه در اون  از حد خارج میشه!(overshoot).</strong> و از آستانه <em>دقیقا</em> زمانی عبور میکنه که کیس ها به نقطه ی پیک اپیدمی میرسن (هرچقدر دوس داری تنظیماتو تغییر بده، این نتیجه هیچ تغییری نمیکنه! تست کن :) ) </p>
 
-	<p>This is because when there are more <span class="nowrap">non-<icon s></icon>s</span> than the herd immunity threshold, you get R &lt; 1. And when R &lt; 1, new cases stop growing: a peak.</p>
+	<p>علتش هم اینه که افراد<span class="nowrap">غیر-<icon s></icon>ها</span> از آستانه ی مصونیت بیشتر باشن(افراد غیر مستعد بیماری بیشتر از افراد مستعد)، مقدار R کمتر از 1 میشه و دیگه آمار مبتلا رشد نمیکنه :). برای همین چیزی به اسم <em>پیک</em> وجود داره.</p>
 
-	<p><strong>If there&#39;s only one lesson you take away from this guide, here it is</strong> – it&#39;s an extremely complex diagram so please take time to fully absorb it:</p>
+	<p><strong>اگر قرار باشه از کل این صفحه چیزی یاد بگیرید، همینجاس.</strong>این دیاگرام یکم پیچیدس، پس یه نفس عمیق بکشید و تمرکز کنید:</p>
 
 	<p><img src="pics/r3.png" alt=""></p>
 
-	<p><strong>This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!</strong></p>
+	<p><strong>این ینی نیاز نیست تا همه ی ما کووید-19 بگیریم تا بالاخره این ویروس از بین بره (آخیش :|)</strong></p>
 
-	<p>It&#39;s a paradox. COVID-19 is extremely contagious, yet to contain it, we &quot;only&quot; need to stop more than 60% of infections. 60%?! If that was a school grade, that&#39;s a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R &lt; 1, virus is contained! (exact formula:<sup id="fnref12"><a href="#fn12" rel="footnote">12</a></sup>)</p>
+	<p>خب پس چقدر از جمعیت باید بگیرن؟ 60%! احتمالا برای نمره ی درسی عدد کمیه، ولی برای مبارزه با این ویروس کافیه.بزارین شفاف سازی کنم براتون: اگه R<sub>0</sub>=2.5 باشه، و ما 60% ابتلاهارو متوقف کنیم.. مقدار  جدید R بدست میاد R=0.975.دیدین چیشد؟R<1!  یعنی ما ویروسو کنترل کردیم!:<sup id="fnref12"><a href="#fn12" rel="footnote">12</a></sup>)</p>
 
 	<p><img src="pics/r4.png" alt=""></p>
 
-	<p>(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that&#39;s good you&#39;re challenging our assumptions! There&#39;ll be a &quot;Sandbox Mode&quot; at the end of this guide, where you can plug in your <em>own</em> numbers, and simulate what happens.)</p>
+	<p>(اگر فکر میکنید مقدار R<sub>0</sub> یا اعداد دیگه توی شبیه ساز ها خیلی کم یا زیاده، نگران نباشید :) توی حالت SandBox تو آخر این راهنما، میتونید اطلاعات ما رو با اعداد دلخواه خودتون به چالش بکشید!)</p>
 
-	<p><em>Every</em> COVID-19 intervention you&#39;ve heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing &amp; quarantining, face masks, even &quot;herd immunity&quot; – they&#39;re <em>all</em> doing the same thing:</p>
+	<p><em>هر</em> مداخله ای با COVID-19 که شما شنیده اید-از شستن دست گرفته تا قرنطینه - همه و همه دارن یک کار رو انجام میدن!:</p>
 
-	<p>Getting R &lt; 1.</p>
+	<p>رسوندن R به زیر 1.</p>
 
-	<p>So now, let&#39;s use our &quot;epidemic flight simulator&quot; to figure this out: How can we get R &lt; 1 in a way <strong>that also protects our mental health <em>and</em> financial health?</strong></p>
+	<p> خب حالا ، بیاید از "شبیه ساز اپیدمیک پرواز" خوومون استفاده کنیم تا اینو بدست بیاریم:<strong>چطور R رو زیر 1 برسونیم بدون اینکه سلامت روانی <em>و</em> اقتصادی جامعه رو به خطر بندازیم؟</strong></p>
 
-	<p>Brace yourselves for an emergency landing...</p>
+	<p>خودتون رو برای یک فرود اضطراری آماده کنید...</p>
 
 	<div class="section chapter">
 	    <div>
