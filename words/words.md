@@ -455,11 +455,11 @@ Kaj pa ljudje brez pametnih telefonov? Ali pa okužbe preko "vratnih kljuk"? Ali
 
 (razburjanje glede zmede med pre-simptomatskimi in *popolnoma* asimptomatskimi. Slednji so redki:[^razburjenje])
 
-[^razburjenje]: Veliko novih poročil - iskreno, res veliko - ni razlikovalo med "primeri, ki niso pokazali nikakršnih simptomov, ko smo jih testirali" (pre-simptomatski) in "primeri, ki jih *nikdar* niso pokazali" (popolnoma asimptomatski). Edini način razlikovanja je nadoknadenje primerovpoznejeis by following up with cases later.
+[^razburjenje]: Veliko novih poročil - iskreno, res veliko - ni razlikovalo med "primeri, ki niso pokazali nikakršnih simptomov, ko smo jih testirali" (pre-simptomatski) in "primeri, ki jih *nikdar* niso pokazali" (popolnoma asimptomatski). Edini način razlikovanja je poznejše nadoknadenje primerov.
 
-    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    Kar je točno to, kar je [raziskava](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) naredila. (Izjava o omejevanju odgovornosti: "Zgodnje izšli članki niso obravnavani kot končne različice.") V klicnem centru v Južni Koreji, kjer so imeli izbruh virusa COVID-19, "so le štirje (1.9 %) ostali asimptomatski v roku štirinajstih dni karantene in noben od stikov z njihovimi gospodinjstvi ni pripeljal do sekunarnih okužb."
 
-    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
+    ToSo that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
 
 Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
 
