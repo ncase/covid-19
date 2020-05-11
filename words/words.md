@@ -526,24 +526,24 @@ Prav imaš. Maske ne preprečijo, da zboliš[^incoming]... preprečijo ti, da ok
 
 [^incoming]: “Nobena od teh kirurških mask ni pokazala ustreznih lastnosti filtra in obraznega prileganja, da bi jih lahko šteli kot pripomočke za zaščito dihal.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
-*[^outgoing]: “Skupno 3,4-kratno zmanjšanje [70% zmanjšanje] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+[^outgoing]: “Skupno 3,4-kratno zmanjšanje [70 % zmanjšanje] kopirnih števil aerosola, ki smo ga opazovali kombiniranega s skoraj popolno eliminacijo razpršila velikih kapljic, ki je bil demonstriran s strani Johnsona et al., predlaga, da bi kirurške maske, ki jih nosijo okuženi, lahko imele klinično signifikantni prispevek k prenosu.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
-*[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) Glej seznam 1: 100% bombažna majica ima okrog 2/3 filtrilne učinkovitosti kirurške maske, for the two bacterial aerosols they tested.
+[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) Glej seznam 1: 100 % bombažna majica ima okrog 2/3 filtrirne učinkovitosti kirurške maske, kar velja za dva bakterijska aerosola, za katera so testirali.
 
 ![](pics/masks.png)
 
-*Predstavljeno v številkah: kirurška maska *na zboleli osebi* zmanjša prenos virusa pri prehladu & gripi preko zraka do 70%.[^outgoing] Zmanjšanje prenosov za 70% bi imelo tako velik vpliv kot karantena!
+Predstavljeno v številkah: kirurška maska *na zboleli osebi* zmanjša prenos virusa pri prehladu & gripi preko zraka do 70 %.[^outgoing] Zmanjšanje prenosov za 70 % bi imelo tako velik vpliv kot karantena!
 
-*Vseeno, ne vemo zagotovo kakšen vpliv imajo maske pri COVID-19 *specifično*. V znanosti, se ugotovitev lahko objavi samo, če so 95% prepričani. (...lahko.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+Vseeno, ne vemo zagotovo kakšen vpliv imajo maske pri virusu COVID-19 *specifično*. V znanosti, se ugotovitev lahko objavi samo, če je gotovost 95 %. (...lahko.[^replication]) Maske imajo, od 1. maja 2020, manjšo zanesljivost od 95 %.
 
 [^replication]: 
 Vsak dejanski znanstvenik, ki je prebral zadnji stavek, se verjetno trenutno smeje-joče. Glej: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [kriza podvajanja](https://en.wikipedia.org/wiki/Replication_crisis))
 
-Pandemija je kot poker. **Če staviš zgolj, ko si 95% prepričan, boš izgubil vse.** Kot ugotavlja nedavni članek o maskah v Britanskem medicinskem časopisu,[^precautionary]  *moramo* sprejemati v negotovosti cenovno ugodne analize. Kot so:
+Pandemija je kot poker. **Če staviš zgolj, ko si 95% prepričan, boš izgubil vse.** Kot ugotavlja nedavni članek o maskah v Britanskem medicinskem časopisu,[^precautionary]  *moramo* sprejemati cena/korist analize glede na negotovost. Kot so:
 
 [^precautionary]: “Čas je za vpeljavo previdnostnega načela” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cena: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
+Cena: V primeru doma izdelanih iz blaga (ki so približno 2/3 tako efektivne kot kirurške maske [^homemade]) je cena zelo ugodna. V primeru kirurških mask je cena višja, a še vedno precej ugodna.
 
 Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
 
@@ -551,11 +551,12 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
 
-(other arguments for/against masks:[^mask_args])
+(ostali argumenti za/proti maskam:[^mask_args])
 
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
+[^mask_args]: **"Prihraniti moramo zaloge za bolnišnice."** *Absolutno drži.* Toda to je bolj argument za povečanje proizvodnje mask, ne omejevanje količine. 
+Medtem pa si lahko naredimo maske iz tkanin.
 
-   **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
+   **"Težko jih je nositi pravilno."** Prav tako si je težko umivati roke v skladu s smernicami WHO – resno, "korek 3.) Dlan desne roke preko hrbtišča leve?! – Vseeno še vedno priporočamo umivanje rok, saj je nepopolno še zmeraj bolje kakor nič.
 
    **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
 
