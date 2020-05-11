@@ -268,104 +268,105 @@ Pripravite se na zasilni pristanek...
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Months</div>
+        <div>Naslednjih nekaj mesecev</div>
     </div>
 </div>
 
-...could have been worse. Here's a parallel universe we avoided:
+…lahko bi bilo huje. V nadaljevanju sledi prikaz vzporednega sveta, kateremu smo se uspeli izogniti:
 
-###Scenario 0: Do Absolutely Nothing
+###Scenarij 0: Ne naredite popolnoma ničesar
 
-Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+Približno eden izmed 20 ljudi, ki so okuženi s COVID-19, se mora odpraviti na oddelek za intenzivno nego.[^icu_covid] V bogatih državah, kot so na primer ZDA, 1 oddelek za intenzivno nego premore le 1 ležišče za kar 3400 ljudi.[^icu_us] Zato lahko ZDA *hkrati* sprejmejo le 20 izmed 3400 okuženih ljudi – oziroma 0,6% prebivalstva.
 
-[^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
+[^icu_covid]: ["Odstotek primerov COVID-19 v ZDA od 12. februarja do 16. marca 2020, za katere je bil potreben sprejem na oddelku intenzivne nege (starostna skupina)"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Le ta se je za vse primere COVID-19, ki so potrebovali intenzivno nego, gibal med 4,9% in 11,5%. Če smo pri tem še malenkost velikodušni in tako izberemo spodnjo mejo, ugotovimo, da je to 5% oziroma eden izmed dvajsetih. Upoštevati morate, da je ta vrednost značilna za starostno skupino ZDA ter da bo vrednost v državah s starejšim prebivalstvom višja in nižja v državah z mlajšim prebivalstvom.
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400.
+[^icu_us]: “Število ležišč na oddelku za intenzivno nego = 96.596”. Leta 2019 je bilo število prebivalcev ZDA iz družbe za kritično oskrbo ([the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19)) enako 328.200.000. 96.596 od 328.200.000 = približno 1 na 3400.
 
-Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
+Tudi če bi to vrednost *več kot potrojili* na 2%, nam spodnja simulacija prikazuje, kaj bi se zgodilo, *če ne bi storili absolutno ničesar:*
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
-Not good.
+Slabo kaže…
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected.
-(remember: total cases *overshoots* herd immunity)
+Britanska fakulteta je 16. marca ([the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/)) prišla do sledeče ugotovitve: Ne naredimo ničesar in se posledično spopadajmo s problemom premajhnega števila ležišč na oddelkih intenzivne nege, saj se je do sedaj okužilo več kot 80% prebivalstva. 
+(ne pozabite: skupni primeri *prekoračijo* imuniteto črede)
 
-Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+Tudi če umre le 0,5% okuženih – velikodušna domneva, ko ni več možnosti oskrbe na oddelku za intenzivno nego – v veliki državi, kot je ZDA, s 300 milijoni ljudi, 0,5% od 80% od 300 milijonov = še vedno 1,2 milijona mrtvih… *ČE nismo naredili ničesar*.
 
-(Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
+(Številne novice in mediji so poročali le "80% okuženih" *brez*, da bi temu priključili še "ČE NISMO NAREDILI NIČESAR". Strah je bil usmerjen v klike, ne pa v razumevanje. *Vzdih.*)
 
-###Scenario 1: Flatten The Curve / Herd Immunity
+###Scenarij 1: Izravnajte krivuljo / Imuniteta črede
 
-The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+Načrt "Izravnati krivuljo" je bil predstavljen s strani prav vsake izmed javnih zdravstvenih organizacij, medtem ko je bil prvotni načrt Združenega kraljestva, imenovan "imuniteta črede", splošno razglašen. Šlo je za *enak načrt*. Razlika je le v tem, da je Združeno kraljestvo svoj načrt sporočilo slabo in površno.[^yong]
 
-[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
+[^yong]: “Pravi, da je dejanski cilj enak kot v drugih državah: zravnati krivuljo s pravo razporeditvijo začetka okužb. Posledično lahko država doseže imuniteto črede; je stranski učinek in ne cilj. [...] Dejanski akcijski načrt vlade za koronavirus, ki je na voljo na spletu, sploh ne omenja čredne imunosti. ”
 
-    From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+    Iz članka [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
-Both plans, though, had a literally fatal flaw.
+Oba načrta pa sta imela dobesedno usodno napako.
 
-First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
+Najprej si oglejmo dva glavna načina za "zravnanje krivulje": pranje rok in fizično distanciranje.
 
-Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+Povečano pranje rok je v državah z visokim dohodkom zmanjšalo zaščito pred prehladom in mrazom za ~25%[^handwashing], medtem ko je mestno zaprtje v Londonu tesne stike zmanjšalo za ~70%[^london]. Predpostavimo lahko, da lahko pranje rok R zmanjša za *do* 25%, distanciranje pa *do* 70%:
 
-[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
+[^handwashing]: “Vseh osem kvalificiranih študij je poročalo, da je pranje rok zmanjšalo tveganje za okužbo dihal, zmanjšanje tveganja pa je znašalo od 6% do 44% [združena vrednost 24% (95% CI 6-40%)].« Zaradi enostavnosti smo v simulacijah združeno vrednost zaokrožili na 25%. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Opomba: kot kaže ta meta-analiza, je kakovost študij glede pranja rok (vsaj v državah z visokimi dohodki) grozljiva. 
 
-[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: “Ugotovili smo, da se je povprečno dnevno število stikov na udeleženca zmanjšalo za 73%. To bi zadostovalo za zmanjšanje R0 iz vrednosti 2,6 pred zaprtjem na 0,62 (med 0,37 in 0,89) v času zaprtja”. Ponovno smo zaradi enostavnosti v simulaciji vrednost zaokrožili na 70%. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**Preizkusite spodnji kalkulator in videli boste, kako delež <icon s></icon>, pranje rok in distanciranje zmanjšajo R:** (kalkulator predstavlja njihove *relativne* učinke, zato *izgleda* kakor, da povečanje enega izmed njih zmanjša učinek drugih.[^log_caveat])
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+[^log_caveat]: Tega izkrivljanja bi se znebili, če bi R risali na logaritmični lestvici… vendar bi potem mogli dodatno razložiti še *logaritmične lestvice*.
 
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
+Sedaj simulirajmo, kaj bi se zgodilo z epidemijo COVID-19, če bi od marca 2020 dalje imeli le povečano pranje rok, fizično distanciranje pa bi ostalo v *(pre)blagi* obliki – R je tako nižji, vendar še vedno nad 1: 
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
+Tri opombe:
 
-1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1. To *zmanjšuje* skupno število primerov! **Četudi ne dobite R < 1, nižanje R na način, da poskušamo zmanjševati 'prekoračitve' nad imunostjo črede, še vedno rešuje življenja.** Večina ljudi misli, da načrt "Izravnati krivuljo" le širi primere, ne da bi pri tem zmanjšali celoto. Vendar to ni mogoče v *nobenem* epidemiološkem modelu. Ker pa so novice kot neizogibno dejstvo poročale, da bo "okuženih več kot 80% ljudi", so ljudje posledično mislili, da bodo skupni primeri enaki ne glede na vse. *Vzdih.*
 
-2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2. Zaradi dodatnih ukrepov trenutni primeri dosežejo vrhunec *preden* se doseže imuniteta črede. Dejansko v tej simulaciji skupni primeri le premaknejo *majhen delček* nad imuniteto črede – gre za načrt Združenega kraljestva! Na tej točki, kjer je R < 1, lahko opustite vse druge ukrepe in virus nam je uspelo uspešno zajeziti! Srečamo se le z eno težavo…
 
-3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3. Še vedno vam primanjkuje enot za intenzivno nego. In to za kar nekaj mesecev. (in ne pozabite, za te simulacije smo enote za intenzivno nego *že* potrojili)
 
-That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+To je bila druga ugotovitev poročila britanske fakultete (16. marec), ki je Združeno kraljestvo uspelo prepričati, da opusti svoj prvotni načrt. Prepričani so bili, da bo vsak poskus **blaženja** (zmanjšati R, vendar vseeno ohraniti R < 1) spodletel. Tako rekoč je preostal le izhod v sili, in sicer **zaviranje** virusa (zmanjšati R tako, da je R < 1).
 
 ![](pics/mitigation_vs_suppression.png)
 
-That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
+Se pravi, krivulje ne le "izravnajte", potrebno jo je *zdrobiti*. Na primer, z…
 
-###Scenario 2: Months-Long Lockdown
+###Scenarij 2: Nekaj mesečno zaprtje
 
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+Poglejmo, kaj se zgodi, če krivuljo *zatremo* s 5-mesečnim zaprtjem, <icon i></icon> zmanjšamo skoraj na nič, nato pa se *končno* vrnemo v normalno življenje:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 
-Oh.
+Ojej.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+Gre za "drugi val" o katerem že vsi govorijo. Takoj ko odstranimo zaprtje, ponovno dobimo R > 1. Torej lahko en sam izpuščen <icon i></icon> (ali uvožen <icon i></icon>) povzroči konico v primerih, ki so skoraj tako slabi, kot če bi se soočili s scenarijem 0: Absolutno nič.
 
-**A lockdown isn't a cure, it's just a restart.**
+**Zaprtje ni zdravilo, je le ponovni zagon.**
 
-So, what, do we just lockdown again & again?
+Torej se znova in znova le zapiramo?
 
-###Scenario 3: Intermittent Lockdown
+###Scenarij 3: Občasno zaprtje
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+To rešitev je sprva 16. marca predlagalo poročilo britanske fakultete, kasneje pa še listina Harvard.[^lockdown_harvard]
 
-[^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
+Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.
+[^lockdown_harvard]: “Če ni drugih intervencij, je ključno merilo uspešnosti socialnega distanciranja to, ali so presežene zmogljivosti kritične oskrbe. Da bi se temu izognili, bo morda potrebno dolgotrajno ali občasno distanciranje do leta 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**Tukaj je simulacija:** (Po predvajanju "posnetega scenarija" lahko poskusite simulirati *svoj* urnik zaprtja tako, da spremenite drsnike, *medtem* ko simulacija teče! Ne pozabite, da lahko zaustavite in nadaljujete simulacijo ter spremenite njeno hitrost.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
