@@ -423,31 +423,39 @@ This is called **contact tracing**. It's an old idea, was used at an unprecedent
 
 Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
 
-(This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
+(Ta ideja ni prišla s strani računalničarjev: uporaba aplikacije za boj proti COVID-19 je bila sprva predlagana s strani [ekipe Oxford-skih epidemiologov](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
-Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+Čakaj, aplikacije, ki beležijo s kom si bil v stiku? ... Ali to pomeni, da se odrekamo zasebnosti in jo dajamo "Velikemu bratu"?
 
-Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
 
-Here's how it works:
+Seveda ne! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, 
+skupina epidemiologov & kriptografov (including one of us, Marcel Salathé) *že* delajo na tej aplikaciji – 
+z javno dostopno kodo – ki ne razkrije **nobenih informacij o tvoji identiteti, lokaciji, s kom 
+ali celo *s koliko ljudmi* si bil v stiku.**
+
+Tako deluje:
 
 ![](pics/dp3t.png)
 
-(& [here's the full comic](https://ncase.me/contact-tracing/))
+(& [Tukaj je celoten strip.](https://ncase.me/contact-tracing/))
 
-Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
+Skupaj s podobnimi skupinami kot so TCN Protocol[^tcn] in MIT PACT[^pact], so navdihnili podjetji Apple & Google
+to bake sledenje stikov, katerih prioriteta je varovanje zasebnosti neposredno v sistem Android/iOS.[^gapple]
+(Ne zaupaš Google-u/Apple-u? Dobro! Lepota sistema je, da ne *potrebuje* zaupanja.
+Kmalu bo lokalna zdravstena agencija morda predlagala, da jo preneseš. Če je prioriteta aplikacije varovanje zasebnosti z javno dostopno kodo,
+jo, prosim, prenesi!
 
-[^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
+[^tcn]: [Temporary Contact Numbers, decentraliziran protokol sledenja stikov z varnostjo zasebnosti](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
 [^pact]: [PACT: Private Automated Contact Tracing](https://pact.mit.edu/)
 
-[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
+[^gapple]: [Podjetji Apple and Google sodelujeta pri tehnologiji sledenja stikov v zvezi z virusom COVID-19](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Pomni, da ne ustvarjajo aplikacij *samih*, zgolj sisteme, ki jih bodo podpirale.
 
-But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+Kaj pa ljudje brez pametnih telefonov? Ali pa okužbe preko "vratnih kljuk"? Ali "popolnoma" asimptomatski primeri? Aplikacije sledenja stikov ne morejo prestreči vseh prenosov ... *Kar je čisto V redu!* Ni nam treba prestreči *vseh*, vsaj 60%, da je R < 1.
 
-(Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
+(razburjanje glede zmede med pre-simptomatskimi in *popolnoma* asimptomatskimi. Slednji so redki:[^razburjenje])
 
-[^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
+[^razburjenje]: Veliko novih poročil - iskreno, res veliko - ni razlikovalo med "primeri, ki niso pokazali nikakršnih simptomov, ko smo jih testirali" (pre-simptomatski) in "primeri, ki jih *nikdar* niso pokazali" (popolnoma asimptomatski). Edini način razlikovanja je nadoknadenje primerovpoznejeis by following up with cases later.
 
     Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
 
