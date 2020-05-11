@@ -459,85 +459,91 @@ Kaj pa ljudje brez pametnih telefonov? Ali pa okužbe preko "vratnih kljuk"? Ali
 
     Kar je točno to, kar je [raziskava](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) naredila. (Izjava o omejevanju odgovornosti: "Zgodnje izšli članki niso obravnavani kot končne različice.") V klicnem centru v Južni Koreji, kjer so imeli izbruh virusa COVID-19, "so le štirje (1.9 %) ostali asimptomatski v roku štirinajstih dni karantene in noben od stikov z njihovimi gospodinjstvi ni pripeljal do sekunarnih okužb."
 
-    ToSo that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
+    To pomeni, da so  "popolnoma asimptimatski" redki, nalezenje od popolnoma asimptomatskega primera pa še redkeje!
 
-Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
+Izolacija *simptomatskih* primerov bi znižala R do 40 %, and karantenizacija njihovih *pre/a-simptomatičnih* stikov bi znižala R vse do 50 %[^oxford]:
 
-[^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
+[^oxford]: Iz iste oxford-ske raziskave, ki je prva predlagala aplikacije za boj proti virusu COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) Glej diagram 2. Če predpostavimo R<sub>0</sub> = 2.0, potem velja:    
 
-    * Symptomatics contribute R = 0.8 (40%)
-    * Pre-symptomatics contribute R = 0.9 (45%)
-    * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-    * Environmental stuff like doorknobs contribute R = 0.2 (10%)
+    * Simptomatski prispevajo R = 0,8 (40 %)
+    * Pre-simptomatski prispevajo R = 0,9 (45 %)
+    * Asimptomatski prispevajo R = 0.1 (5 %, sicer njihov model še ima negotovosti in je lahko R precej nižji.)
+    * Okoljski predmeti kot so kljuke prispevajo R = 0.2 (10%)
 
-    And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
+    In seštej pre- & a-simptomatske stike (45% + 5%) in znaša R 50%!
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
+Zatorej, četudi se nena 100% stikov osami, lahko dobimo R < 1  *brez karantene!* Veliko boljše za naše mentalno & finančno zdravje.
+(Kar se tiče stroškov za ljudi, ki se morajo samoosamiti / karantenizirati, *vlada bi jih morala podpreti* – plačati teste, preprečiti izgubo službe, subvencionirati plačani dopust, etc. Še vedno veliko cenejša od karantene.)
 
-We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
+Potem ohranjamo R < 1 until dokler nimamo zdravila, ki spremeni dovzetne <icon s></icon> v imune <icon r></icon>. Imuniteta črede, tokrat na *pravi* način:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+(Pomni: ta kalkulator privzema, da je zdravilo 100% učinkovito. Ne pozabi, da v realnosti bomo morali kompenzirati cepljenje *več* kot "čredne imunosti", da  *dejansko* dobimo čredno imunost)
 
-Okay, enough talk. Here's a simulation of:
+Dobro, dovolj govorjenja. Tukaj je simulacija za:
 
-1. A few-month lockdown, until we can...
-2. Switch to "Test, Trace, Isolate" until we can...
-3. Vaccinate enough people, which means...
-4. We win.
+1. Nekaj mesečno karanteno, dokler ne ...
+2. Preklopimo na "Testiraj, Izsledi, Izoliraj" dokler ne...
+3. cepimo dovolj ljudi, kar pomeni...
+4. Zmagali smo.
 
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-So that's it! That's how we make an emergency landing on this plane.
+Torej, to je to! Tako izvedemo zasilni pristanek na tem letalu.
 
-That's how we beat COVID-19.
+Tako premagamo COVID-19.
 
 ...
 
-But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
 
-The pessimist invents the parachute.
+Kaj pa, če gredo stvari *še vedno* narobe? 
+Stvari so že potekale zelo narobe. To je strah in to je dobro! Strah nam da energijo, da ustvarimo *rezervne načrte*.
 
-###Scenario 4+: Masks For All, Summer, Circuit Breakers
+Pesimist izumi padalo.
 
-What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
+###Scenarij 4+: Maske za vse, poletje, varnostno stikalo
 
-Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
+Kaj če je  R<sub>0</sub> veliko višji kot smo predvideli, in zgornji posegi, tudi z blagim distanciranjem, *še vedno* niso dovolj, da dobimo R < 1?
 
-**Masks For All:**
+Ne pozabi, 
+tudi če ne moremo dobiti R <1, zmanjšanje R še vedno zniža "presežek" v skupnih primerih, kar reši življenja. 
+Kljub temu je R <1 idealen, zato je tu še nekaj načinov za zmanjšanje R:
 
-*"Wait,"* you might ask, *"I thought face masks don't stop you from getting sick?"*
+**Maske za vse:**
 
-You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
+*"Čakaj,"* mogoče se boš vprašal, *"obrazne maske ne preprečijo, da zboliš?"*
 
-[^incoming]: “None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
+Prav imaš. Maske ne preprečijo, da zboliš[^incoming]... preprečijo ti, da okužiš *ostale*.
 
-[^outgoing]: “The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+[^incoming]: “Nobena od teh kirurških mask ni pokazala ustreznih lastnosti filtra in obraznega prileganja, da bi jih lahko šteli kot pripomočke za zaščito dihal.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
-[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
+*[^outgoing]: “Skupno 3,4-kratno zmanjšanje [70% zmanjšanje] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+
+*[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) Glej seznam 1: 100% bombažna majica ima okrog 2/3 filtrilne učinkovitosti kirurške maske, for the two bacterial aerosols they tested.
 
 ![](pics/masks.png)
 
-To put a number on it: surgical masks *on the sick person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
+*Predstavljeno v številkah: kirurška maska *na zboleli osebi* zmanjša prenos virusa pri prehladu & gripi preko zraka do 70%.[^outgoing] Zmanjšanje prenosov za 70% bi imelo tako velik vpliv kot karantena!
 
-However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+*Vseeno, ne vemo zagotovo kakšen vpliv imajo maske pri COVID-19 *specifično*. V znanosti, se ugotovitev lahko objavi samo, če so 95% prepričani. (...lahko.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
 
-[^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
+[^replication]: 
+Vsak dejanski znanstvenik, ki je prebral zadnji stavek, se verjetno trenutno smeje-joče. Glej: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [kriza podvajanja](https://en.wikipedia.org/wiki/Replication_crisis))
 
-However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
+Pandemija je kot poker. **Če staviš zgolj, ko si 95% prepričan, boš izgubil vse.** Kot ugotavlja nedavni članek o maskah v Britanskem medicinskem časopisu,[^precautionary]  *moramo* sprejemati v negotovosti cenovno ugodne analize. Kot so:
 
-[^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
+[^precautionary]: “Čas je za vpeljavo previdnostnega načela” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
+Cena: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
 
 Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
 
