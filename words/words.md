@@ -546,7 +546,7 @@ Pandemija je kot poker. **Če staviš zgolj, ko si 95% prepričan, boš izgubil 
 
 Cena: V primeru doma izdelanih iz blaga (ki so približno 2/3 tako efektivne kot kirurške maske [^homemade]) je cena zelo ugodna. V primeru kirurških mask je cena višja, a še vedno precej ugodna.
 
-Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
+Korist: Tudi, če je možnost, da kirurške maske znižajo prenos za 0 % ali 70 %, 50 %, je povprečna "pričakovana vrendnost" še zmeraj 35 %. Tako kot polovična karantena! Torej ugibajmo, da kirurške maske znižajo R za največ 35%, zaradi negotovosti. (Ponovno, lahko preveriš naše predpostavke s premikanjem drsnikov gor ali dol)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
@@ -554,34 +554,35 @@ Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission b
 
 (ostali argumenti za/proti maskam:[^mask_args])
 
-[^mask_args]: **"Prihraniti moramo zaloge za bolnišnice."** *Absolutno drži.* Toda to je bolj argument za povečanje proizvodnje mask, ne omejevanje količine. 
+[^mask_args]: **"Prihraniti moramo zaloge za bolnišnice."** *Absolutno drži.* Toda to je bolj argument za povečanje proizvodnje mask, ne omejevanje količine.
 Medtem pa si lahko naredimo maske iz tkanin.
 
    **"Težko jih je nositi pravilno."** Prav tako si je težko umivati roke v skladu s smernicami WHO – resno, "korek 3.) Dlan desne roke preko hrbtišča leve?! – Vseeno še vedno priporočamo umivanje rok, saj je nepopolno še zmeraj bolje kakor nič.
 
-   **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
+   **"Ljudje bodo bolj nepremišljeni pri umivanju rok in socialem distanciranju."** Kakopak! Zaradi varnostnih pasov ljudje tudi ignorirajo stop znake, prav tako zaradi nitkanja ljudje jedo kamenje. Zdaj pa zares, zavzemali bi se za nasprotno: maske so *neprestani fizični opomnik*, da moramo biti previdni – V Vzhodni Aziji so celo simbol solidarnosti.
 
 
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
+Maske *same* ne bodo privedle do R < 1. Toda, če nas umivanje rok in "Testiraj, Izsledi, Izoliraj" pride zgolj do R = 1.10, bi z nošo mask 1/3 ljudi dosegli R < 1 in virus obvladali!
 
-**Summer:**
+**Poletje:**
 
-Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
+Ok, to ni "intervencija", ki jo lahko nadzorujemo, lahko pa pomaga! Nekatere novice poročajo, da poletje COVID-19 ne bo ničesar storilo. Imajo deloma res: poljetje ne bo zagotovilo R < 1, ampak ga *bo* zmanjšalo R.
 
-For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 15°C (60°F), so summer will make R drop by 18%.
+Pri COVID-19, vsaka dodatna 1° Celsius (2.2° Fahrenheit) povzroči upad R za 1.2%.[^heat] 
+Temperaturna razlika poletje-zima je v New Yorku  15 ° C (60 ° F), torej bo s poletjem upad R za 18%.
 
-[^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: “Zvišanje temperature za eno stopinjo Celzija [...] zniža R za 0.0225” in “Povprečna vrednost R teh 100 mest je 1,83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+*Poletje samo ne bo znižalo R < 1, če pa imamo omejene vire, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
 
-**A "Circuit Breaker" Lockdown:**
+** "Varnostno stikalo" - karantena:**
 
-And if all that *still* isn't enough to get R < 1... we can do another lockdown.
+In če vse to še  *vedno* ni dovolj, da dobimo R < 1... lahko ponovno uvedemo karanteno.
 
 But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
 
