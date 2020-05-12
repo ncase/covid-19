@@ -441,7 +441,7 @@ Tako deluje:
 (& [Tukaj je celoten strip.](https://ncase.me/contact-tracing/))
 
 Skupaj s podobnimi skupinami kot so TCN Protocol[^tcn] in MIT PACT[^pact], so navdihnili podjetji Apple & Google
-to bake sledenje stikov, katerih prioriteta je varovanje zasebnosti neposredno v sistem Android/iOS.[^gapple]
+za vnos sledenja stikov, katerih prioriteta je varovanje zasebnosti neposredno v sistem Android/iOS.[^gapple]
 (Ne zaupaš Google-u/Apple-u? Dobro! Lepota sistema je, da ne *potrebuje* zaupanja.
 Kmalu bo lokalna zdravstena agencija morda predlagala, da jo preneseš. Če je prioriteta aplikacije varovanje zasebnosti z javno dostopno kodo,
 jo, prosim, prenesi!
@@ -469,9 +469,9 @@ Izolacija *simptomatskih* primerov bi znižala R do 40 %, and karantenizacija nj
     * Simptomatski prispevajo R = 0,8 (40 %)
     * Pre-simptomatski prispevajo R = 0,9 (45 %)
     * Asimptomatski prispevajo R = 0.1 (5 %, sicer njihov model še ima negotovosti in je lahko R precej nižji.)
-    * Okoljski predmeti kot so kljuke prispevajo R = 0.2 (10%)
+    * Okoljski predmeti kot so kljuke prispevajo R = 0.2 (10 %)
 
-    In seštej pre- & a-simptomatske stike (45% + 5%) in znaša R 50%!
+    In seštej pre- & a-simptomatske stike (45 % + 5 %) in znaša R 50 %!
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
@@ -569,16 +569,16 @@ Maske *same* ne bodo privedle do R < 1. Toda, če nas umivanje rok in "Testiraj,
 
 Ok, to ni "intervencija", ki jo lahko nadzorujemo, lahko pa pomaga! Nekatere novice poročajo, da poletje COVID-19 ne bo ničesar storilo. Imajo deloma res: poljetje ne bo zagotovilo R < 1, ampak ga *bo* zmanjšalo R.
 
-Pri COVID-19, vsaka dodatna 1° Celsius (2.2° Fahrenheit) povzroči upad R za 1.2%.[^heat] 
-Temperaturna razlika poletje-zima je v New Yorku  15 ° C (60 ° F), torej bo s poletjem upad R za 18%.
+Pri COVID-19, vsaka dodatna 1 °C (2,2 ° Fahrenheit) povzroči upad R za 1,2 %.[^heat] 
+Temperaturna razlika poletje-zima je v New Yorku  15 ° C (60 °F), torej bo s poletjem upad R za 18 %.
 
-[^heat]: “Zvišanje temperature za eno stopinjo Celzija [...] zniža R za 0.0225” in “Povprečna vrednost R teh 100 mest je 1,83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: “Zvišanje temperature za eno stopinjo Celzija [...] zniža R za 0,0225” in “Povprečna vrednost R teh 100 mest je 1,83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-*Poletje samo ne bo znižalo R < 1, če pa imamo omejene vire, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+*Poletje samo ne bo doseglo R < 1, če pa imamo omejene vire, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
 
 ** "Varnostno stikalo" - karantena:**
 
@@ -589,8 +589,8 @@ In če vse to še  *vedno* ni dovolj, da dobimo R < 1... lahko ponovno uvedemo k
 Tu je simulacija "lenega primera" scenarija:
 
 1. Karantena, potem
-2. Zmerna količina higiene & "Testiraj, Izsledi, Izoliraj", z blago zalogo "Maske za vse", potem...
-*3. One more "circuit breaker" lockdown before a vaccine's found.
+2. Zmerna količina higiene & "Testiraj, Izsledi, Izoliraj" z blago zalogo "Maske za vse", potem...
+*3. Samo še eno "circuit breaker" lockdown pred iznajdbo cepiva.
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
@@ -608,13 +608,13 @@ Da ne omenjam vseh *ostalih* intervencij, ki še dodatno znižajo R:
 
 Upamo, da smo ti s temi načrti vlili upanje.
 
-**Tudi po pesimističnem scenariju,  *je* mogoče premagati COVID-19 in hkrati zaščititi našo mentalno in finančno zdravje.** Glej na zaprtje kot "reset button", vzdržujmo R < 1 izolacijo okuženega + pogodbo o varovanju zasebnosti sledenja + ter *vsaj* maske iz blaga za vse... in življenje lahko ponovno postane normalno!
+**Tudi po pesimističnem scenariju, *je* mogoče premagati COVID-19 in hkrati zaščititi našo mentalno in finančno zdravje.** Glej na zaprtje kot "reset button", vzdržujmo R < 1 izolacijo okuženega + pogodbo o varovanju zasebnosti sledenja + ter *vsaj* maske iz blaga za vse... in življenje lahko ponovno postane normalno!
 
-Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
+Seveda, morda imaš izsušene roke, ampak boš lahko zaradi tega lahko povabil partnerja v knjigarno stripov! Lahko boš šel ven s prijatelji gledat najnovejši hollywood-ski "cash-grab". Lahko boš opazoval ljudi v knjižnici, užival ob podjetništvu preprostih ljudi, ki mu enostavno rečemo *živeti*.
 
-Even under the worst-case scenario... life perseveres.
+Celo v najhujšem primeru ... Se življenje ohrani.
 
-So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+Zatorej se zdaj pripravimo na najhujše možne primere. Pristanek na vodi, vzami svoj rešilni jopič in, prosim, sledi lučkam do zasilnih izhodov:
 
 <div class="section chapter">
     <div>
