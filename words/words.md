@@ -372,57 +372,58 @@ Absent other interventions, a key metric for the success of social distancing is
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+To *bi* primere ohranilo pod zmogljivostjo enot za intenzivno nego, kar je *veliko* bolje, kot 18-mesečna popolna zaustavitev, dokler na voljo ne bi bilo cepivo. Za nekaj mesecev moramo uvesti zaprtje, nato ponovno odpreti za nekaj mesecev in to potem ponavljati, dokler ne bo cepivo na voljo. (In če cepiva še kar ni, to ponavljajte, dokler ne dosežete imunosti črede … torej do leta 2022.)
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+Poglejte, naravnost čudovito je narisati črto, ki predstavlja "zmogljivost enot za intenzivno nego", vendar se tukaj srečamo še z veliko ostalimi pomembnimi stvarmi, ki pa jih tukaj *ne moremo* simulirati. Mednje štejemo:
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**Duševno zdravje:** Osamljenost je eden največjih dejavnikov tveganja za depresijo, tesnobo in samomor. To bi lahko primerjali s kajenjem 15 cigaret na dan, kar prav tako privede do zgodnje smrti.[^loneliness]
 
-[^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
+[^loneliness]: Glej sliko 6: [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Seveda, nedvomno gre za zanikanje pomembne izjave o tem, da so našli *korelacijo*. Razen, če sami želite poskusiti naključno določiti ljudi, ki naj bodo osamljeni za vso življenje, so vse, kar boste dobili, dokazi o opazovanju.
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**Finančno zdravje:** "Kaj pa gospodarstvo?" zveni, kot da vas bolj kot za življenja skrbi za denar. Vendar "ekonomija" ni le zaloga: gre za sposobnost ljudi, da lahko svojim najdražjim zagotovijo hrano in streho nad glavo, da imajo možnost vlagati v prihodnost svojih otrok in preprosto uživajo v umetnosti, hrani, videoigrah – v glavnem v tistem, zaradi česar je življenje vredno živeti. Poleg tega je vredno omeniti, da revščina *sama po sebi* strahotno vpliva na duševno in fizično zdravje. 
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+Ne pravimo, da smo *proti* ponovnemu zaprtju! Kasneje si bomo ogledali zaprtje, ki ga bomo poimenovali "varnostno stikalo". Kljub vsemu, ne gre za idealen način zaprtja. 
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
 
-How?
+Vendar pozor… Ali se nista Tajvan in Južna Koreja *že* pred časom srečala s COVID-19? 4 cele mesece *brez* dolgotrajnega zaprtij?
 
-###Scenario 4: Test, Trace, Isolate
+Kako?
 
-*"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+###Scenarij 4: Test, sled, izolacija
 
-But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
+*"Seveda, tudi mi \*bi lahko*\ naredili tisto, kar sta Tajvan in Južna Koreja storila že na začetku, vendar je sedaj že prepozno. Zamudili smo začetek."*
 
-To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
+Ampak gre ravno za to! “Zaustavitev ni zdravilo, je le ponovni zagon”... **in vse, kar potrebujemo, je nov začetek.**
 
-[^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
+Da bi razumeli, kako sta se Tajvan in Južna Koreja znali spopadati s COVID-19, moramo razumeti natančen časovni trak tipične okužbe s COVID-19[^timeline]: 
 
-    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+[^timeline]: **V povprečju 3 dnevi do stanja nalezljivosti:** “Na podlagi ločenih študij zgodnjih primerov COVID-19, domnevamo, da je inkubacijsko obdobje v povprečju porazdeljeno na 5,2 dni in sklepamo, da do nalezljivosti pride že pred pojavom simptomov, in sicer od 2,3. dneva dalje (95% Cl, 0,8-3,0 dni).” (prevod: Ob predpostavki, da se simptomi začnejo pri 5 dneh, do nalezljivosti pride že 2 dneva prej = nalezljivost se začne pri 3 dneh) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    **V povprečju 4 dnevi, da pride okužba do nekoga drugega:** “Povprečni [serijski] interval je bil 3,96 dni (95% Cl 3,53-4,39 dni)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+
+    **V povprečju 5 dni, da začutimo prve simptome:** “Mediana inkubacijske dobe je bila ocenjena na 5,1 dni (95% Cl, 4,5-5,8 dni)”. [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
-If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
+Če se primeri samoizolirajo, ko že vedo, da so bolni (torej, ko čutijo simptome), se virus lahko še vedno širi:
 
 ![](pics/timeline2.png)
 
-And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+In v resnici je 44% vseh prenosov prav takšnih: *pred*simptomatskih! [^pre_symp]
 
-[^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: “Ocenili smo, da je bilo 44% (interval zaupanja: 95%, 25-69%) sekundarnih primerov okuženih ravno med predsimptomatsko stopnjo indeksnih primerov.” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
-But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
+Vendar, če najdemo *in damo v karanteno* ljudi, ki so bili še nedavno v tesnejših stikih in imajo simptome virusa, lahko tako širjenje virusa ustavimo in ostanemo korak spredaj!
 
 ![](pics/timeline3.png)
 
-This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
+Temu pravimo **sledenje stikov**. Gre za starejšo idejo, ki je bila v neprimerljivem obsegu uporabljena za obvladovanje ebole[^ebola], sedaj pa se pri zajezitvi COVID-19 po njej zgledujeta predvsem Tajvan in Južna Koreja!
 
-[^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
+[^ebola]: “Sledenje stikov se je v Liberiji izkazalo kot kritično posredovanje in je predstavljajo enega največjih naporov iskanja stikov med epidemijo v zgodovini.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)
+(Omogoča nam tudi učinkovitejšo uporabo naših omejenih testov za iskanje predsimptomatskih <icon i></icon>, ne da bi bilo pri tem potrebno testirati skorajda vse.)
 
-Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
+Navadno je stike moč najti z osebnimi pogovori, vendar so v našem primeru le ti *sami* prepočasni za t.i. 48-urno okno COVID-19. Zaradi tega sledilci stikov še kako potrebujejo pomoč, pri čemer pridejo v poštev (in *NE* v nadomestilo) aplikacije za sledenje stikov.
 
 (Ta ideja ni prišla s strani računalničarjev: uporaba aplikacije za boj proti COVID-19 je bila sprva predlagana s strani [ekipe Oxford-skih epidemiologov](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
