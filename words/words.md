@@ -584,31 +584,31 @@ Temperaturna razlika poletje-zima je v New Yorku  15 ° C (60 ° F), torej bo s 
 
 In če vse to še  *vedno* ni dovolj, da dobimo R < 1... lahko ponovno uvedemo karanteno.
 
-But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
+*Ampak ne bo nam treba biti  2-mesca-zaprti / 1-mesec-odprti znova & znova! Ker R je zmanjšan, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore je moral to narediti pred kratkim, "kljub" temu da je COVID-19 bil pod kontrolo 4 mesece. To ni neuspeh: to  *je* "cena, ki jo moraš plačati", da zmagas.)
 
-Here's a simulation a "lazy case" scenario:
+Tu je simulacija "lenega primera" scenarija:
 
-1. Lockdown, then
-2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
-3. One more "circuit breaker" lockdown before a vaccine's found.
+1. Karantena, potem
+2. Zmerna količina higiene & "Testiraj, Izsledi, Izoliraj", z blago zalogo "Maske za vse", potem...
+*3. One more "circuit breaker" lockdown before a vaccine's found.
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
 
-Not to mention all the *other* interventions we could do, to further push R down:
+Da ne omenjam vseh *ostalih* intervencij, ki še dodatno znižajo R:
 
-* Travel restrictions/quarantines
-* Temperature checks at malls & schools
-* Deep-cleaning public spaces
-* [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
-* And all else human ingenuity shall bring
+* Omejitve potovanj/karantene
+* Preverjanje temperature v trgovskih centrih & šolah
+* Temeljito čiščenje javnih površin
+* [Nadomestimo rokovanje z brco nog](https://twitter.com/V_actually/status/1233785527788285953)
+* In vse ostalo kar prinese človeška iznajdljivost
 
 . . .
 
-We hope these plans give you hope.
+Upamo, da smo ti s temi načrti vlili upanje.
 
-**Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+**Tudi po pesimističnem scenariju,  *je* mogoče premagati COVID-19 in hkrati zaščititi našo mentalno in finančno zdravje.** Glej na zaprtje kot "reset button", vzdržujmo R < 1 izolacijo okuženega + pogodbo o varovanju zasebnosti sledenja + ter *vsaj* maske iz blaga za vse... in življenje lahko ponovno postane normalno!
 
 Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
 
