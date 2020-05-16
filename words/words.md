@@ -620,49 +620,49 @@ Zatorej se zdaj pripravimo na najhujše možne primere. Pristanek na vodi, vzami
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>Naslednjih nekaj let</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+Stakneš virus COVID-19, in si opomoreš, ali pa se proti njemu cepiš. V vsakem primeru si zdaj imun ...
 
-...*for how long?*
+...*A kako dolgo?*
+""
+* Virus COVID-19 je najbolj podoben virusu SARS, ki je dal "svojim" preživelim 2 leti imunosti.[^SARS immunity]
+* Corona virusi, ki so vzrok za navaden prehlad, nudijo le 8 mesecev imunosti.[^cold immunity]
+* Obstajajo poročila ljudi, ki so preboleli COVID-19, potem pa bili pozitivni. Je pa neznano, če so testi lažno pozitivni.[^unclear]
+* Ena *"nestrokovno pregledana"* raziskava na opicah je pokazala imunost na COVID-19 za vsaj 28 let.[^monkeys]
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+*Pri ljudeh* je ,od 1. maja 2020, ta doba en velik vprašaj.
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+[^SARS immunity]: “Specifična protitelesa za SARS so se v povprečju ohranila 2 leti [...] Zatorej so SARS pacienti morebiti dovzetni za ponovno okužbo po več kot 3 letih po prvotnem izpostavljenju.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Na žalost" ne bomo nikoli vedeli kako dolgo bi SARS imunost resnično trajala, saj smo se ga znebili tako hitro.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^cold immunity]: “Nismo našli nikakršne signifikantne razlike med verjetnostjo vsaj enkrat pozitivnega testa in verjetnostjo ponovnega pojava Beta-Corona virusa HKU1 in OC43 34 tednov po prvi okužbi.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^unclear]: “Čim se oseba otrese virusa, se viralni delci še nekaj časa zadržijo v telesu. Ti ne morejo povzročiti okužbe, lahko pa so povzročitelji pozitivnega testa.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^monkeys]: Od [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *izjava o omejitvi odgovornosti: Ta članek  je osnutek in še ni bil pregledan s strani strokovnjakov.* Poudariti je treba tudi: testirali so le ponovno okužbo 28 dni pozneje.
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later.
-
-For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
+Za te simulacije recimo, da je 1 leto.
+**Tu je simulacija, začenši s 100% <icon r></icon>**, Po 1 letu v *povpečju* eksponentno pada v dovzetne, neimune <icon s></icon>, z variacijo:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+Vrnimo se na eksponentni upad!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+To je **SEIRS Model**. Zadnji "S" pomeni <icon s></icon> Susceptible (dovzetno).
 
 ![](pics/seirs.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+Zdaj pa simulirajmo izbruh virusa COVID-19 v obdobju več kot 10 let brez ukrepov ... *Če imunost traja le leto dni:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+V prejšnjih simulacijah smo imeli le *en* sunek preobremenitve na intenzivni negi spike. Zdaj pa jih imamo več, *in* <icon i></icon> primeri se zaključijo pri kapaciteti oddelka za intenzivno nego. (Ki smo jih *potrojili* za to simulacijo)
 
 R = 1, it's **endemic.**
 
