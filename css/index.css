@@ -54,6 +54,7 @@ article > p, article > ul, article > ol, article > h1, article > h2, article > h
 }
 .section > div > div{
 	position: absolute;
+	direction: rtl;
 }
 .section > div > iframe{
 	display: block;
