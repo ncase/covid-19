@@ -510,7 +510,7 @@ But wait – how can a simple piece of fabric block droplets in one direction, *
 
 ![](pics/masks.png)
 
-To put a number on it: surgical masks *on the infectious person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
+Surgical masks *on the infectious person* reduce cold & flu viruses in aerosols by 70%[^outgoing] – that's potentially as large an impact as a lockdown!
 
 However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
 
