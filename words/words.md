@@ -249,11 +249,11 @@ Brace yourselves for an emergency landing...
 
 ###Scenario 0: Do Absolutely Nothing
 
-*Roughly* around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+*Roughly* 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
 
 [^icu_covid]: **[UPDATED MAY 15]** Many of you rightly pointed out that our previous citation for "**1 in 20** need hospitalization" was based off old USA data on *confirmed* cases – which was way lower than the *real* number of cases, due to lack of tests.
     
-    So, let's look at the country with the *most* tests per capita: Iceland. As of May 15th, 2020, they had 115 hospitalized among 1802 confirmed cases ≈ 6.4% hospitalization rate, or **1 in 16**.
+    So, let's look at the country with the *most* tests per capita: Iceland. [On May 15th, 2020](https://web.archive.org/web/20200516012656/https://en.wikipedia.org/wiki/COVID-19_pandemic_in_Iceland), they had 115 hospitalized among 1802 confirmed cases ≈ 6.4% hospitalization rate, or **1 in 16**.
     
     [A more recent study of COVID-19 in France](https://science.sciencemag.org/content/early/2020/05/12/science.abc3517) – using not just official confirmed cases but also antibody test data – found that “3.6% of infected individuals are hospitalized”. Or, **1 in 28.**
     
@@ -505,6 +505,8 @@ You're right. Masks don't stop you from getting sick[^incoming]... they stop you
 [^outgoing]: “The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
 [^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
+
+But wait – how can a simple piece of fabric block droplets in one direction, *but not the other?* The answer's counter-intuitive, yet simple:
 
 ![](pics/masks.png)
 
