@@ -15,12 +15,12 @@
 			<div id="hide_on_first_playthrough">
 				<div id="section_dynamics">
 
-					به صورت <i>میانگین</i>,
+					به صورت <i>میانگین</i>،
 					هر <icon i></icon>...
 					<br><br>
 					
 					<div id="label_transmission">
-						ویروسه را به یک <icon s></icon> هر <span id="label_p_transmission">N</span> روز منتقل میکند
+						هر<icon s></icon> در <span id="label_p_transmission">N</span> روز
 						<br>
 						<span id="label_transmission_caveat">
 							(در شروع اپیدمی)<br>
@@ -30,21 +30,21 @@
 
 					<div id="label_c_exposed">
 						<input class="sim_checkbox" type="checkbox" id="c_exposed">
-						 <span id="label_p_exposed">N</span> روز طول میکشد تا  <icon e></icon> به <icon i></icon> تبدیل شود
+						 <span id="label_p_exposed">N</span> طول میکشد تا <icon e></icon> به <icon i></icon> تبدیل شود.
 						<br>
 						<input class="sim_input" type="range" id="p_exposed" min="1" max="30" step="1" value="3">
 					</div>
 					
 					<div id="label_c_recovery">
 						<input class="sim_checkbox" type="checkbox" id="c_recovery">
-						 <span id="label_p_recovery">N</span> روز طول میکشد <icon i></icon> تا <icon r></icon> تبدیل شود
+						 <span id="label_p_recovery">N</span> طول میکشد تا <icon i></icon> به <icon r></icon> تبدیل شود.
 						<br>
 						<input class="sim_input" type="range" id="p_recovery" min="1" max="30" step="1" value="10">
 					</div>
 					
 					<div id="label_c_waning">
 						<input class="sim_checkbox" type="checkbox" id="c_waning">
-						مصونیت <icon s></icon> در <span id="label_p_waning">N</span> ماه از دست میرود
+						 هر<icon s></icon> مصونیت را در <span id="label_p_waning">N</span> ماه از دست میدهد.
 						<br>
 						<input class="sim_input" type="range" id="p_waning" min="1" max="60" step="1" value="12">
 					</div>
@@ -55,36 +55,36 @@
 
 				<div id="section_r">
 
-					R<sub>0</sub> هست <span id="label_p_r0" toFixed="2"></span>
+					مقدار R<sub>0</sub> برابر است با: <span id="label_p_r0" toFixed="2"></span>
 					<canvas class="r_canvas" id="canvas_r0"></canvas>
 					<!--input class="sim_input" type="range" id="p_r0" min="0" max="6" step="0.01" disabled-->
 					<br>
 
 					<span id="label_s">
-						درصد افرادی که <icon s></icon> <i>نیستن</i> 
+						% افرادی که <icon s></icon> <i>نیستند</i> 
 						<input class="sim_input" type="range" id="p_s" min="0" max="1" step="0.001" value="0" disabled>
 						<div class="herd"></div>
 						<br>
 					</span>
 
 					<span id="int_block_0">
-						افزایش ژن
+						افزایش بهداشت
 						<br>
 						<input class="sim_input recordable" type="range" id="p_hygiene" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_1">
-						فاصله ی اجتماعی
+						فاصله گذاری اجتماعی
 						<br>
 						<input class="sim_input recordable" type="range" id="p_distancing" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_2">
-						ایزوله ی کیس ها
+						ایزوله ی موارد ابتلا
 						<br>
 						<input class="sim_input recordable" type="range" id="p_isolate" min="0" max="1" step="0.001" value="0">
 						<br>
-						قرنطینه ی اجتماع
+						قرنطینه
 						<br>
 						<input class="sim_input recordable" type="range" id="p_quarantine" min="0" max="1" step="0.001" value="0">
 						<br>
@@ -96,13 +96,13 @@
 						<br>
 					</span>
 					<span id="int_block_4">
-						قدرت تابستان
+						تاثیر تابستان
 						<br>
 						<input class="sim_input recordable" type="range" id="p_summer" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_5">
-						واکسیناسون
+						واکسیناسیون
 						<br>
 						<input class="sim_input recordable" type="range" id="p_vaccines" min="0" max="1" step="0.001" value="0">
 						<br>
@@ -115,7 +115,7 @@
 					</span>
 
 					<span id="hospital_capacity">
-						ظرفیت ICU <span id="label_p_hospital">N</span>%
+						ظرفیت ICU در <span id="label_p_hospital">N</span>%
 						<br>
 						<input class="sim_input recordable" type="range" id="p_hospital" min="100" max="1000" step="1" value="333">
 					</span>
@@ -126,7 +126,7 @@
 
 				<div id="section_meta">
 
-					شبیه سازی <span id="label_p_years" toFixed="1">N</span> سال
+					شبیه سازی در <span id="label_p_years" toFixed="1">N</span> سال
 					<span id="section_meta_years">
 						<br>
 						<input class="sim_input" type="range" id="p_years" min="0.5" max="10" step="0.5" value="2">
@@ -155,17 +155,17 @@
 					</div>
 					<div id="bb_reset">
 						<div class='control_icon' reset></div>
-						دوباره
+						تنظیم مجدد
 					</div>
 				</div>
 				<!--div id="sb_stop">
 					Stop
 				</div-->
 				<div id="sb_reset">
-					راه اندازی مجدد
+					تنظیم مجدد همه
 				</div>
 				<div id="sb_replay">
-					بازپخش
+					پخش دوباره
 				</div>
 			</div>
 
@@ -182,15 +182,15 @@
 			<div id="legend">
 				
 				<span id="label_susceptible" class="lines">
-					<icon s></icon> حساس<span id="show_percent_s"></span>
+					<icon s></icon> مستعد<span id="show_percent_s"></span>
 					<br>
 				</span>
 				<span id="label_exposed" class="lines">
-					<icon e></icon> مشکوک<span id="show_percent_e"></span>
+					<icon e></icon> در معرض<span id="show_percent_e"></span>
 					<br>
 				</span>
 				<span id="label_infectious" class="lines">
-					<icon i></icon> ناقل<span id="show_percent_i"></span>
+					<icon i></icon>  مبتلا<span id="show_percent_i"></span>
 					<br>
 				</span>
 				<span id="label_removed" class="lines">
@@ -200,7 +200,7 @@
 				<br class="lines">
 				
 				<span id="label_herd_immunity">
-				- - - مصونیت جامعه
+				- - - ایمنی جمعی
 				</span>
 
 				<br class="lines">
@@ -218,18 +218,22 @@
 			</div>
 			<div id="pointer_words">
 				<span id="pointer_params">
-					سعی کن شبیه ساز رو با تنظیمات متفاوت اجرا کنی!
+					سعی کن شبیه ساز رو با تنظیمات
+					خودت دوباره اجزا کنی.
 					<span id="pointer_params_2">
-						<b>(یادت باشه تو میتونی اعداد رو در حال اجزای شبیه ساز تغییر بدی)</b>
+						<b>(نکته: میتونی تنظیمات رو <em>در حال اجرا</em> تغییر بدی.)</b>
 					</span>
 				</span>
 				<span id="pointer_scroll">
-					وقتی بازی تموم شد برو و ادامه ی متن رو بخون
+					وقتی بازیت تموم شد، برای ادامه
+					برو پایین تر.
 				</span>
 				<span id="pointer_replay">
-					این شبیه ساز یک سناریو ذخیره شده داره!
+					این شبیه ساز یک سناریو پیش فرض داره.
 					<br>
-					قبل از شروع ببین چه فاکتور هایی رو میتونی تغییر بدی :)
+					 <i>قبل</i> از شروع میتونی
+					 تنظیمات رو عوض کنی
+					
 				</span>
 			</div>
 		</div>
