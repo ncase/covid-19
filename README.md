@@ -24,7 +24,8 @@ Translate the `<head>`, sidebars, & footer of `index.html` (200 words) **Feel fr
 
 Translate the images in `/pics` (800 words)
 If you don't have image-editing software, ask for help on the Github Issue!
-The fonts are [Open Sans](https://fonts.google.com/specimen/Open+Sans) and [Patrick Hand](https://fonts.google.com/specimen/Patrick+Hand)
+The fonts are [Open Sans](https://fonts.google.com/specimen/Open+Sans) and [Patrick Hand](https://fonts.google.com/specimen/Patrick+Hand).
+(Thanks Asher Barak for creating no-text versions!)
 
 Translate `sim/index.html` (100 words)
 
