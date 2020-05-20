@@ -78,8 +78,8 @@ Ocenjuje se, da *na začetku* izbruha COVID-19, virus skoči iz <icon i></icon> 
 To je **eksponentna krivulja.** Najprej narašča zelo počasi in nato eksplodira. "Ah, to je samo gripa" do "Ojoj, gripa ne bi smela ustvarjati *množičnih grobišč v mestih*".
 
 ![](pics/exponential.png)
-Ampak ta simulacija je napačna, saj se na srečo ekponentna 
-rast ne more odvijati v neskončnost. 
+Ampak ta simulacija je napačna, saj se na srečo ekponentna
+rast ne more odvijati v neskončnost.
 Ena od omejitev širjenja virusa je tudi, da se ne more širiti, če
 so vsi že okuženi:
 
@@ -89,7 +89,7 @@ Več <icon i></icon> kot je, hitreje <icon s></icon>
  postanejo <icon i></icon>, ** ampak manj kot je <icon s></icon>,
    *počasneje* <icon s></icon> postanejo <icon i></icon>.**
 
-Kako to vpliva na rast epidemije? 
+Kako to vpliva na rast epidemije?
 Odgovor se skriva v naslednjih vrsticah:
 
 <div class="sim">
@@ -101,10 +101,10 @@ Sprva raste počasi, eskplodira in se spet upočasni.
 
 
 Ampak ta simulacija je *še vedno* napačna.
- Ne upoštevamo dejstva, da <icon i></icon> okuženi ljudje ščasoma niso več nalezljivi, 
+ Ne upoštevamo dejstva, da <icon i></icon> okuženi ljudje ščasoma niso več nalezljivi,
  saj so 1) ozdraveli,  2) "ozdraveli" s pljučno degeneracijo ali 3) umrli.
 
-Poenostavimo, da so si vsi <icon i></icon> okuženi ljudje <icon r></icon> opomogli. (Zgolj ne pozabi, da si v 
+Poenostavimo, da so si vsi <icon i></icon> okuženi ljudje <icon r></icon> opomogli. (Zgolj ne pozabi, da si v
 realnosti nekateri ne opomorejo.) Pretvarjajmo se, da se <icon r></icon> nemorejo ponovno okužiti – *za zdaj!*
  – ostanejo imuni celo življenje.
 
@@ -113,7 +113,7 @@ Pri COVID-19 je predvideno, da si *v povprečju* <icon i></icon> kužen
 **Spodnja simulacija prikazuje, kako bi izgledalo, če bi *na začetku* bili
 100% <icon i></icon>:**
 
-[^nalezljivost]: “Povprečna doba nalezljivosti  \[...\] je bila 9.5 dni.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) 
+[^nalezljivost]: “Povprečna doba nalezljivosti  \[...\] je bila 9.5 dni.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4)
 Ja, vemo, da "mediana" ni isto kot "povprečje". Za lažje razumevanje zanemarimo razliko.
 
 <div class="sim">
@@ -137,7 +137,7 @@ kjer je na začetku 0.001% <icon i></icon>:
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-In *tako* pridemo do najbolj znane krivulje! 
+In *tako* pridemo do najbolj znane krivulje!
 To ni normalna porazdelitev, niti ni "logaritemsko normalna" porazdelitev. Krivulja ni poimenovana, vendar si jo že videl
 nešteto krat.
 
@@ -150,7 +150,7 @@ To je **model SIR**,[^sir]
 
 ![](pics/sir.png)
 
-**Opomba: Simulacija teh napovedi je veliko, *veliko* bolj kompleksna kot je predstavljeno!** 
+**Opomba: Simulacija teh napovedi je veliko, *veliko* bolj kompleksna kot je predstavljeno!**
 Ampak model SIR še vedno pojasni glavne rezultate, čeprav so izpuščene podrobnosti.
 
 Pravzaprav, dodajmo še en detajl: preden <icon s></icon> postane <icon i></icon>, je sprva <icon e></icon> izpostavljen.
@@ -159,13 +159,13 @@ To je obdoblje, ko se je okužil, ampak še virusa ne prenaša na druge - je oku
 
 ![](pics/seir.png)
 
-(To različico imenujemo **model SEIR**[^seir], kjer je "E" okrajšava za <icon e></icon> "Exposed" (izpostavljene). 
-Pomni, da tukaj izpostavljenost *nima* vsakodnevnega pomena. V tej strokovni definiciji "Izpostavljenost" pomeni, da 
+(To različico imenujemo **model SEIR**[^seir], kjer je "E" okrajšava za <icon e></icon> "Exposed" (izpostavljene).
+Pomni, da tukaj izpostavljenost *nima* vsakodnevnega pomena. V tej strokovni definiciji "Izpostavljenost" pomeni, da
 si definitivno okužen. Strokovna terminologija je slaba.)
 
 [^seir]: Bolj strokovno razlago modela SEIR najdeš: [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) in [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-Pri COVID-19 je predvidena ocena, da si <icon e></icon> okužen, ampak še nenalezljiv, *v povprečju* 3 dni.[^latent] 
+Pri COVID-19 je predvidena ocena, da si <icon e></icon> okužen, ampak še nenalezljiv, *v povprečju* 3 dni.[^latent]
 Kaj se zgodi, če to upoštevamo pri simulaciji?
 
 [^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases,
@@ -246,9 +246,9 @@ To je paradoks. COVID-19 je izjemno nalezljiv, kljub temu pa moramo ustaviti "le
     Če želite dobiti R < 1, morate dobiti R<sub>0</sub> * dovoljeni prenosi < 1.
 
     Sledi: dovoljeni prenosi < 1/R<sub>0</sub>
-    
+
     Sledi: 1 – ustavljeni prenosi < 1/R<sub>0</sub>
- 
+
     Sledi: ustavljeni prenosi > 1 – 1/R<sub>0</sub>
 
     Zato je potrebno ustaviti več kot **1 – 1/R<sub>0</sub>** prenosov, da dobimo R < 1 in omejimo virus!
@@ -290,7 +290,7 @@ Tudi če bi to vrednost *več kot potrojili* na 2%, nam spodnja simulacija prika
 
 Slabo kaže…
 
-Britanska fakulteta je 16. marca ([the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/)) prišla do sledeče ugotovitve: Ne naredimo ničesar in se posledično spopadajmo s problemom premajhnega števila ležišč na oddelkih intenzivne nege, saj se je do sedaj okužilo več kot 80% prebivalstva. 
+Britanska fakulteta je 16. marca ([the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/)) prišla do sledeče ugotovitve: Ne naredimo ničesar in se posledično spopadajmo s problemom premajhnega števila ležišč na oddelkih intenzivne nege, saj se je do sedaj okužilo več kot 80% prebivalstva.
 (ne pozabite: skupni primeri *prekoračijo* imuniteto črede)
 
 Tudi če umre le 0,5% okuženih – velikodušna domneva, ko ni več možnosti oskrbe na oddelku za intenzivno nego – v veliki državi, kot je ZDA, s 300 milijoni ljudi, 0,5% od 80% od 300 milijonov = še vedno 1,2 milijona mrtvih… *ČE nismo naredili ničesar*.
@@ -311,7 +311,7 @@ Najprej si oglejmo dva glavna načina za "zravnanje krivulje": pranje rok in fiz
 
 Povečano pranje rok je v državah z visokim dohodkom zmanjšalo zaščito pred prehladom in mrazom za ~25%[^handwashing], medtem ko je mestno zaprtje v Londonu tesne stike zmanjšalo za ~70%[^london]. Predpostavimo lahko, da lahko pranje rok R zmanjša za *do* 25%, distanciranje pa *do* 70%:
 
-[^handwashing]: “Vseh osem kvalificiranih študij je poročalo, da je pranje rok zmanjšalo tveganje za okužbo dihal, zmanjšanje tveganja pa je znašalo od 6% do 44% [združena vrednost 24% (95% CI 6-40%)].« Zaradi enostavnosti smo v simulacijah združeno vrednost zaokrožili na 25%. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Opomba: kot kaže ta meta-analiza, je kakovost študij glede pranja rok (vsaj v državah z visokimi dohodki) grozljiva. 
+[^handwashing]: “Vseh osem kvalificiranih študij je poročalo, da je pranje rok zmanjšalo tveganje za okužbo dihal, zmanjšanje tveganja pa je znašalo od 6% do 44% [združena vrednost 24% (95% CI 6-40%)].« Zaradi enostavnosti smo v simulacijah združeno vrednost zaokrožili na 25%. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Opomba: kot kaže ta meta-analiza, je kakovost študij glede pranja rok (vsaj v državah z visokimi dohodki) grozljiva.
 
 [^london]: “Ugotovili smo, da se je povprečno dnevno število stikov na udeleženca zmanjšalo za 73%. To bi zadostovalo za zmanjšanje R0 iz vrednosti 2,6 pred zaprtjem na 0,62 (med 0,37 in 0,89) v času zaprtja”. Ponovno smo zaradi enostavnosti v simulaciji vrednost zaokrožili na 70%. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
@@ -323,7 +323,7 @@ Povečano pranje rok je v državah z visokim dohodkom zmanjšalo zaščito pred 
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Sedaj simulirajmo, kaj bi se zgodilo z epidemijo COVID-19, če bi od marca 2020 dalje imeli le povečano pranje rok, fizično distanciranje pa bi ostalo v *(pre)blagi* obliki – R je tako nižji, vendar še vedno nad 1: 
+Sedaj simulirajmo, kaj bi se zgodilo z epidemijo COVID-19, če bi od marca 2020 dalje imeli le povečano pranje rok, fizično distanciranje pa bi ostalo v *(pre)blagi* obliki – R je tako nižji, vendar še vedno nad 1:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
@@ -380,9 +380,9 @@ Poglejte, naravnost čudovito je narisati črto, ki predstavlja "zmogljivost eno
 
 [^loneliness]: Glej sliko 6: [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Seveda, nedvomno gre za zanikanje pomembne izjave o tem, da so našli *korelacijo*. Razen, če sami želite poskusiti naključno določiti ljudi, ki naj bodo osamljeni za vso življenje, so vse, kar boste dobili, dokazi o opazovanju.
 
-**Finančno zdravje:** "Kaj pa gospodarstvo?" zveni, kot da vas bolj kot za življenja skrbi za denar. Vendar "ekonomija" ni le zaloga: gre za sposobnost ljudi, da lahko svojim najdražjim zagotovijo hrano in streho nad glavo, da imajo možnost vlagati v prihodnost svojih otrok in preprosto uživajo v umetnosti, hrani, videoigrah – v glavnem v tistem, zaradi česar je življenje vredno živeti. Poleg tega je vredno omeniti, da revščina *sama po sebi* strahotno vpliva na duševno in fizično zdravje. 
+**Finančno zdravje:** "Kaj pa gospodarstvo?" zveni, kot da vas bolj kot za življenja skrbi za denar. Vendar "ekonomija" ni le zaloga: gre za sposobnost ljudi, da lahko svojim najdražjim zagotovijo hrano in streho nad glavo, da imajo možnost vlagati v prihodnost svojih otrok in preprosto uživajo v umetnosti, hrani, videoigrah – v glavnem v tistem, zaradi česar je življenje vredno živeti. Poleg tega je vredno omeniti, da revščina *sama po sebi* strahotno vpliva na duševno in fizično zdravje.
 
-Ne pravimo, da smo *proti* ponovnemu zaprtju! Kasneje si bomo ogledali zaprtje, ki ga bomo poimenovali "varnostno stikalo". Kljub vsemu, ne gre za idealen način zaprtja. 
+Ne pravimo, da smo *proti* ponovnemu zaprtju! Kasneje si bomo ogledali zaprtje, ki ga bomo poimenovali "varnostno stikalo". Kljub vsemu, ne gre za idealen način zaprtja.
 
 
 Vendar pozor… Ali se nista Tajvan in Južna Koreja *že* pred časom srečala s COVID-19? 4 cele mesece *brez* dolgotrajnega zaprtij?
@@ -395,7 +395,7 @@ Kako?
 
 Ampak gre ravno za to! “Zaustavitev ni zdravilo, je le ponovni zagon”... **in vse, kar potrebujemo, je nov začetek.**
 
-Da bi razumeli, kako sta se Tajvan in Južna Koreja znali spopadati s COVID-19, moramo razumeti natančen časovni trak tipične okužbe s COVID-19[^timeline]: 
+Da bi razumeli, kako sta se Tajvan in Južna Koreja znali spopadati s COVID-19, moramo razumeti natančen časovni trak tipične okužbe s COVID-19[^timeline]:
 
 [^timeline]: **V povprečju 3 dnevi do stanja nalezljivosti:** “Na podlagi ločenih študij zgodnjih primerov COVID-19, domnevamo, da je inkubacijsko obdobje v povprečju porazdeljeno na 5,2 dni in sklepamo, da do nalezljivosti pride že pred pojavom simptomov, in sicer od 2,3. dneva dalje (95% Cl, 0,8-3,0 dni).” (prevod: Ob predpostavki, da se simptomi začnejo pri 5 dneh, do nalezljivosti pride že 2 dneva prej = nalezljivost se začne pri 3 dneh) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
@@ -430,9 +430,9 @@ Navadno je stike moč najti z osebnimi pogovori, vendar so v našem primeru le t
 Čakaj, aplikacije, ki beležijo s kom si bil v stiku? ... Ali to pomeni, da se odrekamo zasebnosti in jo dajamo "Velikemu bratu"?
 
 
-Seveda ne! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, 
-skupina epidemiologov & kriptografov (including one of us, Marcel Salathé) *že* delajo na tej aplikaciji – 
-z javno dostopno kodo – ki ne razkrije **nobenih informacij o tvoji identiteti, lokaciji, s kom 
+Seveda ne! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**,
+skupina epidemiologov & kriptografov (including one of us, Marcel Salathé) *že* delajo na tej aplikaciji –
+z javno dostopno kodo – ki ne razkrije **nobenih informacij o tvoji identiteti, lokaciji, s kom
 ali celo *s koliko ljudmi* si bil v stiku.**
 
 Tako deluje:
@@ -507,7 +507,7 @@ Tako premagamo COVID-19.
 ...
 
 
-Kaj pa, če gredo stvari *še vedno* narobe? 
+Kaj pa, če gredo stvari *še vedno* narobe?
 Stvari so že potekale zelo narobe. To je strah in to je dobro! Strah nam da energijo, da ustvarimo *rezervne načrte*.
 
 Pesimist izumi padalo.
@@ -516,8 +516,8 @@ Pesimist izumi padalo.
 
 Kaj če je  R<sub>0</sub> veliko višji kot smo predvideli, in zgornji posegi, tudi z blagim distanciranjem, *še vedno* niso dovolj, da dobimo R < 1?
 
-Ne pozabi, 
-tudi če ne moremo dobiti R <1, zmanjšanje R še vedno zniža "presežek" v skupnih primerih, kar reši življenja. 
+Ne pozabi,
+tudi če ne moremo dobiti R <1, zmanjšanje R še vedno zniža "presežek" v skupnih primerih, kar reši življenja.
 Kljub temu je R <1 idealen, zato je tu še nekaj načinov za zmanjšanje R:
 
 **Maske za vse:**
@@ -538,7 +538,7 @@ Predstavljeno v številkah: kirurška maska *na zboleli osebi* zmanjša prenos v
 
 Vseeno, ne vemo zagotovo kakšen vpliv imajo maske pri virusu COVID-19 *specifično*. V znanosti, se ugotovitev lahko objavi samo, če je gotovost 95 %. (...lahko.[^replication]) Maske imajo, od 1. maja 2020, manjšo zanesljivost od 95 %.
 
-[^replication]: 
+[^replication]:
 Vsak dejanski znanstvenik, ki je prebral zadnji stavek, se verjetno trenutno smeje-joče. Glej: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [kriza podvajanja](https://en.wikipedia.org/wiki/Replication_crisis))
 
 Pandemija je kot poker. **Če staviš zgolj, ko si 95% prepričan, boš izgubil vse.** Kot ugotavlja nedavni članek o maskah v Britanskem medicinskem časopisu,[^precautionary]  *moramo* sprejemati cena/korist analize glede na negotovost. Kot so:
@@ -570,7 +570,7 @@ Maske *same* ne bodo privedle do R < 1. Toda, če nas umivanje rok in "Testiraj,
 
 Ok, to ni "intervencija", ki jo lahko nadzorujemo, lahko pa pomaga! Nekatere novice poročajo, da poletje COVID-19 ne bo ničesar storilo. Imajo deloma res: poljetje ne bo zagotovilo R < 1, ampak ga *bo* zmanjšalo R.
 
-Pri COVID-19, vsaka dodatna 1 °C (2,2 ° Fahrenheit) povzroči upad R za 1,2 %.[^heat] 
+Pri COVID-19, vsaka dodatna 1 °C (2,2 ° Fahrenheit) povzroči upad R za 1,2 %.[^heat]
 Temperaturna razlika poletje-zima je v New Yorku  15 ° C (60 °F), torej bo s poletjem upad R za 18 %.
 
 [^heat]: “Zvišanje temperature za eno stopinjo Celzija [...] zniža R za 0,0225” in “Povprečna vrednost R teh 100 mest je 1,83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
@@ -664,9 +664,9 @@ Zdaj pa simulirajmo izbruh virusa COVID-19 v obdobju več kot 10 let brez ukrepo
 
 V prejšnjih simulacijah smo imeli le *en* sunek preobremenitve na intenzivni negi spike. Zdaj pa jih imamo več, *in* <icon i></icon> primeri se zaključijo pri kapaciteti oddelka za intenzivno nego. (Ki smo jih *potrojili* za to simulacijo)
 
-R = 1, it's **endemic.**
+R = 1,  *endemično.*
 
-Thankfully, because summer reduces R, it'll make the situation better:
+K sreči, poletje oz višje temperature zmanjšujejo R, zato se bo stanje izboljšalo:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
@@ -674,23 +674,23 @@ Thankfully, because summer reduces R, it'll make the situation better:
 
 Oh.
 
-Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+Counterintuitively, summer makes the spikes worse and regular! To je zato, ker poletje zmanjšuje nove <icon i></icon>s, vendar to posledično zmanjšuje novo imunost <icon r></icon>s. Kar pomeni, da imuniteta poleti pade, torej ustvari nove large regular spikes in the winter.
 
-Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
+Na srečo je rešitev za to preprosta - ljudi je potrebno vsako jesen/zimo cepiti, tako kot pri gripi:
 
-**(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+*(Po predvajanju posnetka poskusite simulirati lastne akcije cepljenja! Ne pozabite, da lahko sim začasno zaustavite/nadaljujete s sim)*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-But here's the scarier question:
+Toda tukaj se pojavi bolj strašno vprašanje:
 
-What if there's no vaccine for *years*? Or *ever?*
+Kaj pa če cepiva ne bo več let? Ali nikoli?
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment.
+*Da bo jasno: to malo verjetno.* Večina epidemiologov pričakuje cepivo čez 1 do 2 leti. Seveda, še nikoli ni bilo cepiva za katerega koli od drugih koronavirusov, toda to je zato, ker je bil SARS hitro izkoreninjen in "navadni prehlad" ni bil vreden naložbe.
 
-Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
+Kljub temu so raziskovalci nalezljivih bolezni izrazili zaskrbljenost:  What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
 
 [^vax_enough]: “If a coronavirus vaccine arrives, can the world make enough?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
@@ -698,19 +698,21 @@ Still, infectious disease researchers have expressed worries: What if we can't m
 
 Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:
 
-1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
+Tudi v najslabšem scenariju "brez cepiva" imamo še vedno 3 poti. Od najbolj do najmanj groznega scenarija:
 
-2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
+1) Izvedemo občasne ali ohlapne R<1 ukrepe, da dosežemo naravno imunost ljudi. (Opozorilo: To bo povzročilo veliko srtnih žtev in poškodovanih pljuč pri ljudeh. In ne bo delovalo, če imuniteta ne bo trajala.)
 
-3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
+2) Naredimo R<1 ukrepe za vedno. Sledenje stikov & nošenje mask postane nova norma v svetu po COVID-19, denimo kot so testi STI in nošenje kondomov postali nova norma v svetu po HIV.
 
-**Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
+3) Naredimo R<1 ukrepe, dokler ne razvijejo zdravljenja za COVID-19, po katem je manj verjetno, da bi ljudje potrebovali intenzivno nego. (Kar bi morali storiti kljub vsemu!) Zmanjšanje uporabe ICU za 10x je isto kot povečanje naše zmogljivosti ICU za 10x:
+
+*Tu je simulacija *ne trajne imunosti, brez cepiva in niti nobenega posega**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-Even under the *worst* worst-case scenario... life perseveres.
+Tudi v najslabšem najslabšem primeru ... življenje vztraja.
 
 . . .
 
