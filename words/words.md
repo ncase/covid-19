@@ -716,43 +716,43 @@ Tudi v najslabšem najslabšem primeru ... življenje vztraja.
 
 . . .
 
-Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
+Morda dvomite v naše predpostavke in bi jih želeli izpodbiti. Preizkusite lahko različne R<sub>0</sub> ali številke ter celo poskusite simulirati *svojo* kombinacijo intervencijskih načrtov!
 
-**Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
+**Pred vami je (izbiren) t. i. način peskovnika, ki ima na voljo prav *vse*. (pomaknite se nižje in si oglejte vse krmilne tipke) Simulirajte in igrajte se kolikor dolgo želite:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
 
-This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
+Še tako osnovni "simulacija epidemičnega poleta" nas je naučil ogromno. Dovolite nam odgovoriti na vprašanja glede zadnjih nekaj mesecev, naslednjih nekaj mesecev in naslednjih nekaj let.
 
-So finally, let's return to...
+Torej, končno se vrnimo k...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Now</div>
+        <div>Zdaj</div>
     </div>
 </div>
 
-Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
+Letalo je potonilo. Naleteli smo na rešilne splave in čas je, da poiščemo suho zemljo.[^dry_land] 
 
-[^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
+[^dry_land]: Metafora o suhi zemlji [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Teams of epidemiologists and policymakers ([left](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [right](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), and [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) have come to a consensus on how to beat COVID-19, while protecting our lives *and* liberties.
+Skupine epidemiologov in oblikovalcev politike ([leve](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [desne](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ) in [večstranske](https://ethics.harvard.edu/covid-roadmap)) so dosegle soglasje o tem, kako premagati COVID-19 in hkrati zaščititi naša življenja *ter* svoboščine.
 
-Here's the rough idea, with some (less-consensus) backup plans:
+Tukaj je skica ideje z nekaj (manj soglasnimi) rezervnimi načrti:
 
 ![](pics/plan.png)
 
-So what does this mean for YOU, right now?
+Torej, kaj trenutno to pomeni ZATE?
 
-**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+**Za vse:** Spoštujte zaprtje, da bomo lahko takoj stopili iz faze I. Še naprej si umivajte roke, izdelajte si svoje maske, prenesite si aplikacijo za sledenje stikov, ki *ščiti zasebnost* (ko bo le-ta na voljo v naslednjem mesecu). Ostanite zdravi, tako fizično kot tudi psihično! Svojim krajevnim oblikovalcem politike pa sporočite, da je lenobe dovolj in...
 
-**For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
+**Za oblikovalce politike:** Sprejmite zakone za podporo vsem ljudem, ki so bili prisiljeni v samoizolacijo. Najemite več ročnih sledilnikov stikov, ki jih *podpirajo* aplikacije za sledenje stikov. Več sredstev usmerite v stvari, ki bi jih morali graditi, kot na primer...
 
-**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope.
+**Za gradbenike:** Gradite preizkuse. Gradite ventilatorje. Gradite osebno zaščitno opremo za bolnišnice. Gradite teste. Gradite maske. Gradite aplikacije. Gradite protivirusna sredstva, preventivna sredstva ter druge načine zdravljenja, ki niso cepiva. Gradite teste. Gradite teste. Gradite teste. Gradite upanje.
 
-Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
+Ne omalovažujte strahu, da bi povečali vaše upe. Naš strah bi se moral *združiti* z našim upanjem tako kot izumitelji letal in padal. Priprava na grozno prihodnost nam v bistvu *ustvari* upanja polno prihodnost.
 
-The only thing to fear is the idea that the only thing to fear is fear itself.
+Ideja, da nas mora biti strah le strahu samega, je edina, česar se moramo resnično bati.
