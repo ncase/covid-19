@@ -127,7 +127,7 @@ rasti *z* okrevanjem?
 
 ![](pics/graphs_q.png)
 
-Let's find out.
+Pa ugotovimo...
 
 <b style='color:#ff4040'>Rdeča krivulja</b> so *trenutni* primeri <icon i></icon>,    
 <b style='color:#999999'>Siva krivulja</b> so *vsi* primeri (trenutni + opomogli <icon r></icon>),
