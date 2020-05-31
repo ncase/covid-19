@@ -407,36 +407,35 @@ Temperaturna razlika poletje-zima je v New Yorku 15 ° C (60 °F), torej bo s po
 <li class="has-line-data" data-line-start="633" data-line-end="635">Ena <em>“nestrokovno pregledana”</em> raziskava na opicah je pokazala imunost na COVID-19 za vsaj 28 let.<sup class="footnote-ref"><a href="#fn37" id="fnref37">[39]</a></sup></li>
 </ul>
 <p class="has-line-data" data-line-start="635" data-line-end="636"><em>Pri ljudeh</em> je ,od 1. maja 2020, ta doba en velik vprašaj.</p>
-<p class="has-line-data" data-line-start="645" data-line-end="647">Za te simulacije recimo, da je 1 leto.<br>
-<strong>Tu je simulacija, začenši s 100% &lt;icon r&gt;&lt;/icon&gt;</strong>, Po 1 letu v <em>povpečju</em> eksponentno pada v dovzetne, neimune &lt;icon s&gt;&lt;/icon&gt;, z variacijo:</p>
-<p class="has-line-data" data-line-start="648" data-line-end="651">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=yrs-1&amp;format=lines&amp;height=600” width=“800” height=“600”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<p class="has-line-data" data-line-start="645" data-line-end="647">Za te simulacije recimo, da je 1 leto.
+<strong>Tu je simulacija, začenši s 100% <icon r></icon></strong>, Po 1 letu v <em>povpečju</em> eksponentno pada v dovzetne, neimune <icon s></icon>, z variacijo:</p>
+<div class="sim">
+	        <iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="652" data-line-end="653">Vrnimo se na eksponentni upad!</p>
-<p class="has-line-data" data-line-start="654" data-line-end="655">To je <strong>SEIRS Model</strong>. Zadnji “S” pomeni &lt;icon s&gt;&lt;/icon&gt; Susceptible (dovzetno).</p>
+<p class="has-line-data" data-line-start="654" data-line-end="655">To je <strong>SEIRS Model</strong>. Zadnji “S” pomeni <icon s></icon> Susceptible (dovzetno).</p>
 <p class="has-line-data" data-line-start="656" data-line-end="657"><img src="pics/seirs.png" alt=""></p>
 <p class="has-line-data" data-line-start="658" data-line-end="659">Zdaj pa simulirajmo izbruh virusa COVID-19 v obdobju več kot 10 let brez ukrepov … <em>Če imunost traja le leto dni:</em></p>
-<p class="has-line-data" data-line-start="660" data-line-end="663">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=yrs-2&amp;format=lines&amp;height=600” width=“800” height=“600”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
-<p class="has-line-data" data-line-start="664" data-line-end="665">V prejšnjih simulacijah smo imeli le <em>en</em> sunek preobremenitve na intenzivni negi spike. Zdaj pa jih imamo več, <em>in</em> &lt;icon i&gt;&lt;/icon&gt; primeri se zaključijo pri kapaciteti oddelka za intenzivno nego. (Ki smo jih <em>potrojili</em> za to simulacijo)</p>
+<div class="sim">
+	        <iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
+	</div>
+<p class="has-line-data" data-line-start="664" data-line-end="665">V prejšnjih simulacijah smo imeli le <em>en</em> sunek preobremenitve na intenzivni negi. Zdaj pa jih imamo več, <em>in</em> <icon i></icon> primeri se zaključijo pri kapaciteti oddelka za intenzivno nego. (Ki smo jih <em>potrojili</em> za to simulacijo)</p>
 <p class="has-line-data" data-line-start="666" data-line-end="667">R = 1, <em>endemično.</em></p>
 <p class="has-line-data" data-line-start="668" data-line-end="669">K sreči, poletje oz višje temperature zmanjšujejo R, zato se bo stanje izboljšalo:</p>
-<p class="has-line-data" data-line-start="670" data-line-end="673">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=yrs-3&amp;format=lines&amp;height=640” width=“800” height=“640”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<div class="sim">
+	        <iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="674" data-line-end="675">Oh.</p>
-<p class="has-line-data" data-line-start="676" data-line-end="677">Counterintuitively, summer makes the spikes worse and regular! To je zato, ker poletje zmanjšuje nove &lt;icon i&gt;&lt;/icon&gt;s, vendar to posledično zmanjšuje novo imunost &lt;icon r&gt;&lt;/icon&gt;s. Kar pomeni, da imuniteta poleti pade, torej ustvari nove large regular spikes in the winter.</p>
+<p class="has-line-data" data-line-start="676" data-line-end="677">Intuitivno, poletje povzroči, da so sunki okužbe hujši in regularni! To je zato, ker poletje zmanjšuje nove <icon i></icon>, vendar to posledično zmanjšuje novo imunost <icon r></icon>. Kar pomeni, da imuniteta poleti pade, torej ustvari nove, večje, redne sunke okužbe pozimi.</p>
 <p class="has-line-data" data-line-start="678" data-line-end="679">Na srečo je rešitev za to preprosta - ljudi je potrebno vsako jesen/zimo cepiti, tako kot pri gripi:</p>
-<p class="has-line-data" data-line-start="680" data-line-end="681"><em>(Po predvajanju posnetka poskusite simulirati lastne akcije cepljenja! Ne pozabite, da lahko sim začasno zaustavite/nadaljujete s sim)</em></p>
-<p class="has-line-data" data-line-start="682" data-line-end="685">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=yrs-4&amp;format=lines” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<p class="has-line-data" data-line-start="680" data-line-end="681"><em>(Po predvajanju posnetka poskusite simulirati lastne akcije cepljenja! Ne pozabite, da lahko simulacijo začasno zaustavite/nadaljujete)</em></p>
+<div class="sim">
+	        <iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="686" data-line-end="687">Toda tukaj se pojavi bolj strašno vprašanje:</p>
 <p class="has-line-data" data-line-start="688" data-line-end="689">Kaj pa če cepiva ne bo več let? Ali nikoli?</p>
 <p class="has-line-data" data-line-start="690" data-line-end="691"><em>Da bo jasno: to malo verjetno.</em> Večina epidemiologov pričakuje cepivo čez 1 do 2 leti. Seveda, še nikoli ni bilo cepiva za katerega koli od drugih koronavirusov, toda to je zato, ker je bil SARS hitro izkoreninjen in “navadni prehlad” ni bil vreden naložbe.</p>
-<p class="has-line-data" data-line-start="692" data-line-end="693">Kljub temu so raziskovalci nalezljivih bolezni izrazili zaskrbljenost: What if we can’t make enough?<sup class="footnote-ref"><a href="#fn38" id="fnref38">[38]</a></sup> What if we rush it, and it’s not safe?<sup class="footnote-ref"><a href="#fn39" id="fnref39">[39]</a></sup></p>
-<p class="has-line-data" data-line-start="698" data-line-end="699">Even in the nightmare “no-vaccine” scenario, we still have 3 ways out. From most to least terrible:</p>
+<p class="has-line-data" data-line-start="692" data-line-end="693">Kljub temu so raziskovalci nalezljivih bolezni izrazili zaskrbljenost: Kaj če ga ne bomo mogli narediti dovolj?<sup class="footnote-ref"><a href="#fn38" id="fnref38">[38]</a></sup> Kaj, če preveč pohitimo in cepivo ne bo varno?<sup class="footnote-ref"><a href="#fn39" id="fnref39">[39]</a></sup></p>
 <p class="has-line-data" data-line-start="700" data-line-end="701">Tudi v najslabšem scenariju “brez cepiva” imamo še vedno 3 poti. Od najbolj do najmanj groznega scenarija:</p>
 <ol>
 <li class="has-line-data" data-line-start="702" data-line-end="704">
@@ -450,16 +449,16 @@ Temperaturna razlika poletje-zima je v New Yorku 15 ° C (60 °F), torej bo s po
 </li>
 </ol>
 <p class="has-line-data" data-line-start="708" data-line-end="709"><em>Tu je simulacija <em>ne trajne imunosti, brez cepiva in niti nobenega posega</em></em></p>
-<p class="has-line-data" data-line-start="710" data-line-end="713">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=yrs-5&amp;format=lines” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<div class="sim">
+	        <iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="714" data-line-end="715">Tudi v najslabšem najslabšem primeru … življenje vztraja.</p>
 <p class="has-line-data" data-line-start="716" data-line-end="717">. . .</p>
-<p class="has-line-data" data-line-start="718" data-line-end="719">Morda dvomite v naše predpostavke in bi jih želeli izpodbiti. Preizkusite lahko različne R&lt;sub&gt;0&lt;/sub&gt; ali številke ter celo poskusite simulirati <em>svojo</em> kombinacijo intervencijskih načrtov!</p>
+<p class="has-line-data" data-line-start="718" data-line-end="719">Morda dvomite v naše predpostavke in bi jih želeli izpodbiti. Preizkusite lahko različne R<sub>0</sub> ali številke ter celo poskusite simulirati <em>svojo</em> kombinacijo intervencijskih načrtov!</p>
 <p class="has-line-data" data-line-start="720" data-line-end="721"><strong>Pred vami je (izbiren) t. i. način peskovnika, ki ima na voljo prav <em>vse</em>. (pomaknite se nižje in si oglejte vse krmilne tipke) Simulirajte in igrajte se kolikor dolgo želite:</strong></p>
-<p class="has-line-data" data-line-start="722" data-line-end="725">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=SB&amp;format=sb” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<div class="sim">
+	        <iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="726" data-line-end="727">Še tako osnovni “simulacija epidemičnega poleta” nas je naučil ogromno. Dovolite nam odgovoriti na vprašanja glede zadnjih nekaj mesecev, naslednjih nekaj mesecev in naslednjih nekaj let.</p>
 <p class="has-line-data" data-line-start="728" data-line-end="729">Torej, končno se vrnimo k…</p>
 
@@ -591,9 +590,9 @@ Medtem pa si lahko naredimo maske iz tkanin. <a href="#fnref34" class="footnote-
 </li>
 <li id="fn37" class="footnote-item"><p class="has-line-data" data-line-start="643" data-line-end="644">Od <a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract">Bao et al.</a> <em>izjava o omejitvi odgovornosti: Ta članek je osnutek in še ni bil pregledan s strani strokovnjakov.</em> Poudariti je treba tudi: testirali so le ponovno okužbo 28 dni pozneje. <a href="#fnref37" class="footnote-backref">↩</a></p>
 </li>
-<li id="fn38" class="footnote-item"><p class="has-line-data" data-line-start="694" data-line-end="695">“If a coronavirus vaccine arrives, can the world make enough?” <a href="https://www.nature.com/articles/d41586-020-01063-8">by Roxanne Khamsi, on Nature</a> <a href="#fnref38" class="footnote-backref">↩</a></p>
+<li id="fn38" class="footnote-item"><p class="has-line-data" data-line-start="694" data-line-end="695">“Če pride cepivo, ali smo ga sposobni proizvesti dovolj?” <a href="https://www.nature.com/articles/d41586-020-01063-8">by Roxanne Khamsi, on Nature</a> <a href="#fnref38" class="footnote-backref">↩</a></p>
 </li>
-<li id="fn39" class="footnote-item"><p class="has-line-data" data-line-start="696" data-line-end="697">“Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” <a href="https://www.nature.com/articles/d41586-020-00751-9">by Shibo Jiang, on Nature</a> <a href="#fnref39" class="footnote-backref">↩</a></p>
+<li id="fn39" class="footnote-item"><p class="has-line-data" data-line-start="696" data-line-end="697">“Ne prehitevajte z razvojem cepiva in zdravil za COVID-19, če zadostna varnost ni zagotovljena” <a href="https://www.nature.com/articles/d41586-020-00751-9">by Shibo Jiang, on Nature</a> <a href="#fnref39" class="footnote-backref">↩</a></p>
 </li>
 <li id="fn40" class="footnote-item"><p class="has-line-data" data-line-start="739" data-line-end="740">Metafora o suhi zemlji <a href="https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/">from Marc Lipsitch &amp; Yonatan Grad, on STAT News</a> <a href="#fnref40" class="footnote-backref">↩</a></p>
 </li>
