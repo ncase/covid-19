@@ -230,59 +230,59 @@ in <em>kdaj</em> trenutni primeri dosežejo ekstrem… ampak &quot;<em>višina</
 (ne pozabite: skupni primeri <em>prekoračijo</em> imuniteto črede)</p>
 <p class="has-line-data" data-line-start="295" data-line-end="296">Tudi če umre le 0,5% okuženih – velikodušna domneva, ko ni več možnosti oskrbe na oddelku za intenzivno nego – v veliki državi, kot je ZDA, s 300 milijoni ljudi, 0,5% od 80% od 300 milijonov = še vedno 1,2 milijona mrtvih… <em>ČE nismo naredili ničesar</em>.</p>
 <p class="has-line-data" data-line-start="297" data-line-end="298">(Številne novice in mediji so poročali le “80% okuženih” <em>brez</em>, da bi temu priključili še “ČE NISMO NAREDILI NIČESAR”. Strah je bil usmerjen v klike, ne pa v razumevanje. <em>Vzdih.</em>)</p>
-<p class="has-line-data" data-line-start="299" data-line-end="300">###Scenarij 1: Izravnajte krivuljo / Imuniteta črede</p>
-<p class="has-line-data" data-line-start="301" data-line-end="302">Načrt “Izravnati krivuljo” je bil predstavljen s strani prav vsake izmed javnih zdravstvenih organizacij, medtem ko je bil prvotni načrt Združenega kraljestva, imenovan “imuniteta črede”, splošno razglašen. Šlo je za <em>enak načrt</em>. Razlika je le v tem, da je Združeno kraljestvo svoj načrt sporočilo slabo in površno.<sup class="footnote-ref"><a href="#fn15" id="fnref15">[15]</a></sup></p>
+	<h3 id="toc_1">Scenarij 1: Izravnajte krivuljo / Čredna imunost</h3>
+<p class="has-line-data" data-line-start="301" data-line-end="302">Načrt “Izravnati krivuljo” je bil predstavljen s strani prav vsake izmed javnih zdravstvenih organizacij, medtem ko je bil prvotni načrt Združenega kraljestva, imenovan “čredna imunost”, splošno razglašen. Šlo je za <em>enak načrt</em>. Razlika je le v tem, da je Združeno kraljestvo svoj načrt sporočilo slabo in površno.<sup class="footnote-ref"><a href="#fn15" id="fnref15">[15]</a></sup></p>
 <p class="has-line-data" data-line-start="307" data-line-end="308">Oba načrta pa sta imela dobesedno usodno napako.</p>
 <p class="has-line-data" data-line-start="309" data-line-end="310">Najprej si oglejmo dva glavna načina za “zravnanje krivulje”: pranje rok in fizično distanciranje.</p>
 <p class="has-line-data" data-line-start="311" data-line-end="312">Povečano pranje rok je v državah z visokim dohodkom zmanjšalo zaščito pred prehladom in mrazom za ~25%<sup class="footnote-ref"><a href="#fn16" id="fnref16">[16]</a></sup>, medtem ko je mestno zaprtje v Londonu tesne stike zmanjšalo za ~70%<sup class="footnote-ref"><a href="#fn17" id="fnref17">[17]</a></sup>. Predpostavimo lahko, da lahko pranje rok R zmanjša za <em>do</em> 25%, distanciranje pa <em>do</em> 70%:</p>
-<p class="has-line-data" data-line-start="317" data-line-end="318"><strong>Preizkusite spodnji kalkulator in videli boste, kako delež &lt;icon s&gt;&lt;/icon&gt;, pranje rok in distanciranje zmanjšajo R:</strong> (kalkulator predstavlja njihove <em>relativne</em> učinke, zato <em>izgleda</em> kakor, da povečanje enega izmed njih zmanjša učinek drugih.<sup class="footnote-ref"><a href="#fn18" id="fnref18">[18]</a></sup>)</p>
-<p class="has-line-data" data-line-start="321" data-line-end="324">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-2a&amp;format=calc” width=“285” height=“260”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<p class="has-line-data" data-line-start="317" data-line-end="318"><strong>Preizkusite spodnji kalkulator in videli boste, kako delež ne-<icon s></icon>, pranje rok in distanciranje, zmanjšajo R:</strong> (kalkulator predstavlja njihove <em>relativne</em> učinke, zato <em>izgleda</em> kakor, da povečanje enega izmed njih zmanjša učinek drugih.<sup class="footnote-ref"><a href="#fn18" id="fnref18">[18]</a></sup>)</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="325" data-line-end="326">Sedaj simulirajmo, kaj bi se zgodilo z epidemijo COVID-19, če bi od marca 2020 dalje imeli le povečano pranje rok, fizično distanciranje pa bi ostalo v <em>(pre)blagi</em> obliki – R je tako nižji, vendar še vedno nad 1:</p>
-<p class="has-line-data" data-line-start="327" data-line-end="330">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-2&amp;format=lines” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="331" data-line-end="332">Tri opombe:</p>
 <ol>
 <li class="has-line-data" data-line-start="333" data-line-end="335">
-<p class="has-line-data" data-line-start="333" data-line-end="334">To <em>zmanjšuje</em> skupno število primerov! <strong>Četudi ne dobite R &lt; 1, nižanje R na način, da poskušamo zmanjševati ‘prekoračitve’ nad imunostjo črede, še vedno rešuje življenja.</strong> Večina ljudi misli, da načrt “Izravnati krivuljo” le širi primere, ne da bi pri tem zmanjšali celoto. Vendar to ni mogoče v <em>nobenem</em> epidemiološkem modelu. Ker pa so novice kot neizogibno dejstvo poročale, da bo “okuženih več kot 80% ljudi”, so ljudje posledično mislili, da bodo skupni primeri enaki ne glede na vse. <em>Vzdih.</em></p>
+<p class="has-line-data" data-line-start="333" data-line-end="334">To <em>zmanjšuje</em> skupno število primerov! <strong>Četudi ne dobite R &lt; 1, nižanje R na način, da poskušamo zmanjševati ‘prekoračitve’ nad imunostjo črede, še vedno rešuje življenja.</strong> Večina ljudi misli, da načrt “Izravnati krivuljo” le širi primere, ne da bi pri tem zmanjšali celoto. Vendar to ni mogoče v <em>nobenem</em> epidemiološkem modelu. Ker pa so novice, kot neizogibno dejstvo, poročale, da bo “okuženih več kot 80% ljudi”, so ljudje posledično mislili, da bodo skupni primeri enaki ne glede na vse. <em>Vzdih.</em></p>
 </li>
 <li class="has-line-data" data-line-start="335" data-line-end="337">
-<p class="has-line-data" data-line-start="335" data-line-end="336">Zaradi dodatnih ukrepov trenutni primeri dosežejo vrhunec <em>preden</em> se doseže imuniteta črede. Dejansko v tej simulaciji skupni primeri le premaknejo <em>majhen delček</em> nad imuniteto črede – gre za načrt Združenega kraljestva! Na tej točki, kjer je R &lt; 1, lahko opustite vse druge ukrepe in virus nam je uspelo uspešno zajeziti! Srečamo se le z eno težavo…</p>
+<p class="has-line-data" data-line-start="335" data-line-end="336">Zaradi dodatnih ukrepov trenutni primeri dosežejo vrhunec <em>preden</em> se doseže čredna imunost. Dejansko v tej simulaciji skupni primeri le premaknejo <em>majhen delček</em> k čredni imunosti – gre za načrt Združenega kraljestva! Na tej točki, kjer je R &lt; 1, lahko opustite vse druge ukrepe in virus nam je uspelo uspešno zajeziti! Srečamo se le z eno težavo…</p>
 </li>
 <li class="has-line-data" data-line-start="337" data-line-end="339">
-<p class="has-line-data" data-line-start="337" data-line-end="338">Še vedno vam primanjkuje enot za intenzivno nego. In to za kar nekaj mesecev. (in ne pozabite, za te simulacije smo enote za intenzivno nego <em>že</em> potrojili)</p>
+<p class="has-line-data" data-line-start="337" data-line-end="338">Še vedno nam primanjkuje enot za intenzivno nego. In to za kar nekaj mesecev. (in ne pozabite, za te simulacije smo enote za intenzivno nego <em>že</em> potrojili)</p>
 </li>
 </ol>
 <p class="has-line-data" data-line-start="339" data-line-end="340">To je bila druga ugotovitev poročila britanske fakultete (16. marec), ki je Združeno kraljestvo uspelo prepričati, da opusti svoj prvotni načrt. Prepričani so bili, da bo vsak poskus <strong>blaženja</strong> (zmanjšati R, vendar vseeno ohraniti R &lt; 1) spodletel. Tako rekoč je preostal le izhod v sili, in sicer <strong>zaviranje</strong> virusa (zmanjšati R tako, da je R &lt; 1).</p>
 <p class="has-line-data" data-line-start="341" data-line-end="342"><img src="pics/mitigation_vs_suppression.png" alt=""></p>
 <p class="has-line-data" data-line-start="343" data-line-end="344">Se pravi, krivulje ne le “izravnajte”, potrebno jo je <em>zdrobiti</em>. Na primer, z…</p>
-<p class="has-line-data" data-line-start="345" data-line-end="346">###Scenarij 2: Nekaj mesečno zaprtje</p>
-<p class="has-line-data" data-line-start="347" data-line-end="348">Poglejmo, kaj se zgodi, če krivuljo <em>zatremo</em> s 5-mesečnim zaprtjem, &lt;icon i&gt;&lt;/icon&gt; zmanjšamo skoraj na nič, nato pa se <em>končno</em> vrnemo v normalno življenje:</p>
-<p class="has-line-data" data-line-start="349" data-line-end="352">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-3&amp;format=lines” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<h3 id="toc_2">Scenarij 2: Nekaj mesečno zaprtje</h3>
+<p class="has-line-data" data-line-start="347" data-line-end="348">Poglejmo, kaj se zgodi, če krivuljo <em>zatremo</em> s 5-mesečnim zaprtjem, <icon i></icon> zmanjšamo skoraj na nič, nato pa se <em>končno</em> vrnemo v normalno življenje:</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="353" data-line-end="354">Ojej.</p>
-<p class="has-line-data" data-line-start="355" data-line-end="356">Gre za “drugi val” o katerem že vsi govorijo. Takoj ko odstranimo zaprtje, ponovno dobimo R &gt; 1. Torej lahko en sam izpuščen &lt;icon i&gt;&lt;/icon&gt; (ali uvožen &lt;icon i&gt;&lt;/icon&gt;) povzroči konico v primerih, ki so skoraj tako slabi, kot če bi se soočili s scenarijem 0: Absolutno nič.</p>
+<p class="has-line-data" data-line-start="355" data-line-end="356">Gre za “drugi val” o katerem že vsi govorijo. Takoj ko odstranimo zaprtje, ponovno dobimo R &gt; 1. Torej lahko en sam izpuščen <icon i></icon> (ali uvožen <icon i></icon>) povzroči sunek primerov, ki je skoraj tako slab, kot če bi se soočili s scenarijem 0: Absolutno nič.</p>
 <p class="has-line-data" data-line-start="357" data-line-end="358"><strong>Zaprtje ni zdravilo, je le ponovni zagon.</strong></p>
 <p class="has-line-data" data-line-start="359" data-line-end="360">Torej se znova in znova le zapiramo?</p>
-<p class="has-line-data" data-line-start="361" data-line-end="362">###Scenarij 3: Občasno zaprtje</p>
+<h3 id="toc_3">Scenarij 3: Občasno zaprtje</h3>
 <p class="has-line-data" data-line-start="363" data-line-end="364">To rešitev je sprva 16. marca predlagalo poročilo britanske fakultete, kasneje pa še listina Harvard.<sup class="footnote-ref"><a href="#fn19" id="fnref19">[19]</a></sup></p>
-<p class="has-line-data" data-line-start="365" data-line-end="366">Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.</p>
+
 <p class="has-line-data" data-line-start="368" data-line-end="369"><strong>Tukaj je simulacija:</strong> (Po predvajanju “posnetega scenarija” lahko poskusite simulirati <em>svoj</em> urnik zaprtja tako, da spremenite drsnike, <em>medtem</em> ko simulacija teče! Ne pozabite, da lahko zaustavite in nadaljujete simulacijo ter spremenite njeno hitrost.)</p>
-<p class="has-line-data" data-line-start="370" data-line-end="373">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-4&amp;format=lines” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
-<p class="has-line-data" data-line-start="374" data-line-end="375">To <em>bi</em> primere ohranilo pod zmogljivostjo enot za intenzivno nego, kar je <em>veliko</em> bolje, kot 18-mesečna popolna zaustavitev, dokler na voljo ne bi bilo cepivo. Za nekaj mesecev moramo uvesti zaprtje, nato ponovno odpreti za nekaj mesecev in to potem ponavljati, dokler ne bo cepivo na voljo. (In če cepiva še kar ni, to ponavljajte, dokler ne dosežete imunosti črede … torej do leta 2022.)</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
+	</div>
+<p class="has-line-data" data-line-start="374" data-line-end="375">To <em>bi</em> primere ohranilo pod zmogljivostjo enot za intenzivno nego, kar je <em>veliko</em> bolje, kot 18-mesečna popolna zaustavitev, dokler na voljo ne bi bilo cepivo. Za nekaj mesecev moramo uvesti zaprtje, nato ponovno odpreti za nekaj mesecev in to potem ponavljati, dokler ne bo cepivo na voljo. (In če cepiva še kar ni, to ponavljajte, dokler ne dosežete čredna imunost … torej do leta 2022.)</p>
 <p class="has-line-data" data-line-start="376" data-line-end="377">Poglejte, naravnost čudovito je narisati črto, ki predstavlja “zmogljivost enot za intenzivno nego”, vendar se tukaj srečamo še z veliko ostalimi pomembnimi stvarmi, ki pa jih tukaj <em>ne moremo</em> simulirati. Mednje štejemo:</p>
 <p class="has-line-data" data-line-start="378" data-line-end="379"><strong>Duševno zdravje:</strong> Osamljenost je eden največjih dejavnikov tveganja za depresijo, tesnobo in samomor. To bi lahko primerjali s kajenjem 15 cigaret na dan, kar prav tako privede do zgodnje smrti.<sup class="footnote-ref"><a href="#fn20" id="fnref20">[20]</a></sup></p>
 <p class="has-line-data" data-line-start="382" data-line-end="383"><strong>Finančno zdravje:</strong> “Kaj pa gospodarstvo?” zveni, kot da vas bolj kot za življenja skrbi za denar. Vendar “ekonomija” ni le zaloga: gre za sposobnost ljudi, da lahko svojim najdražjim zagotovijo hrano in streho nad glavo, da imajo možnost vlagati v prihodnost svojih otrok in preprosto uživajo v umetnosti, hrani, videoigrah – v glavnem v tistem, zaradi česar je življenje vredno živeti. Poleg tega je vredno omeniti, da revščina <em>sama po sebi</em> strahotno vpliva na duševno in fizično zdravje.</p>
 <p class="has-line-data" data-line-start="384" data-line-end="385">Ne pravimo, da smo <em>proti</em> ponovnemu zaprtju! Kasneje si bomo ogledali zaprtje, ki ga bomo poimenovali “varnostno stikalo”. Kljub vsemu, ne gre za idealen način zaprtja.</p>
 <p class="has-line-data" data-line-start="387" data-line-end="388">Vendar pozor… Ali se nista Tajvan in Južna Koreja <em>že</em> pred časom srečala s COVID-19? 4 cele mesece <em>brez</em> dolgotrajnega zaprtij?</p>
 <p class="has-line-data" data-line-start="389" data-line-end="390">Kako?</p>
-<p class="has-line-data" data-line-start="391" data-line-end="392">###Scenarij 4: Test, sled, izolacija</p>
-<p class="has-line-data" data-line-start="393" data-line-end="394"><em>&quot;Seveda, tudi mi *bi lahko</em>\ naredili tisto, kar sta Tajvan in Južna Koreja storila že na začetku, vendar je sedaj že prepozno. Zamudili smo začetek.&quot;*</p>
+<h3 id="toc_4">Scenarij 4: Test, sled, izolacija</h3>
+<p class="has-line-data" data-line-start="393" data-line-end="394"><em>&quot;Seveda, tudi mi *bi lahko* naredili tisto, kar sta Tajvan in Južna Koreja storila že na začetku, vendar je sedaj že prepozno. Zamudili smo začetek."</em></p>
 <p class="has-line-data" data-line-start="395" data-line-end="396">Ampak gre ravno za to! “Zaustavitev ni zdravilo, je le ponovni zagon”… <strong>in vse, kar potrebujemo, je nov začetek.</strong></p>
 <p class="has-line-data" data-line-start="397" data-line-end="398">Da bi razumeli, kako sta se Tajvan in Južna Koreja znali spopadati s COVID-19, moramo razumeti natančen časovni trak tipične okužbe s COVID-19<sup class="footnote-ref"><a href="#fn21" id="fnref21">[21]</a></sup>:</p>
 <p class="has-line-data" data-line-start="405" data-line-end="406"><img src="pics/timeline1.png" alt=""></p>
@@ -292,12 +292,12 @@ in <em>kdaj</em> trenutni primeri dosežejo ekstrem… ampak &quot;<em>višina</
 <p class="has-line-data" data-line-start="415" data-line-end="416">Vendar, če najdemo <em>in damo v karanteno</em> ljudi, ki so bili še nedavno v tesnejših stikih in imajo simptome virusa, lahko tako širjenje virusa ustavimo in ostanemo korak spredaj!</p>
 <p class="has-line-data" data-line-start="417" data-line-end="418"><img src="pics/timeline3.png" alt=""></p>
 <p class="has-line-data" data-line-start="419" data-line-end="420">Temu pravimo <strong>sledenje stikov</strong>. Gre za starejšo idejo, ki je bila v neprimerljivem obsegu uporabljena za obvladovanje ebole<sup class="footnote-ref"><a href="#fn23" id="fnref23">[23]</a></sup>, sedaj pa se pri zajezitvi COVID-19 po njej zgledujeta predvsem Tajvan in Južna Koreja!</p>
-<p class="has-line-data" data-line-start="423" data-line-end="424">(Omogoča nam tudi učinkovitejšo uporabo naših omejenih testov za iskanje predsimptomatskih &lt;icon i&gt;&lt;/icon&gt;, ne da bi bilo pri tem potrebno testirati skorajda vse.)</p>
+<p class="has-line-data" data-line-start="423" data-line-end="424">(Omogoča nam tudi učinkovitejšo uporabo naših omejenih testov za iskanje predsimptomatskih <icon i></icon>, ne da bi bilo pri tem potrebno testirati skorajda vse.)</p>
 <p class="has-line-data" data-line-start="425" data-line-end="426">Navadno je stike moč najti z osebnimi pogovori, vendar so v našem primeru le ti <em>sami</em> prepočasni za t.i. 48-urno okno COVID-19. Zaradi tega sledilci stikov še kako potrebujejo pomoč, pri čemer pridejo v poštev (in <em>NE</em> v nadomestilo) aplikacije za sledenje stikov.</p>
 <p class="has-line-data" data-line-start="427" data-line-end="428">(Ta ideja ni prišla s strani računalničarjev: uporaba aplikacije za boj proti COVID-19 je bila sprva predlagana s strani <a href="https://science.sciencemag.org/content/early/2020/04/09/science.abb6936">ekipe Oxford-skih epidemiologov</a>.)</p>
 <p class="has-line-data" data-line-start="429" data-line-end="430">Čakaj, aplikacije, ki beležijo s kom si bil v stiku? … Ali to pomeni, da se odrekamo zasebnosti in jo dajamo “Velikemu bratu”?</p>
 <p class="has-line-data" data-line-start="432" data-line-end="436">Seveda ne! <strong><a href="https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing">DP-3T</a></strong>,<br>
-skupina epidemiologov &amp; kriptografov (including one of us, Marcel Salathé) <em>že</em> delajo na tej aplikaciji –<br>
+skupina epidemiologov &amp; kriptografov (eden izmed njih je Marcel Salathé) <em>že</em> delajo na tej aplikaciji –
 z javno dostopno kodo – ki ne razkrije <strong>nobenih informacij o tvoji identiteti, lokaciji, s kom<br>
 ali celo <em>s koliko ljudmi</em> si bil v stiku.</strong></p>
 <p class="has-line-data" data-line-start="437" data-line-end="438">Tako deluje:</p>
@@ -306,20 +306,20 @@ ali celo <em>s koliko ljudmi</em> si bil v stiku.</strong></p>
 <p class="has-line-data" data-line-start="443" data-line-end="448">Skupaj s podobnimi skupinami kot so TCN Protocol<sup class="footnote-ref"><a href="#fn24" id="fnref24">[24]</a></sup> in MIT PACT<sup class="footnote-ref"><a href="#fn25" id="fnref25">[25]</a></sup>, so navdihnili podjetji Apple &amp; Google<br>
 za vnos sledenja stikov, katerih prioriteta je varovanje zasebnosti neposredno v sistem Android/iOS.<sup class="footnote-ref"><a href="#fn26" id="fnref26">[26]</a></sup><br>
 (Ne zaupaš Google-u/Apple-u? Dobro! Lepota sistema je, da ne <em>potrebuje</em> zaupanja.<br>
-Kmalu bo lokalna zdravstena agencija morda predlagala, da jo preneseš. Če je prioriteta aplikacije varovanje zasebnosti z javno dostopno kodo,<br>
+Kmalu bo lokalna zdravstena agencija morda predlagala, da jo preneseš. Če je prioriteta aplikacije varovanje zasebnosti z javno dostopno kodo,
 jo, prosim, prenesi!</p>
 <p class="has-line-data" data-line-start="455" data-line-end="456">Kaj pa ljudje brez pametnih telefonov? Ali pa okužbe preko “vratnih kljuk”? Ali “popolnoma” asimptomatski primeri? Aplikacije sledenja stikov ne morejo prestreči vseh prenosov … <em>Kar je čisto V redu!</em> Ni nam treba prestreči <em>vseh</em>, vsaj 60%, da je R &lt; 1.</p>
 <p class="has-line-data" data-line-start="457" data-line-end="458">(razburjanje glede zmede med pre-simptomatskimi in <em>popolnoma</em> asimptomatskimi. Slednji so redki:<sup class="footnote-ref"><a href="#fn27" id="fnref27">[27]</a></sup>)</p>
 <p class="has-line-data" data-line-start="465" data-line-end="466">Izolacija <em>simptomatskih</em> primerov bi znižala R do 40 %, and karantenizacija njihovih <em>pre/a-simptomatičnih</em> stikov bi znižala R vse do 50 %<sup class="footnote-ref"><a href="#fn28" id="fnref28">[28]</a></sup>:</p>
-<p class="has-line-data" data-line-start="476" data-line-end="479">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-4a&amp;format=calc” width=“285” height=“340”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
-<p class="has-line-data" data-line-start="480" data-line-end="482">Zatorej, četudi se nena 100% stikov osami, lahko dobimo R &lt; 1 <em>brez karantene!</em> Veliko boljše za naše mentalno &amp; finančno zdravje.<br>
-(Kar se tiče stroškov za ljudi, ki se morajo samoosamiti / karantenizirati, <em>vlada bi jih morala podpreti</em> – plačati teste, preprečiti izgubo službe, subvencionirati plačani dopust, etc. Še vedno veliko cenejša od karantene.)</p>
-<p class="has-line-data" data-line-start="483" data-line-end="484">Potem ohranjamo R &lt; 1 until dokler nimamo zdravila, ki spremeni dovzetne &lt;icon s&gt;&lt;/icon&gt; v imune &lt;icon r&gt;&lt;/icon&gt;. Imuniteta črede, tokrat na <em>pravi</em> način:</p>
-<p class="has-line-data" data-line-start="485" data-line-end="488">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-4b&amp;format=calc” width=“285” height=“230”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
+	</div>
+<p class="has-line-data" data-line-start="480" data-line-end="482">Zatorej, četudi se nena 100% stikov osami, lahko dobimo R &lt; 1 <em>brez karantene!</em> Veliko boljše za naše mentalno &amp; finančno zdravje.
+(Kar se tiče stroškov za ljudi, ki se morajo samoosamiti / karantenizirati, <em> bi jih vlada morala podpreti</em> – plačati teste, preprečiti izgubo službe, subvencionirati plačani dopust, etc. Še vedno veliko ceneje od karantene.)</p>
+<p class="has-line-data" data-line-start="483" data-line-end="484">Potem ohranjamo R &lt; 1 until dokler nimamo zdravila, ki spremeni dovzetne <icon s></icon> v imune <icon r></icon>. Čredna imunost, tokrat na <em>pravi</em> način:</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="489" data-line-end="490">(Pomni: ta kalkulator privzema, da je zdravilo 100% učinkovito. Ne pozabi, da v realnosti bomo morali kompenzirati cepljenje <em>več</em> kot “čredne imunosti”, da <em>dejansko</em> dobimo čredno imunost)</p>
 <p class="has-line-data" data-line-start="491" data-line-end="492">Dobro, dovolj govorjenja. Tukaj je simulacija za:</p>
 <ol>
@@ -328,18 +328,18 @@ jo, prosim, prenesi!</p>
 <li class="has-line-data" data-line-start="495" data-line-end="496">cepimo dovolj ljudi, kar pomeni…</li>
 <li class="has-line-data" data-line-start="496" data-line-end="498">Zmagali smo.</li>
 </ol>
-<p class="has-line-data" data-line-start="498" data-line-end="501">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-5&amp;format=lines” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="502" data-line-end="503">Torej, to je to! Tako izvedemo zasilni pristanek na tem letalu.</p>
 <p class="has-line-data" data-line-start="504" data-line-end="505">Tako premagamo COVID-19.</p>
 <p class="has-line-data" data-line-start="506" data-line-end="507">…</p>
-<p class="has-line-data" data-line-start="509" data-line-end="511">Kaj pa, če gredo stvari <em>še vedno</em> narobe?<br>
+<p class="has-line-data" data-line-start="509" data-line-end="511">Kaj pa, če gredo stvari <em>še vedno</em> narobe?
 Stvari so že potekale zelo narobe. To je strah in to je dobro! Strah nam da energijo, da ustvarimo <em>rezervne načrte</em>.</p>
 <p class="has-line-data" data-line-start="512" data-line-end="513">Pesimist izumi padalo.</p>
-<p class="has-line-data" data-line-start="514" data-line-end="515">###Scenarij 4+: Maske za vse, poletje, varnostno stikalo</p>
-<p class="has-line-data" data-line-start="516" data-line-end="517">Kaj če je R&lt;sub&gt;0&lt;/sub&gt; veliko višji kot smo predvideli, in zgornji posegi, tudi z blagim distanciranjem, <em>še vedno</em> niso dovolj, da dobimo R &lt; 1?</p>
-<p class="has-line-data" data-line-start="518" data-line-end="521">Ne pozabi,<br>
+<h3 id="toc_5">Scenarij 4+: Maske za vse, poletje, varnostno stikalo</h3>
+<p class="has-line-data" data-line-start="516" data-line-end="517">Kaj če je R<sub>0</sub> veliko višji kot smo predvideli, in zgornji posegi, tudi z blagim distanciranjem, <em>še vedno</em> niso dovolj, da dobimo R &lt; 1?</p>
+<p class="has-line-data" data-line-start="518" data-line-end="521">Ne pozabi,
 tudi če ne moremo dobiti R &lt;1, zmanjšanje R še vedno zniža “presežek” v skupnih primerih, kar reši življenja.<br>
 Kljub temu je R &lt;1 idealen, zato je tu še nekaj načinov za zmanjšanje R:</p>
 <p class="has-line-data" data-line-start="522" data-line-end="523"><strong>Maske za vse:</strong></p>
@@ -347,39 +347,36 @@ Kljub temu je R &lt;1 idealen, zato je tu še nekaj načinov za zmanjšanje R:</
 <p class="has-line-data" data-line-start="526" data-line-end="527">Prav imaš. Maske ne preprečijo, da zboliš<sup class="footnote-ref"><a href="#fn29" id="fnref29">[29]</a></sup>… preprečijo ti, da okužiš <em>ostale</em>.</p>
 <p class="has-line-data" data-line-start="534" data-line-end="535"><img src="pics/masks.png" alt=""></p>
 <p class="has-line-data" data-line-start="536" data-line-end="537">Predstavljeno v številkah: kirurška maska <em>na zboleli osebi</em> zmanjša prenos virusa pri prehladu &amp; gripi preko zraka do 70 %.<sup class="footnote-ref"><a href="#fn30" id="fnref30">[30]</a></sup> Zmanjšanje prenosov za 70 % bi imelo tako velik vpliv kot karantena!</p>
-<p class="has-line-data" data-line-start="538" data-line-end="539">Vseeno, ne vemo zagotovo kakšen vpliv imajo maske pri virusu COVID-19 <em>specifično</em>. V znanosti, se ugotovitev lahko objavi samo, če je gotovost 95 %. (…lahko.<sup class="footnote-ref"><a href="#fn31" id="fnref31">[31]</a></sup>) Maske imajo, od 1. maja 2020, manjšo zanesljivost od 95 %.</p>
-<p class="has-line-data" data-line-start="541" data-line-end="542">Vsak dejanski znanstvenik, ki je prebral zadnji stavek, se verjetno trenutno smeje-joče. Glej: <a href="https://en.wikipedia.org/wiki/Data_dredging">p-hacking</a>, <a href="https://en.wikipedia.org/wiki/Replication_crisis">kriza podvajanja</a>)</p>
+<p class="has-line-data" data-line-start="538" data-line-end="539">Vseeno, ne vemo zagotovo kakšen vpliv imajo maske pri virusu COVID-19 <em>specifično</em>. V znanosti, se ugotovitev lahko objavi samo, če je gotovost 95 %. (…lahko.<sup class="footnote-ref"><a href="#fn31" id="fnref31">[31]</a></sup>) Maske imajo, od 1. maja 2020, "manjšo zanesljivost od 95 %".</p>
 <p class="has-line-data" data-line-start="543" data-line-end="544">Pandemija je kot poker. <strong>Če staviš zgolj, ko si 95% prepričan, boš izgubil vse.</strong> Kot ugotavlja nedavni članek o maskah v Britanskem medicinskem časopisu,<sup class="footnote-ref"><a href="#fn32" id="fnref32">[32]</a></sup> <em>moramo</em> sprejemati cena/korist analize glede na negotovost. Kot so:</p>
 <p class="has-line-data" data-line-start="547" data-line-end="548">Cena: V primeru doma izdelanih iz blaga (ki so približno 2/3 tako efektivne kot kirurške maske <sup class="footnote-ref"><a href="#fn33" id="fnref33">[33]</a></sup>) je cena zelo ugodna. V primeru kirurških mask je cena višja, a še vedno precej ugodna.</p>
 <p class="has-line-data" data-line-start="549" data-line-end="550">Korist: Tudi, če je možnost, da kirurške maske znižajo prenos za 0 % ali 70 %, 50 %, je povprečna “pričakovana vrendnost” še zmeraj 35 %. Tako kot polovična karantena! Torej ugibajmo, da kirurške maske znižajo R za največ 35%, zaradi negotovosti. (Ponovno, lahko preveriš naše predpostavke s premikanjem drsnikov gor ali dol)</p>
-<p class="has-line-data" data-line-start="551" data-line-end="554">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-6a&amp;format=calc” width=“285” height=“380”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="555" data-line-end="556">(ostali argumenti za/proti maskam:<sup class="footnote-ref"><a href="#fn34" id="fnref34">[34]</a></sup>)</p>
-<p class="has-line-data" data-line-start="560" data-line-end="561"><strong>“Težko jih je nositi pravilno.”</strong> Prav tako si je težko umivati roke v skladu s smernicami WHO – resno, &quot;korek 3.) Dlan desne roke preko hrbtišča leve?! – Vseeno še vedno priporočamo umivanje rok, saj je nepopolno še zmeraj bolje kakor nič.</p>
-<p class="has-line-data" data-line-start="562" data-line-end="563"><strong>“Ljudje bodo bolj nepremišljeni pri umivanju rok in socialem distanciranju.”</strong> Kakopak! Zaradi varnostnih pasov ljudje tudi ignorirajo stop znake, prav tako zaradi nitkanja ljudje jedo kamenje. Zdaj pa zares, zavzemali bi se za nasprotno: maske so <em>neprestani fizični opomnik</em>, da moramo biti previdni – V Vzhodni Aziji so celo simbol solidarnosti.</p>
-<p class="has-line-data" data-line-start="566" data-line-end="567">Maske <em>same</em> ne bodo privedle do R &lt; 1. Toda, če nas umivanje rok in “Testiraj, Izsledi, Izoliraj” pride zgolj do R = 1.10, bi z nošo mask 1/3 ljudi dosegli R &lt; 1 in virus obvladali!</p>
+<p class="has-line-data" data-line-start="566" data-line-end="567">Maske <em>same</em> ne bodo privedle do R &lt; 1. Toda, če nas umivanje rok in “Testiraj, Izsledi, Izoliraj” privede zgolj do R = 1.10, bi z nošo mask 1/3 ljudi dosegli R &lt; 1 in virus obvladali!</p>
 <p class="has-line-data" data-line-start="568" data-line-end="569"><strong>Poletje:</strong></p>
-<p class="has-line-data" data-line-start="570" data-line-end="571">Ok, to ni “intervencija”, ki jo lahko nadzorujemo, lahko pa pomaga! Nekatere novice poročajo, da poletje COVID-19 ne bo ničesar storilo. Imajo deloma res: poljetje ne bo zagotovilo R &lt; 1, ampak ga <em>bo</em> zmanjšalo R.</p>
+<p class="has-line-data" data-line-start="570" data-line-end="571">Ok, to ni “intervencija”, ki jo lahko nadzorujemo, lahko pa pomaga! Nekatere novice poročajo, da poletje COVID-19 ne bo ničesar storilo. Imajo deloma prav: poljetje ne bo zagotovilo R &lt; 1, ampak ga <em>bo</em> zmanjšalo.</p>
 <p class="has-line-data" data-line-start="572" data-line-end="574">Pri COVID-19, vsaka dodatna 1 °C (2,2 ° Fahrenheit) povzroči upad R za 1,2 %.<sup class="footnote-ref"><a href="#fn35" id="fnref35">[35]</a></sup><br>
 Temperaturna razlika poletje-zima je v New Yorku 15 ° C (60 °F), torej bo s poletjem upad R za 18 %.</p>
-<p class="has-line-data" data-line-start="577" data-line-end="580">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-6b&amp;format=calc” width=“285” height=“220”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
-<p class="has-line-data" data-line-start="581" data-line-end="582">*Poletje samo ne bo doseglo R &lt; 1, če pa imamo omejene vire, we can scale back some interventions in the summer – so we can scale them <em>higher</em> in the winter.</p>
-<p class="has-line-data" data-line-start="583" data-line-end="584">** “Varnostno stikalo” - karantena:**</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
+	</div>
+<p class="has-line-data" data-line-start="581" data-line-end="582">Poletje samo ne bo doseglo R &lt; 1, če pa imamo omejene vire, lahko zmanjšamo ukrepe poleti – da jih lahko <em>zaostrimo</em> pozimi.</p>
+<p><strong> "Varnostno stikalo" - zaprtje:</strong></p>
 <p class="has-line-data" data-line-start="585" data-line-end="586">In če vse to še <em>vedno</em> ni dovolj, da dobimo R &lt; 1… lahko ponovno uvedemo karanteno.</p>
-<p class="has-line-data" data-line-start="587" data-line-end="588">*Ampak ne bo nam treba biti 2-mesca-zaprti / 1-mesec-odprti znova &amp; znova! Ker R je zmanjšan, we’d only need one or two more “circuit breaker” lockdowns before a vaccine is available. (Singapore je moral to narediti pred kratkim, “kljub” temu da je COVID-19 bil pod kontrolo 4 mesece. To ni neuspeh: to <em>je</em> “cena, ki jo moraš plačati”, da zmagas.)</p>
+<p class="has-line-data" data-line-start="587" data-line-end="588">Ampak ne bo nam treba biti 2-mesca-zaprti / 1-mesec-odprti znova &amp; znova! Ker je R zmanjšan, bomo potrebovali zgolj še eno ali dve "varnostni stikali"-zaprtji, predno bo na voljo cepivo. (Singapore je moral to narediti pred kratkim, “kljub” temu da je COVID-19 bil pod kontrolo 4 mesece. To ni neuspeh: to <em>je</em> “cena, ki jo moraš plačati”, da zmagas.)</p>
 <p class="has-line-data" data-line-start="589" data-line-end="590">Tu je simulacija “lenega primera” scenarija:</p>
 <ol>
 <li class="has-line-data" data-line-start="591" data-line-end="592">Karantena, potem</li>
-<li class="has-line-data" data-line-start="592" data-line-end="595">Zmerna količina higiene &amp; “Testiraj, Izsledi, Izoliraj” z blago zalogo “Maske za vse”, potem…<br>
-*3. Samo še eno “circuit breaker” lockdown pred iznajdbo cepiva.</li>
+<li class="has-line-data" data-line-start="592" data-line-end="595">Zmerna količina higiene &amp; "Testiraj, Izsledi, Izoliraj" z blago zalogo "Maske za vse", potem…</li>
+<li class="has-line-data" data-line-start="593" data-line-end="595">Samo še eno “varnostno stikalo”-zaprtje pred iznajdbo cepiva.</li>
 </ol>
-<p class="has-line-data" data-line-start="595" data-line-end="598">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-7&amp;format=lines&amp;height=620” width=“800” height=“620”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
-<p class="has-line-data" data-line-start="599" data-line-end="600">Da ne omenjam vseh <em>ostalih</em> intervencij, ki še dodatno znižajo R:</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
+	</div>
+<p class="has-line-data" data-line-start="599" data-line-end="600">Da ne omenjam vseh <em>ostalih</em> ukrepov, ki še dodatno znižajo R:</p>
 <ul>
 <li class="has-line-data" data-line-start="601" data-line-end="602">Omejitve potovanj/karantene</li>
 <li class="has-line-data" data-line-start="602" data-line-end="603">Preverjanje temperature v trgovskih centrih &amp; šolah</li>
@@ -389,8 +386,8 @@ Temperaturna razlika poletje-zima je v New Yorku 15 ° C (60 °F), torej bo s po
 </ul>
 <p class="has-line-data" data-line-start="607" data-line-end="608">. . .</p>
 <p class="has-line-data" data-line-start="609" data-line-end="610">Upamo, da smo ti s temi načrti vlili upanje.</p>
-<p class="has-line-data" data-line-start="611" data-line-end="612"><strong>Tudi po pesimističnem scenariju, <em>je</em> mogoče premagati COVID-19 in hkrati zaščititi našo mentalno in finančno zdravje.</strong> Glej na zaprtje kot “reset button”, vzdržujmo R &lt; 1 izolacijo okuženega + pogodbo o varovanju zasebnosti sledenja + ter <em>vsaj</em> maske iz blaga za vse… in življenje lahko ponovno postane normalno!</p>
-<p class="has-line-data" data-line-start="613" data-line-end="614">Seveda, morda imaš izsušene roke, ampak boš lahko zaradi tega lahko povabil partnerja v knjigarno stripov! Lahko boš šel ven s prijatelji gledat najnovejši hollywood-ski “cash-grab”. Lahko boš opazoval ljudi v knjižnici, užival ob podjetništvu preprostih ljudi, ki mu enostavno rečemo <em>živeti</em>.</p>
+<p class="has-line-data" data-line-start="611" data-line-end="612"><strong>Tudi po pesimističnem scenariju, <em>je</em> mogoče premagati COVID-19 in hkrati zaščititi našo mentalno in finančno zdravje.</strong> Glej na zaprtje kot “reset button”, vzdržujmo R &lt; 1 z izolacijo okuženega + pogodbo o varovanju zasebnosti sledenja + <em>vsaj</em> maske iz blaga za vse… in življenje lahko ponovno postane normalno!</p>
+<p class="has-line-data" data-line-start="613" data-line-end="614">Seveda, morda imaš izsušene roke, ampak boš lahko zaradi tega povabil partnerja v knjigarno stripov! Lahko boš šel ven s prijatelji gledat najnovejši hollywood-ski “cash-grab”. Lahko boš opazoval ljudi v knjižnici, užival ob podjetništvu preprostih ljudi, čemur enostavno rečemo <em>živeti</em>.</p>
 <p class="has-line-data" data-line-start="615" data-line-end="616">Celo v najhujšem primeru … Se življenje ohrani.</p>
 <p class="has-line-data" data-line-start="617" data-line-end="618">Zatorej se zdaj pripravimo na najhujše možne primere. Pristanek na vodi, vzami svoj rešilni jopič in, prosim, sledi lučkam do zasilnih izhodov:</p>
 
@@ -402,17 +399,14 @@ Temperaturna razlika poletje-zima je v New Yorku 15 ° C (60 °F), torej bo s po
 	</div>
 
 	<p class="has-line-data" data-line-start="626" data-line-end="627">Stakneš virus COVID-19, in si opomoreš, ali pa se proti njemu cepiš. V vsakem primeru si zdaj imun …</p>
-<p class="has-line-data" data-line-start="628" data-line-end="630">…<em>A kako dolgo?</em><br>
-“”</p>
+<p class="has-line-data" data-line-start="628" data-line-end="630">…<em>A kako dolgo?</em></p>
 <ul>
-<li class="has-line-data" data-line-start="630" data-line-end="631">Virus COVID-19 je najbolj podoben virusu SARS, ki je dal “svojim” preživelim 2 leti imunosti.[^SARS immunity]</li>
-<li class="has-line-data" data-line-start="631" data-line-end="632">Corona virusi, ki so vzrok za navaden prehlad, nudijo le 8 mesecev imunosti.[^cold immunity]</li>
-<li class="has-line-data" data-line-start="632" data-line-end="633">Obstajajo poročila ljudi, ki so preboleli COVID-19, potem pa bili pozitivni. Je pa neznano, če so testi lažno pozitivni.<sup class="footnote-ref"><a href="#fn36" id="fnref36">[36]</a></sup></li>
-<li class="has-line-data" data-line-start="633" data-line-end="635">Ena <em>“nestrokovno pregledana”</em> raziskava na opicah je pokazala imunost na COVID-19 za vsaj 28 let.<sup class="footnote-ref"><a href="#fn37" id="fnref37">[37]</a></sup></li>
+<li class="has-line-data" data-line-start="630" data-line-end="631">Virus COVID-19 je najbolj podoben virusu SARS, ki je dal “svojim” preživelim 2 leti imunosti.<sup class="footnote-ref"><a href="#fn363" id="fnref363">[36]</a></sup></li></li>
+<li class="has-line-data" data-line-start="631" data-line-end="632">Corona virusi, ki so vzrok za navaden prehlad, nudijo le 8 mesecev imunosti.<sup class="footnote-ref"><a href="#fn373" id="fnref373">[37]</a></sup></li></li>
+<li class="has-line-data" data-line-start="632" data-line-end="633">Obstajajo poročila ljudi, ki so preboleli COVID-19, potem pa bili pozitivni. Je pa neznano, če so testi lažno pozitivni.<sup class="footnote-ref"><a href="#fn36" id="fnref36">[38]</a></sup></li>
+<li class="has-line-data" data-line-start="633" data-line-end="635">Ena <em>“nestrokovno pregledana”</em> raziskava na opicah je pokazala imunost na COVID-19 za vsaj 28 let.<sup class="footnote-ref"><a href="#fn37" id="fnref37">[39]</a></sup></li>
 </ul>
 <p class="has-line-data" data-line-start="635" data-line-end="636"><em>Pri ljudeh</em> je ,od 1. maja 2020, ta doba en velik vprašaj.</p>
-<p class="has-line-data" data-line-start="637" data-line-end="638">[^SARS immunity]: “Specifična protitelesa za SARS so se v povprečju ohranila 2 leti […] Zatorej so SARS pacienti morebiti dovzetni za ponovno okužbo po več kot 3 letih po prvotnem izpostavljenju.” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/">Wu LP, Wang NC, Chang YH, et al.</a> “Na žalost” ne bomo nikoli vedeli kako dolgo bi SARS imunost resnično trajala, saj smo se ga znebili tako hitro.</p>
-<p class="has-line-data" data-line-start="639" data-line-end="640">[^cold immunity]: “Nismo našli nikakršne signifikantne razlike med verjetnostjo vsaj enkrat pozitivnega testa in verjetnostjo ponovnega pojava Beta-Corona virusa HKU1 in OC43 34 tednov po prvi okužbi.” <a href="http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf">Marta Galanti &amp; Jeffrey Shaman (PDF)</a></p>
 <p class="has-line-data" data-line-start="645" data-line-end="647">Za te simulacije recimo, da je 1 leto.<br>
 <strong>Tu je simulacija, začenši s 100% &lt;icon r&gt;&lt;/icon&gt;</strong>, Po 1 letu v <em>povpečju</em> eksponentno pada v dovzetne, neimune &lt;icon s&gt;&lt;/icon&gt;, z variacijo:</p>
 <p class="has-line-data" data-line-start="648" data-line-end="651">&lt;div class=“sim”&gt;<br>
@@ -573,15 +567,25 @@ we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) b
 </li>
 <li id="fn30" class="footnote-item"><p class="has-line-data" data-line-start="530" data-line-end="531">“Skupno 3,4-kratno zmanjšanje [70 % zmanjšanje] kopirnih števil aerosola, ki smo ga opazovali kombiniranega s skoraj popolno eliminacijo razpršila velikih kapljic, ki je bil demonstriran s strani Johnsona et al., predlaga, da bi kirurške maske, ki jih nosijo okuženi, lahko imele klinično signifikantni prispevek k prenosu.” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/">Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ</a> <a href="#fnref30" class="footnote-backref">↩</a></p>
 </li>
-<li id="fn31" class="footnote-item"> <a href="#fnref31" class="footnote-backref">↩</a></li>
+<li id="fn31" class="footnote-item"><p class="has-line-data" data-line-start="541" data-line-end="542">Vsak dejanski znanstvenik, ki je prebral zadnji stavek, se verjetno trenutno smeje-joče. Glej: <a href="https://en.wikipedia.org/wiki/Data_dredging">p-hacking</a>, <a href="https://en.wikipedia.org/wiki/Replication_crisis">kriza podvajanja</a>)</p>
+ <a href="#fnref31" class="footnote-backref">↩</a></li>
 <li id="fn32" class="footnote-item"><p class="has-line-data" data-line-start="545" data-line-end="546">“Čas je za vpeljavo previdnostnega načela” <a href="https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf">Trisha Greenhalgh et al [PDF]</a> <a href="#fnref32" class="footnote-backref">↩</a></p>
 </li>
 <li id="fn33" class="footnote-item"><p class="has-line-data" data-line-start="532" data-line-end="533"><a href="https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55">Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., &amp; Bennett, A</a> Glej seznam 1: 100 % bombažna majica ima okrog 2/3 filtrirne učinkovitosti kirurške maske, kar velja za dva bakterijska aerosola, za katera so testirali. <a href="#fnref33" class="footnote-backref">↩</a></p>
 </li>
 <li id="fn34" class="footnote-item"><p class="has-line-data" data-line-start="557" data-line-end="559"><strong>“Prihraniti moramo zaloge za bolnišnice.”</strong> <em>Absolutno drži.</em> Toda to je bolj argument za povečanje proizvodnje mask, ne omejevanje količine.<br>
 Medtem pa si lahko naredimo maske iz tkanin. <a href="#fnref34" class="footnote-backref">↩</a></p>
+	<p class="has-line-data" data-line-start="560" data-line-end="561"><strong>“Težko jih je nositi pravilno.”</strong> Prav tako si je težko umivati roke v skladu s smernicami WHO – resno, &quot;korek 3.) Dlan desne roke preko hrbtišča leve?! – Vseeno še vedno priporočamo umivanje rok, saj je nepopolno še zmeraj bolje kakor nič.</p>
+<p class="has-line-data" data-line-start="562" data-line-end="563"><strong>“Ljudje bodo bolj nepremišljeni pri umivanju rok in socialem distanciranju.”</strong> Kakopak! Zaradi varnostnih pasov ljudje tudi ignorirajo stop znake, prav tako zaradi nitkanja ljudje jedo kamenje. Zdaj pa zares, zavzemali bi se za nasprotno: maske so <em>neprestani fizični opomnik</em>, da moramo biti previdni – V Vzhodni Aziji so celo simbol solidarnosti.</p>
+
 </li>
 <li id="fn35" class="footnote-item"><p class="has-line-data" data-line-start="575" data-line-end="576">“Zvišanje temperature za eno stopinjo Celzija […] zniža R za 0,0225” in “Povprečna vrednost R teh 100 mest je 1,83”. 0.0225 ÷ 1.83 = ~1.2%. <a href="https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767">Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng</a> <a href="#fnref35" class="footnote-backref">↩</a></p>
+</li>
+	<li id="fn363" class="footnote-item"><p class="has-line-data" data-line-start="637" data-line-end="638">“Specifična protitelesa za SARS so se v povprečju ohranila 2 leti […] Zatorej so SARS pacienti morebiti dovzetni za ponovno okužbo po več kot 3 letih po prvotnem izpostavljenju.” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/">Wu LP, Wang NC, Chang YH, et al.</a> “Na žalost” ne bomo nikoli vedeli kako dolgo bi SARS imunost resnično trajala, saj smo se ga znebili tako hitro.
+<a href="#fnref363" class="footnote-backref"></a></p>
+</li>
+<li id="fn373" class="footnote-item"><p class="has-line-data" data-line-start="643" data-line-end="644">“Nismo našli nikakršne signifikantne razlike med verjetnostjo vsaj enkrat pozitivnega testa in verjetnostjo ponovnega pojava Beta-Corona virusa HKU1 in OC43 34 tednov po prvi okužbi.” <a href="http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf">Marta Galanti &amp; Jeffrey Shaman (PDF)</a>
+ <a href="#fnref373" class="footnote-backref"></a></p>
 </li>
 <li id="fn36" class="footnote-item"><p class="has-line-data" data-line-start="641" data-line-end="642">“Čim se oseba otrese virusa, se viralni delci še nekaj časa zadržijo v telesu. Ti ne morejo povzročiti okužbe, lahko pa so povzročitelji pozitivnega testa.” <a href="https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/">from STAT News by Andrew Joseph</a> <a href="#fnref36" class="footnote-backref">↩</a></p>
 </li>
