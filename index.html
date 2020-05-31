@@ -153,61 +153,61 @@ To pomeni, da si bodo nekateri opomogli prej, nekateri kasneje.<br>
 	        <iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 	</div>
 <p class="has-line-data" data-line-start="139" data-line-end="142">In <em>tako</em> pridemo do najbolj znane krivulje!<br>
-To ni normalna porazdelitev, niti ni “logaritemsko normalna” porazdelitev. Krivulja ni poimenovana, vendar ste jo že videli nešteto krat.</p>
+To ni normalna porazdelitev, niti ni “logaritemsko normalna”. Krivulja nima imena, vendar ste jo že videli nešteto krat.</p>
 <p class="has-line-data" data-line-start="143" data-line-end="146">To je <strong>model SIR</strong>,<sup class="footnote-ref"><a href="#fn5" id="fnref5">[5]</a></sup><br>
-(&lt;icon s&gt;&lt;/icon&gt;<strong>S</strong>usceptible(Dovzetni) &lt;icon i&gt;&lt;/icon&gt;<strong>I</strong>nfectious(nalezljivi) &lt;icon r&gt;&lt;/icon&gt;<strong>R</strong>ecovered(opomogli))<br>
+(<icon s></icon><strong>S</strong>usceptible(dovzetni) <icon i></icon><strong>I</strong>nfectious(okuženi) <icon r></icon><strong>R</strong>ecovered(ozdraveli))<br>
 <em>Druga</em>-najbolj pomembna ugotovitev v knjigi Epidemiology 101:</p>
 <p class="has-line-data" data-line-start="150" data-line-end="151"><img src="pics/sir.png" alt=""></p>
-<p class="has-line-data" data-line-start="152" data-line-end="154"><strong>Opomba: Simulacije, ki obveščajo o politiki, so precej bolj zapletene od tega!</strong><br>
+<p class="has-line-data" data-line-start="152" data-line-end="154"><strong>Opomba: Simulacije, ki obveščajo politike, so precej, precej bolj zapletene od tega!</strong>
 Ampak model SIR še vedno pojasni glavne rezultate, čeprav so izpuščene podrobnosti.</p>
-<p class="has-line-data" data-line-start="155" data-line-end="157">Pravzaprav, dodajmo še en detajl: preden &lt;icon s&gt;&lt;/icon&gt; postane &lt;icon i&gt;&lt;/icon&gt;, je sprva &lt;icon e&gt;&lt;/icon&gt; izpostavljen.<br>
+<p class="has-line-data" data-line-start="155" data-line-end="157">Pravzaprav, dodajmo še en detajl: preden <icon s></icon> postane <icon i></icon>, je sprva <icon e></icon> izpostavljen.
 To je obdoblje, ko se je okužil, ampak virusa še ne prenaša na druge - je okužen ampak še nenalezljiv.</p>
 <p class="has-line-data" data-line-start="159" data-line-end="160"><img src="pics/seir.png" alt=""></p>
-<p class="has-line-data" data-line-start="161" data-line-end="164">(To različico imenujemo <strong>model SEIR</strong><sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>, kjer je “E” okrajšava za &lt;icon e&gt;&lt;/icon&gt; “Exposed” (izpostavljene).<br>
+<p class="has-line-data" data-line-start="161" data-line-end="164">(To različico imenujemo <strong>model SEIR</strong><sup class="footnote-ref"><a href="#fn6" id="fnref6">[6]</a></sup>, kjer je “E” okrajšava za <icon e></icon> “Exposed” (izpostavljen).
 Pomni, da tukaj izpostavljenost <em>nima</em> vsakodnevnega pomena. V tej strokovni definiciji “izpostavljenost” pomeni, da si definitivno okužen. Strokovna terminologija je slaba.)</p>
 <p class="has-line-data" data-line-start="167" data-line-end="169">
-Za COVID-19 ocenjujemo, da ste v povprečju &lt;icon e&gt;&lt;/icon&gt; okuženi 3 dni, ampak še nenalezljivi.<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup><br>
+Za COVID-19 ocenjujemo, da ste v povprečju <icon e></icon> okuženi 3 dni, ampak še nenalezljivi.<sup class="footnote-ref"><a href="#fn7" id="fnref7">[7]</a></sup>
 Kaj se zgodi, če k simulaciji dodamo še to?</p>
-<p class="has-line-data" data-line-start="175" data-line-end="177">&lt;b style=‘color:#ff4040’&gt;Rdeča &lt;b style=‘color:#FF9393’&gt;+ Roza&lt;/b&gt; krivulja&lt;/b&gt; so <em>trenutni</em> primeri (okuženi &lt;icon i&gt;&lt;/icon&gt; + izpostavljeni &lt;icon e&gt;&lt;/icon&gt;),<br>
-&lt;b style=‘color:#888’&gt;Siva krivulja&lt;/b&gt; so <em>vsi</em> primeri (trenutni + opomogli &lt;icon r&gt;&lt;/icon&gt;):</p>
-<p class="has-line-data" data-line-start="178" data-line-end="181">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=epi-5” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
-<p class="has-line-data" data-line-start="182" data-line-end="184">Ni se veliko spremenilo! Kako dolgo si &lt;icon e&gt;&lt;/icon&gt; izpostavljen spremeni razmerje med &lt;icon e&gt;&lt;/icon&gt;-in-&lt;icon i&gt;&lt;/icon&gt;,<br>
-in <em>kdaj</em> trenutni primeri dosežejo ekstrem… ampak &quot;<em>višina</em>&quot; ekstrema, in vseh primerov na koncu, ostane enaka.</p>
+<p class="has-line-data" data-line-start="175" data-line-end="177"><p><b style='color:#ff4040'>Rdeča <b style='color:#FF9393'>+ Roza</b> krivulja</b>  so <em>trenutni</em> primeri (okuženi <icon i></icon> + izpostavljeni <icon e></icon>),
+<b style='color:#888'>Siva krivulja</b> so <em>vsi</em> primeri (trenutni + opomogli <icon r></icon>):</p>
+<div class="sim">
+	        <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
+	</div>
+<p class="has-line-data" data-line-start="182" data-line-end="184">Ni se veliko spremenilo! Kako dolgo si <icon e></icon> izpostavljen spremeni razmerje med <icon e></icon>-in-<icon i></icon>,
+in <em>kdaj</em> trenutni primeri dosežejo ekstrem… ampak &quot;<em>višina</em>&quot; ekstrema, in število vseh primerov je na koncu enako.</p>
 <p class="has-line-data" data-line-start="185" data-line-end="186">Zakaj je temu tako? Zaradi <em>prve</em>-najpomemnejše ugotovitve v Epidemiology 101:</p>
 <p class="has-line-data" data-line-start="187" data-line-end="188"><img src="pics/r.png" alt=""></p>
 <p class="has-line-data" data-line-start="189" data-line-end="190">R je kratica, s katero označimo “število za razmnoževanje”. Predstavlja <em>povprečno</em> število ljudi, ki se okužijo <em>preden</em> ozdravijo (ali umrejo).</p>
 <p class="has-line-data" data-line-start="191" data-line-end="192"><img src="pics/r2.png" alt=""></p>
-<p class="has-line-data" data-line-start="193" data-line-end="194"><strong>R</strong> se med izbruhom spremeni, saj sčasoma pridobimo imunost in sprejmemo ustrezne ukrepe.</p>
-<p class="has-line-data" data-line-start="195" data-line-end="196"><strong>R&lt;sub&gt;0&lt;/sub&gt;</strong> (izgovarjamo R-nič) predstavlja R <em>na začetku izbruha, torej pred imunostjo in ukrepi</em>. <strong>R&lt;sub&gt;0&lt;/sub&gt;</strong> natančneje odraža moč virusa, vendar se le-ta še vedno spreminja od mesta do mesta. Na primer: <strong>R&lt;sub&gt;0&lt;/sub&gt;</strong> je višji v gosteje naseljenih mestih kakor v redkih podeželskih območjih.</p>
-<p class="has-line-data" data-line-start="197" data-line-end="198">(V večini novic, celo v nekaterih raziskovalnih člankih, pride do zmede zaradi zamenjave R in R&lt;sub&gt;0&lt;/sub&gt;. Znova je potrebno poudariti, da je znanstvena terminologija zares slaba.)</p>
-<p class="has-line-data" data-line-start="199" data-line-end="200">R&lt;sub&gt;0&lt;/sub&gt; za t.i. »sezonsko gripo« znaša približno 1,28<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>. To pomeni, da na <em>začetku</em> izbruha gripe vsak v <em>povprečju</em> okuži 1.28 drugih ljudi. (Če morda komu to, da to ni celo število, zveni nenavadno, ne pozabite, da ima “povprečna” mama 2,4 otroka. To pa seveda ne pomeni, da okoli teka polbrat.)</p>
-<p class="has-line-data" data-line-start="203" data-line-end="204">Predvideva se, da bo vrednost R&lt;sub&gt;0&lt;/sub&gt; za COVID-19 znašala približno 2,2,<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup> vendar <em>sicer še nedokončana</em> študija v Wuhanu znaša 5,7!<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup></p>
-<p class="has-line-data" data-line-start="209" data-line-end="210">V naših simulacijah oseba <em>na začetku v povprečju</em> okuži nekoga drugega vsake 4 dni ter to počne več kot 10 dni. “4 dnevi” grejo v “10 dni” dva in pol krat. To pomeni, da vsaka oseba <em>na začetku v povprečju</em> okuži 2,5 drugih oseb. Zato je potemtakem R&lt;sub&gt;0&lt;/sub&gt; = 2,5. (opozorila: <sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup>)</p>
-<p class="has-line-data" data-line-start="213" data-line-end="217"><strong>Preizkusi R&lt;sub&gt;0&lt;/sub&gt; kalkulator, ki prikazuje, kako R&lt;sub&gt;0&lt;/sub&gt; vpliva na čas zdravljenja in čas, v katerem pride do nove infekcije:</strong><br>
-&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=epi-6a&amp;format=calc” width=“285” height=“255”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
-<p class="has-line-data" data-line-start="218" data-line-end="219">Ne pozabite, manj kot je &lt;icon s&gt;&lt;/icon&gt;, <em>počasnejši</em> postanejo &lt;icon i&gt;&lt;/icon&gt;. <em>Trenutno</em> reprodukcijsko število ® ni odvisno samo od <em>osnovnega</em> reprodukcijskega števila (R&lt;sub&gt;0&lt;/sub&gt;), ampak <em>tudi</em> od tega, koliko ljudi ni več &lt;icon s&gt;&lt;/icon&gt; dovzetnih. (Na primer: Nekateri ozdravijo in pridobijo naravno imunost.)</p>
-<p class="has-line-data" data-line-start="220" data-line-end="223">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=epi-6b&amp;format=calc” width=“285” height=“390”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<p class="has-line-data" data-line-start="193" data-line-end="194"> <strong>R</strong> se med izbruhom spremeni, saj sčasoma pridobimo imunost in sprejmemo ustrezne ukrepe.</p>
+<p class="has-line-data" data-line-start="195" data-line-end="196"> <strong> R<sub>0</sub> </strong> (izgovarjamo R-nič) predstavlja R <em>na začetku izbruha, torej pred imunostjo in ukrepi</em>. <strong>R<sub>0</sub></strong> natančneje odraža moč virusa, vendar se le-ta še vedno spreminja od mesta do mesta. Na primer: <strong>R<sub>0</sub></strong> je višji v gosteje naseljenih mestih kakor v redkih podeželskih območjih.</p>
+<p class="has-line-data" data-line-start="197" data-line-end="198">(V večini novic, celo v nekaterih raziskovalnih člankih, pride do zmede zaradi zamenjave R in R<sub>0</sub>. Znova je potrebno poudariti, da je znanstvena terminologija zares slaba.)</p>
+<p class="has-line-data" data-line-start="199" data-line-end="200">R<sub>0</sub> za t.i. »sezonsko gripo« znaša približno 1,28<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>. To pomeni, da na <em>začetku</em> izbruha gripe vsak <icon i></icon>, v <em>povprečju</em>, okuži 1.28 drugih ljudi. (Če morda komu to, da to ni celo število, zveni nenavadno, ne pozabite, da ima “povprečna” mama 2,4 otroka. To pa seveda ne pomeni, da okoli teka polbrat.)</p>
+<p class="has-line-data" data-line-start="203" data-line-end="204">Predvideva se, da bo vrednost R<sub>0</sub> za COVID-19 znašala približno 2,2,<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup> vendar <em>sicer še nedokončana</em> študija v Wuhanu znaša 5,7!<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup></p>
+<p class="has-line-data" data-line-start="209" data-line-end="210">V naših simulacijah oseba, <em>na začetku v povprečju</em>, okuži nekoga drugega vsake 4 dni ter to počne več kot 10 dni. “4 dnevi” grejo v “10 dni” dva in pol krat. To pomeni, da vsaka oseba <em>na začetku v povprečju</em> okuži 2,5 drugih oseb. Zato je potemtakem R<sub>0</sub> = 2,5. (opozorila: <sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup>)</p>
+<p class="has-line-data" data-line-start="213" data-line-end="217"><strong>Preizkusi R<sub>0</sub> kalkulator, ki prikazuje, kako R<sub>0</sub> vpliva na čas zdravljenja in čas, v katerem pride do nove infekcije:</strong><br>
+<div class="sim">
+	        <iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
+	</div>
+<p class="has-line-data" data-line-start="218" data-line-end="219">Ne pozabite, manj kot je <icon s></icon>, <em>počasnejši</em> postanejo <icon i></icon>. <em>Trenutno</em> reprodukcijsko število (R) ni odvisno samo od <em>osnovnega</em> reprodukcijskega števila (R<sub>0</sub>), ampak <em>tudi</em> od tega, koliko ljudi ni več <icon s></icon> dovzetnih. (Na primer: Nekateri ozdravijo in pridobijo naravno imunost.)</p>
+<div class="sim">
+	        <iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="224" data-line-end="225">Ko je dovolj ljudi imunih, je R &lt; 1 in virus je moč obvladovati! Temu pravimo <strong>čredna imunost</strong>. Čredno imunost pri gripi dosežemo <em>s cepivom</em>. Ideja o tem, da bi “naravno imunost črede” dosegli tako, da bi se ljudje okužili, je <em>grozljiva</em>. (Vendar ne iz razloga, za katerega morda mislite! Pojasnilo sledi kasneje.)</p>
-<p class="has-line-data" data-line-start="226" data-line-end="230">Znova uporabimo Model SEIR, vendar sedaj prikažimo R&lt;sub&gt;0&lt;/sub&gt;, R skozi čas in mejo čredne imunosti:<br>
-&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=epi-7” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<p class="has-line-data" data-line-start="226" data-line-end="230">Znova uporabimo Model SEIR, vendar sedaj prikažimo R<sub>0</sub>, R skozi čas in mejo čredne imunosti:<br>
+<div class="sim">
+	        <iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="231" data-line-end="232"><strong>OPOMBA: Skupni primeri se pri imuniteti črede <em>ne ustavijo</em>, temveč mejo presežejo!</strong> To se zgodi <em>točno takrat</em>, ko trenutni primeri dosežejo vrhunec. (Do tega pride ne glede na to, kako spremenite nastavitve – poskusite sami!)</p>
-<p class="has-line-data" data-line-start="233" data-line-end="234">Temu je tako, ker v primeru, ko je več &lt;icon s&gt;&lt;/icon&gt; kot je meja imunosti črede, dobite R &lt; 1. In ko je R &lt; 1, novi primeri prenehajo rasti: pride do vrhunca.</p>
+<p class="has-line-data" data-line-start="233" data-line-end="234">Temu je tako, ker v primeru, ko je več <icon s></icon> kot je meja imunosti črede, dobite R &lt; 1. In ko je R &lt; 1, novi primeri prenehajo rasti: pride do vrhunca.</p>
 <p class="has-line-data" data-line-start="235" data-line-end="236"><strong>Če boste iz tega priročnika odnesli le eno lekcijo, je to sledeča</strong> - pred vami je izredno zapleten diagram, zato si prosim vzemite čas, da ga boste popolnoma razumeli:</p>
 <p class="has-line-data" data-line-start="237" data-line-end="238"><img src="pics/r3.png" alt=""></p>
 <p class="has-line-data" data-line-start="239" data-line-end="240"><strong>To pomeni: za zaustavitev COVID-19 nam NI potrebno ujeti večine, kaj šele vseh prenosov!</strong></p>
 <p class="has-line-data" data-line-start="241" data-line-end="242">To je paradoks. COVID-19 je izjemno nalezljiv, kljub temu pa moramo ustaviti “le” nekaj več kot 60% okužb. 60% ?! Če bi bila to šolska ocena, je to zadostno(2). Če pa je R&lt;sub&gt;0&lt;/sub&gt; = 2,5, sledi, da za 61% zmanjšamo R = 0,975. Potem je R &lt; 1 in virus je obvladljiv, saj je tako rekoč omejen! (natančna formula: <sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup>)</p>
 <p class="has-line-data" data-line-start="255" data-line-end="256"><img src="pics/r4.png" alt=""></p>
-<p class="has-line-data" data-line-start="257" data-line-end="258">(Če menite, da so R&lt;sub&gt;0&lt;/sub&gt; ali druge številke v naših simulacijah prenizke/previsoke, je to odlično, saj tako izpodbijate naše predpostavke! Na koncu tega priročnika bo na voljo “način peskovnika”, kjer lahko priključite <em>svoje</em> številke in simulirajte, kaj se zgodi.)</p>
-<p class="has-line-data" data-line-start="259" data-line-end="260"><em>Vsak</em> poseg glede COVID-19, za katerega ste slišali - pranje rok, socialno/fizično distanciranje, zaprtja, samoizolacija, sledenje stikom in karantena, maske za obraz, celo “imuniteta črede” - <em>vsi</em> počnejo popolnoma isto:</p>
-<p class="has-line-data" data-line-start="261" data-line-end="262">Pridobivajo R &lt; 1.</p>
+<p class="has-line-data" data-line-start="257" data-line-end="258">(Če menite, da so R<sub>0</sub> ali druge številke v naših simulacijah prenizke/previsoke, je to odlično, saj tako izpodbijate naše predpostavke! Na koncu tega priročnika bo na voljo “način peskovnika”, kjer lahko priključite <em>svoje</em> številke in simulirajte, kaj se zgodi.)</p>
+<p class="has-line-data" data-line-start="259" data-line-end="260"><em>Vsak</em> ukrep glede COVID-19, za katerega ste slišali - pranje rok, socialno/fizično distanciranje, zaprtja, samoizolacija, sledenje stikom in karantena, maske za obraz, celo “imuniteta črede” - <em>vsi</em> počnejo popolnoma isto:</p>
+<p class="has-line-data" data-line-start="261" data-line-end="262">Prispevajo R &lt; 1.</p>
 <p class="has-line-data" data-line-start="263" data-line-end="264">Sedaj uporabimo naš “simulator epidemije letenja”, da ugotovimo sledeče: Kako lahko dobimo R &lt; 1 na način, ki <strong>ščiti tudi naše duševno <em>in</em> finančno zdravje?</strong></p>
 <p class="has-line-data" data-line-start="265" data-line-end="266">Pripravite se na zasilni pristanek…</p>
 
@@ -219,14 +219,14 @@ in <em>kdaj</em> trenutni primeri dosežejo ekstrem… ampak &quot;<em>višina</
 </div>
 
 	<p class="has-line-data" data-line-start="274" data-line-end="275">…lahko bi bilo huje. V nadaljevanju sledi prikaz vzporednega sveta, kateremu smo se uspeli izogniti:</p>
-<p class="has-line-data" data-line-start="276" data-line-end="277">###Scenarij 0: Ne naredite popolnoma ničesar</p>
+<p class="has-line-data" data-line-start="276" data-line-end="277"><h3 id="toc_0">Scenario 0: Do Absolutely Nothing</h3></p>
 <p class="has-line-data" data-line-start="278" data-line-end="279">Približno eden izmed 20 ljudi, ki so okuženi s COVID-19, se mora odpraviti na oddelek za intenzivno nego.<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup> V bogatih državah, kot so na primer ZDA, 1 oddelek za intenzivno nego premore le 1 ležišče za kar 3400 ljudi.<sup class="footnote-ref"><a href="#fn14" id="fnref14">[14]</a></sup> Zato lahko ZDA <em>hkrati</em> sprejmejo le 20 izmed 3400 okuženih ljudi – oziroma 0,6% prebivalstva.</p>
 <p class="has-line-data" data-line-start="284" data-line-end="285">Tudi če bi to vrednost <em>več kot potrojili</em> na 2%, nam spodnja simulacija prikazuje, kaj bi se zgodilo, <em>če ne bi storili absolutno ničesar:</em></p>
-<p class="has-line-data" data-line-start="286" data-line-end="289">&lt;div class=“sim”&gt;<br>
-&lt;iframe src=“sim?stage=int-1&amp;format=lines” width=“800” height=“540”&gt;&lt;/iframe&gt;<br>
-&lt;/div&gt;</p>
+<div class="sim">
+	        <iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
+	</div>
 <p class="has-line-data" data-line-start="290" data-line-end="291">Slabo kaže…</p>
-<p class="has-line-data" data-line-start="292" data-line-end="294">Britanska fakulteta je 16. marca (<a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">the March 16 Imperial College report</a>) prišla do sledeče ugotovitve: Ne naredimo ničesar in se posledično spopadajmo s problemom premajhnega števila ležišč na oddelkih intenzivne nege, saj se je do sedaj okužilo več kot 80% prebivalstva.<br>
+<p class="has-line-data" data-line-start="292" data-line-end="294">Britanska fakulteta je 16. marca (<a href="https://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">the March 16 Imperial College report</a>) prišla do sledeče ugotovitve: Ne naredimo ničesar in se posledično spopadajmo s problemom premajhnega števila ležišč na oddelkih intenzivne nege, saj se je do sedaj okužilo več kot 80% prebivalstva.
 (ne pozabite: skupni primeri <em>prekoračijo</em> imuniteto črede)</p>
 <p class="has-line-data" data-line-start="295" data-line-end="296">Tudi če umre le 0,5% okuženih – velikodušna domneva, ko ni več možnosti oskrbe na oddelku za intenzivno nego – v veliki državi, kot je ZDA, s 300 milijoni ljudi, 0,5% od 80% od 300 milijonov = še vedno 1,2 milijona mrtvih… <em>ČE nismo naredili ničesar</em>.</p>
 <p class="has-line-data" data-line-start="297" data-line-end="298">(Številne novice in mediji so poročali le “80% okuženih” <em>brez</em>, da bi temu priključili še “ČE NISMO NAREDILI NIČESAR”. Strah je bil usmerjen v klike, ne pa v razumevanje. <em>Vzdih.</em>)</p>
@@ -514,16 +514,16 @@ we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) b
 </li>
 <li id="fn9" class="footnote-item"><p class="has-line-data" data-line-start="205" data-line-end="206">“Osnovno reprodukcijsko število R0 leta 2019-nCoV smo ocenili na približno 2,2 (90-odstoten gost interval: 1,4–3,8)” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/">Riou J, Althaus CL.</a> <a href="#fnref9" class="footnote-backref">↩</a></p>
 </li>
-<li id="fn10" class="footnote-item"><p class="has-line-data" data-line-start="207" data-line-end="208">“Izračunali smo srednjo vrednost <strong>R&lt;sub&gt;0&lt;/sub&gt;</strong> 5,7 (95% CI 3,8–8,9)” <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article">Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.</a> <a href="#fnref10" class="footnote-backref">↩</a></p>
+<li id="fn10" class="footnote-item"><p class="has-line-data" data-line-start="207" data-line-end="208">“Izračunali smo srednjo vrednost <strong>R<sub>0</sub></strong> 5,7 (95% CI 3,8–8,9)” <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article">Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.</a> <a href="#fnref10" class="footnote-backref">↩</a></p>
 </li>
 <li id="fn11" class="footnote-item"><p class="has-line-data" data-line-start="211" data-line-end="212">Pretvarjamo se, da so vsi enako kužni v svojem t.i. “nalezljivem obdobju”. Zaradi izobraževalnih namenov je znova prišlo do manjših poenostavitev. <a href="#fnref11" class="footnote-backref">↩</a></p>
 </li>
-<li id="fn12" class="footnote-item"><p class="has-line-data" data-line-start="243" data-line-end="244">Pomni: R = R&lt;sub&gt;0&lt;/sub&gt; * razmerje prenosov, ki so še dovoljeni. Ne pozabite tudi, da je dovoljeno razmerje prenosov = 1 – razmerje <em>ustavljenih</em> prenosov.</p>
-<p class="has-line-data" data-line-start="245" data-line-end="246">Če želite dobiti R &lt; 1, morate dobiti R&lt;sub&gt;0&lt;/sub&gt; * dovoljeni prenosi &lt; 1.</p>
-<p class="has-line-data" data-line-start="247" data-line-end="248">Sledi: dovoljeni prenosi &lt; 1/R&lt;sub&gt;0&lt;/sub&gt;</p>
-<p class="has-line-data" data-line-start="249" data-line-end="250">Sledi: 1 – ustavljeni prenosi &lt; 1/R&lt;sub&gt;0&lt;/sub&gt;</p>
-<p class="has-line-data" data-line-start="251" data-line-end="252">Sledi: ustavljeni prenosi &gt; 1 – 1/R&lt;sub&gt;0&lt;/sub&gt;</p>
-<p class="has-line-data" data-line-start="253" data-line-end="254">Zato je potrebno ustaviti več kot <strong>1 – 1/R&lt;sub&gt;0&lt;/sub&gt;</strong> prenosov, da dobimo R &lt; 1 in omejimo virus! <a href="#fnref12" class="footnote-backref">↩</a></p>
+<li id="fn12" class="footnote-item"><p class="has-line-data" data-line-start="243" data-line-end="244">Pomni: R = R<sub>0</sub> *razmerje prenosov, ki so še dovoljeni. Ne pozabite tudi, da je dovoljeno razmerje prenosov = 1 – razmerje <em>ustavljenih</em> prenosov.</p>
+<p class="has-line-data" data-line-start="245" data-line-end="246">Če želite dobiti R &lt; 1, morate dobiti R<sub>0</sub> * <br>DovoljeniPrenosi &lt; 1.</p>
+<p class="has-line-data" data-line-start="247" data-line-end="248">Sledi: DovoljeniPrenosi &lt; 1/R<sub>0</sub></p>
+<p class="has-line-data" data-line-start="249" data-line-end="250">Sledi: 1 – UstavljeniPrenosi &lt; 1/R<sub>0</sub></p>
+<p class="has-line-data" data-line-start="251" data-line-end="252">Sledi: UstavljeniPrenosi &gt; 1 – 1/R<sub>0</sub></p>
+<p class="has-line-data" data-line-start="253" data-line-end="254">Zato je potrebno ustaviti več kot <strong>1 – 1/R<sub>0</sub></strong> prenosov, da dobimo R &lt; 1 in omejimo virus! <a href="#fnref12" class="footnote-backref">↩</a></p>
 </li>
 <li id="fn13" class="footnote-item"><p class="has-line-data" data-line-start="280" data-line-end="281"><a href="https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/">“Odstotek primerov COVID-19 v ZDA od 12. februarja do 16. marca 2020, za katere je bil potreben sprejem na oddelku intenzivne nege (starostna skupina)”</a>. Le ta se je za vse primere COVID-19, ki so potrebovali intenzivno nego, gibal med 4,9% in 11,5%. Če smo pri tem še malenkost velikodušni in tako izberemo spodnjo mejo, ugotovimo, da je to 5% oziroma eden izmed dvajsetih. Upoštevati morate, da je ta vrednost značilna za starostno skupino ZDA ter da bo vrednost v državah s starejšim prebivalstvom višja in nižja v državah z mlajšim prebivalstvom. <a href="#fnref13" class="footnote-backref">↩</a></p>
 </li>
