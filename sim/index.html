@@ -37,7 +37,7 @@
 
 					<div id="label_c_recovery">
 						<input class="sim_checkbox" type="checkbox" id="c_recovery">
-						Takes <span id="label_p_recovery">N</span> days to go from <icon i></icon> to <icon r></icon>
+						Potrebuje <span id="label_p_recovery">N</span> dni, da preide iz <icon i></icon> v <icon r></icon>
 						<br>
 						<input class="sim_input" type="range" id="p_recovery" min="1" max="30" step="1" value="10">
 					</div>
@@ -55,54 +55,54 @@
 
 				<div id="section_r">
 
-					R<sub>0</sub> is <span id="label_p_r0" toFixed="2"></span>
+					R<sub>0</sub> je <span id="label_p_r0" toFixed="2"></span>
 					<canvas class="r_canvas" id="canvas_r0"></canvas>
 					<!--input class="sim_input" type="range" id="p_r0" min="0" max="6" step="0.01" disabled-->
 					<br>
 
 					<span id="label_s">
-						% of people who are <i>NOT</i> <icon s></icon>
+						% ljudi, ki <i>NISO</i> <icon s></icon>
 						<input class="sim_input" type="range" id="p_s" min="0" max="1" step="0.001" value="0" disabled>
 						<div class="herd"></div>
 						<br>
 					</span>
 
 					<span id="int_block_0">
-						Increased Hygiene
+						Povečana higiena
 						<br>
 						<input class="sim_input recordable" type="range" id="p_hygiene" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_1">
-						Physical Distancing
+						Fizično distanciranje
 						<br>
 						<input class="sim_input recordable" type="range" id="p_distancing" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_2">
-						Isolating Cases
+						Izolacijski primeri
 						<br>
 						<input class="sim_input recordable" type="range" id="p_isolate" min="0" max="1" step="0.001" value="0">
 						<br>
-						Quarantining Contacts
+						Stiki v karanteni
 						<br>
 						<input class="sim_input recordable" type="range" id="p_quarantine" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_3">
-						Face Masks
+						Maske za obraz
 						<br>
 						<input class="sim_input recordable" type="range" id="p_masks" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_4">
-						Summer
+						Poletje
 						<br>
 						<input class="sim_input recordable" type="range" id="p_summer" min="0" max="1" step="0.001" value="0">
 						<br>
 					</span>
 					<span id="int_block_5">
-						Vaccinations
+						Cepljenja
 						<br>
 						<input class="sim_input recordable" type="range" id="p_vaccines" min="0" max="1" step="0.001" value="0">
 						<br>
@@ -110,13 +110,13 @@
 
 
 					<span id="label_re">
-						R is now <span id="label_p_re" toFixed="2"></span>
+						R je zdaj <span id="label_p_re" toFixed="2"></span>
 						<canvas class="r_canvas" id="canvas_re"></canvas>
 						<!--<input class="sim_input" type="range" id="p_re" min="0" max="6" step="0.01" disabled>-->
 					</span>
 
 					<span id="hospital_capacity">
-						ICU capacity at <span id="label_p_hospital">N</span>%
+						Zmogljivost EIN na <span id="label_p_hospital">N</span>%
 						<br>
 						<input class="sim_input recordable" type="range" id="p_hospital" min="100" max="1000" step="1" value="333">
 					</span>
@@ -127,13 +127,13 @@
 
 				<div id="section_meta">
 
-					Simulate <span id="label_p_years" toFixed="1">N</span> years
+					Simulirajte <span id="label_p_years" toFixed="1">N</span> let
 					<span id="section_meta_years">
 						<br>
 						<input class="sim_input" type="range" id="p_years" min="0.5" max="10" step="0.5" value="2">
 						<br>
 					</span>
-					in <span id="label_p_speed">N</span> seconds
+					v <span id="label_p_speed">N</span> sekundah
 					<br>
 					<input class="sim_input" type="range" id="p_speed" min="1" max="60" step="1" value="30">
 
@@ -144,11 +144,11 @@
 				<div class="big_button">
 					<div id="bb_start">
 						<div class='control_icon' start></div>
-						Start
+						Začni
 					</div>
 					<div id="bb_pause">
 						<div class='control_icon' pause></div>
-						Pause
+						Pavza
 					</div>
 					<div id="bb_continue">
 						<div class='control_icon' continue></div>
@@ -156,17 +156,17 @@
 					</div>
 					<div id="bb_reset">
 						<div class='control_icon' reset></div>
-						Reset
+						Ponastavi
 					</div>
 				</div>
 				<!--div id="sb_stop">
 					Stop
 				</div-->
 				<div id="sb_reset">
-					Reset All
+					Ponastavi vse
 				</div>
 				<div id="sb_replay">
-					Replay Recording
+					Ponovno snemanje
 				</div>
 			</div>
 
