@@ -146,7 +146,7 @@
 	<p><strong>Click &quot;Start&quot; to play the simulation! You can re-play it later with different settings:</strong> (technical caveats: <sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup>)</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=epi-1" width="800" height="540"></iframe>
 	</div>
 
 	<p>This is the <strong>exponential growth curve.</strong> Starts small, then explodes. &quot;Oh it&#39;s just a flu&quot; to &quot;Oh right, flus don&#39;t create <em>mass graves in rich cities</em>&quot;. </p>
@@ -162,7 +162,7 @@
 	<p>How&#39;s this change the growth of an epidemic? Let&#39;s find out:</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=epi-2" width="800" height="540"></iframe>
 	</div>
 
 	<p>This is the &quot;S-shaped&quot; <strong>logistic growth curve.</strong> Starts small, explodes, then slows down again.</p>
@@ -174,7 +174,7 @@
 	<p>With COVID-19, it&#39;s estimated you&#39;re <icon i></icon> Infectious for 10 days, <em>on average</em>.<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> That means some folks will recover before 10 days, some after. <strong>Here&#39;s what that looks like, with a simulation <em>starting</em> with 100% <span class="nowrap"><icon i></icon>:</span></strong></p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=epi-3" width="800" height="540"></iframe>
 	</div>
 
 	<p>This is the opposite of exponential growth, the <strong>exponential decay curve.</strong></p>
@@ -190,7 +190,7 @@
 	starts at just 0.001% <span class="nowrap"><icon i></icon>:</span></p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=epi-4" width="800" height="540"></iframe>
 	</div>
 
 	<p>And <em>that&#39;s</em> where that famous curve comes from! It&#39;s not a bell curve, it&#39;s not even a &quot;log-normal&quot; curve. It has no name. But you&#39;ve seen it a zillion times, and beseeched to flatten.</p>
@@ -215,7 +215,7 @@
 	<b style='color:#888'>Gray curve</b> is <em>total</em> cases (current + recovered <span class="nowrap"><icon r></icon>):</span></p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=epi-5" width="800" height="540"></iframe>
 	</div>
 
 	<p>Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <span class="nowrap"><icon e></icon>-to-<icon i></icon>,</span> and <em>when</em> current cases peak... but the <em>height</em> of that peak, and total cases in the end, stays the same.</p>
@@ -243,13 +243,13 @@
 	<p><strong>Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time &amp; new-infection time:</strong></p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
+	        <iframe src="sim/?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 	</div>
 
 	<p>But remember, the fewer <span class="nowrap"><icon s></icon>s</span> there are, the <em>slower</em> <span class="nowrap"><icon s></icon>s</span> become <span class="nowrap"><icon i></icon>s.</span> The <em>current</em> reproduction number (R) depends not just on the <em>basic</em> reproduction number (R<sub>0</sub>), but <em>also</em> on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering &amp; getting natural immunity.)</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
+	        <iframe src="sim/?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 	</div>
 
 	<p>When enough people have immunity, R &lt; 1, and the virus is contained! This is called <strong>herd immunity</strong>. For flus, herd immunity is achieved <em>with a vaccine</em>. Trying to achieve &quot;natural herd immunity&quot; by letting folks get infected is a <em>terrible</em> idea. (But not for the reason you may think! We&#39;ll explain later.)</p>
@@ -257,7 +257,7 @@
 	<p>Now, let&#39;s play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=epi-7" width="800" height="540"></iframe>
 	</div>
 
 	<p><strong>NOTE: Total cases <em>does not stop</em> at herd immunity, but overshoots it!</strong> And it crosses the threshold <em>exactly</em> when current cases peak. (This happens no matter how you change the settings – try it for yourself!)</p>
@@ -300,12 +300,12 @@
 	<p>Even if we <em>more than tripled</em> that capacity to 2%, here&#39;s what would&#39;ve happened <em>if we did absolutely nothing:</em></p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=int-1&format=lines" width="800" height="540"></iframe>
 	</div>
 
 	<p>Not good.</p>
 
-	<p>That&#39;s what <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">the March 16 Imperial College report</a> found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
+	<p>That&#39;s what <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">the March 16 Imperial College report</a> found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected.
 	(remember: total cases <em>overshoots</em> herd immunity)</p>
 
 	<p>Even if only 0.5% of infected die<sup id="fnref15"><a href="#fn15" rel="footnote">15</a></sup> – a generous assumption when there&#39;s no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... <em>IF we did nothing.</em></p>
@@ -325,13 +325,13 @@
 	<p><strong>Play with this calculator to see how % of <span class="nowrap">non-<icon s></icon>,</span> handwashing, and distancing reduce R:</strong> (this calculator visualizes their <em>relative</em> effects, which is why increasing one <em>looks</em> like it decreases the effect of the others.<sup id="fnref19"><a href="#fn19" rel="footnote">19</a></sup>)</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
+	        <iframe src="sim/?stage=int-2a&format=calc" width="285" height="260"></iframe>
 	</div>
 
 	<p>Now, let&#39;s simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only <em>mild</em> physical distancing – so that R is lower, but still above 1:</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=int-2&format=lines" width="800" height="540"></iframe>
 	</div>
 
 	<p>Three notes:</p>
@@ -353,7 +353,7 @@
 	<p>Let&#39;s see what happens if we <em>crush</em> the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – <em>finally</em> – return to normal life:</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=int-3&format=lines" width="800" height="540"></iframe>
 	</div>
 
 	<p>Oh.</p>
@@ -371,7 +371,7 @@
 	<p><strong>Here&#39;s a simulation:</strong> (After playing the &quot;recorded scenario&quot;, you can try simulating your <em>own</em> lockdown schedule, by changing the sliders <em>while</em> the simulation is running! Remember you can pause &amp; continue the sim, and change the simulation speed)</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=int-4&format=lines" width="800" height="540"></iframe>
 	</div>
 
 	<p>This <em>would</em> keep cases below ICU capacity! And it&#39;s <em>much</em> better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there&#39;s no vaccine, repeat until herd immunity is reached... in 2022.)</p>
@@ -435,7 +435,7 @@
 	<p>Isolating <em>symptomatic</em> cases would reduce R by up to 40%, and quarantining their <em>pre/a-symptomatic</em> contacts would reduce R by up to 50%<sup id="fnref30"><a href="#fn30" rel="footnote">30</a></sup>:</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
+	        <iframe src="sim/?stage=int-4a&format=calc" width="285" height="340"></iframe>
 	</div>
 
 	<p>Thus, even without 100% contact quarantining, we can get R &lt; 1 <em>without a lockdown!</em> Much better for our mental &amp; financial health. (As for the cost to folks who have to self-isolate/quarantine, <em>governments should support them</em> – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)</p>
@@ -443,7 +443,7 @@
 	<p>We then keep R &lt; 1 until we have a vaccine, which turns susceptible <span class="nowrap"><icon s></icon>s</span> into immune <span class="nowrap"><icon r></icon>s.</span> Herd immunity, the <em>right</em> way:</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
+	        <iframe src="sim/?stage=int-4b&format=calc" width="285" height="230"></iframe>
 	</div>
 
 	<p>(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you&#39;d have to compensate by vaccinating <em>more</em> than &quot;herd immunity&quot;, to <em>actually</em> get herd immunity)</p>
@@ -458,7 +458,7 @@
 	</ol>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=int-5&format=lines" width="800" height="540"></iframe>
 	</div>
 
 	<p>So that&#39;s it! That&#39;s how we make an emergency landing on this plane.</p>
@@ -498,7 +498,7 @@
 	<p>Benefit: Even if it&#39;s a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average &quot;expected value&quot; is still 35%, same as a half-lockdown! So let&#39;s guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
+	        <iframe src="sim/?stage=int-6a&format=calc" width="285" height="380"></iframe>
 	</div>
 
 	<p>(other arguments for/against masks:<sup id="fnref36"><a href="#fn36" rel="footnote">36</a></sup>)</p>
@@ -512,7 +512,7 @@
 	<p>For COVID-19, every extra 1° Celsius (1.8° Fahrenheit) makes R drop by 1.2%.<sup id="fnref37"><a href="#fn37" rel="footnote">37</a></sup> The summer-winter difference in New York City is 26°C (47°F),<sup id="fnref38"><a href="#fn38" rel="footnote">38</a></sup> so summer will make R drop by ~31%.</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
+	        <iframe src="sim/?stage=int-6b&format=calc" width="285" height="220"></iframe>
 	</div>
 
 	<p>Summer alone won&#39;t make R &lt; 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them <em>higher</em> in the winter.</p>
@@ -532,7 +532,7 @@
 	</ol>
 
 	<div class="sim">
-	        <iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
+	        <iframe src="sim/?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 	</div>
 
 	<p>Not to mention all the <em>other</em> interventions we could do, to further push R down:</p>
@@ -581,7 +581,7 @@
 	<strong>Here&#39;s a simulation starting with 100% <span class="nowrap"><icon r></icon></strong>,</span> exponentially decaying into susceptible, no-immunity <span class="nowrap"><icon s></icon>s</span> after 1 year, on <em>average</em>, with variation:</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
+	        <iframe src="sim/?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 	</div>
 
 	<p>Return of the exponential decay!</p>
@@ -593,7 +593,7 @@
 	<p>Now, let&#39;s simulate a COVID-19 outbreak, over 10 years, with no interventions... <em>if immunity only lasts a year:</em></p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
+	        <iframe src="sim/?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 	</div>
 
 	<p>In previous simulations, we only had <em>one</em> ICU-overwhelming spike. Now, we have several, <em>and</em> <icon i></icon> cases come to a rest <em>permanently at</em> ICU capacity. (Which, remember, we <em>tripled</em> for these simulations)</p>
@@ -603,7 +603,7 @@
 	<p>Thankfully, because summer reduces R, it&#39;ll make the situation better:</p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
+	        <iframe src="sim/?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 	</div>
 
 	<p>Oh.</p>
@@ -615,7 +615,7 @@
 	<p><strong>(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)</strong></p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 	</div>
 
 	<p>But here&#39;s the scarier question:</p>
@@ -637,7 +637,7 @@
 	<p><strong>Here&#39;s a simulation of <em>no</em> lasting immunity, <em>no</em> vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:</strong></p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 	</div>
 
 	<p>Even under the <em>worst</em> worst-case scenario... life perseveres.</p>
@@ -649,7 +649,7 @@
 	<p><strong>Here&#39;s an (optional) Sandbox Mode, with <em>everything</em> available. (scroll to see all controls) Simulate &amp; play around to your heart&#39;s content:</strong></p>
 
 	<div class="sim">
-	        <iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
+	        <iframe src="sim/?stage=SB&format=sb" width="800" height="540"></iframe>
 	</div>
 
 	<p>This basic &quot;epidemic flight simulator&quot; has taught us so much. It&#39;s let us answer questions about the past few months, next few months, and next few years.</p>
