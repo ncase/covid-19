@@ -5,7 +5,11 @@
         	What Happens Next?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
+<<<<<<< HEAD
+			COVID-19 prihodnost razložena s simulacijami
+=======
 			COVID-19 Futures, Explained With Playable Simulations
+>>>>>>> parent of 1ddeec2... Update words.md
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
