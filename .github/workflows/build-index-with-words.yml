@@ -1,0 +1,30 @@
+# This workflow will compile words/words.md to words/words.html. 
+# The content of words/words.html then replaces everything between 
+# the article tags in index.html. 
+# Any resulting changes will be committed and pushed to master.
+
+name: "Build index.html with words.md"
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Get the current source from master
+        uses: actions/checkout@master
+      - name: Convert markdown to html
+        uses: docker://pandoc/core:2.9 # use a docker image that has pandoc pre-installed
+        with:
+          args: "--from markdown_strict+footnotes words/words.md -o words/words.html"
+      - name: Merge html files
+        run: |
+          perl -0777pi -e 's/(?<=<article>)(\n?).*(?=<\/article>)/`printf "\n" & cat words\/words.html`/gse' index.html
+      - name: Commit and push changes if files have changed
+        uses: stefanzweifel/git-auto-commit-action@v4.1.6
+        with:
+          commit_message: Update index.html from words.md
+          commit_user_name: GitHub Action
+          commit_user_email: action@github.com
